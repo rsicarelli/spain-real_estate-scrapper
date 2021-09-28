@@ -4,37 +4,30 @@ import domain.valueobjects.APropertiesPagination
 import domain.valueobjects.PropertySearchResult
 import it.skrape.core.htmlDocument
 import it.skrape.selects.Doc
+import utils.loadResource
 
 
 inline fun <reified T> T.defaultSearchResults(): Pair<Doc, List<PropertySearchResult>> {
-    return this!!::class.java.getResource("/aproperties-search-result.txt")!!
-        .readText()
-        .let { Pair(htmlDocument(it), Fixtures.defaultSearchResults) }
+    return Pair(htmlDocument(loadResource("/aproperties-search-result.txt")), Fixtures.defaultSearchResults)
 }
 
-inline fun <reified T> T.defaultSearchResultsWithPagination(): Triple<Doc, List<PropertySearchResult>, APropertiesPagination> {
-    return this!!::class.java.getResource("/aproperties-search-result.txt")!!
-        .readText()
-        .let { Triple(htmlDocument(it), Fixtures.defaultSearchResults, Fixtures.defaultPagination) }
-}
+inline fun <reified T> T.defaultSearchResultsWithPagination() =
+    Triple(
+        htmlDocument(loadResource("/aproperties-search-result.txt")),
+        Fixtures.defaultSearchResults,
+        Fixtures.defaultPagination
+    )
 
-inline fun <reified T> T.singleSearchResultWithMissingData(): Pair<Doc, List<PropertySearchResult>> {
-    return this!!::class.java.getResource("/aproperties-single-search-result-missing-data.txt")!!
-        .readText()
-        .let { Pair(htmlDocument(it), Fixtures.singleSearchResultWithMissingData) }
-}
+inline fun <reified T> T.singleSearchResultWithMissingData() =
+    Pair(
+        htmlDocument(loadResource("/aproperties-single-search-result-missing-data.txt")),
+        Fixtures.singleSearchResultWithMissingData
+    )
 
-inline fun <reified T> T.emptySearchResult(): Doc {
-    return this!!::class.java.getResource("/aproperties-empty-search-result.txt")!!
-        .readText()
-        .let { htmlDocument(it) }
-}
+inline fun <reified T> T.emptySearchResult() = htmlDocument(loadResource("/aproperties-empty-search-result.txt"))
 
-inline fun <reified T> T.invalidSearchResult(): Pair<Doc, List<PropertySearchResult>?> {
-    return this!!::class.java.getResource("/aproperties-invalid-search-result.txt")!!
-        .readText()
-        .let { Pair(htmlDocument(it), null) }
-}
+inline fun <reified T> T.invalidSearchResult() =
+    Pair(htmlDocument(loadResource("/aproperties-invalid-search-result.txt")), null)
 
 object Fixtures {
     val defaultSearchResults = listOf(

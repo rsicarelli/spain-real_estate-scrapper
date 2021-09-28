@@ -2,7 +2,7 @@ package data.scrapp.aproperties
 
 import it.skrape.selects.ElementNotFoundException
 import org.junit.jupiter.api.Test
-import utils.extracthAuthority
+import utils.extractAuthority
 import utils.fixtures.defaultSearchResults
 import utils.fixtures.invalidSearchResult
 import utils.fixtures.singleSearchResultWithMissingData
@@ -93,7 +93,7 @@ class APropertiesSearchResultsParserTest {
 
         //then
         result.forEach { propertySearchResult ->
-            assertEquals("www.aproperties.es", propertySearchResult.propertyUrl.extracthAuthority())
+            assertEquals("www.aproperties.es", propertySearchResult.propertyUrl.extractAuthority())
         }
     }
 
@@ -107,7 +107,7 @@ class APropertiesSearchResultsParserTest {
 
         //then
         result.forEach { propertySearchResult ->
-            assertEquals("www.aproperties.es", propertySearchResult.imageUrl.extracthAuthority())
+            assertEquals("www.aproperties.es", propertySearchResult.imageUrl.extractAuthority())
         }
     }
 
