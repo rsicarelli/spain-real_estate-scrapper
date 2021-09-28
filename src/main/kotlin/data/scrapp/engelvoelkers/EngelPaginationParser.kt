@@ -9,10 +9,10 @@ import it.skrape.selects.Doc
 
 const val ENGEL_PAGINATION_PARSER_QUALIFIER = "EngelPaginationParser"
 
-internal class EngelPaginationParser : Parser<EngelPagination> {
+internal class EngelPaginationParser : Parser<EngelPagination?> {
 
-    override fun parse(document: Doc): EngelPagination {
-        return EngelPagination(document.pagination())
+    override fun parse(document: Doc): EngelPagination? {
+        return runCatching { EngelPagination(document.pagination()) }.getOrNull()
     }
 
     private object Mapper {

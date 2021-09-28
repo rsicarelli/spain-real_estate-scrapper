@@ -23,7 +23,7 @@ class FetchPaginatedEngelUseCase(
     ): Flow<Result<List<PropertySearchResult>>> {
 
         return flow<Result<List<PropertySearchResult>>> {
-            if (pagination == null || pagination.pageCount <= 1) {
+            if (pagination == null || pagination.totalResults <= 1) {
                 emit(Result.failure(RuntimeException("Skipping pagination $pagination")))
             } else {
                 val combinedResults = ArrayList(initialResults)

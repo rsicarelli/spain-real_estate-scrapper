@@ -19,7 +19,7 @@ const val ENGEL_SCRAPPER_QUALIFIER = "EngelScrapper"
 
 class EngelScrapper(
     private val propertiesParser: Parser<List<PropertySearchResult>>,
-    private val paginationParser: Parser<EngelPagination>,
+    private val paginationParser: Parser<EngelPagination?>,
     private val propertyDetailsParser: Parser<PropertyDetail>,
     private val skraper: Skraper
 ) : Scrapper<EngelScrapper.Output> {
