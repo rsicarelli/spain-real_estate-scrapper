@@ -15,17 +15,19 @@ import data.scrapp.aproperties.APropertiesSearchResultsParser.Mapper.surface
 import data.scrapp.aproperties.APropertiesSearchResultsParser.Mapper.tag
 import data.scrapp.aproperties.APropertiesSearchResultsParser.Mapper.title
 import domain.valueobjects.PropertySearchResult
-import it.skrape.core.document
-import it.skrape.fetcher.Result
+import it.skrape.selects.Doc
 import it.skrape.selects.DocElement
+import it.skrape.selects.ElementNotFoundException
 import it.skrape.selects.eachHref
 import it.skrape.selects.html5.a
 
 const val APROPERTIES_SEARCH_RESULT_PARSER_QUALIFIER = "APropertiesSearchResultsParser"
 
 internal class APropertiesSearchResultsParser : Parser<List<PropertySearchResult>> {
-    override fun parse(result: Result): List<PropertySearchResult> {
-        return result.document.divWithClass(ROOT_CLASS) {
+
+    @Throws(ElementNotFoundException::class)
+    override fun parse(document: Doc): List<PropertySearchResult> {
+        return document.divWithClass(ROOT_CLASS) {
             findAll {
                 map { docElement ->
                     with(docElement) {
@@ -49,7 +51,7 @@ internal class APropertiesSearchResultsParser : Parser<List<PropertySearchResult
     }
 
     private object Mapper {
-        fun DocElement.propertyUrl(): String = a { findAll { "https://www.aproperties.es${eachHref.first()}" } }
+        fun DocElement.propertyUrl(): String = a { findAll { eachHref.first() } }
 
         fun DocElement.avatarUrl(): String =
             divWithClass(IMAGE_CLASS) { findFirst { "https://www.aproperties.es${eachSrc.first()}" } }

@@ -4,16 +4,14 @@ import app.liWithClass
 import data.scrapp.Parser
 import data.scrapp.aproperties.APropertiesPaginationParser.Mapper.pagination
 import domain.valueobjects.APropertiesPagination
-import it.skrape.core.document
-import it.skrape.fetcher.Result
 import it.skrape.selects.Doc
 import it.skrape.selects.html5.a
 
 const val APROPERTIES_PAGINATION_PARSER_QUALIFIER = "APropertiesPaginationParser"
 
 internal class APropertiesPaginationParser : Parser<APropertiesPagination> {
-    override fun parse(result: Result): APropertiesPagination {
-        return result.document.pagination()
+    override fun parse(document: Doc): APropertiesPagination {
+        return document.pagination()
     }
 
     private object Mapper {

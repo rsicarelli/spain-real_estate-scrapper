@@ -12,6 +12,7 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import data.scrapp.Parser
 import data.scrapp.Scrapper
+import it.skrape.core.document
 
 const val ENGEL_SCRAPPER_QUALIFIER = "EngelScrapper"
 class EngelScrapper(
@@ -23,8 +24,8 @@ class EngelScrapper(
     override suspend fun scrapSearchPage(url: String, getPagination: Boolean): Flow<Result<Output>> {
         return flow {
             emit(scrapper(url) { result ->
-                val pagination = if (getPagination) paginationParser.parse(result) else null
-                val results = propertiesParser.parse(result).filter { it.reference.isNotEmpty() }
+                val pagination = if (getPagination) paginationParser.parse(result.document) else null
+                val results = propertiesParser.parse(result.document).filter { it.reference.isNotEmpty() }
                 Output.SearchResult(pagination, results)
             })
         }.flowOn(Dispatchers.IO)
@@ -33,7 +34,7 @@ class EngelScrapper(
     override suspend fun scrapPropertyDetails(url: String): Flow<Result<Output>> {
         return flow {
             emit(scrapper(url) {
-                Output.SingleProperty(propertyDetailsParser.parse(it))
+                Output.SingleProperty(propertyDetailsParser.parse(it.document))
             })
         }.flowOn(Dispatchers.IO)
     }

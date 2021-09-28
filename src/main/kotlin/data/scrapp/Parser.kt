@@ -1,7 +1,7 @@
 package data.scrapp
 
-import it.skrape.fetcher.Result
+import it.skrape.selects.Doc
 
 interface Parser<T> {
-    fun parse(result: Result): T
+    fun parse(document: Doc): T
 }

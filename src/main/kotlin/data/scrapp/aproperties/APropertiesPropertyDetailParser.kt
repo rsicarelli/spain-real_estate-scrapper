@@ -1,11 +1,6 @@
 package data.scrapp.aproperties
 
 import app.*
-import domain.valueobjects.PropertyDetail
-import it.skrape.core.document
-import it.skrape.fetcher.Result
-import it.skrape.selects.eachHref
-import it.skrape.selects.text
 import data.scrapp.Parser
 import data.scrapp.aproperties.APropertiesPropertyDetailParser.Mapper.characteristics
 import data.scrapp.aproperties.APropertiesPropertyDetailParser.Mapper.description
@@ -14,12 +9,15 @@ import data.scrapp.aproperties.APropertiesPropertyDetailParser.Mapper.latLng
 import data.scrapp.aproperties.APropertiesPropertyDetailParser.Mapper.pdfUrl
 import data.scrapp.aproperties.APropertiesPropertyDetailParser.Mapper.reference
 import data.scrapp.aproperties.APropertiesPropertyDetailParser.Mapper.videoUrl
+import domain.valueobjects.PropertyDetail
 import it.skrape.selects.Doc
+import it.skrape.selects.eachHref
+import it.skrape.selects.text
 
 const val APROPERTIES_PROPERTY_DETAIL_PARSER_QUALIFIER = "APropertiesPropertyDetailParser"
 
 internal class APropertiesPropertyDetailParser : Parser<PropertyDetail> {
-    override fun parse(result: Result): PropertyDetail = with(result.document) {
+    override fun parse(document: Doc): PropertyDetail = with(document) {
         val latLng = latLng()
         return PropertyDetail(
             reference = reference(),

@@ -12,6 +12,7 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import data.scrapp.Parser
 import data.scrapp.Scrapper
+import it.skrape.core.document
 
 const val APROPERTIES_SCRAPPER_QUALIFIER = "APropertiesScrapper"
 
@@ -24,8 +25,8 @@ class APropertiesScrapper(
     override suspend fun scrapSearchPage(url: String, getPagination: Boolean): Flow<Result<Output>> {
         return flow {
             emit(scrapper(url) {
-                val pagination = if (getPagination) paginationParser.parse(it) else null
-                val results = searchResultParser.parse(it)
+                val pagination = if (getPagination) paginationParser.parse(it.document) else null
+                val results = searchResultParser.parse(it.document)
                 Output.SearchResult(pagination, results)
             })
         }.flowOn(Dispatchers.IO)
@@ -34,7 +35,7 @@ class APropertiesScrapper(
     override suspend fun scrapPropertyDetails(url: String): Flow<Result<Output>> {
         return flow {
             emit(scrapper(url) {
-                Output.SingleProperty(propertyDetailsParser.parse(it))
+                Output.SingleProperty(propertyDetailsParser.parse(it.document))
             })
         }.flowOn(Dispatchers.IO)
     }

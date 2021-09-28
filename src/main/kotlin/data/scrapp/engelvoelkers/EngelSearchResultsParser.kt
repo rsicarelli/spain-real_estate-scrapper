@@ -14,8 +14,6 @@ import data.scrapp.engelvoelkers.EngelSearchResultsParser.Mapper.surface
 import data.scrapp.engelvoelkers.EngelSearchResultsParser.Mapper.tag
 import data.scrapp.engelvoelkers.EngelSearchResultsParser.Mapper.title
 import domain.valueobjects.PropertySearchResult
-import it.skrape.core.document
-import it.skrape.fetcher.Result
 import it.skrape.selects.Doc
 import it.skrape.selects.DocElement
 import it.skrape.selects.html5.div
@@ -23,8 +21,8 @@ import it.skrape.selects.html5.div
 const val ENGEL_SEARCH_RESULTS_PARSER_QUALIFIER = "EngelSearchResultsParser"
 
 internal class EngelSearchResultsParser : Parser<List<PropertySearchResult>> {
-    override fun parse(result: Result): List<PropertySearchResult> {
-        return result.document.searchResults { docElements ->
+    override fun parse(document: Doc): List<PropertySearchResult> {
+        return document.searchResults { docElements ->
             docElements.map { docElement ->
                 with(docElement) {
                     PropertySearchResult(

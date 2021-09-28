@@ -22,7 +22,7 @@ class FetchPaginatedEngelUseCase(
         initialResults: List<PropertySearchResult>
     ): Flow<Result<List<PropertySearchResult>>> {
 
-        return flow {
+        return flow<Result<List<PropertySearchResult>>> {
             if (pagination == null || pagination.pageCount <= 1) {
                 emit(Result.failure(RuntimeException("Skipping pagination $pagination")))
             } else {

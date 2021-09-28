@@ -21,7 +21,7 @@ class FetchPaginatedAPropertiesUseCase(
         paginationMeta: APropertiesPagination?,
         initialResults: List<PropertySearchResult>
     ): Flow<Result<List<PropertySearchResult>>> {
-        return flow {
+        return flow<Result<List<PropertySearchResult>>> {
             if (paginationMeta == null || paginationMeta.pageCount <= 1) {
                 emit(Result.failure(RuntimeException("Skipping pagination $paginationMeta")))
             } else {

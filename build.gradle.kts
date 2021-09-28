@@ -17,12 +17,14 @@ dependencies {
     implementation(Dependencies.kotlinLogging)
     implementation(Dependencies.koin)
     testImplementation(Dependencies.jUnit5)
+    testImplementation(kotlin(Kotlin.test))
 }
 
 tasks.test {
-    useJUnit()
+    useJUnitPlatform()
 }
 
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
 }
+
