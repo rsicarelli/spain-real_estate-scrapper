@@ -9,7 +9,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import java.util.concurrent.TimeUnit
 
-fun String.convertToDouble() = this.replace(Regex("[^A-Za-z0-9 ]"), "").toDouble()
+fun String.convertToDouble() = this.replace(Regex("[^0-9]"), "").toDouble()
 fun String.convertToInt() = this.replace(Regex("[^0-9]"), "").toInt()
 
 inline fun <T> runCatchingOrDefault(defaultValue: T, action: () -> T): T {

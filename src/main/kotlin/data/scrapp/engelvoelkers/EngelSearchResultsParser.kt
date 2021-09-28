@@ -23,23 +23,24 @@ const val ENGEL_SEARCH_RESULTS_PARSER_QUALIFIER = "EngelSearchResultsParser"
 internal class EngelSearchResultsParser : Parser<List<PropertySearchResult>> {
     override fun parse(document: Doc): List<PropertySearchResult> {
         return document.searchResults { docElements ->
-            docElements.map { docElement ->
-                with(docElement) {
-                    PropertySearchResult(
-                        reference = reference(),
-                        price = price(),
-                        title = title(),
-                        location = location(),
-                        surface = surface(),
-                        dormCount = dormCount(),
-                        bathCount = bathCount(),
-                        description = "",
-                        tag = tag(),
-                        propertyUrl = propertyUrl(),
-                        imageUrl = imageUrl()
-                    )
+            docElements.filter { it.reference().isNotEmpty() }
+                .map { docElement ->
+                    with(docElement) {
+                        PropertySearchResult(
+                            reference = reference(),
+                            price = price(),
+                            title = title(),
+                            location = location(),
+                            surface = surface(),
+                            dormCount = dormCount(),
+                            bathCount = bathCount(),
+                            description = "",
+                            tag = tag(),
+                            propertyUrl = propertyUrl(),
+                            imageUrl = imageUrl()
+                        )
+                    }
                 }
-            }
         }
     }
 
