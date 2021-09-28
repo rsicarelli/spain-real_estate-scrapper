@@ -150,7 +150,7 @@ class APropertiesSearchResultsParserTest {
         val result = runCatching { parser.parse(searchResultDoc) }
 
         //then
-        assertTrue { result.isFailure }
+        assertTrue(result.isFailure)
         assertNotNull(result.exceptionOrNull())
         assertEquals(ElementNotFoundException::class, result.exceptionOrNull()!!::class)
         assertEquals(expectedObject, result.getOrNull())

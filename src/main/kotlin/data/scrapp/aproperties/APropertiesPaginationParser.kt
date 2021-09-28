@@ -9,9 +9,9 @@ import it.skrape.selects.html5.a
 
 const val APROPERTIES_PAGINATION_PARSER_QUALIFIER = "APropertiesPaginationParser"
 
-internal class APropertiesPaginationParser : Parser<APropertiesPagination> {
-    override fun parse(document: Doc): APropertiesPagination {
-        return document.pagination()
+internal class APropertiesPaginationParser : Parser<APropertiesPagination?> {
+    override fun parse(document: Doc): APropertiesPagination? {
+        return runCatching { document.pagination() }.getOrNull()
     }
 
     private object Mapper {

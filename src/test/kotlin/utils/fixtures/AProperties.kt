@@ -1,5 +1,6 @@
 package utils.fixtures
 
+import domain.valueobjects.APropertiesPagination
 import domain.valueobjects.PropertySearchResult
 import it.skrape.core.htmlDocument
 import it.skrape.selects.Doc
@@ -11,10 +12,22 @@ inline fun <reified T> T.defaultSearchResults(): Pair<Doc, List<PropertySearchRe
         .let { Pair(htmlDocument(it), Fixtures.defaultSearchResults) }
 }
 
+inline fun <reified T> T.defaultSearchResultsWithPagination(): Triple<Doc, List<PropertySearchResult>, APropertiesPagination> {
+    return this!!::class.java.getResource("/aproperties-search-result.txt")!!
+        .readText()
+        .let { Triple(htmlDocument(it), Fixtures.defaultSearchResults, Fixtures.defaultPagination) }
+}
+
 inline fun <reified T> T.singleSearchResultWithMissingData(): Pair<Doc, List<PropertySearchResult>> {
     return this!!::class.java.getResource("/aproperties-single-search-result-missing-data.txt")!!
         .readText()
         .let { Pair(htmlDocument(it), Fixtures.singleSearchResultWithMissingData) }
+}
+
+inline fun <reified T> T.emptySearchResult(): Doc {
+    return this!!::class.java.getResource("/aproperties-empty-search-result.txt")!!
+        .readText()
+        .let { htmlDocument(it) }
 }
 
 inline fun <reified T> T.invalidSearchResult(): Pair<Doc, List<PropertySearchResult>?> {
@@ -156,6 +169,8 @@ object Fixtures {
             propertyUrl = "https://www.aproperties.es/valencia/patacona/piso-de-alquiler-temporal-de-2-habitaciones-en-playa-patacona"
         ),
     )
+
+    val defaultPagination = APropertiesPagination(6)
 
     val singleSearchResultWithMissingData = listOf(
         PropertySearchResult(
