@@ -1,8 +1,8 @@
 package data.scrapp.aproperties
 
 import org.junit.jupiter.api.Test
-import utils.fixtures.defaultSearchResultsWithPagination
-import utils.fixtures.emptySearchResult
+import utils.fixtures.AProperties.defaultSearchResultsWithPagination
+import utils.fixtures.AProperties.emptySearchResult
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
 import kotlin.test.assertNull

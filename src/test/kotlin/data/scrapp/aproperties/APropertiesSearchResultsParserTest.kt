@@ -3,9 +3,9 @@ package data.scrapp.aproperties
 import it.skrape.selects.ElementNotFoundException
 import org.junit.jupiter.api.Test
 import utils.extractAuthority
-import utils.fixtures.defaultSearchResults
-import utils.fixtures.invalidSearchResult
-import utils.fixtures.singleSearchResultWithMissingData
+import utils.fixtures.AProperties.defaultSearchResults
+import utils.fixtures.AProperties.invalidSearchResult
+import utils.fixtures.AProperties.singleSearchResultWithMissingData
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
 import kotlin.test.assertNull

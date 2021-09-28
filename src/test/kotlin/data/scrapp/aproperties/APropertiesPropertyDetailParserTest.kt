@@ -4,9 +4,9 @@ import data.scrapp.aproperties.APropertiesPropertyDetailParser.Companion.vimeoRe
 import it.skrape.selects.ElementNotFoundException
 import org.junit.jupiter.api.Test
 import utils.extractAuthority
-import utils.fixtures.badPropertyDetailMissing
-import utils.fixtures.defaultPropertyDetail
-import utils.fixtures.propertyDetailMissingData
+import utils.fixtures.AProperties.badPropertyDetailMissing
+import utils.fixtures.AProperties.defaultPropertyDetail
+import utils.fixtures.AProperties.propertyDetailMissingData
 import kotlin.test.*
 
 class APropertiesPropertyDetailParserTest {

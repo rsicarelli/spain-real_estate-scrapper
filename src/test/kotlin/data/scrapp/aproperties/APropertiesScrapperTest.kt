@@ -4,6 +4,7 @@ package data.scrapp.aproperties
 
 import data.scrapp.Parser
 import data.scrapp.Skraper
+import data.scrapp.aproperties.APropertiesScrapper.Output
 import data.scrapp.aproperties.APropertiesScrapper.Output.SearchResult
 import data.scrapp.aproperties.APropertiesScrapper.Output.SingleProperty
 import domain.valueobjects.APropertiesPagination
@@ -21,11 +22,11 @@ import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
-import utils.fixtures.Fixtures.defaultPagination
-import utils.fixtures.Fixtures.defaultPropertyDetail
-import utils.fixtures.Fixtures.defaultSearchResults
-import utils.fixtures.Fixtures.propertyUrl
-import utils.fixtures.Fixtures.searchUrl
+import utils.fixtures.AProperties.Fixtures.defaultPagination
+import utils.fixtures.AProperties.Fixtures.defaultPropertyDetail
+import utils.fixtures.AProperties.Fixtures.defaultSearchResults
+import utils.fixtures.AProperties.Fixtures.propertyUrl
+import utils.fixtures.AProperties.Fixtures.searchUrl
 import java.lang.RuntimeException
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
@@ -52,26 +53,27 @@ class APropertiesScrapperTest {
 
     @BeforeEach
     fun setup() {
-        coEvery { skraper.get<APropertiesScrapper.Output>(any(), any()) } answers {
-            secondArg<(Doc) -> APropertiesScrapper.Output>().invoke(mockk())
+        coEvery { skraper.get<Output>(any(), any()) } answers {
+            secondArg<(Doc) -> Output>().invoke(mockk())
         }
     }
 
     @Test
-    fun `given a valid html document when scrap search results then should return correct output`() = runBlocking {
-        //given
-        every { paginationParser.parse(any()) } returns defaultPagination
-        every { searchResultParser.parse(any()) } returns defaultSearchResults
+    fun `given a valid html document when scrap search results then should return correct output`() =
+        runBlocking {
+            //given
+            every { paginationParser.parse(any()) } returns defaultPagination
+            every { searchResultParser.parse(any()) } returns defaultSearchResults
 
-        //when
-        val result = scrapper.scrapSearchPage(searchUrl, true).first()
+            //when
+            val result = scrapper.scrapSearchPage(searchUrl, true).first()
 
-        //then
-        assertNotNull(result)
-        assertEquals(SearchResult::class, result::class)
-        assertEquals(defaultPagination, result.asSearchResult().pagination)
-        assertEquals(defaultSearchResults, result.asSearchResult().results)
-    }
+            //then
+            assertNotNull(result)
+            assertEquals(SearchResult::class, result::class)
+            assertEquals(defaultPagination, result.asSearchResult().pagination)
+            assertEquals(defaultSearchResults, result.asSearchResult().results)
+        }
 
     @Test
     fun `given a valid html and html has no page when scrap search results then should return correct output`() =
@@ -124,18 +126,19 @@ class APropertiesScrapperTest {
         }
 
     @Test
-    fun `given a valid document when scrap property details then should return valid output`() = runBlocking {
-        //given
-        every { propertyDetailsParser.parse(any()) } answers { defaultPropertyDetail }
+    fun `given a valid document when scrap property details then should return valid output`() =
+        runBlocking {
+            //given
+            every { propertyDetailsParser.parse(any()) } answers { defaultPropertyDetail }
 
-        //when
-        val result = scrapper.scrapPropertyDetails(propertyUrl).first()
+            //when
+            val result = scrapper.scrapPropertyDetails(propertyUrl).first()
 
-        //then
-        assertNotNull(result)
-        assertEquals(result::class, SingleProperty::class)
-        assertEquals(defaultPropertyDetail, result.asSingleProperty().propertyDetail)
-    }
+            //then
+            assertNotNull(result)
+            assertEquals(result::class, SingleProperty::class)
+            assertEquals(defaultPropertyDetail, result.asSingleProperty().propertyDetail)
+        }
 
     @Test
     fun `given a valid document when scrap property details but parse returns null then should throw error`() =
