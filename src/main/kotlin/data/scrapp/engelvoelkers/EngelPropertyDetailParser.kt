@@ -17,21 +17,24 @@ import it.skrape.selects.eachText
 
 const val ENGEL_PROPERTY_DETAIL_PARSER_QUALIFIER = "EngelPropertyDetailParser"
 
-internal class EngelPropertyDetailParser : Parser<PropertyDetail> {
-    override fun parse(document: Doc): PropertyDetail =
-        document.exposeeDetail { docElement ->
-            PropertyDetail(
-                reference = docElement.reference(),
-                fullDescription = docElement.fullDescription(),
-                characteristics = docElement.characteristics(),
-                locationDescription = docElement.locationDescription(),
-                photosGalleryUrls = document.photosGalleryUrls(),
-                lat = 0.0,
-                lng = 0.0,
-                pdfUrl = "",
-                videoUrl = ""
-            )
-        }
+internal class EngelPropertyDetailParser : Parser<PropertyDetail?> {
+    override fun parse(document: Doc): PropertyDetail? =
+        runCatching {
+            document.exposeeDetail { docElement ->
+                PropertyDetail(
+                    reference = docElement.reference(),
+                    fullDescription = docElement.fullDescription(),
+                    characteristics = docElement.characteristics(),
+                    locationDescription = docElement.locationDescription(),
+                    photosGalleryUrls = document.photosGalleryUrls(),
+                    lat = 0.0,
+                    lng = 0.0,
+                    pdfUrl = "",
+                    videoUrl = ""
+                )
+            }
+        }.getOrNull()
+
 
     private object Mapper {
         fun Doc.photosGalleryUrls() = runCatchingOrDefault(emptyList()) {

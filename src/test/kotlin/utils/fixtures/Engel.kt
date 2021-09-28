@@ -28,12 +28,6 @@ object Engel {
             Fixtures.defaultPropertyDetail
         )
 
-    inline fun <reified T> T.propertyDetailMissingData() =
-        Pair(
-            htmlDocument(loadResource("/engel/engel-property-detail-missing-data.txt")),
-            Fixtures.propertyDetailMissingData
-        )
-
     inline fun <reified T> T.badPropertyDetailMissing() =
         htmlDocument(loadResource("/engel/engel-bad-property-detail.txt"))
 
@@ -258,55 +252,57 @@ object Engel {
         val defaultPagination = EngelPagination(234)
 
         val defaultPropertyDetail = PropertyDetail(
-            reference = "AV2109083",
-            videoUrl = "https://player.vimeo.com/video/510636212",
-            fullDescription = "Fabulosa vivienda ubicada en calle Xàtiva en pleno centro y corazón de la ciudad. Totalmente amueblado, en una finca residencial con tres ascensores y servicio de Portería. Distribuido en un amplio comedor, con terraza que da a la calle Xátiva con unas vistas espectaculares de la ciudad, habitación amplia y con armarios empotrados, cuarto de baño completo, cocina equipada con electrodomésticos, totalmente amueblado. los muebles pueden variar , Equipado con aire acondicionado. No dude en ponerse en contacto con nosotros, estremos encantados de atenderle.",
-            locationDescription = "",
-            characteristics = listOf("Calefacción", "Amueblado", "Aacc", "Terraza", "Ascensor", "Conserje"),
-            photosGalleryUrls = listOf(
-                "https://www.engel.es/engel-property-detail_files/31800_1632323417028.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_1632323417065.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170252.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170444.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_1632323417058.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170475.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170513.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_1632323417032.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170399.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170618.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170359.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170541.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170214.jpg",
+            reference = "W-02LH5J",
+            videoUrl = "",
+            fullDescription = "This house in a traditional style is located in one of the best areas of \"El Cabañal\". Completely renovated property for short term rentals. Available from July for the price 1800 euros, August 2000 euros. The house consists of three double bedrooms, three bathrooms, large living room and a balcony. It also has a modern kitchen equipped with appliances. House is fully furnished and ready to move in. Do no hesitate to contact us to arrange a visit, we will be happy to assist you.",
+            locationDescription = "The area of “El Cabañal” originally was an area with traditional fishermen houses, it has been recently renovated and it´s located very close to “Malvarrosa” beach and “Las Arenas” beach. Currently it has a pleasant promenade, a very quiet white sand beach and all kinds of leisure activities, such as restaurants, bars, shops, supermarkets, etc. Very well connected by bus or tram to the city center. A unique opportunity to live right next to the beach with all the necessary services.",
+            characteristics = listOf(
+                "Property subtype House",
+                "Rooms 3",
+                "Bedrooms 3",
+                "Bathrooms 3",
+                "Living Area 105 m²",
+                "Total Surface Area 105 m²",
+                "Condition Top",
+                "Location Very good",
+                "Heating Central heating",
+                "Central heating",
+                "Floor type Tiles",
+                "Tiles"
             ),
-            lat = 39.4676,
-            lng = -0.378454,
-            pdfUrl = "https://www.engel.es/pdf/properties/es/av2109083.pdf"
-        )
-
-        val propertyDetailMissingData = PropertyDetail(
-            reference = "AV2109083",
-            videoUrl = "https://player.vimeo.com/video/510636212",
-            fullDescription = "Fabulosa vivienda ubicada en calle Xàtiva en pleno centro y corazón de la ciudad. Totalmente amueblado, en una finca residencial con tres ascensores y servicio de Portería. Distribuido en un amplio comedor, con terraza que da a la calle Xátiva con unas vistas espectaculares de la ciudad, habitación amplia y con armarios empotrados, cuarto de baño completo, cocina equipada con electrodomésticos, totalmente amueblado. los muebles pueden variar , Equipado con aire acondicionado. No dude en ponerse en contacto con nosotros, estremos encantados de atenderle.",
-            locationDescription = "",
-            characteristics = listOf("Calefacción", "Amueblado", "Aacc", "Terraza", "Ascensor", "Conserje"),
             photosGalleryUrls = listOf(
-                "https://www.engel.es/engel-property-detail_files/31800_1632323417028.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_1632323417065.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170252.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170444.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_1632323417058.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170475.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170513.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_1632323417032.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170399.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170618.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170359.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170541.jpg",
-                "https://www.engel.es/engel-property-detail_files/31800_16323234170214.jpg",
+                "https://www.engelvoelkers.com/images/4c7fb9d3-9a88-4808-9099-03149554f7a1/house-in-el-caba%C3%B1al-for-short-term-balcony",
+                "https://www.engelvoelkers.com/images/b9f25234-873d-412a-81fb-21ad50723019/house-in-el-caba%C3%B1al-for-short-term-balcony",
+                "https://www.engelvoelkers.com/images/373c73e4-173c-4c8e-8bae-fa03d4346b90/house-in-el-caba%C3%B1al-for-short-term-balcony",
+                "https://www.engelvoelkers.com/images/50a5509a-9359-405d-bf9a-c5a426043f38/house-in-el-caba%C3%B1al-for-short-term-living-room",
+                "https://www.engelvoelkers.com/images/22942d39-01d2-43b8-b586-4ea04d008ecd/house-in-el-caba%C3%B1al-for-short-term-balcony",
+                "https://www.engelvoelkers.com/images/6aabecb3-7633-42bc-b8dd-c8f5a30c69ba/house-in-el-caba%C3%B1al-for-short-term-kitchen",
+                "https://www.engelvoelkers.com/images/e33de738-8ce2-4174-82d1-1f3425cc1ed8/house-in-el-caba%C3%B1al-for-short-term-living-room",
+                "https://www.engelvoelkers.com/images/0f7d8c7f-345a-4ed0-bf41-c1f51a7d80af/house-in-el-caba%C3%B1al-for-short-term-kitchen",
+                "https://www.engelvoelkers.com/images/17ba5f09-c845-4066-8d5a-b1388e1fdb66/house-in-el-caba%C3%B1al-for-short-term-living-room",
+                "https://www.engelvoelkers.com/images/b923a2fa-b6db-49ca-86e1-6f158cec6ac1/house-in-el-caba%C3%B1al-for-short-term-dining-area",
+                "https://www.engelvoelkers.com/images/78676165-4d30-48f0-98d9-6ecd0674a23c/house-in-el-caba%C3%B1al-for-short-term-living-room",
+                "https://www.engelvoelkers.com/images/50dd3663-f814-4527-805c-7fc99074e66f/house-in-el-caba%C3%B1al-for-short-term-living-room",
+                "https://www.engelvoelkers.com/images/7363e201-8fb6-4197-aeda-6caf8d07ae5e/house-in-el-caba%C3%B1al-for-short-term-dining-area",
+                "https://www.engelvoelkers.com/images/983c4e6a-8572-424b-8358-695eb9afa91c/house-in-el-caba%C3%B1al-for-short-term-bedroom",
+                "https://www.engelvoelkers.com/images/e65febcc-da73-4eaf-bbde-de64709d9a5d/house-in-el-caba%C3%B1al-for-short-term-bedroom",
+                "https://www.engelvoelkers.com/images/c199dd3a-e70f-4168-8dbf-4b7605cc06f5/house-in-el-caba%C3%B1al-for-short-term-bedroom",
+                "https://www.engelvoelkers.com/images/0477eed6-5f7f-44ae-89f5-11951b38f21c/house-in-el-caba%C3%B1al-for-short-term-bathroom",
+                "https://www.engelvoelkers.com/images/83ff0391-a933-4d2b-9d3b-e19d719fdec2/house-in-el-caba%C3%B1al-for-short-term-bathroom",
+                "https://www.engelvoelkers.com/images/c8234648-e011-43ab-a85a-fe3dd01a41d1/house-in-el-caba%C3%B1al-for-short-term-bathroom",
+                "https://www.engelvoelkers.com/images/1e63af95-50c3-424d-806d-e037894904b8/house-in-el-caba%C3%B1al-for-short-term-bedroom-2",
+                "https://www.engelvoelkers.com/images/d75c0bcb-f8e0-440f-9821-7a3fa1eb89e7/house-in-el-caba%C3%B1al-for-short-term-bedroom-3",
+                "https://www.engelvoelkers.com/images/7158ae0c-3fe7-4bf8-accf-9962c73a7c88/house-in-el-caba%C3%B1al-for-short-term-bedroom-3",
+                "https://www.engelvoelkers.com/images/d189e634-b5b3-4626-9b0e-f17ef773b1c7/house-in-el-caba%C3%B1al-for-short-term-hallway",
+                "https://www.engelvoelkers.com/images/2d6d252b-cb67-44f8-b066-264623877bab/house-in-el-caba%C3%B1al-for-short-term-hallway",
+                "https://www.engelvoelkers.com/images/8442bd05-fc94-440a-af19-f2baf3e74f86/house-in-el-caba%C3%B1al-for-short-term-bathroom",
+                "https://www.engelvoelkers.com/images/859f24ae-1256-493a-9566-1ee860fb18d1/house-in-el-caba%C3%B1al-for-short-term-bedroom-3",
+                "https://www.engelvoelkers.com/images/dfe18ee5-f66b-4707-b2b0-8e83f76e7792/house-in-el-caba%C3%B1al-for-short-term-plan",
+                "https://www.engelvoelkers.com/images/38111c99-59d9-4d88-a6c5-b5ec65ff67f9/house-in-el-caba%C3%B1al-for-short-term-plan",
             ),
-            lat = null,
-            lng = null,
-            pdfUrl = "https://www.engel.es/pdf/properties/es/av2109083.pdf"
+            lat = 0.0,
+            lng = 0.0,
+            pdfUrl = ""
         )
 
 
