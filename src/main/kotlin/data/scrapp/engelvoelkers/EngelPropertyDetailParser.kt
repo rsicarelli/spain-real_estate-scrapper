@@ -26,8 +26,8 @@ internal class EngelPropertyDetailParser : Parser<PropertyDetail> {
                 characteristics = docElement.characteristics(),
                 locationDescription = docElement.locationDescription(),
                 photosGalleryUrls = document.photosGalleryUrls(),
-                lat = 0.0F,
-                lng = 0.0F,
+                lat = 0.0,
+                lng = 0.0,
                 pdfUrl = "",
                 videoUrl = ""
             )

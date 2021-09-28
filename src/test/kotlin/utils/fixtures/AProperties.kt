@@ -1,6 +1,7 @@
 package utils.fixtures
 
 import domain.valueobjects.APropertiesPagination
+import domain.valueobjects.PropertyDetail
 import domain.valueobjects.PropertySearchResult
 import it.skrape.core.htmlDocument
 import it.skrape.selects.Doc
@@ -27,7 +28,24 @@ inline fun <reified T> T.singleSearchResultWithMissingData() =
 inline fun <reified T> T.emptySearchResult() = htmlDocument(loadResource("/aproperties-empty-search-result.txt"))
 
 inline fun <reified T> T.invalidSearchResult() =
-    Pair(htmlDocument(loadResource("/aproperties-invalid-search-result.txt")), null)
+    Pair(
+        htmlDocument(loadResource("/aproperties-invalid-search-result.txt")),
+        null
+    )
+
+inline fun <reified T> T.defaultPropertyDetail() =
+    Pair(
+        htmlDocument(loadResource("/aproperties-property-detail.txt")),
+        Fixtures.defaultPropertyDetail
+    )
+
+inline fun <reified T> T.propertyDetailMissingData() =
+    Pair(
+        htmlDocument(loadResource("/aproperties-property-detail-missing-data.txt")),
+        Fixtures.propertyDetailMissingData
+    )
+
+inline fun <reified T> T.badPropertyDetailMissing() = htmlDocument(loadResource("/aproperties-bad-property-detail.txt"))
 
 object Fixtures {
     val defaultSearchResults = listOf(
@@ -180,5 +198,59 @@ object Fixtures {
             propertyUrl = "https://www.aproperties.es/valencia/patacona/piso-de-alquiler-temporal-de-2-habitaciones-en-playa-patacona"
         )
     )
+
+    val defaultPropertyDetail = PropertyDetail(
+        reference = "AV2109083",
+        videoUrl = "https://player.vimeo.com/video/510636212",
+        fullDescription = "Fabulosa vivienda ubicada en calle Xàtiva en pleno centro y corazón de la ciudad. Totalmente amueblado, en una finca residencial con tres ascensores y servicio de Portería. Distribuido en un amplio comedor, con terraza que da a la calle Xátiva con unas vistas espectaculares de la ciudad, habitación amplia y con armarios empotrados, cuarto de baño completo, cocina equipada con electrodomésticos, totalmente amueblado. los muebles pueden variar , Equipado con aire acondicionado. No dude en ponerse en contacto con nosotros, estremos encantados de atenderle.",
+        locationDescription = "",
+        characteristics = listOf("Calefacción", "Amueblado", "Aacc", "Terraza", "Ascensor", "Conserje"),
+        photosGalleryUrls = listOf(
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_1632323417028.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_1632323417065.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170252.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170444.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_1632323417058.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170475.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170513.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_1632323417032.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170399.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170618.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170359.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170541.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170214.jpg",
+        ),
+        lat = 39.4676,
+        lng = -0.378454,
+        pdfUrl = "https://www.aproperties.es/pdf/properties/es/av2109083.pdf"
+    )
+
+    val propertyDetailMissingData = PropertyDetail(
+        reference = "AV2109083",
+        videoUrl = "https://player.vimeo.com/video/510636212",
+        fullDescription = "Fabulosa vivienda ubicada en calle Xàtiva en pleno centro y corazón de la ciudad. Totalmente amueblado, en una finca residencial con tres ascensores y servicio de Portería. Distribuido en un amplio comedor, con terraza que da a la calle Xátiva con unas vistas espectaculares de la ciudad, habitación amplia y con armarios empotrados, cuarto de baño completo, cocina equipada con electrodomésticos, totalmente amueblado. los muebles pueden variar , Equipado con aire acondicionado. No dude en ponerse en contacto con nosotros, estremos encantados de atenderle.",
+        locationDescription = "",
+        characteristics = listOf("Calefacción", "Amueblado", "Aacc", "Terraza", "Ascensor", "Conserje"),
+        photosGalleryUrls = listOf(
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_1632323417028.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_1632323417065.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170252.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170444.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_1632323417058.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170475.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170513.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_1632323417032.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170399.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170618.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170359.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170541.jpg",
+            "https://www.aproperties.es/aproperties-property-detail_files/31800_16323234170214.jpg",
+        ),
+        lat = null,
+        lng = null,
+        pdfUrl = "https://www.aproperties.es/pdf/properties/es/av2109083.pdf"
+    )
+
+
 }
 

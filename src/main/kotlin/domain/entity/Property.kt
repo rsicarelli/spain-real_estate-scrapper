@@ -20,8 +20,8 @@ data class Property(
     val locationDescription: String?,
     val characteristics: List<String?>,
     val photoGalleryUrls: List<String?>,
-    val lat: Float?,
-    val lng: Float?,
+    val lat: Double?,
+    val lng: Double?,
     val pdfUrl: String?
 ) {
     fun toMap() =
@@ -109,8 +109,8 @@ data class Property(
                 fullDescription = data["fullDescription"] as String?,
                 characteristics = data["characteristics"] as List<String?>,
                 photoGalleryUrls = data["photoGalleryUrls"] as List<String?>,
-                lat = (data["lat"] as Double?)?.toFloat(),
-                lng = (data["lng"] as Double?)?.toFloat(),
+                lat = data["lat"] as Double?,
+                lng = data["lng"] as Double?,
                 pdfUrl = data["pdfUrl"] as String? ?: "",
                 locationDescription = data["locationDescription"] as String? ?: ""
             )

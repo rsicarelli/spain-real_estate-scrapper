@@ -7,8 +7,8 @@ data class PropertyDetail(
     val locationDescription: String?,
     val characteristics: List<String?>,
     val photosGalleryUrls: List<String?>,
-    val lat: Float?,
-    val lng: Float?,
+    val lat: Double?,
+    val lng: Double?,
     val pdfUrl: String?
 ) {
 

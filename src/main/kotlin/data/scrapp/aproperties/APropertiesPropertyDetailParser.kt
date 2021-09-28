@@ -11,7 +11,9 @@ import data.scrapp.aproperties.APropertiesPropertyDetailParser.Mapper.reference
 import data.scrapp.aproperties.APropertiesPropertyDetailParser.Mapper.videoUrl
 import domain.valueobjects.PropertyDetail
 import it.skrape.selects.Doc
+import it.skrape.selects.eachAttribute
 import it.skrape.selects.eachHref
+import it.skrape.selects.html5.a
 import it.skrape.selects.text
 
 const val APROPERTIES_PROPERTY_DETAIL_PARSER_QUALIFIER = "APropertiesPropertyDetailParser"
@@ -51,20 +53,21 @@ internal class APropertiesPropertyDetailParser : Parser<PropertyDetail> {
 
         fun Doc.galleryImages() = divWithClass(PROPERTY_GALLERY) {
             findAll {
-                aWithClass(PROPERTY_GALLERY_ITEM) {
+                a {
+                    withAttributeKey = PROPERTY_GALLERY_ITEM
                     findAll { eachHref }
                 }
             }
-        }.let { PropertyDetail.imagesFullPath(it.subList(1, it.size)) }
+        }.let { PropertyDetail.imagesFullPath(it) }
 
         fun Doc.latLng() = this.entireDocAsString()
             .substringAfter("var latlng = new google.maps.LatLng(")
             .substringBefore(")")
             .split(",")
-            .map { it.toFloatOrNull() }
+            .map { it.toDoubleOrNull() }
             .let { geometry ->
-                var lat: Float? = null
-                var lng: Float? = null
+                var lat: Double? = null
+                var lng: Double? = null
                 if (geometry.size > 1) {
                     lat = geometry[0]
                     lng = geometry[1]
@@ -83,7 +86,7 @@ internal class APropertiesPropertyDetailParser : Parser<PropertyDetail> {
         private const val PROPERTY_CONTENT = "propertyContent"
         private const val PROPERTY_CHARACTERISTICS = "description__featuresCaractListItem"
         private const val PROPERTY_GALLERY = "propertyGallery__mainViewer"
-        private const val PROPERTY_GALLERY_ITEM = "propertyGallery__slide"
+        private const val PROPERTY_GALLERY_ITEM = "data-fancybox"
         private const val PROPERTY_REFERENCE = "_leadform__titles"
         private const val PROPERTY_REF = "ref"
     }
