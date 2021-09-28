@@ -10,4 +10,11 @@ object Dependencies {
 
     private const val koinVersion = "3.1.2"
     const val koin = "io.insert-koin:koin-core:$koinVersion"
+
+    private const val jUnit5Version = "5.7.0"
+    const val jUnit5 = "org.junit.jupiter:junit-jupiter:$jUnit5Version"
+}
+
+object Kotlin {
+    const val version = "1.5.21"
 }
