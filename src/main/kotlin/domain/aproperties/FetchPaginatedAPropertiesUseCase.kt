@@ -31,12 +31,8 @@ class FetchPaginatedAPropertiesUseCase(
                     val pagination = paginationMeta.getPagination(i)
                     aPropertiesScrapper.scrapSearchPage(pagination, false)
                         .collect {
-                            if (it.isSuccess) {
-                                when (val output = it.getOrNull()) {
-                                    is APropertiesScrapper.Output.SearchResult -> combinedResults.addAll(output.results)
-                                }
-                            } else {
-                                logger.error { "Failed to scrap $pagination" }
+                            when (it) {
+                                is APropertiesScrapper.Output.SearchResult -> combinedResults.addAll(it.results)
                             }
                         }
                 }

@@ -30,12 +30,8 @@ class FetchPaginatedEngelUseCase(
                 pagination.getPagination().forEach { url ->
                     scrapper.scrapSearchPage(url, false)
                         .collect {
-                            if (it.isSuccess) {
-                                when (val output = it.getOrNull()) {
-                                    is EngelScrapper.Output.SearchResult -> combinedResults.addAll(output.results)
-                                }
-                            } else {
-                                logger.error { "Failed to scrap $pagination" }
+                            when (it) {
+                                is EngelScrapper.Output.SearchResult -> combinedResults.addAll(it.results)
                             }
                         }
                 }

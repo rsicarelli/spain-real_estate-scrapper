@@ -33,8 +33,7 @@ class FetchSingleEngelUseCase(
                         }
                     }
                     .catch { failureResultMap.add(searchResult) }
-                    .filter { it.isSuccess }
-                    .map { it.getOrThrow() as EngelScrapper.Output.SingleProperty }
+                    .map { it as EngelScrapper.Output.SingleProperty }
                     .collect { propertyDetail ->
                         successResultMap.add(Property.combine(searchResult, propertyDetail.propertyDetail))
                         logger.info { "Success" }

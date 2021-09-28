@@ -18,6 +18,13 @@ dependencies {
     implementation(Dependencies.koin)
     testImplementation(Dependencies.jUnit5)
     testImplementation(kotlin(Kotlin.test))
+    testImplementation(Dependencies.koinTest) {
+        exclude("org.jetbrains.kotlin", "kotlin-test-junit")
+    }
+    testImplementation(Dependencies.koinTestJUnit5) {
+        exclude("org.jetbrains.kotlin", "kotlin-test-junit")
+    }
+    testImplementation(Dependencies.mokk)
 }
 
 tasks.test {

@@ -12,48 +12,37 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import data.scrapp.Parser
 import data.scrapp.Scrapper
+import data.scrapp.Skraper
 import it.skrape.core.document
 
 const val ENGEL_SCRAPPER_QUALIFIER = "EngelScrapper"
+
 class EngelScrapper(
     private val propertiesParser: Parser<List<PropertySearchResult>>,
     private val paginationParser: Parser<EngelPagination>,
-    private val propertyDetailsParser: Parser<PropertyDetail>
+    private val propertyDetailsParser: Parser<PropertyDetail>,
+    private val skraper: Skraper
 ) : Scrapper<EngelScrapper.Output> {
 
-    override suspend fun scrapSearchPage(url: String, getPagination: Boolean): Flow<Result<Output>> {
+    override suspend fun scrapSearchPage(url: String, getPagination: Boolean): Flow<Output> {
         return flow {
-            emit(scrapper(url) { result ->
-                val pagination = if (getPagination) paginationParser.parse(result.document) else null
-                val results = propertiesParser.parse(result.document).filter { it.reference.isNotEmpty() }
+            emit(skraper.get(url) { result ->
+                val pagination = if (getPagination) paginationParser.parse(result) else null
+                val results =
+                    propertiesParser.parse(result)?.filter { it.reference.isNotEmpty() }
+                        ?: throw RuntimeException("Parser returned null value") //TODO: better error handling
                 Output.SearchResult(pagination, results)
             })
         }.flowOn(Dispatchers.IO)
     }
 
-    override suspend fun scrapPropertyDetails(url: String): Flow<Result<Output>> {
+    override suspend fun scrapPropertyDetails(url: String): Flow<Output> {
         return flow {
-            emit(scrapper(url) {
-                Output.SingleProperty(propertyDetailsParser.parse(it.document))
+            emit(skraper.get(url) {
+                val propertyDetail = propertyDetailsParser.parse(it) ?: throw RuntimeException("Parser returned null") //TODO: better error handling
+                Output.SingleProperty(propertyDetail)
             })
         }.flowOn(Dispatchers.IO)
-    }
-
-    private suspend fun scrapper(
-        url: String,
-        action: (it.skrape.fetcher.Result) -> Output
-    ): Result<Output> {
-        return skrape(AsyncFetcher) {
-            request {
-                this.url = url
-                userAgent = "HomeHunt Scrapper"
-                timeout = 1000000 * 2 * 100
-            }
-
-            return@skrape response {
-                runCatching { action(this) }
-            }
-        }
     }
 
     sealed class Output {

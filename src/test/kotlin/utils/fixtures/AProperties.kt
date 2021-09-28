@@ -48,6 +48,10 @@ inline fun <reified T> T.propertyDetailMissingData() =
 inline fun <reified T> T.badPropertyDetailMissing() = htmlDocument(loadResource("/aproperties-bad-property-detail.txt"))
 
 object Fixtures {
+    const val searchUrl = "https://www.aproperties.es/search?searchbar=1&mod=rental&zone=3&area=7&group=&loc=42&dis="
+
+    const val propertyUrl = "https://www.aproperties.es/valencia/arrancapins/av2109083-piso-de-alquiler-de-una-habitacion-en-calle-xativa"
+
     val defaultSearchResults = listOf(
         PropertySearchResult(
             reference = "AV2109033",

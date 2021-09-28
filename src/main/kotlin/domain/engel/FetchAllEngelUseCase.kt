@@ -22,8 +22,7 @@ class FetchAllEngelUseCase(
     @OptIn(FlowPreview::class)
     suspend operator fun invoke() {
         scrapper.scrapSearchPage(DEFAULT_URL, getPagination = true)
-            .filter { it.isSuccess }
-            .map { it.getOrThrow() as EngelScrapper.Output.SearchResult }
+            .map { it as EngelScrapper.Output.SearchResult }
             .onEach { logger.info { "Got initial search result: ${it.results.size}" } }
             .flatMapConcat { paginationUseCase.invoke(it.pagination, it.results) }
             .filter { it.isSuccess }

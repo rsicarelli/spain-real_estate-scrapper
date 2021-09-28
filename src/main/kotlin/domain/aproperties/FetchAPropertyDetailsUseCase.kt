@@ -36,8 +36,7 @@ class FetchAPropertyDetailsUseCase(
                         }
                     }
                     .catch { failureResultMap.add(searchResult) }
-                    .filter { it.isSuccess }
-                    .map { it.getOrThrow() as APropertiesScrapper.Output.SingleProperty }
+                    .map { it as APropertiesScrapper.Output.SingleProperty }
                     .collect { propertyDetail ->
                         successResultMap.add(Property.combine(searchResult, propertyDetail.propertyDetail))
                         logger.info { "Success" }

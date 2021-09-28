@@ -17,6 +17,7 @@ import org.koin.dsl.bind
 import org.koin.dsl.module
 import data.scrapp.Parser
 import data.scrapp.Scrapper
+import data.scrapp.Skraper
 import data.scrapp.aproperties.*
 import data.scrapp.engelvoelkers.*
 
@@ -30,6 +31,7 @@ val homeHuntModule = module {
 val dataModule = module {
     single { FirestoreDataSource(get()) }
     single<Firestore> { FirestoreClient.getFirestore() }
+    single { Skraper() }
 
     single(named(APROPERTIES_SEARCH_RESULT_PARSER_QUALIFIER)) { APropertiesSearchResultsParser() } bind Parser::class
     single(named(APROPERTIES_PAGINATION_PARSER_QUALIFIER)) { APropertiesPaginationParser() } bind Parser::class
@@ -38,7 +40,8 @@ val dataModule = module {
         APropertiesScrapper(
             searchResultParser = get(named(APROPERTIES_SEARCH_RESULT_PARSER_QUALIFIER)),
             paginationParser = get(named(APROPERTIES_PAGINATION_PARSER_QUALIFIER)),
-            propertyDetailsParser = get(named(APROPERTIES_PROPERTY_DETAIL_PARSER_QUALIFIER))
+            propertyDetailsParser = get(named(APROPERTIES_PROPERTY_DETAIL_PARSER_QUALIFIER)),
+            skraper = get()
         )
     } bind Scrapper::class
 
@@ -49,7 +52,8 @@ val dataModule = module {
         EngelScrapper(
             propertiesParser = get(named(ENGEL_SEARCH_RESULTS_PARSER_QUALIFIER)),
             paginationParser = get(named(ENGEL_PAGINATION_PARSER_QUALIFIER)),
-            propertyDetailsParser = get(named(ENGEL_PROPERTY_DETAIL_PARSER_QUALIFIER))
+            propertyDetailsParser = get(named(ENGEL_PROPERTY_DETAIL_PARSER_QUALIFIER)),
+            skraper = get()
         )
     } bind Scrapper::class
 }

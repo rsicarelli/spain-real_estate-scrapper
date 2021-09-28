@@ -20,8 +20,7 @@ class FetchAPropertiesUseCase(
     @OptIn(FlowPreview::class)
     suspend operator fun invoke() {
         scrapper.scrapSearchPage(DEFAULT_URL, getPagination = true)
-            .filter { it.isSuccess }
-            .map { it.getOrThrow() as APropertiesScrapper.Output.SearchResult }
+            .map { it as APropertiesScrapper.Output.SearchResult }
             .onEach { logger.info { "Got initial search result: ${it.results.size}" } }
             .flatMapConcat { fetchPaginatedPropertiesUseCase.invoke(it.pagination, it.results) }
             .filter { it.isSuccess }
