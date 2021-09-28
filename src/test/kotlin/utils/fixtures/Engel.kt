@@ -33,10 +33,10 @@ object Engel {
 
     object Fixtures {
         const val searchUrl =
-            "https://www.engel.es/search?searchbar=1&mod=rental&zone=3&area=7&group=&loc=42&dis="
+            "https://www.engelvoelkers.com/en/search/?q=&startIndex=0&businessArea=residential&sortOrder=DESC&sortField=sortPrice&pageSize=238&facets=bsnssr%3Aresidential%3Bcntry%3Aspain%3Brgn%3Avalencia%3Btyp%3Arent%3B"
 
         const val propertyUrl =
-            "https://www.engel.es/valencia/arrancapins/av2109083-piso-de-alquiler-de-una-habitacion-en-calle-xativa"
+            "https://www.engelvoelkers.com/en-es/property/house-in-el-cabanal-for-short-term-4361239.921834_exp/"
 
         val defaultSearchResults = listOf(
             PropertySearchResult(
