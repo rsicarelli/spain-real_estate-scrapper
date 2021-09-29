@@ -1,6 +1,5 @@
-package data.scrapp.aproperties
+package data.parser
 
-import data.parser.APropertiesPropertyDetailParser
 import data.parser.APropertiesPropertyDetailParser.Companion.vimeoRegex
 import it.skrape.selects.ElementNotFoundException
 import org.junit.jupiter.api.Test
