@@ -46,15 +46,15 @@ data class Property(
 
     sealed class Tags(val identifier: String) {
         object EMPTY : Tags("")
-        object NEW : Tags("nuevo")
-        object RESERVED : Tags("reservada")
-        object RENTED : Tags("alquilada")
+        object NEW : Tags("new")
+        object RESERVED : Tags("rented")
+        object RENTED : Tags("reserved")
 
         companion object {
             fun fromString(tag: String?): Tags {
                 return tag?.let {
                     return@let when (it.toLowerCase()) {
-                        NEW.identifier, "new" -> NEW
+                        NEW.identifier -> NEW
                         RESERVED.identifier -> RESERVED
                         RENTED.identifier -> RENTED
                         else -> EMPTY

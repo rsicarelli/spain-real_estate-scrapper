@@ -16,10 +16,12 @@ import it.skrape.selects.Doc
 import it.skrape.selects.eachHref
 import it.skrape.selects.html5.a
 import it.skrape.selects.text
+import kotlin.jvm.Throws
 
 const val APROPERTIES_PROPERTY_DETAIL_PARSER_QUALIFIER = "APropertiesPropertyDetailParser"
 
 internal class APropertiesPropertyDetailParser : Parser<PropertyDetail> {
+    @Throws
     override fun parse(document: Doc): PropertyDetail = with(document) {
         val latLng = latLng()
         return PropertyDetail(
