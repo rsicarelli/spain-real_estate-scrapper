@@ -1,7 +1,11 @@
-<!DOCTYPE html>
-<!-- saved from url=(0089)https://www.aproperties.es/search?searchbar=1&mod=rental&zone=3&area=7&group=&loc=42&dis= -->
-<html class="no-js" lang=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-28327086-2"></script>
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<HEAD>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28327086-2"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments)};
@@ -10,38 +14,38 @@ gtag('config', 'UA-28327086-2');
  
 gtag('config', 'AW-858563631');
 </script>
-    
+    <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Alquilar propiedades en Valencia</title>
-<meta name="description" content="Propiedades. También puedes buscar propiedades con características como piscina, terraza, chimenea o parking.">
-<meta name="keywords" content="">
-<meta name="resource-type" content="document">
-
-<meta http-equiv="content-language" content="">
-<meta name="seoptimize" content="all">
-<meta name="robots" content="index, follow,noodp,noydir">
-<meta name="distribution" content="global">
-<meta name="rating" content="general">
-<meta name="copyright" content="2021 aProperties">
-<meta name="expires" content="never">
+<TITLE>Rent properties in El Cabañal - El Grau</TITLE>
+<META name="description" content="Properties. You may also search properties by features like swimming pool, terrace, fireplace or garage.">
+<META name="keywords" content="">
+<meta name="resource-type" content="document" />
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="content-language" content="" />
+<META name="seoptimize" content="all">
+<META name="robots" content="index, follow,noodp,noydir">
+<meta name="distribution" content="global"/>
+<META name="rating" content="general">
+<META name="copyright" content="2021 aProperties">
+<META name="expires" content="never">
 <meta name="viewport" content="width=1024">
 
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="aProperties">
-<meta property="og:url" content="https://www.aproperties.es/search">
-<meta property="og:title" content="">
-<meta property="og:description" content="Propiedades. También puedes buscar propiedades con características como piscina, terraza, chimenea o parking.">
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="aProperties" />
+<meta property="og:url" content="https://www.aproperties.es/en/search"/>
+<meta property="og:title" content="" />
+<meta property="og:description" content="Properties. You may also search properties by features like swimming pool, terrace, fireplace or garage." />
 
 
-<link rel="shortcut icon" type="image/ico" href="https://www.aproperties.es/fav-icon.ico?v=2.1"> 
+<link rel="shortcut icon" type="image/ico" href="/fav-icon.ico?v=2.1" /> 
 
 
-<link rel="stylesheet" href="./aproperties-search-result_files/html5.css" type="text/css">
-<link rel="stylesheet" href="./aproperties-search-result_files/style.css" type="text/css">
+<LINK rel="stylesheet" href="/templates/html5.css" type="text/css" />
+<LINK rel="stylesheet" href="/templates/style.css?v=9.64" type="text/css" />
 
 
-<link href="./aproperties-search-result_files/css" rel="stylesheet" type="text/css">
-<link href="./aproperties-search-result_files/css(1)" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Merriweather:400&subset=latin&display=swap" rel="stylesheet" type="text/css" />
+<link href="//fonts.googleapis.com/css?family=Lato:400,700,900&subset=latin&display=swap" rel="stylesheet" type="text/css" />
 
 <style>
 h1,h2,h3,h4,#nav ul li a, .title, #footer .logos p, .sub-title {
@@ -68,7 +72,7 @@ document.createElement('main');
 <!--[if lt IE 10]>
 <style>select{ background:none; }</style>
 <![endif]-->
-    <script src="./aproperties-search-result_files/jquery.1.7.1.min.js"></script>            <!-- Facebook Pixel Code -->
+    <script src="/scripts/jquery.1.7.1.min.js"></script>            <!-- Facebook Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -82,9 +86,9 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=324605214376324&ev=PageView&noscript=1"
 /></noscript>
 <!-- DO NOT MODIFY -->
-<!-- End Facebook Pixel Code --></head>
+<!-- End Facebook Pixel Code --></HEAD>
 
-<body id="search" class="isDesktop chrome" data-new-gr-c-s-check-loaded="14.1029.0" data-gr-ext-installed="">
+<BODY id='search' >
 <!-- Google Code para etiquetas de remarketing -->
 <!--------------------------------------------------
 Es posible que las etiquetas de remarketing todavía no estén asociadas a la información de identificación personal o que estén en páginas relacionadas con las categorías delicadas. Para obtener más información e instrucciones sobre cómo configurar la etiqueta, consulte http://google.com/ads/remarketingsetup.
@@ -103,7 +107,7 @@ var google_custom_params = window.google_tag_params;
 var google_remarketing_only = true;
 /* ]]> */
 </script>
-<script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js">
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
 </script>
 <noscript>
 <div style="display:inline;">
@@ -111,7 +115,7 @@ var google_remarketing_only = true;
 </div>
 </noscript><div class="page">
         
-    <link rel="stylesheet" href="./aproperties-search-result_files/styles.css" type="text/css">
+    <link rel="stylesheet" href="/fonts/ie-font-190327/styles.css" type="text/css">
 
 <script>
     $('body').addClass('isDesktop chrome');
@@ -331,15 +335,15 @@ body{
                         <div class="header__cols">
                             <div class="header__links">
                                 <div class="header__link">
-                                    <a href="https://www.aproperties.es/tasacion-de-propiedad">Valoración gratuita</a>
+                                    <a href="/en/property-evaluation">Free valuation</a>
                                 </div>
 
                                 <div class="header__link">
-                                    <a href="https://www.aproperties.es/trabaja-con-nosotros">Trabaja con nosotros</a>
+                                    <a href="/en/work-with-us">Work with us</a>
                                 </div>
                             </div>
 
-                            <div class="header__langs"><ul class="languages"><li class="language-es active"><a href="https://www.aproperties.es/search?searchbar=1&amp;mod=rental&amp;zone=3&amp;area=7&amp;group=&amp;loc=42&amp;dis="><img src="./aproperties-search-result_files/flag_es.png" border="0" title="Español"></a></li><li class="language-en"><a href="https://www.aproperties.es/en/search?searchbar=1&amp;mod=rental&amp;zone=3&amp;area=7&amp;group=&amp;loc=42&amp;dis="><img src="./aproperties-search-result_files/flag_en.png" border="0" title="English"></a></li><li class="language-fr"><a href="https://www.aproperties.es/fr/search?searchbar=1&amp;mod=rental&amp;zone=3&amp;area=7&amp;group=&amp;loc=42&amp;dis="><img src="./aproperties-search-result_files/flag_fr.png" border="0" title="Français"></a></li></ul></div>
+                            <div class="header__langs"><ul class='languages'><li class='language-es'><a href='/'><img src='/templates/images/flag_es.png' border='0' title='Español'/></a></li><li class='language-en active'><a href='/en/'><img src='/templates/images/flag_en.png' border='0' title='English'/></a></li><li class='language-fr'><a href='/fr/'><img src='/templates/images/flag_fr.png' border='0' title='Français'/></a></li></ul></div>
                         </div>
                     </div>
                 </div>
@@ -351,8 +355,8 @@ body{
                 <div class="header__cols">
                     <div class="header__col">
                         <div class="header__logo">
-                            <a href="https://www.aproperties.es/">
-                                <img width="221" height="50" src="./aproperties-search-result_files/logo-white.png" alt="">
+                            <a href="/en">
+                                <img width="221" height="50" src="/templates/images/logo-white.png?v=3.5" alt="">
                             </a>
                         </div>
                     </div>
@@ -364,33 +368,32 @@ body{
     <ul>
         
             <li class="menu-0 ">
-                <a href="https://www.aproperties.es/comprar-casa">Comprar</a>
+                <a href="/en/homes-for-sale">Buy</a>
             </li>
             <li class="menu-3 ">
-                <a href="https://www.aproperties.es/vender-alquilar-mi-piso">Vender</a>
+                <a href="/en/sell-rent-my-flat">Sell</a>
             </li>
             <li class="menu-3 ">
-                <a href="https://www.aproperties.es/alquilar-piso-casa">Alquilar</a>
+                <a href="/en/homes-for-rent">Rent</a>
             </li>
             
             <li class="menu-3 ">
-                <a href="https://www.aproperties.es/obra-nueva">Obra Nueva</a>
+                <a href="/en/new-development">New Developments</a>
             </li>
             <li>
-                <a href="https://www.aoficinas.es/" target="_blank">Oficinas</a>
+                <a href="https://www.aoficinas.es/en" target="_blank">Offices</a>
             </li>
             <li class="menu-3 ">
-                <a href="https://www.aproperties.es/empresa">Empresa</a>
+                <a href="/en/company">Company</a>
                 <ul>
-                    <li class=""><a href="https://www.aproperties.es/empresa">Quienes somos</a></li>
-                    <li class=""><a href="https://www.aproperties.es/paso-a-paso">Paso a paso</a></li>
-                                        <li class=""><a href="https://www.aproperties.es/noticias">Noticias</a></li>
-                                        <li class=""><a href="https://www.aproperties.es/trabaja-con-nosotros">Trabaja con nosotros</a></li>
-                    <li class=""><a href="https://www.aproperties.es/faq">FAQ</a></li>
-                    <li class=""><a target="_blank" href="http://www.grupoafinance.com/amagazine">aMagazine</a></li>			
+                    <li class=""><a href="/en/company">Who are we</a></li>
+                    <li class=""><a href="/en/step-by-step">Step by step</a></li>
+                                        <li class=""><a href="/en/work-with-us">Work with us</a></li>
+                    <li class=""><a href="/en/faq">FAQ</a></li>
+                    <li class=""><a target="_blank" href="http://www.grupoafinance.com/en/amagazine">aMagazine</a></li>			
                 </ul>
             </li>
-            <li class=""><a href="https://www.aproperties.es/contacto">Contacto</a></li>
+            <li class=""><a href="/en/contact">Contact</a></li>
         
             </ul>
 </nav>                        </div>
@@ -456,12 +459,12 @@ s.parentNode.insertBefore(b, s);})();
 
 		<section class="top-results title">
 			<div class="title right" style="margin-bottom: 10px;">
-				<h1>Viviendas en alquiler en  Valencia</h1>
-<h2>155  en alquiler en  Valencia</h2>			</div>
+				<h1>Home for rent with heating in  El Cabañal - El Grau</h1>
+<h2>1 Home for rent with heating in  El Cabañal - El Grau</h2>			</div>
 		</section>
 
 		<div class="search-container">
-            <link rel="stylesheet" href="./aproperties-search-result_files/jquery-ui.css" type="text/css" media="all">
+            <link rel="stylesheet" href="/scripts/jquery-ui/jquery-ui.css" type="text/css" media="all">
 <style>
 .mod-select-pre li.selected {
     background-color: #12638b;
@@ -544,48 +547,48 @@ ul.mod-select-pre {
 <div id="search-sidebar">
 
 <div class="sidebar-form">
-    <form action="https://www.aproperties.es/search" method="get" id="search" class="searcher">
+    <form action="/en/search" method="get" id="search" class="searcher">
         <input id="view-hidden" type="hidden" name="view" value="">
 
                     <div class="rentorsale">
-                <div class="operation buy-switch switch button sale  refreshForm"><label for="sale">Comprar</label><input type="radio" id="sale" name="mod" value="sale"></div>
-                <div class="operation rent-switch switch button rent current refreshForm"><label for="rent">Alquilar</label><input id="rent" type="radio" name="mod" value="rental" checked="yes"></div>
+                <div class="operation buy-switch switch button sale  refreshForm"><label for="sale">Buy</label><input type="radio" id="sale" name="mod" value="sale" ></div>
+                <div class="operation rent-switch switch button rent current refreshForm"><label for="rent">Rent</label><input id="rent" type="radio" name="mod" value="rental" checked="yes"></div>
             </div>
         
         <div class="sidebar-form__main">
-            <h4 class="form-title">Buscar por texto o referencia</h4>
+            <h4 class="form-title">Search by text or reference</h4>
 
             <div class="add-bottom-2 add-bottom-2--text by-text">
-                <input class="reference refreshForm" type="text" id="t" name="q" value="" placeholder="Texto o referencia">
+                <input class="reference refreshForm" type="text" id="t" name="q" value="" placeholder="Keyword or reference">
             </div>
 
             <div class="add-bottom-2 add-bottom-2--type">
                 <div id="sidebar-type" class="select refreshForm" style="z-index: 10;" onchange="ChangeType(this.options[this.selectedIndex].value)">
                                                             <ul>
                         <li>
-                            <input id="house" type="checkbox" name="type[]" value="1">
-                            <label for="house">Casa</label>
+                            <input id="house" type="checkbox" name="type[]"  value="1">
+                            <label for="house">House</label>
 
                         </li>
                         <li>
-                            <input id="flat" type="checkbox" name="type[]" value="14">
-                            <label for="flat">Piso</label>
+                            <input id="flat" type="checkbox" name="type[]" value="14" >
+                            <label for="flat">Flat</label>
                         </li>
                         <li>
-                            <input id="penthouse" type="checkbox" name="type[]" value="9">
-                            <label for="penthouse">atico</label>
+                            <input id="penthouse" type="checkbox" name="type[]" value="9" >
+                            <label for="penthouse">penthouse</label>
                         </li>
                         <li>
-                            <input id="duplex" type="checkbox" name="type[]" value="10">
+                            <input id="duplex" type="checkbox" name="type[]" value="10" >
                             <label for="duplex">duplex</label>
                         </li>
                         <li>
-                            <input id="plot" type="checkbox" name="type[]" value="4">
-                            <label for="plot">Terreno</label>
+                            <input id="plot" type="checkbox" name="type[]" value="4" >
+                            <label for="plot">Plot</label>
                         </li>
                         <li>
-                            <input id="new_build" type="checkbox" name="type[]" value="20">
-                            <label for="new_build">Obra nueva</label>
+                            <input id="new_build" type="checkbox" name="type[]" value="20" >
+                            <label for="new_build">New development</label>
                         </li>
                     </ul>
                 </div>
@@ -663,66 +666,154 @@ ul.mod-select-pre {
 
             <div class="add-bottom-2 add-bottom-2--area">
                 <div id="selectlook-area" name="selectlook-area">
-                    <span>Valencia ciudad</span>
+                    <span>Valencia city</span>
                 </div>
 
                 <input id="area" type="hidden" name="area" value="7">
 
                 <ul id="checkboxlook-area" name="checkboxlook-area">
-                                                <li class="zones-option                             hidden" data-area="1">Barcelona ciudad</li>                            <li class="zones-option                             hidden" data-area="2">Madrid ciudad</li>                            <li class="zones-option                             hidden" data-area="3">Maresme</li>                            <li class="zones-option                             hidden" data-area="4">Garraf</li>                            <li class="zones-option                             hidden" data-area="5">Sant Cugat</li>                            <li class="zones-option                             hidden" data-area="6">Baix Llobregat</li>                            <li class="zones-option selected                            " data-area="7">Valencia ciudad</li>                            <li class="zones-option                             " data-area="8">Horta Nord</li>                            <li class="zones-option                             " data-area="9">Camp de Morvedre</li>                            <li class="zones-option                             " data-area="10">Camp del Turia</li>                            <li class="zones-option                             " data-area="11">Horta Oest</li>                            <li class="zones-option                             " data-area="12">Hoya de Buñol-Chiva</li>                            <li class="zones-option                             " data-area="13">Pobles del Sud</li>                            <li class="zones-option                             " data-area="14">Playas Pobles del Sud</li>                            <li class="zones-option                             hidden" data-area="15">Alt Empordà</li>                            <li class="zones-option                             hidden" data-area="16">L'Hospitalet de Llobregat</li>                            <li class="zones-option                             hidden" data-area="17">Madrid Noroeste</li>                            <li class="zones-option                             " data-area="19">Ribera Alta</li>                            <li class="zones-option                             " data-area="20">Castellón</li>                            <li class="zones-option                             " data-area="23">La Plana de Utiel Requena</li>                            <li class="zones-option                             hidden" data-area="24">Palma</li>                            <li class="zones-option                             hidden" data-area="25">Calvià</li>                </ul>
+                                                <li class="zones-option                             hidden" data-area="1">Barcelona city</li>                            <li class="zones-option                             hidden" data-area="2">Madrid city</li>                            <li class="zones-option                             hidden" data-area="3">Maresme</li>                            <li class="zones-option                             hidden" data-area="4">Garraf</li>                            <li class="zones-option                             hidden" data-area="5">Sant Cugat</li>                            <li class="zones-option                             hidden" data-area="6">Baix Llobregat</li>                            <li class="zones-option selected                            " data-area="7">Valencia city</li>                            <li class="zones-option                             " data-area="8">Horta Nord</li>                            <li class="zones-option                             " data-area="9">Camp de Morvedre</li>                            <li class="zones-option                             " data-area="10">Camp del Turia</li>                            <li class="zones-option                             " data-area="11">Horta Oest</li>                            <li class="zones-option                             " data-area="12">Hoya de Buñol-Chiva</li>                            <li class="zones-option                             " data-area="13">Pobles del Sud</li>                            <li class="zones-option                             " data-area="14">Playas Pobles del Sud</li>                            <li class="zones-option                             hidden" data-area="15">Alt Empordà</li>                            <li class="zones-option                             hidden" data-area="16">L&#39;Hospitalet de Llobregat</li>                            <li class="zones-option                             hidden" data-area="17">Madrid Noroeste</li>                            <li class="zones-option                             " data-area="19">Ribera Alta</li>                            <li class="zones-option                             " data-area="20">Castellón</li>                            <li class="zones-option                             " data-area="23">La Plana de Utiel Requena</li>                            <li class="zones-option                             hidden" data-area="24">Palma</li>                            <li class="zones-option                             hidden" data-area="25">Calvià</li>                </ul>
             </div>
 
             <div class="add-bottom-2 add-bottom-2--location">
                 <div id="selectlook-loc" name="selectlook-loc">
-                    <span>Valencia</span>
+                    <span>El Cabañal - El Grau</span>
                 </div>
                 <ul id="checkboxlook-loc" name="checkboxlook-loc">
-                                                                                        <li type="checkbox" data-id="1" data-group="4,8,17,20" data-loc="1" class="                            hidden">Ciutat Vella</li>
-                                                                                            <li type="checkbox" data-id="2" data-group="67,66,69,70,84,88" data-loc="11" class="                            hidden">Salamanca</li>
-                                                                                            <li type="checkbox" data-id="3" data-group="85,86,82,83,87,236" data-loc="11" class="                            hidden">Chamartín</li>
-                                                                                            <li type="checkbox" data-id="4" data-group="80,101,102,103,214" data-loc="11" class="                            hidden">Ciudad Lineal</li>
-                                                                                            <li type="checkbox" data-id="5" data-group="116,77,79,89,117,118" data-loc="11" class="                            hidden">Retiro</li>
-                                                                                            <li type="checkbox" data-id="6" data-group="90,91" data-loc="11" class="                            hidden">Tetuán</li>
-                                                                                            <li type="checkbox" data-id="7" data-group="68,75,78,92,93,94" data-loc="11" class="                            hidden">Chamberí</li>
-                                                                                            <li type="checkbox" data-id="8" data-group="95,96,97,98,99,276" data-loc="11" class="                            hidden">Centro</li>
-                                                                                            <li type="checkbox" data-id="9" data-group="100,217" data-loc="11" class="                            hidden">Moncloa</li>
-                                                                                            <li type="checkbox" data-id="10" data-group="104,305,306,307,308,309,310" data-loc="11" class="                            hidden">Arganzuela</li>
-                                                                                            <li type="checkbox" data-id="11" data-group="1,12,319" data-loc="1" class="                            hidden">Pedralbes/Les Corts</li>
-                                                                                            <li type="checkbox" data-id="12" data-group="5,6,7,9,11,26,35" data-loc="1" class="                            hidden">Sarrià–Sant Gervasi</li>
-                                                                                            <li type="checkbox" data-id="13" data-group="2,3,110,32" data-loc="1" class="                            hidden">L'Eixample</li>
-                                                                                            <li type="checkbox" data-id="14" data-group="13" data-loc="1" class="                            hidden">Diagonal Mar</li>
-                                                                                            <li type="checkbox" data-id="15" data-group="15" data-loc="1" class="                            hidden">Poblenou</li>
-                                                                                            <li type="checkbox" data-id="16" data-group="16" data-loc="1" class="                            hidden">La Vila Olímpica</li>
-                                                                                            <li type="checkbox" data-id="17" data-group="10,18,108,235,279" data-loc="1" class="                            hidden">Gràcia</li>
-                                                                                            <li type="checkbox" data-id="26" data-group="128,129,130" data-loc="42" class="                            ">L'Eixample</li>
-                                                                                            <li type="checkbox" data-id="25" data-group="122,123,124,125,126,127" data-loc="42" class="                            ">Ciutat Vella</li>
-                                                                                            <li type="checkbox" data-id="21" data-group="51" data-loc="1" class="                            hidden">El Poble Sec</li>
-                                                                                            <li type="checkbox" data-id="22" data-group="119,120,218,282" data-loc="11" class="                            hidden">Hortaleza</li>
-                                                                                            <li type="checkbox" data-id="23" data-group="121" data-loc="1" class="                            hidden">Sants</li>
-                                                                                            <li type="checkbox" data-id="27" data-group="131,132,133,134" data-loc="42" class="                            ">Extramurs</li>
-                                                                                            <li type="checkbox" data-id="28" data-group="135,136" data-loc="42" class="                            ">Quatre Carreres</li>
-                                                                                                                                    <li type="checkbox" data-id="30" data-group="138" data-loc="42" class="                            ">Patraix</li>
-                                                                                            <li type="checkbox" data-id="31" data-group="139" data-loc="42" class="                            ">Jesús</li>
-                                                                                            <li type="checkbox" data-id="32" data-group="140,141,142,143" data-loc="42" class="                            ">Pla del Real</li>
-                                                                                            <li type="checkbox" data-id="33" data-group="144,145" data-loc="42" class="                            ">Camins al Grau</li>
-                                                                                            <li type="checkbox" data-id="34" data-group="146,147" data-loc="42" class="                            ">La Saidia</li>
-                                                                                            <li type="checkbox" data-id="35" data-group="148,149,150" data-loc="42" class="                            ">Algiros</li>
-                                                                                            <li type="checkbox" data-id="36" data-group="151,152" data-loc="42" class="                            ">Benimaclet</li>
-                                                                                            <li type="checkbox" data-id="37" data-group="153" data-loc="42" class="                            ">Rascanya</li>
-                                                                                            <li type="checkbox" data-id="38" data-group="154" data-loc="42" class="                            ">Benicalap</li>
-                                                                                            <li type="checkbox" data-id="39" data-group="155,156,157,158" data-loc="42" class="                            ">Campanar</li>
-                                                                                            <li type="checkbox" data-id="40" data-group="159,160" data-loc="42" class="                            ">Ciudad de las Ciencias</li>
-                                                                                            <li type="checkbox" data-id="41" data-group="161" data-loc="42" class="                            ">El Cabañal - El Grau</li>
-                                                                                            <li type="checkbox" data-id="42" data-group="162,163" data-loc="42" class="                            ">Playa de Valencia</li>
-                                                                                            <li type="checkbox" data-id="43" data-group="21" data-loc="1" class="                            hidden">La Sagrada Familia</li>
-                                                                                            <li type="checkbox" data-id="44" data-group="238,239" data-loc="1" class="                            hidden">Sant Martí</li>
-                                                                                            <li type="checkbox" data-id="45" data-group="240,313" data-loc="1" class="                            hidden">Horta-Guinardó</li>
-                                                                                            <li type="checkbox" data-id="46" data-group="245" data-loc="1" class="                            hidden">Nou Barris</li>
-                                                                                            <li type="checkbox" data-id="48" data-group="269" data-loc="11" class="                            hidden">Campo de las Naciones</li>
-                                                                                            <li type="checkbox" data-id="49" data-group="270" data-loc="11" class="                            hidden">Alameda de Osuna</li>
-                                                                                            <li type="checkbox" data-id="50" data-group="280,281" data-loc="1" class="                            hidden">Sant Andreu</li>
+                                                                                        <li type="checkbox" data-id="1" data-group="4,8,17,20" data-loc="1"
+                            class="                            hidden"
+                            >Ciutat Vella</li>
+                                                                                            <li type="checkbox" data-id="2" data-group="67,66,69,70,84,88" data-loc="11"
+                            class="                            hidden"
+                            >Salamanca</li>
+                                                                                            <li type="checkbox" data-id="3" data-group="85,86,82,83,87,236" data-loc="11"
+                            class="                            hidden"
+                            >Chamartín</li>
+                                                                                            <li type="checkbox" data-id="4" data-group="80,101,102,103,214" data-loc="11"
+                            class="                            hidden"
+                            >Ciudad Lineal</li>
+                                                                                            <li type="checkbox" data-id="5" data-group="116,77,79,89,117,118" data-loc="11"
+                            class="                            hidden"
+                            >Retiro</li>
+                                                                                            <li type="checkbox" data-id="6" data-group="90,91" data-loc="11"
+                            class="                            hidden"
+                            >Tetuán</li>
+                                                                                            <li type="checkbox" data-id="7" data-group="68,75,78,92,93,94" data-loc="11"
+                            class="                            hidden"
+                            >Chamberí</li>
+                                                                                            <li type="checkbox" data-id="8" data-group="95,96,97,98,99,276" data-loc="11"
+                            class="                            hidden"
+                            >Centro</li>
+                                                                                            <li type="checkbox" data-id="9" data-group="100,217" data-loc="11"
+                            class="                            hidden"
+                            >Moncloa</li>
+                                                                                            <li type="checkbox" data-id="10" data-group="104,305,306,307,308,309,310" data-loc="11"
+                            class="                            hidden"
+                            >Arganzuela</li>
+                                                                                            <li type="checkbox" data-id="11" data-group="1,12,319" data-loc="1"
+                            class="                            hidden"
+                            >Pedralbes/Les Corts</li>
+                                                                                            <li type="checkbox" data-id="12" data-group="5,6,7,9,11,26,35" data-loc="1"
+                            class="                            hidden"
+                            >Sarrià–Sant Gervasi</li>
+                                                                                            <li type="checkbox" data-id="13" data-group="2,3,110,32" data-loc="1"
+                            class="                            hidden"
+                            >L'Eixample</li>
+                                                                                            <li type="checkbox" data-id="14" data-group="13" data-loc="1"
+                            class="                            hidden"
+                            >Diagonal Mar</li>
+                                                                                            <li type="checkbox" data-id="15" data-group="15" data-loc="1"
+                            class="                            hidden"
+                            >Poblenou</li>
+                                                                                            <li type="checkbox" data-id="16" data-group="16" data-loc="1"
+                            class="                            hidden"
+                            >La Vila Olímpica</li>
+                                                                                            <li type="checkbox" data-id="17" data-group="10,18,108,235,279" data-loc="1"
+                            class="                            hidden"
+                            >Gràcia</li>
+                                                                                            <li type="checkbox" data-id="26" data-group="128,129,130" data-loc="42"
+                            class="                            "
+                            >L'Eixample</li>
+                                                                                            <li type="checkbox" data-id="25" data-group="122,123,124,125,126,127" data-loc="42"
+                            class="                            "
+                            >Ciutat Vella</li>
+                                                                                            <li type="checkbox" data-id="21" data-group="51" data-loc="1"
+                            class="                            hidden"
+                            >El Poble Sec</li>
+                                                                                            <li type="checkbox" data-id="22" data-group="119,120,218,282" data-loc="11"
+                            class="                            hidden"
+                            >Hortaleza</li>
+                                                                                            <li type="checkbox" data-id="23" data-group="121" data-loc="1"
+                            class="                            hidden"
+                            >Sants</li>
+                                                                                            <li type="checkbox" data-id="27" data-group="131,132,133,134" data-loc="42"
+                            class="                            "
+                            >Extramurs</li>
+                                                                                            <li type="checkbox" data-id="28" data-group="135,136" data-loc="42"
+                            class="                            "
+                            >Quatre Carreres</li>
+                                                                                                                                    <li type="checkbox" data-id="30" data-group="138" data-loc="42"
+                            class="                            "
+                            >Patraix</li>
+                                                                                            <li type="checkbox" data-id="31" data-group="139" data-loc="42"
+                            class="                            "
+                            >Jesús</li>
+                                                                                            <li type="checkbox" data-id="32" data-group="140,141,142,143" data-loc="42"
+                            class="                            "
+                            >Pla del Real</li>
+                                                                                            <li type="checkbox" data-id="33" data-group="144,145" data-loc="42"
+                            class="                            "
+                            >Camins al Grau</li>
+                                                                                            <li type="checkbox" data-id="34" data-group="146,147" data-loc="42"
+                            class="                            "
+                            >La Saidia</li>
+                                                                                            <li type="checkbox" data-id="35" data-group="148,149,150" data-loc="42"
+                            class="                            "
+                            >Algiros</li>
+                                                                                            <li type="checkbox" data-id="36" data-group="151,152" data-loc="42"
+                            class="                            "
+                            >Benimaclet</li>
+                                                                                            <li type="checkbox" data-id="37" data-group="153" data-loc="42"
+                            class="                            "
+                            >Rascanya</li>
+                                                                                            <li type="checkbox" data-id="38" data-group="154" data-loc="42"
+                            class="                            "
+                            >Benicalap</li>
+                                                                                            <li type="checkbox" data-id="39" data-group="155,156,157,158" data-loc="42"
+                            class="                            "
+                            >Campanar</li>
+                                                                                            <li type="checkbox" data-id="40" data-group="159,160" data-loc="42"
+                            class="                            "
+                            >Ciudad de las Ciencias</li>
+                                                                                            <li type="checkbox" data-id="41" data-group="161" data-loc="42"
+                            class=" selected                             "
+                            >El Cabañal - El Grau</li>
+                                                                                            <li type="checkbox" data-id="42" data-group="162,163" data-loc="42"
+                            class="                            "
+                            >Playa de Valencia</li>
+                                                                                            <li type="checkbox" data-id="43" data-group="21" data-loc="1"
+                            class="                            hidden"
+                            >La Sagrada Familia</li>
+                                                                                            <li type="checkbox" data-id="44" data-group="238,239" data-loc="1"
+                            class="                            hidden"
+                            >Sant Martí</li>
+                                                                                            <li type="checkbox" data-id="45" data-group="240,313" data-loc="1"
+                            class="                            hidden"
+                            >Horta-Guinardó</li>
+                                                                                            <li type="checkbox" data-id="46" data-group="245" data-loc="1"
+                            class="                            hidden"
+                            >Nou Barris</li>
+                                                                                            <li type="checkbox" data-id="48" data-group="269" data-loc="11"
+                            class="                            hidden"
+                            >Campo de las Naciones</li>
+                                                                                            <li type="checkbox" data-id="49" data-group="270" data-loc="11"
+                            class="                            hidden"
+                            >Alameda de Osuna</li>
+                                                                                            <li type="checkbox" data-id="50" data-group="280,281" data-loc="1"
+                            class="                            hidden"
+                            >Sant Andreu</li>
                                                                                                                             
-                                            <input id="group" type="hidden" name="group" value="">
+                                            <input id="group" type="hidden" name="group" value="41">
                     
                 </ul>
 
@@ -775,7 +866,7 @@ ul.mod-select-pre {
 
             <div class="add-bottom-2 add-bottom-2--district" id="distBox" name="distBox" style="position:relative;">
                 <div id="selectlook" name="selectlook">
-                    <span>Distrito</span>
+                    <span>District</span>
                 </div>
                 <style>
                     ul#checkboxlook li.selected,ul#checkboxlook li:hover{
@@ -822,46 +913,8 @@ ul.mod-select-pre {
                 <input id="dis" type="hidden" name="dis" value="">
                 <ul id="checkboxlook" name="checkboxlook">
 
-                                                                                                                                                                        <li type="checkbox" data-loc="42" data-dis="151" class="">Alfahuir</li>
-                                                                                                                                                                                <li type="checkbox" data-loc="42" data-dis="131" class="">Arrancapins</li>
-                                                                                                                                                                                <li type="checkbox" data-loc="42" data-dis="144" class="">Ayora</li>
-                                                                                                                        <li type="checkbox" data-loc="42" data-dis="154" class="">Benicalap</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="152" class="">Benimaclet</li>
-                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="132" class="">Botánico</li>
-                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="155" class="">Campanar</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li type="checkbox" data-loc="42" data-dis="159" class="">Ciudad de la Justicia</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="160" class="">Ciudad de las Ciencias - Penya Roja</li>
-                                                                                            <li type="checkbox" data-loc="42" data-dis="148" class="">Ciutat Jardí</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="143" class="">Ciutat Universitaria</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li type="checkbox" data-loc="42" data-dis="161" class="">El Cabañal - El Grau</li>
-                                                                                                                        <li type="checkbox" data-loc="42" data-dis="122" class="">El Carme</li>
-                                                                                                                                                                                <li type="checkbox" data-loc="42" data-dis="123" class="">El Mercat</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="124" class="">El Pilar</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                <li type="checkbox" data-loc="42" data-dis="136" class="">En Corts</li>
-                                                                                                                        <li type="checkbox" data-loc="42" data-dis="140" class="">Exposició</li>
-                                                                                                                                                                                                                                                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="129" class="">Gran Vía</li>
-                                                                                                                                                                                                            <li type="checkbox" data-loc="42" data-dis="141" class="">Jaume Roig</li>
-                                                                                            <li type="checkbox" data-loc="42" data-dis="139" class="">Jesús</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="133" class="">La Petxina</li>
-                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="134" class="">La Roqueta</li>
-                                                                                                                                                                                <li type="checkbox" data-loc="42" data-dis="125" class="">La Seu</li>
-                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="126" class="">La Xerea</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="145" class="">La creu del Grau</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li type="checkbox" data-loc="42" data-dis="162" class="">Malvarrosa</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="147" class="">Marxalenes</li>
-                                                                                                                                                                                                            <li type="checkbox" data-loc="42" data-dis="142" class="">Mestalla</li>
-                                                                                                                                                                                                                                                                                                <li type="checkbox" data-loc="42" data-dis="135" class="">Monteolivete</li>
-                                                                                                                                                                                                            <li type="checkbox" data-loc="42" data-dis="158" class="">Nou Campanar</li>
-                                                                                                                                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="163" class="">Patacona</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="138" class="">Patraix</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="178" class="">Patraix - Vara de Quart</li>
-                                                                                                                        <li type="checkbox" data-loc="42" data-dis="128" class="">Pla del remei</li>
-                                                                                                                                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="153" class="">Rascanya</li>
-                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="130" class="">Ruzafa</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="127" class="">San Francesc</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                            <li type="checkbox" data-loc="42" data-dis="157" class="">Sant Pau</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li type="checkbox" data-loc="42" data-dis="177" class="">Valterna</li>
-                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li type="checkbox" data-loc="42" data-dis="161" class="" />El Cabañal - El Grau</li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
                 </ul>
             </div>
             
@@ -873,177 +926,177 @@ ul.mod-select-pre {
             </div>
 
 
-            <h4 class="form-title">Precio</h4>
+            <h4 class="form-title">Price</h4>
             <div class="add-bottom-2 add-bottom-2--price">
                 <select id="sidebar-price-from" name="" class="select sidebar-price-hidden refreshForm" style="z-index: 10;">
-                    <option value="">Desde</option>
-                    <option value="50000">50.000 €</option>
-                    <option value="100000">100.000 €</option>
-                    <option value="150000">150.000 €</option>
-                    <option value="200000">200.000 €</option>
-                    <option value="250000">250.000 €</option>
-                    <option value="300000">300.000 €</option>
-                    <option value="350000">350.000 €</option>
-                    <option value="400000">400.000 €</option>
-                    <option value="450000">450.000 €</option>
-                    <option value="500000">500.000 €</option>
-                    <option value="550000">550.000 €</option>
-                    <option value="600000">600.000 €</option>
-                    <option value="650000">650.000 €</option>
-                    <option value="700000">700.000 €</option>
-                    <option value="750000">750.000 €</option>
-                    <option value="800000">800.000 €</option>
-                    <option value="1000000">1.000.000 €</option>
-                    <option value="1500000">1.500.000 €</option>
-                    <option value="3000000">3.000.000 €</option>
-                    <option value="4000000">4.000.000 €</option>
+                    <option value="">From</option>
+                    <option value="50000" >50.000 €</option>
+                    <option value="100000" >100.000 €</option>
+                    <option value="150000" >150.000 €</option>
+                    <option value="200000" >200.000 €</option>
+                    <option value="250000" >250.000 €</option>
+                    <option value="300000" >300.000 €</option>
+                    <option value="350000" >350.000 €</option>
+                    <option value="400000" >400.000 €</option>
+                    <option value="450000" >450.000 €</option>
+                    <option value="500000" >500.000 €</option>
+                    <option value="550000" >550.000 €</option>
+                    <option value="600000" >600.000 €</option>
+                    <option value="650000" >650.000 €</option>
+                    <option value="700000" >700.000 €</option>
+                    <option value="750000" >750.000 €</option>
+                    <option value="800000" >800.000 €</option>
+                    <option value="1000000" >1.000.000 €</option>
+                    <option value="1500000" >1.500.000 €</option>
+                    <option value="3000000" >3.000.000 €</option>
+                    <option value="4000000" >4.000.000 €</option>
                 </select>
 
                 <select id="sidebar-price-to" name="" class="select sidebar-price-hidden refreshForm" style="z-index: 10;">
-                    <option value="">Hasta</option>
-                    <option value="50000">50.000 €</option>
-                    <option value="100000">100.000 €</option>
-                    <option value="150000">150.000 €</option>
-                    <option value="200000">200.000 €</option>
-                    <option value="250000">250.000 €</option>
-                    <option value="300000">300.000 €</option>
-                    <option value="350000">350.000 €</option>
-                    <option value="400000">400.000 €</option>
-                    <option value="450000">450.000 €</option>
-                    <option value="500000">500.000 €</option>
-                    <option value="550000">550.000 €</option>
-                    <option value="600000">600.000 €</option>
-                    <option value="650000">650.000 €</option>
-                    <option value="700000">700.000 €</option>
-                    <option value="750000">750.000 €</option>
-                    <option value="800000">800.000 €</option>
-                    <option value="1000000">1.000.000 €</option>
-                    <option value="1500000">1.500.000 €</option>
-                    <option value="3000000">3.000.000 €</option>
-                    <option value="4000000">4.000.000 €</option>
+                    <option value="">To</option>
+                    <option value="50000" >50.000 €</option>
+                    <option value="100000" >100.000 €</option>
+                    <option value="150000" >150.000 €</option>
+                    <option value="200000" >200.000 €</option>
+                    <option value="250000" >250.000 €</option>
+                    <option value="300000" >300.000 €</option>
+                    <option value="350000" >350.000 €</option>
+                    <option value="400000" >400.000 €</option>
+                    <option value="450000" >450.000 €</option>
+                    <option value="500000" >500.000 €</option>
+                    <option value="550000" >550.000 €</option>
+                    <option value="600000" >600.000 €</option>
+                    <option value="650000" >650.000 €</option>
+                    <option value="700000" >700.000 €</option>
+                    <option value="750000" >750.000 €</option>
+                    <option value="800000" >800.000 €</option>
+                    <option value="1000000" >1.000.000 €</option>
+                    <option value="1500000" >1.500.000 €</option>
+                    <option value="3000000" >3.000.000 €</option>
+                    <option value="4000000" >4.000.000 €</option>
                 </select>
             </div>
             <div class="add-bottom-2 add-bottom-2--price">
                 <select id="sidebar-price-from-rent" name="price-from" class="select refreshForm" style="z-index: 10;margin-top: -6px;">
-                    <option value="">Desde</option>
-                    <option value="150">150 €</option>
-                    <option value="300">300 €</option>
-                    <option value="400">400 €</option>
-                    <option value="500">500 €</option>
-                    <option value="600">600 €</option>
-                    <option value="700">700 €</option>
-                    <option value="800">800 €</option>
-                    <option value="1000">1.000 €</option>
-                    <option value="1250">1.250 €</option>
-                    <option value="1500">1.500 €</option>
-                    <option value="1750">1.750 €</option>
-                    <option value="2000">2.000 €</option>
-                    <option value="2500">2.500 €</option>
-                    <option value="3000">3.000 €</option>
-                    <option value="4000">4.000 €</option>
-                    <option value="6000">6.000 €</option>
+                    <option value="">From</option>
+                    <option value="150" >150 €</option>
+                    <option value="300" >300 €</option>
+                    <option value="400" >400 €</option>
+                    <option value="500" >500 €</option>
+                    <option value="600" >600 €</option>
+                    <option value="700" >700 €</option>
+                    <option value="800" >800 €</option>
+                    <option value="1000" >1.000 €</option>
+                    <option value="1250" >1.250 €</option>
+                    <option value="1500" >1.500 €</option>
+                    <option value="1750" >1.750 €</option>
+                    <option value="2000" >2.000 €</option>
+                    <option value="2500" >2.500 €</option>
+                    <option value="3000" >3.000 €</option>
+                    <option value="4000" >4.000 €</option>
+                    <option value="6000" >6.000 €</option>
                 </select>
 
                 <select id="sidebar-price-to-rent" name="price-to" class="select refreshForm" style="z-index: 10;">
-                    <option value="">Hasta</option>
-                    <option value="150">150 €</option>
-                    <option value="300">300 €</option>
-                    <option value="400">400 €</option>
-                    <option value="500">500 €</option>
-                    <option value="600">600 €</option>
-                    <option value="700">700 €</option>
-                    <option value="800">800 €</option>
-                    <option value="1000">1.000 €</option>
-                    <option value="1250">1.250 €</option>
-                    <option value="1500">1.500 €</option>
-                    <option value="1750">1.750 €</option>
-                    <option value="2000">2.000 €</option>
-                    <option value="2500">2.500 €</option>
-                    <option value="3000">3.000 €</option>
-                    <option value="4000">4.000 €</option>
-                    <option value="6000">6.000 €</option>
+                    <option value="">To</option>
+                    <option value="150" >150 €</option>
+                    <option value="300" >300 €</option>
+                    <option value="400" >400 €</option>
+                    <option value="500" >500 €</option>
+                    <option value="600" selected>600 €</option>
+                    <option value="700" >700 €</option>
+                    <option value="800" >800 €</option>
+                    <option value="1000" >1.000 €</option>
+                    <option value="1250" >1.250 €</option>
+                    <option value="1500" >1.500 €</option>
+                    <option value="1750" >1.750 €</option>
+                    <option value="2000" >2.000 €</option>
+                    <option value="2500" >2.500 €</option>
+                    <option value="3000" >3.000 €</option>
+                    <option value="4000" >4.000 €</option>
+                    <option value="6000" >6.000 €</option>
                 </select>
             </div>
         
-            <h4 class="form-title">Dormitorios</h4>
+            <h4 class="form-title">Bedrooms</h4>
             <div class="add-bottom-2 add-bottom-2--bedrooms">
                 <ul class="radio-list numbers beds refreshForm">
                                         <li>
-                        <input type="radio" id="beds_1" name="habs" value="1">
+                        <input type="radio" id="beds_1" name="habs" value="1" >
                         <label for="habs_1">1 +</label>
                     </li>
                                         <li>
-                        <input type="radio" id="beds_2" name="habs" value="2">
+                        <input type="radio" id="beds_2" name="habs" value="2" >
                         <label for="habs_2">2 +</label>
                     </li>
                                         <li>
-                        <input type="radio" id="beds_3" name="habs" value="3">
+                        <input type="radio" id="beds_3" name="habs" value="3" >
                         <label for="habs_3">3 +</label>
                     </li>
                                         <li>
-                        <input type="radio" id="beds_4" name="habs" value="4">
+                        <input type="radio" id="beds_4" name="habs" value="4" >
                         <label for="habs_4">4 +</label>
                     </li>
                                         <li>
-                        <input type="radio" id="beds_5" name="habs" value="5">
+                        <input type="radio" id="beds_5" name="habs" value="5" >
                         <label for="habs_5">5 +</label>
                     </li>
                                     </ul>
             </div>
 
-            <h4 class="form-title">Baños</h4>
+            <h4 class="form-title">Bathrooms</h4>
             <div class="add-bottom-2 add-bottom-2--bathrooms">
                 <ul class="radio-list numbers toilets refreshForm">
                                         <li>
-                        <input type="radio" id="toilets_1" name="toilets" value="1">
+                        <input type="radio" id="toilets_1" name="toilets" value="1" >
                         <label for="toilets_1">1 +</label>
                     </li>
                                         <li>
-                        <input type="radio" id="toilets_2" name="toilets" value="2">
+                        <input type="radio" id="toilets_2" name="toilets" value="2" >
                         <label for="toilets_2">2 +</label>
                     </li>
                                         <li>
-                        <input type="radio" id="toilets_3" name="toilets" value="3">
+                        <input type="radio" id="toilets_3" name="toilets" value="3" >
                         <label for="toilets_3">3 +</label>
                     </li>
                                     </ul>
             </div>
 
-            <h4 class="form-title">Superficie</h4>
+            <h4 class="form-title">Surface</h4>
             <div class="add-bottom-2 add-bottom-2--surface">
                 <select id="sidebar-surface" name="surface-from" class="select refreshForm">
-                    <option value="">Desde</option>
-                                            <option value="40">40 m2</option>
-                                            <option value="60">60 m2</option>
-                                            <option value="80">80 m2</option>
-                                            <option value="100">100 m2</option>
-                                            <option value="120">120 m2</option>
-                                            <option value="140">140 m2</option>
-                                            <option value="160">160 m2</option>
-                                            <option value="180">180 m2</option>
-                                            <option value="200">200 m2</option>
-                                            <option value="220">220 m2</option>
-                                            <option value="240">240 m2</option>
-                                            <option value="260">260 m2</option>
-                                            <option value="280">280 m2</option>
-                                            <option value="300">300 m2</option>
+                    <option value="">From</option>
+                                            <option value="40" >40 m2</option>
+                                            <option value="60" >60 m2</option>
+                                            <option value="80" >80 m2</option>
+                                            <option value="100" >100 m2</option>
+                                            <option value="120" >120 m2</option>
+                                            <option value="140" >140 m2</option>
+                                            <option value="160" >160 m2</option>
+                                            <option value="180" >180 m2</option>
+                                            <option value="200" >200 m2</option>
+                                            <option value="220" >220 m2</option>
+                                            <option value="240" >240 m2</option>
+                                            <option value="260" >260 m2</option>
+                                            <option value="280" >280 m2</option>
+                                            <option value="300" >300 m2</option>
                                     </select>
                 <select id="sidebar-surface" name="surface-to" class="select refreshForm">
-                    <option value="">Hasta</option>
-                                            <option value="40">40 m2</option>
-                                            <option value="60">60 m2</option>
-                                            <option value="80">80 m2</option>
-                                            <option value="100">100 m2</option>
-                                            <option value="120">120 m2</option>
-                                            <option value="140">140 m2</option>
-                                            <option value="160">160 m2</option>
-                                            <option value="180">180 m2</option>
-                                            <option value="200">200 m2</option>
-                                            <option value="220">220 m2</option>
-                                            <option value="240">240 m2</option>
-                                            <option value="260">260 m2</option>
-                                            <option value="280">280 m2</option>
-                                            <option value="300">300 m2</option>
+                    <option value="">To</option>
+                                            <option value="40" >40 m2</option>
+                                            <option value="60" >60 m2</option>
+                                            <option value="80" >80 m2</option>
+                                            <option value="100" >100 m2</option>
+                                            <option value="120" >120 m2</option>
+                                            <option value="140" >140 m2</option>
+                                            <option value="160" >160 m2</option>
+                                            <option value="180" >180 m2</option>
+                                            <option value="200" >200 m2</option>
+                                            <option value="220" >220 m2</option>
+                                            <option value="240" >240 m2</option>
+                                            <option value="260" >260 m2</option>
+                                            <option value="280" >280 m2</option>
+                                            <option value="300" >300 m2</option>
                                     </select>
             </div>
 
@@ -1053,44 +1106,44 @@ ul.mod-select-pre {
             <div class="add-bottom-2 add-bottom-2--extras">
                 <ul class="check-list extras-array refreshForm">
                                                             <li>
-                        <input type="checkbox" id="pool" name="pool" value="1">
-                                                <label for="pool">Piscina</label>
+                        <input type="checkbox" id="pool" name="pool" value="1" >
+                                                <label for="pool">Pool</label>
                     </li>
                                                             <li>
-                        <input type="checkbox" id="heating" name="heating" value="1">
-                                                <label for="heating">Calefacción</label>
+                        <input type="checkbox" id="heating" name="heating" value="1" checked="yes">
+                                                <label for="heating">Heating</label>
                     </li>
                                                             <li>
-                        <input type="checkbox" id="terrace" name="terrace" value="1">
-                                                <label for="terrace">Terraza</label>
+                        <input type="checkbox" id="terrace" name="terrace" value="1" >
+                                                <label for="terrace">Terrace</label>
                     </li>
                                                             <li>
-                        <input type="checkbox" id="views" name="views" value="1">
-                                                <label for="views">Vistas</label>
+                        <input type="checkbox" id="views" name="views" value="1" >
+                                                <label for="views">Views</label>
                     </li>
                                                             <li>
-                        <input type="checkbox" id="lift" name="lift" value="1">
-                                                <label for="lift">Ascensor</label>
+                        <input type="checkbox" id="lift" name="lift" value="1" >
+                                                <label for="lift">Lift</label>
                     </li>
                                                                                 <li>
-                        <input type="checkbox" id="gym" name="gym" value="1">
-                                                <label for="gym">Gimnasio</label>
+                        <input type="checkbox" id="gym" name="gym" value="1" >
+                                                <label for="gym">Gym</label>
                     </li>
                                                             <li>
-                        <input type="checkbox" id="furnished" name="furnished" value="1">
-                                                <label for="furnished">Amueblado</label>
+                        <input type="checkbox" id="furnished" name="furnished" value="1" >
+                                                <label for="furnished">Furnished</label>
                     </li>
                                                             <li>
-                        <input type="checkbox" id="has_parking" name="has_parking" value="1">
-                                                <label for="has_parking">Aparcamiento</label>
+                        <input type="checkbox" id="has_parking" name="has_parking" value="1" >
+                                                <label for="has_parking">Parking</label>
                     </li>
                     
                     <div class="clear"></div>
                 </ul>
             </div>
             <input class="order-hidden" type="hidden" name="order" value="">
-            <img loading="lazy" style="display:none;" class="current-loading" src="./aproperties-search-result_files/ajax_loader.gif">
-            <button class="_btn">Buscar</button>
+            <img loading="lazy" style="display:none;" class="current-loading" src="/templates/images/ajax_loader.gif">
+            <button class="_btn">Search</button>
         </div>
     </form>
     </div>
@@ -1313,78 +1366,625 @@ Url = {
 			<div id="search-results">
 				<section class="results-options">
 					<div class="pull-left order">
-						<span>Ordenar por</span>
+						<span>Order by</span>
 						<select name="order">
-							<option value="new">Lo más nuevo</option>
-														<option value="cheaper">Precio más bajo</option>
-							<option value="expensive">Precio más alto</option>
-							<option value="desc_surface">Más superfície</option>
-							<option value="asc_surface">Menos superfície</option>
+							<option  value="new">Newest</option>
+														<option  value="cheaper">Lowest price</option>
+							<option  value="expensive">Highest price</option>
+							<option  value="desc_surface">Most sqm</option>
+							<option  value="asc_surface">Less sqm</option>
 						</select>
 					</div>
 
 					<div class="pull-right views">
 						<ul>
-							<li class="listado switch option-view button ">Listado</li>
-							<li class="fotos switch option-view button current">Mosaico</li>
+							<li class="listado switch option-view button ">List</li>
+							<li class="fotos switch option-view button current">Mosaic</li>
 						</ul>
 					</div>
 				</section>
 
 				<div class="properties-results fotos">
 						
-	            <ul class="properties-list">
-						<div class="propertyBlock propertyBlock--condensed propertyBlock--noContent col-three">
-							
-							<div class="">
-								<a href="https://www.aproperties.es/valencia/patacona/piso-de-alquiler-temporal-de-2-habitaciones-en-playa-patacona">
-									<div class="propertyBlock__image _imgTagBg">
-										<img loading="lazy" width="310" height="228" src="/aproperties-search-result_files/thumb(34)" alt="Piso en alquiler">
-										
+	<ul class="properties-list">
+        <div class='propertyBlock col-third'>					
+            <div class=''>
+								<a href='/en/valencia/el-cabanal-el-grau/study-in-the-cabanal'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/22281/22281_15958568695649.jpg&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Reserved</div>
 									</div>
-									<div class="propertyBlock__info">
-										<div class="propertyBlock__infoTop">
-											<div class="propertyBlock__cols">
-												<div class="propertyBlock__col">
-													<span class="propertyBlock__reference">AV1909034-2</span>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2007103</span>
 												</div>
-												<div class="propertyBlock__col">
-													<div class="propertyBlock__priceContainer">
-														<div class="propertyBlock__price">1.900 €</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>600 &euro;</div>
 														
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="propertyBlock__infoContent">
-											<h3 class="propertyBlock__title">Piso de alquiler TEMPORAL de 2 habitaciones, en Playa Patacona.</h3>
-											<div class="propertyBlock__location">Patacona, Valencia ciudad</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Study in the Cabañal</h3>
+											<div class='propertyBlock__location'>El Cabañal - El Grau, Valencia city</div>
 										</div>
-										<div class="propertyBlock__infoBot">
-											<div class="propertyBlock__content">SOLO ALQUILER TEMPORAL.
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>For short and long stay. We present this beautiful furnished loft in the cozy and famous area of Caba&ntilde;al, completely renovated, and located on a ground floor.
 
-Amplia y cuidada vivienda de 2 habitaciones y 2 baños, en un complejo con piscina, vistas al mar y mucha luz, disponible en alquiler de Octubre a Abril, en la playa de la Patacona.&nbsp;
+The house of 47 m2, has an open space where we find a bright living room, dining room and fully equipped open kitchen and a bathroom with shower.
 
+It has a single bed and a sofa bed. The recently renovated house has air conditioning hot and cold, high ceilings with restored joists and an interior terrace to rest in the open air Located in the best atmosphere of the city, 5 minutes walking from the beach Las Arenas and Malvarrosa, with availability of any public transport and close to the promenade, surrounded by the best restaurants and hotels.
 
-Se trata de una vivienda amplia,con una superficie de 93 m2 construidos,&nbsp;completamente amueblada y equipada. Con un gran salón y terraza, luminosa y completamente exterior. Construida en el año 2014. Incluye garaje.
-Dispone de&nbsp; 2 dormitorios ( 1 con cama de matrimonio y otra individual ), dos baños completos, una moderna cocina equipada con una amplia galería&nbsp;y un gran salón con salida a la terraza. Dispone de parqué, aire acondicionado por conductos frío- calor, pintura lisa, videoportero, armarios empotrados, acceso personas de movilidad reducida y excelente aislamiento con ventanas climalit.
-
-La vivienda se encuentra en complejo privado con piscina, parque infantil, conserje y cámaras de seguridad y vigilancia, situado a escasos metros de la playa.
-
-
-Zona con todos los servicios, supermercados, restaurantes, farmacia, centro de salud, escuela infantil, colegios y calles peatonales con parques y zonas de juego, además de un centro deportivo con piscina y gimnasio. A 10 minutos andando de las universidades y solo 15 minutos en coche al centro de València. Muy buena comunicación con varias lineas de autobús al centro de la ciudad.
-
-&nbsp;
-
-¡ No dude en contactarnos !
+Do not miss or miss the opportunity to enjoy the experience of living here.
 </div>
 
 									
 
-											<div class="propertyBlock__cols"><div class="propertyBlock__col">
-													<div class="propertyBlock__priceContainer">
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
 														
-														<div class="propertyBlock__price">1.900 €</div>
+														<div class='propertyBlock__price'>600 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						</ul>
+						<h3 class="title-others near">Other Homes for rent  with heating near  El Cabañal - El Grau</h3>
+	                    <ul class="properties-list"><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/arrancapins/av2109083-flat-for-rent-with-terrace-in-arrancapins-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/31800/31800_1632323417028.jpg&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Reserved</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2109083</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>600 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent with terrace in Arrancapins (Valencia)</h3>
+											<div class='propertyBlock__location'>Arrancapins, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>51 sqm  flat with terrace in Arrancapins, Valencia.The property has bedroom, 1 bathroom, air conditioning, fitted wardrobes,  heating and concierge.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>51m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedroom</span>
+														<span class='propertyBlock__value'>1</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathroom </span>
+														<span class='propertyBlock__value'>1 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>600 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/nou-campanar/av2012088-loft-for-rent-in-cortes-valencianas'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/25506/25506_16085620159014.jpg&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Reserved</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2012088</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>600 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Loft for rent in Cortes Valencianas</h3>
+											<div class='propertyBlock__location'>Nou Campanar, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>Furnished loft on Avenida Cortes Valencianas.
+
+Temporary contracts of three to eleven months, but they can be prolonged.
+
+A single room where the kitchen and the room are; the kitchen has all the appliances: oven, two-burner hob, extractor hood, microwave and small refrigerator, it is also equipped with storage cabinets. In the same room we find the bed, the wardrobe and the television. It also has a full bathroom with shower and air conditioning - Duct heating.
+
+The building has a laundry service and gym on the first floor for the exclusive use of residents in the building in addition to Wiffi included in the price and daytime concierge service. Possibility of renting parking in the same building.
+
+5 minutes from the Polifilo Garden and 10 minutes from the Benicalap Park and 5 minutes from the Benferri metro stop. It has bus stops throughout the avenue and a bicycle lane that connects different areas of Valencia.
+
+Services in the neighborhood: Restaurants, supermarkets, health center, hospital, private gyms.
+
+Do not hesitate to contact us, we will be happy to assist you!
+</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>38m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedroom</span>
+														<span class='propertyBlock__value'>1</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathroom </span>
+														<span class='propertyBlock__value'>1 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>600 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div></ul>					<style>
+						.properties-list {
+							overflow: auto;
+						}
+					</style>
+
+						 						
+						<div class="footer-text">You are looking at <strong>1 home for rent with heating in  El Cabañal - El Grau</strong> which we have in our portfolio of properties.<br />Remember that you can also search for homes with other filters according to your interests like with pool, terrace, fireplace or lift.</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	
+
+			<div class="searchFooter">
+			<div class="searchFooter__item searchFooter__item--logo">	<div class="_separator">
+		<div class="container">
+			<div class="_separator__logo">
+				<img loading="lazy" width="67" height="67" src="/templates/images/icons/icon-aproperties.png" alt="aProperties logo">
+			</div>
+		</div>
+	</div></div>
+
+							<div class="searchFooter__item">
+    <div class="properties-viewed  recent">
+		<h4>Recently viewed properties</h4>
+
+        <div class="row"><div class='propertyBlock propertyBlock--condensed propertyBlock--noContent col-three'>
+							
+							<div class=''>
+								<a href='/en/valencia/botanico/flat-for-rent-with-views-in-botanico-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/23096/23096_16003371629457.jpg&w=320&h=240' alt='Flat for rent'>
+										
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2009079-1</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>1,200 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent with views in Botánico (Valencia)</h3>
+											<div class='propertyBlock__location'>Botánico, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>151 sqm  flat with views in Botánico, Valencia.The property has 4 bedrooms, 3 bathrooms, 1 parking space, air conditioning, fitted wardrobes,  heating and concierge.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>151m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>4</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathrooms </span>
+														<span class='propertyBlock__value'>3 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>1,200 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock propertyBlock--condensed propertyBlock--noContent col-three'>
+							
+							<div class=''>
+								<a href='/en/valencia/la-petxina/charming-and-furnished-apartment-in-valencia'>
+									<div class='propertyBlock__image _imgTagBg'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/6713/6713_15904075335777.jpg&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Rented</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV1711006-1</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>1,100 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Charming and furnished apartment in Valencia</h3>
+											<div class='propertyBlock__location'>La Petxina, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>In La Petxina area we find this charming housing completely furnished and of design and quality in all rooms. The property has a spacious and bright living-dining room, a fully equipped kitchen, three bedrooms, one with a large dressing room, another bedroom en-suite and two bathrooms. In addition, the housing has air conditioning and heating. It is very well located, near Turia river, the urban center and gardens and areas where we can practice different sports activities.
+</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>120m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>3</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathrooms </span>
+														<span class='propertyBlock__value'>2 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>1,100 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock propertyBlock--condensed propertyBlock--noContent col-three'>
+							
+							<div class=''>
+								<a href='/en/valencia/arrancapins/av2109083-flat-for-rent-with-terrace-in-arrancapins-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/31800/31800_1632323417028.jpg&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Reserved</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2109083</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>600 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent with terrace in Arrancapins (Valencia)</h3>
+											<div class='propertyBlock__location'>Arrancapins, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>51 sqm  flat with terrace in Arrancapins, Valencia.The property has bedroom, 1 bathroom, air conditioning, fitted wardrobes,  heating and concierge.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>51m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedroom</span>
+														<span class='propertyBlock__value'>1</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathroom </span>
+														<span class='propertyBlock__value'>1 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>600 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock propertyBlock--condensed propertyBlock--noContent col-three'>
+							
+							<div class=''>
+								<a href='/en/valencia/benimaclet/av2109078-flat-for-rent-with-views-in-benimaclet-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/31735/31735_16322135269252.jpg&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Rented</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2109078</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>750 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent with views in Benimaclet (Valencia)</h3>
+											<div class='propertyBlock__location'>Benimaclet, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>60 sqm  flat with views in Benimaclet, Valencia.The property has 2 bedrooms, 1 bathroom, air conditioning, fitted wardrobes and heating.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>60m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>2</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathrooms </span>
+														<span class='propertyBlock__value'>2 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>750 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock propertyBlock--condensed propertyBlock--noContent col-three'>
+							
+							<div class=''>
+								<a href='/en/valencia/arrancapins/av2108039-1-flat-for-rent-with-views-in-arrancapins-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/31189/31189_16304994567208.JPG&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Rented</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2108039-1</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>1,300 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent with views in Arrancapins (Valencia)</h3>
+											<div class='propertyBlock__location'>Arrancapins, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>196 sqm flat with views in Arrancapins, Valencia.The property has 5 bedrooms, 2 bathrooms, parking space, air conditioning, fitted wardrobes, balcony and  heating.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>196m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>5</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathrooms </span>
+														<span class='propertyBlock__value'>3 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>1,300 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock propertyBlock--condensed propertyBlock--noContent col-three'>
+							
+							<div class=''>
+								<a href='/en/valencia/arrancapins/av2101119-loft-for-rent-with-terrace-in-arrancapins-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/26217/26217_16119186163488.jpg&w=320&h=240' alt='Loft for rent'>
+										<div class='propertyBlock__ribbon'>Reserved</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2101119</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>825 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Loft for rent with terrace in Arrancapins (Valencia)</h3>
+											<div class='propertyBlock__location'>Arrancapins, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>70 sqm  loft with terrace and views in Arrancapins, Valencia.The property has 2 bedrooms, 1 bathroom, fireplace, air conditioning, fitted wardrobes, laundry room and  heating.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>70m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>2</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathroom </span>
+														<span class='propertyBlock__value'>1 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>825 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock propertyBlock--condensed propertyBlock--noContent col-three'>
+							
+							<div class=''>
+								<a href='/en/valencia/pla-del-remei/av2106020-spectacular-flat-with-views-in-pla-del-remei'>
+									<div class='propertyBlock__image _imgTagBg'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/29596/29596_16227898512202.jpg&w=320&h=240' alt='Flat for rent'>
+										
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2106020</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>2,600 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Spectacular flat with views in Pla del remei </h3>
+											<div class='propertyBlock__location'>Pla del remei, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>
+Spectacular apartment with four bedrooms and three bathrooms located on the fourth floor and located in one of the most sought after points of the city of Valencia. With an area of ​​250 m2, they are distributed in four large bedrooms. The social area consists of a spacious living room and access to the fully equipped designer kitchen. The house has three bathrooms, two independent and another in suite and are complete. The building was completely rebuilt in 2008, conserving only its historical fa&ccedil;ade, so we are facing a new house and high quality materials have been used (parquet floor, sliding doors, armored entrance door, built-in wardrobes). It is rented unfurnished. It is located in the area of ​​Pla del Remei, in the well-known and commercial Col&oacute;n street. Unique location due to its proximity to the best shopping, leisure and restoration areas of the city and the River Turia garden. It has nearby hotels, theaters (Teatro Rialto), movie theaters (ABC Park Cinemas), shopping centers and schools. If you want to visit this large house, contact us, we will be happy to assist you.
+&nbsp;
+</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>250m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>4</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathrooms </span>
+														<span class='propertyBlock__value'>3 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>2,600 &euro;</div>
 													</div>
 												</div>
 											</div>
@@ -1396,35 +1996,7 @@ Zona con todos los servicios, supermercados, restaurantes, farmacia, centro de s
         </div>
 	</div>
 </div>
-							<div class="searchFooter__item _noPadTop">	<div class="sidebar-links">
-		<h4 class="sidebar-links__title">Otras viviendas en Valencia</h4>
-		
-		<div class="sidebar-links__links">				<span data-idvs="728">
-					<a href="https://www.aproperties.es/pisos-lujo-alquiler-valencia">Pisos de lujo en alquiler en Valencia</a>
-				</span>				<span data-idvs="730">
-					<a href="https://www.aproperties.es/pisos-alquiler-valencia">Pisos en alquiler en Valencia</a>
-				</span>				<span data-idvs="731">
-					<a href="https://www.aproperties.es/aticos-alquiler-valencia">Áticos en alquiler en Valencia</a>
-				</span>				<span data-idvs="735">
-					<a href="https://www.aproperties.es/duplex-alquiler-valencia">Dúplex en alquiler en Valencia</a>
-				</span>				<span data-idvs="740">
-					<a href="https://www.aproperties.es/pisos-exclusivos-alquiler-valencia">Pisos exclusivos en alquiler en Valencia</a>
-				</span>				<span data-idvs="744">
-					<a href="https://www.aproperties.es/duplex-exclusivos-alquiler-valencia">Dúplex exclusivos en alquiler en Valencia</a>
-				</span>				<span data-idvs="750">
-					<a href="https://www.aproperties.es/casas-lujo-alquiler-valencia">Casas y chalets de lujo en alquiler en Valencia</a>
-				</span>				<span data-idvs="752">
-					<a href="https://www.aproperties.es/aticos-lujo-alquiler-valencia">Áticos de lujo en alquiler en Valencia</a>
-				</span>				<span data-idvs="754">
-					<a href="https://www.aproperties.es/pisos-de-alto-standing-en-alquiler-en-valencia">Pisos de alto standing en alquiler en Valencia</a>
-				</span>				<span data-idvs="756">
-					<a href="https://www.aproperties.es/casas-alto-standing-alquiler-valencia">Casas y chalets de alto standing en alquiler en Valencia</a>
-				</span>				<span data-idvs="758">
-					<a href="https://www.aproperties.es/aticos-de-alto-standing-en-alquiler-en-valencia">Áticos de alto standing en alquiler en Valencia</a>
-				</span>				<span data-idvs="1103">
-					<a href="https://www.aproperties.es/propiedades-alquiler-valencia">Propiedades en alquiler  en Valencia</a>
-				</span></div>
-	</div></div>		</div>
+					</div>
 </section>
 <script>
 $(document).ready(function() {
@@ -1556,61 +2128,61 @@ $(document).ready(function() {
                         <div class="virtualSearchesBox__content">
                             <div>
                                 <div class="virtualSearchesBox__title2">aProperties</div>
-                                <ul class="virtualSearchesBox__list"><li class="virtualSearchesBox__listItem"><a href="https://www.aproperties.es/empresa" class="virtualSearchesBox__listItemLink">Empresa</a></li><li class="virtualSearchesBox__listItem"><a href="https://www.aproperties.es/comprar-casa" class="virtualSearchesBox__listItemLink">Comprar</a></li><li class="virtualSearchesBox__listItem"><a href="https://www.aproperties.es/alquilar-piso-casa" class="virtualSearchesBox__listItemLink">Alquilar</a></li><li class="virtualSearchesBox__listItem"><a href="https://www.aproperties.es/vender-alquilar-mi-piso" class="virtualSearchesBox__listItemLink">Vender</a></li><li class="virtualSearchesBox__listItem"><a href="https://www.aproperties.es/obra-nueva" class="virtualSearchesBox__listItemLink">Obra Nueva</a></li>                                            <li class="virtualSearchesBox__listItem">
-                                                <a href="https://www.aoficinas.es/" class="virtualSearchesBox__listItemLink" target="_blank">Oficinas</a>
-                                            </li><li class="virtualSearchesBox__listItem"><a href="https://www.aproperties.es/paso-a-paso" class="virtualSearchesBox__listItemLink">Paso a paso</a></li><li class="virtualSearchesBox__listItem"><a href="https://www.aproperties.es/noticias" class="virtualSearchesBox__listItemLink">Noticias</a></li><li class="virtualSearchesBox__listItem"><a href="https://www.aproperties.es/trabaja-con-nosotros" class="virtualSearchesBox__listItemLink">Trabaja con nosotros</a></li><li class="virtualSearchesBox__listItem"><a href="https://www.aproperties.es/faq" class="virtualSearchesBox__listItemLink">FAQ</a></li>                                            <li class="virtualSearchesBox__listItem">
-                                            <a href="http://www.grupoafinance.com/amagazine" class="virtualSearchesBox__listItemLink" target="_blank">aMagazine</a>
-                                            </li><li class="virtualSearchesBox__listItem"><a href="https://www.aproperties.es/contacto" class="virtualSearchesBox__listItemLink">Contacto</a></li></ul>
+                                <ul class="virtualSearchesBox__list"><li class="virtualSearchesBox__listItem"><a href="/en/company" class="virtualSearchesBox__listItemLink">Company</a></li><li class="virtualSearchesBox__listItem"><a href="/en/homes-for-sale" class="virtualSearchesBox__listItemLink">Buy</a></li><li class="virtualSearchesBox__listItem"><a href="/en/homes-for-rent" class="virtualSearchesBox__listItemLink">Rent</a></li><li class="virtualSearchesBox__listItem"><a href="/en/sell-rent-my-flat" class="virtualSearchesBox__listItemLink">Sell</a></li><li class="virtualSearchesBox__listItem"><a href="/en/new-development" class="virtualSearchesBox__listItemLink">New Developments</a></li>                                            <li class="virtualSearchesBox__listItem">
+                                                <a href="https://www.aoficinas.es/en" class="virtualSearchesBox__listItemLink" target="_blank">Offices</a>
+                                            </li><li class="virtualSearchesBox__listItem"><a href="/en/step-by-step" class="virtualSearchesBox__listItemLink">Step by step</a></li><li class="virtualSearchesBox__listItem"><a href="/en/work-with-us" class="virtualSearchesBox__listItemLink">Work with us</a></li><li class="virtualSearchesBox__listItem"><a href="/en/faq" class="virtualSearchesBox__listItemLink">FAQ</a></li>                                            <li class="virtualSearchesBox__listItem">
+                                            <a href="http://www.grupoafinance.com/en/amagazine" class="virtualSearchesBox__listItemLink" target="_blank">aMagazine</a>
+                                            </li><li class="virtualSearchesBox__listItem"><a href="/en/contact" class="virtualSearchesBox__listItemLink">Contact</a></li></ul>
 
                                                                 <div class="footer__socials">
                                     
 <div class="socials">            <div class="socials__item">
-                <a class="socials__social" href="https://www.facebook.com/apropertiesre" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+                <a class="socials__social" href="https://www.facebook.com/apropertiesre" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
             </div>            <div class="socials__item">
-                <a class="socials__social" href="https://www.youtube.com/channel/UCi_iwLdNA6NFdpiozt3tUKA" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.652 0h1.44l.988 3.702.916-3.702h1.454l-1.665 5.505v3.757h-1.431v-3.757l-1.702-5.505zm6.594 2.373c-1.119 0-1.861.74-1.861 1.835v3.349c0 1.204.629 1.831 1.861 1.831 1.022 0 1.826-.683 1.826-1.831v-3.349c0-1.069-.797-1.835-1.826-1.835zm.531 5.127c0 .372-.19.646-.532.646-.351 0-.554-.287-.554-.646v-3.179c0-.374.172-.651.529-.651.39 0 .557.269.557.651v3.179zm4.729-5.07v5.186c-.155.194-.5.512-.747.512-.271 0-.338-.186-.338-.46v-5.238h-1.27v5.71c0 .675.206 1.22.887 1.22.384 0 .918-.2 1.468-.853v.754h1.27v-6.831h-1.27zm2.203 13.858c-.448 0-.541.315-.541.763v.659h1.069v-.66c.001-.44-.092-.762-.528-.762zm-4.703.04c-.084.043-.167.109-.25.198v4.055c.099.106.194.182.287.229.197.1.485.107.619-.067.07-.092.105-.241.105-.449v-3.359c0-.22-.043-.386-.129-.5-.147-.193-.42-.214-.632-.107zm4.827-5.195c-2.604-.177-11.066-.177-13.666 0-2.814.192-3.146 1.892-3.167 6.367.021 4.467.35 6.175 3.167 6.367 2.6.177 11.062.177 13.666 0 2.814-.192 3.146-1.893 3.167-6.367-.021-4.467-.35-6.175-3.167-6.367zm-12.324 10.686h-1.363v-7.54h-1.41v-1.28h4.182v1.28h-1.41v7.54zm4.846 0h-1.21v-.718c-.223.265-.455.467-.696.605-.652.374-1.547.365-1.547-.955v-5.438h1.209v4.988c0 .262.063.438.322.438.236 0 .564-.303.711-.487v-4.939h1.21v6.506zm4.657-1.348c0 .805-.301 1.431-1.106 1.431-.443 0-.812-.162-1.149-.583v.5h-1.221v-8.82h1.221v2.84c.273-.333.644-.608 1.076-.608.886 0 1.18.749 1.18 1.631v3.609zm4.471-1.752h-2.314v1.228c0 .488.042.91.528.91.511 0 .541-.344.541-.91v-.452h1.245v.489c0 1.253-.538 2.013-1.813 2.013-1.155 0-1.746-.842-1.746-2.013v-2.921c0-1.129.746-1.914 1.837-1.914 1.161 0 1.721.738 1.721 1.914v1.656z"></path></svg></a>
+                <a class="socials__social" href="https://www.youtube.com/channel/UCi_iwLdNA6NFdpiozt3tUKA" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.652 0h1.44l.988 3.702.916-3.702h1.454l-1.665 5.505v3.757h-1.431v-3.757l-1.702-5.505zm6.594 2.373c-1.119 0-1.861.74-1.861 1.835v3.349c0 1.204.629 1.831 1.861 1.831 1.022 0 1.826-.683 1.826-1.831v-3.349c0-1.069-.797-1.835-1.826-1.835zm.531 5.127c0 .372-.19.646-.532.646-.351 0-.554-.287-.554-.646v-3.179c0-.374.172-.651.529-.651.39 0 .557.269.557.651v3.179zm4.729-5.07v5.186c-.155.194-.5.512-.747.512-.271 0-.338-.186-.338-.46v-5.238h-1.27v5.71c0 .675.206 1.22.887 1.22.384 0 .918-.2 1.468-.853v.754h1.27v-6.831h-1.27zm2.203 13.858c-.448 0-.541.315-.541.763v.659h1.069v-.66c.001-.44-.092-.762-.528-.762zm-4.703.04c-.084.043-.167.109-.25.198v4.055c.099.106.194.182.287.229.197.1.485.107.619-.067.07-.092.105-.241.105-.449v-3.359c0-.22-.043-.386-.129-.5-.147-.193-.42-.214-.632-.107zm4.827-5.195c-2.604-.177-11.066-.177-13.666 0-2.814.192-3.146 1.892-3.167 6.367.021 4.467.35 6.175 3.167 6.367 2.6.177 11.062.177 13.666 0 2.814-.192 3.146-1.893 3.167-6.367-.021-4.467-.35-6.175-3.167-6.367zm-12.324 10.686h-1.363v-7.54h-1.41v-1.28h4.182v1.28h-1.41v7.54zm4.846 0h-1.21v-.718c-.223.265-.455.467-.696.605-.652.374-1.547.365-1.547-.955v-5.438h1.209v4.988c0 .262.063.438.322.438.236 0 .564-.303.711-.487v-4.939h1.21v6.506zm4.657-1.348c0 .805-.301 1.431-1.106 1.431-.443 0-.812-.162-1.149-.583v.5h-1.221v-8.82h1.221v2.84c.273-.333.644-.608 1.076-.608.886 0 1.18.749 1.18 1.631v3.609zm4.471-1.752h-2.314v1.228c0 .488.042.91.528.91.511 0 .541-.344.541-.91v-.452h1.245v.489c0 1.253-.538 2.013-1.813 2.013-1.155 0-1.746-.842-1.746-2.013v-2.921c0-1.129.746-1.914 1.837-1.914 1.161 0 1.721.738 1.721 1.914v1.656z"/></svg></a>
             </div>            <div class="socials__item">
-                <a class="socials__social" href="https://www.linkedin.com/company/aproperties?trk=job_view_topcard_company_name" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path></svg></a>
+                <a class="socials__social" href="https://www.linkedin.com/company/aproperties?trk=job_view_topcard_company_name" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></a>
             </div>            <div class="socials__item">
-                <a class="socials__social" href="https://www.instagram.com/aproperties_real_estate/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a>
+                <a class="socials__social" href="https://www.instagram.com/aproperties_real_estate/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
             </div></div>                                </div>
                             </div>
 
                                                             <div>
     <div class="_vs_block">
         <div class="_vs_block__title">
-            <a href="https://www.aproperties.es/barcelona">Barcelona</a>
+            <a href="/en/barcelona">Barcelona</a>
         </div>
-        <ul class="_vs_block__list"><li class="_vs_block__listItem"><a href="https://www.aproperties.es/casas-venta-barcelona">Casas y chalets en venta  en Barcelona</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/pisos-venta-barcelona">Pisos en venta  en Barcelona</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/aticos-venta-barcelona">Áticos en venta en Barcelona</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/duplex-venta-barcelona">Duplex en venta  en Barcelona</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/casas-alquiler-barcelona">Casas y chalets en alquiler  en Barcelona</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/pisos-alquiler-barcelona">Pisos en alquiler en Barcelona</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/aticos-alquiler-barcelona">Áticos en alquiler en Barcelona</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/duplex-alquiler-barcelona">Duplex en alquiler  en Barcelona</a></li>                    <li class="_vs_block__listItem">
-                        <a href="https://www.atemporalbarcelona.es/apartamentos" target="_blank">Apartamentos en alquiler en Barcelona</a>
-                    </li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/obra-nueva-venta-barcelona">Obra nueva en venta en Barcelona</a></li>                        <li class="_vs_block__listItem">
-                            <a href="https://www.aoficinas.es/oficinas-alquiler-barcelona" target="_blank">Oficinas en alquiler en Barcelona</a>
+        <ul class="_vs_block__list"><li class="_vs_block__listItem"><a href="/en/houses-sale-barcelona">Houses for sale  in Barcelona</a></li><li class="_vs_block__listItem"><a href="/en/flats-sale-barcelona">Flats for sale  in Barcelona</a></li><li class="_vs_block__listItem"><a href="/en/penthouses-sale-barcelona">Penthouses for sale in Barcelona</a></li><li class="_vs_block__listItem"><a href="/en/duplex-sale-barcelona">Duplex for sale  in Barcelona</a></li><li class="_vs_block__listItem"><a href="/en/houses-rent-barcelona">Houses for rent  in Barcelona</a></li><li class="_vs_block__listItem"><a href="/en/flats-rent-barcelona">Flats for rent in Barcelona</a></li><li class="_vs_block__listItem"><a href="/en/penthouses-rent-barcelona">Penthouses for rent in Barcelona</a></li><li class="_vs_block__listItem"><a href="/en/duplex-rent-barcelona">Duplex for rent  in Barcelona</a></li>                    <li class="_vs_block__listItem">
+                        <a href="https://www.atemporalbarcelona.es/en/apartments" target="_blank">Apartments for rent in Barcelona</a>
+                    </li><li class="_vs_block__listItem"><a href="/en/new-development-sale-barcelona">New development for sale in Barcelona</a></li>                        <li class="_vs_block__listItem">
+                            <a href="https://www.aoficinas.es/en/offices-rent-barcelona" target="_blank">Offices for rent in Barcelona</a>
                         </li>                        <li class="_vs_block__listItem">
-                            <a href="https://www.aoficinas.es/oficinas-venta-barcelona" target="_blank">Oficinas en venta en Barcelona</a>
+                            <a href="https://www.aoficinas.es/en/offices-sale-barcelona" target="_blank">Offices for sale in Barcelona</a>
                         </li>        </ul>
     </div></div>
                                 <div>
     <div class="_vs_block">
         <div class="_vs_block__title">
-            <a href="https://www.aproperties.es/madrid">Madrid</a>
+            <a href="/en/madrid">Madrid</a>
         </div>
-        <ul class="_vs_block__list"><li class="_vs_block__listItem"><a href="https://www.aproperties.es/casas-venta-madrid">Casas y chalets en venta  en Madrid</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/pisos-venta-madrid">Pisos en venta  en Madrid</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/aticos-venta-madrid">Áticos en venta  en Madrid</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/venta-chalets-madrid">Chalets en venta en Madrid</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/casas-alquiler-madrid">Casas y chalets en alquiler en Madrid</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/pisos-alquiler-madrid">Pisos en alquiler  en Madrid</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/aticos-alquiler-madrid">Áticos en alquiler  en Madrid</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/duplex-alquiler-madrid">Duplex en alquiler  en Madrid</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/obra-nueva-venta-madrid">Obra nueva en venta en Madrid</a></li>                        <li class="_vs_block__listItem">
-                            <a href="https://www.aoficinas.es/oficinas-alquiler-madrid" target="_blank">Oficinas en alquiler en Madrid</a>
+        <ul class="_vs_block__list"><li class="_vs_block__listItem"><a href="/en/houses-sale-madrid">Houses for sale  in Madrid</a></li><li class="_vs_block__listItem"><a href="/en/flats-for-sale-madrid">Flats for sale  in Madrid</a></li><li class="_vs_block__listItem"><a href="/en/penthouses-sale-madrid">Penthouses for sale  in Madrid</a></li><li class="_vs_block__listItem"><a href="/en/detached-house-for-sale-madrid">Detached house for sale in Madrid</a></li><li class="_vs_block__listItem"><a href="/en/houses-rent-madrid">Houses for rent in Madrid</a></li><li class="_vs_block__listItem"><a href="/en/flats-rent-madrid">Flats for rent  in Madrid</a></li><li class="_vs_block__listItem"><a href="/en/penthouses-rent-madrid">Penthouses for rent  in Madrid</a></li><li class="_vs_block__listItem"><a href="/en/duplex-rent-madrid">Duplex for rent  in Madrid</a></li><li class="_vs_block__listItem"><a href="/en/new-development-sale-madrid">New development for sale in Madrid</a></li>                        <li class="_vs_block__listItem">
+                            <a href="https://www.aoficinas.es/en/offices-rent-madrid" target="_blank">Offices for rent in Madrid</a>
                         </li>                        <li class="_vs_block__listItem">
-                            <a href="https://www.aoficinas.es/oficinas-venta-madrid" target="_blank">Oficinas en venta en Madrid</a>
+                            <a href="https://www.aoficinas.es/en/offices-sale-madrid" target="_blank">Offices for sale in Madrid</a>
                         </li>        </ul>
     </div></div>
                                 <div>
     <div class="_vs_block">
         <div class="_vs_block__title">
-            <a href="https://www.aproperties.es/valencia">Valencia</a>
+            <a href="/en/valencia">Valencia</a>
         </div>
-        <ul class="_vs_block__list"><li class="_vs_block__listItem"><a href="https://www.aproperties.es/casas-venta-valencia">Casas y chalets en venta en Valencia</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/pisos-venta-valencia">Pisos en venta en Valencia</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/aticos-venta-valencia">Áticos en venta en Valencia</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/casas-alquiler-valencia">Casas y chalets en alquiler en Valencia</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/pisos-alquiler-valencia">Pisos en alquiler en Valencia</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/aticos-alquiler-valencia">Áticos en alquiler en Valencia</a></li>        </ul>
+        <ul class="_vs_block__list"><li class="_vs_block__listItem"><a href="/en/houses-sale-valencia">Houses for sale in Valencia</a></li><li class="_vs_block__listItem"><a href="/en/flats-for-sale-valencia">Flats for sale in Valencia</a></li><li class="_vs_block__listItem"><a href="/en/penthouses-sale-valencia">Penthouses for sale in Valencia</a></li><li class="_vs_block__listItem"><a href="/en/houses-rent-valencia">Houses for rent in Valencia</a></li><li class="_vs_block__listItem"><a href="/en/flats-for-rent-valencia">Flats for rent in Valencia</a></li><li class="_vs_block__listItem"><a href="/en/penthouses-for-rent-valencia">Penthouses for rent  in Valencia</a></li>        </ul>
     </div>
     <div class="_vs_block">
         <div class="_vs_block__title">
-            <a href="https://www.aproperties.es/mallorca">Mallorca</a>
+            <a href="/en/mallorca">Mallorca</a>
         </div>
-        <ul class="_vs_block__list"><li class="_vs_block__listItem"><a href="https://www.aproperties.es/casas-venta-mallorca">Casas y chalets en venta en Mallorca</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/pisos-venta-mallorca">Pisos en venta en Mallorca</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/aticos-venta-mallorca">Áticos en venta en Mallorca</a></li><li class="_vs_block__listItem"><a href="https://www.aproperties.es/pisos-alquiler-mallorca">Pisos en alquiler en Mallorca</a></li>        </ul>
+        <ul class="_vs_block__list"><li class="_vs_block__listItem"><a href="/en/houses-sale-mallorca">Houses for sale in Mallorca</a></li><li class="_vs_block__listItem"><a href="/en/flats-sale-mallorca">Flats for sale in Mallorca</a></li><li class="_vs_block__listItem"><a href="/en/penthouses-sale-mallorca">Penthouses for sale in Mallorca</a></li><li class="_vs_block__listItem"><a href="/en/flats-rent-mallorca">Flats for rent in Mallorca</a></li>        </ul>
     </div></div>
                              
                         </div>
@@ -1728,45 +2300,45 @@ $(document).ready(function() {
         <ul class="logosFooter__logos">
             <li class="logosFooter__logo logosFooter__logo--afinancegroup">
                 <a target="_blank" href="https://www.grupoafinance.com/">
-                    <img loading="lazy" width="209" height="37" src="./aproperties-search-result_files/logo-grupo-afinance-209-white.png" alt="Grupo aFinance">
+                    <img loading="lazy" width="209" height="37" src="/templates/images/logos/logo-grupo-afinance-209-white.png" alt="Grupo aFinance">
                     <p>www.grupoafinance.com</p>
                 </a>
             </li>
 
             <li class="logosFooter__logo logosFooter__logo--aproerties">
                 <a target="_blank" href="https://www.aproperties.es/">
-                    <img loading="lazy" width="164" height="37" src="./aproperties-search-result_files/logo-aproperties.png" alt="aProperties">
+                    <img loading="lazy" width="164" height="37" src="/templates/images/logos/logo-aproperties.png" alt="aProperties">
                     <p>www.aproperties.es</p>
                     <p>Sales and rentals of retail premises</p>
                 </a>
             </li>
 
             <li class="logosFooter__logo logosFooter__logo--atemporal">
-                <a target="_blank" href="https://www.atemporalbarcelona.es/apartamentos">
-                    <img loading="lazy" width="150" height="37" src="./aproperties-search-result_files/logo-atemporal.png" alt="aTemporal">
+                <a target="_blank" href="https://www.atemporalbarcelona.es/en/apartments">
+                    <img loading="lazy" width="150" height="37" src="/templates/images/logos/logo-atemporal.png" alt="aTemporal">
                     <p>www.atemporalbarcelona.es</p>
                 </a>
             </li>
 
             <li class="logosFooter__logo logosFooter__logo--afinance">
-                <a target="_blank" href="https://www.afinance.es/">
-                    <img loading="lazy" width="137" height="37" src="./aproperties-search-result_files/logo-afinance.png" alt="aFinance">
+                <a target="_blank" href="https://www.afinance.es">
+                    <img loading="lazy" width="137" height="37" src="/templates/images/logos/logo-afinance.png" alt="aFinance">
                     <p>www.afinance.es</p>
                     <p>Financial Services</p>
                 </a>
             </li>
 
             <li class="logosFooter__logo logosFooter__logo--acapital">
-                <a target="_blank" href="https://www.acapitalmanagement.es/">
-                    <img loading="lazy" width="130" height="37" src="./aproperties-search-result_files/logo-acapital.png" alt="aCapital management">
+                <a target="_blank" href="https://www.acapitalmanagement.es">
+                    <img loading="lazy" width="130" height="37" src="/templates/images/logos/logo-acapital.png" alt="aCapital management">
                     <p>www.acapitalmanagement.es</p>
                     <p>Capital management and yield</p>
                 </a>
             </li>
 
             <li class="logosFooter__logo logosFooter__logo--aretail">
-                <a target="_blank" href="https://www.aretail.es/">
-                    <img loading="lazy" width="121" height="37" src="./aproperties-search-result_files/logo-aretail.png" alt="aRetail">
+                <a target="_blank" href="https://www.aretail.es">
+                    <img loading="lazy" width="121" height="37" src="/templates/images/logos/logo-aretail.png" alt="aRetail">
                     <p>www.aretail.es</p>
                     <p>Sales and rental of retail premises</p>
                 </a>
@@ -1788,18 +2360,18 @@ $(document).ready(function() {
             <section class="disclaimersSection">
                 <div class="container">
                     <div class="disclaimers">
-                        <div class="disclaimers__item">Copyright 2021 © aProperties</div>
+                        <div class="disclaimers__item">Copyright 2021 &copy; aProperties</div>
                         <div class="disclaimers__item">
-                            <a href="https://www.aproperties.es/">Inmobiliaria de lujo</a>
+                            <a href="/en">Luxury Real Estate</a>
                         </div>
                         <div class="disclaimers__item">AICAT 4553</div>
                         <div class="disclaimers__item">
-                            <a href="https://www.aproperties.es/nota-legal">Aviso Legal</a>
+                            <a href="/en/legal-notice">Legal Notice</a>
                         </div>
                         <div class="disclaimers__item">
-                            <a href="https://www.aproperties.es/politica-de-cookies">Política de cookies</a>
+                            <a href="/en/cookies-policy">Cookie Policy</a>
                         </div>
-                        <div class="disclaimers__item">Website by <a href="https://www.iestrategic.es/">iEstrategic</a></div>
+                        <div class="disclaimers__item">Website by <a href='https://www.iestrategic.es/'>iEstrategic</a></div>
                     </div>
                 </div>
             </section>
@@ -1809,7 +2381,7 @@ $(document).ready(function() {
 
 
 
-<script type="text/javascript" src="./aproperties-search-result_files/_scripts.js"></script>
+<script type="text/javascript" src="/templates/common/_scripts.js?v=9.64"></script>
 
 
 
@@ -1828,36 +2400,7 @@ $(document).ready(function() {
         
         gtag('event', 'view_item_list', 
         {'items': [
-                    {"id": "AV2109093","name": "Piso en alquiler Ciudad de la justicia ","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":31,"quantity": 1,"price": 850.00},
-                    {"id": "AV2109090","name": "Piso en alquiler de 3 habitaciones en el Mercat Central","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":32,"quantity": 1,"price": 1300.00},
-                    {"id": "AV2109083","name": "Piso de alquiler de una habitación en calle Xàtiva","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":33,"quantity": 1,"price": 600.00},
-                    {"id": "AV2109078","name": "Piso en alquiler en Primado Reig","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":34,"quantity": 1,"price": 750.00},
-                    {"id": "AV2109077","name": "Dúplex en alquiler de cuatro habitaciones en Ciutat Vella","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":35,"quantity": 1,"price": 1750.00},
-                    {"id": "AV2109076","name": "Piso en alquiler de 3 habitaciones en Alameda","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":36,"quantity": 1,"price": 3000.00},
-                    {"id": "AV2010119-1","name": "Ático en alquiler con terraza de 2 habitaciones en Pla del Remei ","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":37,"quantity": 1,"price": 1450.00},
-                    {"id": "AV1807026","name": "Piso en alquiler de 1 habitación con terraza interior en Pla del Remei ","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":38,"quantity": 1,"price": 850.00},
-                    {"id": "AV2109066","name": "Alquiler TEMPORAL de ático de 2 habitaciones con terraza en Ruzafa","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":39,"quantity": 1,"price": 1450.00},
-                    {"id": "AV2109065","name": "Alquiler TEMPORAL  de piso de 1 habitación en Ruzafa","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":40,"quantity": 1,"price": 1150.00},
-                    {"id": "AV2109064","name": "Ático en alquiler de 2 habitaciones en la Xerea con terrazas interiores","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":41,"quantity": 1,"price": 1000.00},
-                    {"id": "AV2109063","name": "Chalet en alquiler con piscina en El Bosque","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":42,"quantity": 1,"price": 4000.00},
-                    {"id": "AV2109061","name": "Piso de alquiler en L´Eixample","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":43,"quantity": 1,"price": 1000.00},
-                    {"id": "AV2109031","name": "Piso en alquiler en Alameda","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":44,"quantity": 1,"price": 2400.00},
-                    {"id": "AV2001016","name": "Piso en alquiler con vistas a Alameda","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":45,"quantity": 1,"price": 2400.00},
-                    {"id": "AV2109059","name": "Piso de alquiler en el Carmen","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":46,"quantity": 1,"price": 1250.00},
-                    {"id": "AV2109058","name": "Piso en alquiler temporal de 1 habitación cerca de la playa","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":47,"quantity": 1,"price": 800.00},
-                    {"id": "AV2109054","name": "Piso en alquiler sin amueblar con parking en Exposició ","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":48,"quantity": 1,"price": 750.00},
-                    {"id": "AV2109056","name": "Piso en alquiler en el bario del Carmen ","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":49,"quantity": 1,"price": 950.00},
-                    {"id": "AV2109053","name": "Alquiler de piso de 4 habitaciones en Ayora","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":50,"quantity": 1,"price": 850.00},
-                    {"id": "AV2109048","name": "Loft en alquiler en Patraix","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":51,"quantity": 1,"price": 750.00},
-                    {"id": "AV2109047","name": "Loft en alquiler de diseño en Patraix","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":52,"quantity": 1,"price": 750.00},
-                    {"id": "AV1803021-1","name": "Piso en alquiler con 4 habitaciones en Sant Francesc","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":53,"quantity": 1,"price": 1300.00},
-                    {"id": "AV2109042","name": "Piso en alquiler de 2 habitaciones con balcón en calle de La Paz","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":54,"quantity": 1,"price": 1500.00},
-                    {"id": "AV2109041-1","name": "Piso en alquiler en L´Eixample","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":55,"quantity": 1,"price": 950.00},
-                    {"id": "AVT2004008-2","name": "Piso para alquiler TEMPORAL en el Cabanyal","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":56,"quantity": 1,"price": 950.00},
-                    {"id": "AV2109039","name": "Piso en alquiler de 2 dormitorios en Benimaclet","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":57,"quantity": 1,"price": 675.00},
-                    {"id": "AV2109033","name": "Piso en alquiler de dos dormitorios junto a Plaza de la Reina","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":58,"quantity": 1,"price": 2000.00},
-                    {"id": "AV2109032","name": "Piso el alquiler reformado junto a Gran Vía","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":59,"quantity": 1,"price": 900.00},
-                    {"id": "AV2109027","name": "Ático en alquiler de 2 habitaciones en Marina Alta ","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":60,"quantity": 1,"price": 1100.00},
+                    {"id": "AV2007103","name": "Study in the Cabañal","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":31,"quantity": 1,"price": 600.00},
                 ]});
         
         
@@ -1931,10 +2474,9 @@ $('a[href^="tel:"]').click(function () {
     
 	</script>    <script type="text/javascript">
         $("#CookiePolicyAccept").click(function () {
-            document.cookie = "CookiePolicyAccept=1; expires=27 Mar 2022 09:46:09 GMT; path=/";
+            document.cookie = "CookiePolicyAccept=1; expires=28 Mar 2022 17:56:28 GMT; path=/";
             $(".CookiePolicyWrapper").slideUp();
         });
     </script>
-
-
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+</BODY>
+</html>

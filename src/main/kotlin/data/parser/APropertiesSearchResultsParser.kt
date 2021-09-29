@@ -94,15 +94,20 @@ internal class APropertiesSearchResultsParser : Parser<PropertySearchResult> {
         }
 
         fun Doc.pagination(): Pagination {
+            val pageUrl = runCatchingOrDefault("") {
+                divWithClass(PAGINATION_CONTAINER) {
+                    findFirst { eachHref.first().dropLast(1) }
+                }
+            }
+
+
             val pageCount = runCatchingOrDefault(0) {
                 liWithClass(PAGINATION_LAST_CLASS) {
                     findFirst { a { findFirst { text.toInt() } } }
                 }
             }
 
-            val pageUrl = divWithClass(PAGINATION_CONTAINER) {
-                findFirst { eachHref.first().dropLast(1) }
-            }
+            if (pageUrl.isEmpty()) return Pagination(pageCount, emptyList())
 
             return Pagination(
                 totalItems = sectionWithClass(PAGE_COUNT) {
@@ -120,23 +125,27 @@ internal class APropertiesSearchResultsParser : Parser<PropertySearchResult> {
         }
 
         fun Doc.items(): List<PropertyItem> {
-            return divWithClass(ROOT_CLASS) {
-                findAll {
-                    map { docElement ->
-                        with(docElement) {
-                            PropertyItem(
-                                propertyUrl = propertyUrl(),
-                                imageUrl = avatarUrl(),
-                                reference = reference(),
-                                price = price(),
-                                title = title(),
-                                location = location(),
-                                description = description(),
-                                surface = surface(),
-                                dormCount = dormCount(),
-                                bathCount = bathCount(),
-                                tag = tag()
-                            )
+            return ulWithClass("properties-list"){
+                findFirst {
+                    divWithClass(ROOT_CLASS) {
+                        findAll {
+                            map { docElement ->
+                                with(docElement) {
+                                    PropertyItem(
+                                        propertyUrl = propertyUrl(),
+                                        imageUrl = avatarUrl(),
+                                        reference = reference(),
+                                        price = price(),
+                                        title = title(),
+                                        location = location(),
+                                        description = description(),
+                                        surface = surface(),
+                                        dormCount = dormCount(),
+                                        bathCount = bathCount(),
+                                        tag = tag()
+                                    )
+                                }
+                            }
                         }
                     }
                 }
