@@ -1,5 +1,7 @@
-package data
+package data.repository
 
+import data.FirestoreDataSource
+import data.WebDataSource
 import data.parser.ParserProxy
 import domain.model.Property
 import domain.model.Property.Type

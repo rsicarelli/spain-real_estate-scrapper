@@ -1,9 +1,9 @@
-package domain.repositories
+package domain.repository
 
-import domain.entity.Property
-import domain.entity.Property.Type
-import domain.valueobjects.PropertyDetail
-import domain.valueobjects.PropertySearchResult
+import domain.model.Property
+import domain.model.Property.Type
+import domain.model.PropertyDetail
+import domain.model.PropertySearchResult
 import kotlinx.coroutines.flow.Flow
 
 interface PropertyRepository {

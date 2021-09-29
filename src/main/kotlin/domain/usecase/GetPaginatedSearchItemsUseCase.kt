@@ -1,9 +1,9 @@
-package domain.usecases
+package domain.usecase
 
-import domain.entity.Property.Type
-import domain.repositories.PropertyRepository
-import domain.valueobjects.PropertyItem
-import domain.valueobjects.PropertySearchResult
+import domain.model.Property.Type
+import domain.repository.PropertyRepository
+import domain.model.PropertyItem
+import domain.model.PropertySearchResult
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collect
@@ -23,6 +23,8 @@ class GetPaginatedSearchItemsUseCase(
             if (initialResults.pagination.pagesUrl.isEmpty()) {
                 emit(initialResults.items)
             } else {
+
+                logger.info { "Getting paginated results. Page size: ${initialResults.pagination.pagesUrl.size}" }
                 val combinedResults = ArrayList(initialResults.items)
                 initialResults.pagination.pagesUrl.forEach { propertyUrl ->
                     propertyRepository.scrapSearchPage(propertyUrl, type)

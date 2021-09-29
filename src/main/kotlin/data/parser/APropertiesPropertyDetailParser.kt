@@ -1,17 +1,17 @@
-package data.parsers
+package data.parser
 
 import app.divWithClass
 import app.liWithClass
 import app.sectionWithClass
 import app.spanWithClass
-import data.parsers.APropertiesPropertyDetailParser.Mapper.characteristics
-import data.parsers.APropertiesPropertyDetailParser.Mapper.description
-import data.parsers.APropertiesPropertyDetailParser.Mapper.galleryImages
-import data.parsers.APropertiesPropertyDetailParser.Mapper.latLng
-import data.parsers.APropertiesPropertyDetailParser.Mapper.pdfUrl
-import data.parsers.APropertiesPropertyDetailParser.Mapper.reference
-import data.parsers.APropertiesPropertyDetailParser.Mapper.videoUrl
-import domain.valueobjects.PropertyDetail
+import data.parser.APropertiesPropertyDetailParser.Mapper.characteristics
+import data.parser.APropertiesPropertyDetailParser.Mapper.description
+import data.parser.APropertiesPropertyDetailParser.Mapper.galleryImages
+import data.parser.APropertiesPropertyDetailParser.Mapper.latLng
+import data.parser.APropertiesPropertyDetailParser.Mapper.pdfUrl
+import data.parser.APropertiesPropertyDetailParser.Mapper.reference
+import data.parser.APropertiesPropertyDetailParser.Mapper.videoUrl
+import domain.model.PropertyDetail
 import it.skrape.selects.Doc
 import it.skrape.selects.eachHref
 import it.skrape.selects.html5.a

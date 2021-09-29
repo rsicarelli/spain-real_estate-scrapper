@@ -1,4 +1,4 @@
-package data.parsers
+package data.parser
 
 import it.skrape.selects.Doc
 

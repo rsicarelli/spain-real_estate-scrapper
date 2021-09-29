@@ -1,9 +1,9 @@
-package domain.usecases
+package domain.usecase
 
-import domain.entity.Property
-import domain.entity.Property.Type
-import domain.repositories.PropertyRepository
-import domain.valueobjects.PropertyItem
+import domain.model.Property
+import domain.model.Property.Type
+import domain.repository.PropertyRepository
+import domain.model.PropertyItem
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.*
 import mu.KotlinLogging
@@ -16,8 +16,8 @@ class GetPropertyUseCase(
     private val propertyRepository: PropertyRepository
 ) {
     suspend operator fun invoke(request: Request): Flow<List<Property>> {
-        return flow {
             val (propertyItems, type) = request
+        return flow {
             val properties = mutableListOf<Property>()
             val failures = mutableListOf<PropertyItem>()
 

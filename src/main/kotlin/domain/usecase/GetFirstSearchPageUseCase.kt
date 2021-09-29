@@ -1,8 +1,8 @@
-package domain.usecases
+package domain.usecase
 
-import domain.entity.Property.Type
-import domain.repositories.PropertyRepository
-import domain.valueobjects.PropertySearchResult
+import domain.model.Property.Type
+import domain.repository.PropertyRepository
+import domain.model.PropertySearchResult
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.onEach
 import mu.KotlinLogging

@@ -1,15 +1,22 @@
-package app
+package domain.usecase
 
 import domain.model.Property.Type.APROPERTIES
 import domain.model.Property.Type.ENGELS
-import domain.usecase.ScrapRealEstateUseCase
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.launch
 
 class RentalPropertiesService(
     private val scrapRealEstate: ScrapRealEstateUseCase
 ) {
+
+    private val scope = CoroutineScope(Dispatchers.Default)
+
     suspend operator fun invoke() {
-        scrapRealEstate.invoke(ScrapRealEstateUseCase.Request(APROPERTIES_DEFAULT_URL, APROPERTIES))
-        scrapRealEstate.invoke(ScrapRealEstateUseCase.Request(ENGEL_DEFAULT_URL, ENGELS))
+        scrapRealEstate.invoke(ScrapRealEstateUseCase.Request(APROPERTIES_DEFAULT_URL, APROPERTIES)).collect()
+        scrapRealEstate.invoke(ScrapRealEstateUseCase.Request(ENGEL_DEFAULT_URL, ENGELS)).collect()
     }
 
     companion object {

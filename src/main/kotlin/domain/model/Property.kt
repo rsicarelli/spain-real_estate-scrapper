@@ -1,7 +1,4 @@
-package domain.entity
-
-import domain.valueobjects.PropertyDetail
-import domain.valueobjects.PropertyItem
+package domain.model
 
 data class Property(
     val reference: String,

@@ -1,14 +1,13 @@
-package data.parsers
+package data.parser
 
 import app.*
-import data.parsers.EngelSearchResultsParser.Mapper.items
-import data.parsers.EngelSearchResultsParser.Mapper.pagination
-import domain.valueobjects.Pagination
-import domain.valueobjects.PropertyItem
-import domain.valueobjects.PropertySearchResult
+import data.parser.EngelSearchResultsParser.Mapper.items
+import data.parser.EngelSearchResultsParser.Mapper.pagination
+import domain.model.Pagination
+import domain.model.PropertyItem
+import domain.model.PropertySearchResult
 import it.skrape.selects.Doc
 import it.skrape.selects.DocElement
-import it.skrape.selects.eachHref
 import it.skrape.selects.html5.div
 
 const val ENGEL_SEARCH_RESULTS_PARSER_QUALIFIER = "EngelSearchResultsParser"

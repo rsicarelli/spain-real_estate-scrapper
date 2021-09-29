@@ -1,8 +1,8 @@
-package data.parsers
+package data.parser
 
-import domain.entity.Property.Type
-import domain.valueobjects.PropertyDetail
-import domain.valueobjects.PropertySearchResult
+import domain.model.Property.Type
+import domain.model.PropertyDetail
+import domain.model.PropertySearchResult
 import it.skrape.selects.Doc
 
 interface ParserProxy {

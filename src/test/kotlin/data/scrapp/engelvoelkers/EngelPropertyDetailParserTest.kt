@@ -1,5 +1,6 @@
 package data.scrapp.engelvoelkers
 
+import data.parser.EngelPropertyDetailParser
 import org.junit.jupiter.api.Test
 import utils.extractAuthority
 import utils.fixtures.Engel.badPropertyDetailMissing

@@ -1,13 +1,13 @@
-package data.parsers
+package data.parser
 
 import app.*
-import data.parsers.EngelPropertyDetailParser.Mapper.characteristics
-import data.parsers.EngelPropertyDetailParser.Mapper.exposeeDetail
-import data.parsers.EngelPropertyDetailParser.Mapper.fullDescription
-import data.parsers.EngelPropertyDetailParser.Mapper.locationDescription
-import data.parsers.EngelPropertyDetailParser.Mapper.photosGalleryUrls
-import data.parsers.EngelPropertyDetailParser.Mapper.reference
-import domain.valueobjects.PropertyDetail
+import data.parser.EngelPropertyDetailParser.Mapper.characteristics
+import data.parser.EngelPropertyDetailParser.Mapper.exposeeDetail
+import data.parser.EngelPropertyDetailParser.Mapper.fullDescription
+import data.parser.EngelPropertyDetailParser.Mapper.locationDescription
+import data.parser.EngelPropertyDetailParser.Mapper.photosGalleryUrls
+import data.parser.EngelPropertyDetailParser.Mapper.reference
+import domain.model.PropertyDetail
 import it.skrape.selects.Doc
 import it.skrape.selects.DocElement
 import it.skrape.selects.eachHref

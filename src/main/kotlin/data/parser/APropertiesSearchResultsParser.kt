@@ -1,11 +1,11 @@
-package data.parsers
+package data.parser
 
 import app.*
-import data.parsers.APropertiesSearchResultsParser.Mapper.items
-import data.parsers.APropertiesSearchResultsParser.Mapper.pagination
-import domain.valueobjects.Pagination
-import domain.valueobjects.PropertyItem
-import domain.valueobjects.PropertySearchResult
+import data.parser.APropertiesSearchResultsParser.Mapper.items
+import data.parser.APropertiesSearchResultsParser.Mapper.pagination
+import domain.model.Pagination
+import domain.model.PropertyItem
+import domain.model.PropertySearchResult
 import it.skrape.selects.Doc
 import it.skrape.selects.DocElement
 import it.skrape.selects.ElementNotFoundException

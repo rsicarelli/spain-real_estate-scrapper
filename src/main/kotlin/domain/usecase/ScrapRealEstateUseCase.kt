@@ -1,11 +1,9 @@
-package domain.usecases
+package domain.usecase
 
-import domain.entity.Property.Type
+import domain.model.Property.Type
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.FlowPreview
-import kotlinx.coroutines.flow.flatMapConcat
-import kotlinx.coroutines.flow.flowOn
-import kotlinx.coroutines.flow.onCompletion
+import kotlinx.coroutines.flow.*
 import mu.KotlinLogging
 
 private val logger = KotlinLogging.logger("ScrapRealEstateUseCase")
@@ -18,23 +16,21 @@ class ScrapRealEstateUseCase(
     private val toggleAvailability: TogglePropertyAvailabilityUseCase
 ) {
     @OptIn(FlowPreview::class)
-    suspend operator fun invoke(request: Request) {
+    suspend operator fun invoke(request: Request): Flow<Unit> {
         val (url, type) = request
 
-        getFirstResults.invoke(GetFirstSearchPageUseCase.Request(url, type))
+        return getFirstResults.invoke(GetFirstSearchPageUseCase.Request(url, type))
             .flatMapConcat { getPaginatedSearchItems(GetPaginatedSearchItemsUseCase.Request(it, type)) }
             .flatMapConcat { getProperties(GetPropertyUseCase.Request(it, type)) }
             .flatMapConcat { saveProperties.invoke(SavePropertiesUseCase.Request(it, type)) }
             .flatMapConcat { toggleAvailability.invoke(TogglePropertyAvailabilityUseCase.Request(it, type)) }
+            .catch { logger.error { it } }
             .flowOn(Dispatchers.IO)
-            .onCompletion { logger.info { "Done scrapping ${type.tag}" } }
     }
 
     data class Request(
         val url: String,
         val type: Type
     )
-
-
 
 }

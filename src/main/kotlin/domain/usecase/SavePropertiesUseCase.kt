@@ -1,8 +1,8 @@
-package domain.usecases
+package domain.usecase
 
-import domain.entity.Property
-import domain.entity.Property.Type
-import domain.repositories.PropertyRepository
+import domain.model.Property
+import domain.model.Property.Type
+import domain.repository.PropertyRepository
 import kotlinx.coroutines.flow.Flow
 
 class SavePropertiesUseCase(

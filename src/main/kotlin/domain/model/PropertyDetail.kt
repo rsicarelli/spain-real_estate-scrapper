@@ -1,4 +1,4 @@
-package domain.valueobjects
+package domain.model
 
 data class PropertyDetail(
     val reference: String,
