@@ -1,51 +1,28 @@
-package data.scrapp.engelvoelkers
+package data.parsers
 
 import app.*
-import data.scrapp.Parser
-import data.scrapp.engelvoelkers.EngelSearchResultsParser.Mapper.bathCount
-import data.scrapp.engelvoelkers.EngelSearchResultsParser.Mapper.dormCount
-import data.scrapp.engelvoelkers.EngelSearchResultsParser.Mapper.imageUrl
-import data.scrapp.engelvoelkers.EngelSearchResultsParser.Mapper.location
-import data.scrapp.engelvoelkers.EngelSearchResultsParser.Mapper.price
-import data.scrapp.engelvoelkers.EngelSearchResultsParser.Mapper.propertyUrl
-import data.scrapp.engelvoelkers.EngelSearchResultsParser.Mapper.reference
-import data.scrapp.engelvoelkers.EngelSearchResultsParser.Mapper.searchResults
-import data.scrapp.engelvoelkers.EngelSearchResultsParser.Mapper.surface
-import data.scrapp.engelvoelkers.EngelSearchResultsParser.Mapper.tag
-import data.scrapp.engelvoelkers.EngelSearchResultsParser.Mapper.title
+import data.parsers.EngelSearchResultsParser.Mapper.items
+import data.parsers.EngelSearchResultsParser.Mapper.pagination
+import domain.valueobjects.Pagination
+import domain.valueobjects.PropertyItem
 import domain.valueobjects.PropertySearchResult
 import it.skrape.selects.Doc
 import it.skrape.selects.DocElement
+import it.skrape.selects.eachHref
 import it.skrape.selects.html5.div
 
 const val ENGEL_SEARCH_RESULTS_PARSER_QUALIFIER = "EngelSearchResultsParser"
 
-internal class EngelSearchResultsParser : Parser<List<PropertySearchResult>> {
-    override fun parse(document: Doc): List<PropertySearchResult> {
-        return document.searchResults { docElements ->
-            docElements.filter { it.reference().isNotEmpty() }
-                .map { docElement ->
-                    with(docElement) {
-                        PropertySearchResult(
-                            reference = reference(),
-                            price = price(),
-                            title = title(),
-                            location = location(),
-                            surface = surface(),
-                            dormCount = dormCount(),
-                            bathCount = bathCount(),
-                            description = "",
-                            tag = tag(),
-                            propertyUrl = propertyUrl(),
-                            imageUrl = imageUrl()
-                        )
-                    }
-                }
-        }
+internal class EngelSearchResultsParser : Parser<PropertySearchResult> {
+    override fun parse(document: Doc): PropertySearchResult {
+        return PropertySearchResult(
+            pagination = document.pagination(),
+            items = document.items()
+        )
     }
 
     private object Mapper {
-        fun Doc.searchResults(action: (List<DocElement>) -> List<PropertySearchResult>) =
+        fun Doc.searchResults(action: (List<DocElement>) -> List<PropertyItem>) =
             divWithClass(ROOT_CLASS) {
                 findAll {
                     return@findAll action(this)
@@ -127,6 +104,67 @@ internal class EngelSearchResultsParser : Parser<List<PropertySearchResult>> {
             }
         }
 
+        fun Doc.totalItems() = h1WithClass(PAGINATION_LAST_CLASS) { findFirst { text.convertToInt() } }
+
+        fun Doc.pageUrl() = divWithClass(PAGINATION_CONTAINER) {
+            findFirst {
+                liWithClass(PAGINATION_ITEM) {
+                    findFirst { eachHref.first() }
+                }
+            }
+        }
+
+        /*
+        * First page contains 18 items, being 2 of them promotional banners
+        * Pagination should iterate adding 18 items in the page index
+        * */
+        fun Doc.pagination(): Pagination {
+            val totalItems = totalItems()
+            val pageUrl = pageUrl()
+
+            var pageIndex = 16
+            val pageIndexToken = "startIndex=0"
+
+            val pages = mutableListOf(
+                pageUrl.replace(pageIndexToken, "startIndex=$pageIndex")
+            )
+
+            while (totalItems - pageIndex >= 18) {
+                pageIndex += 18
+                val url = pageUrl.replace(pageIndexToken, "startIndex=$pageIndex")
+                pages.add(url)
+
+            }
+            return Pagination(
+                totalItems = totalItems,
+                pagesUrl = pages
+            )
+        }
+
+        fun Doc.items(): List<PropertyItem> {
+            return searchResults { docElements ->
+                docElements
+                    .filter { it.reference().isNotEmpty() }
+                    .map { docElement ->
+                        with(docElement) {
+                            PropertyItem(
+                                reference = reference(),
+                                price = price(),
+                                title = title(),
+                                location = location(),
+                                surface = surface(),
+                                dormCount = dormCount(),
+                                bathCount = bathCount(),
+                                description = "",
+                                tag = tag(),
+                                propertyUrl = propertyUrl(),
+                                imageUrl = imageUrl()
+                            )
+                        }
+                    }
+            }
+        }
+
         private const val ROOT_CLASS = "col-lg-4"
         private const val PRICE = "ev-teaser-price"
         private const val FIELD_VALUE = "ev-value"
@@ -137,6 +175,9 @@ internal class EngelSearchResultsParser : Parser<List<PropertySearchResult>> {
         private const val TAG = "ev-new-profile"
         private const val PROPERTY_URL = "ev-property-container"
         private const val IMAGE = "slide"
+        private const val PAGINATION_LAST_CLASS = "ev-search-result-title"
+        private const val PAGINATION_CONTAINER = "ev-pager"
+        private const val PAGINATION_ITEM = "ev-pager-item"
     }
 
     companion object {

@@ -1,7 +1,7 @@
 package domain.entity
 
 import domain.valueobjects.PropertyDetail
-import domain.valueobjects.PropertySearchResult
+import domain.valueobjects.PropertyItem
 
 data class Property(
     val reference: String,
@@ -69,7 +69,7 @@ data class Property(
     }
 
     companion object {
-        fun combine(propertySearchResult: PropertySearchResult, propertyDetail: PropertyDetail) =
+        fun combine(propertySearchResult: PropertyItem, propertyDetail: PropertyDetail) =
             Property(
                 reference = propertySearchResult.reference,
                 price = propertySearchResult.price,
@@ -114,6 +114,10 @@ data class Property(
                 pdfUrl = data["pdfUrl"] as String? ?: "",
                 locationDescription = data["locationDescription"] as String? ?: ""
             )
+    }
 
+    sealed class Type(val tag: String) {
+        object APROPERTIES : Type("aProperties")
+        object ENGELS : Type("engels")
     }
 }

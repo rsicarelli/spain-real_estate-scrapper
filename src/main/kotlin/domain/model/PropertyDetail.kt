@@ -10,14 +10,4 @@ data class PropertyDetail(
     val lat: Double?,
     val lng: Double?,
     val pdfUrl: String?
-) {
-
-    companion object {
-        fun imagesFullPath(images: List<String>): List<String> {
-            return images.map {
-                "https://www.aproperties.es$it"
-            }
-        }
-    }
-
-}
+)

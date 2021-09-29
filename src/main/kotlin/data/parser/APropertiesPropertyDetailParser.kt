@@ -1,17 +1,18 @@
-package data.scrapp.aproperties
+package data.parsers
 
-import app.*
-import data.scrapp.Parser
-import data.scrapp.aproperties.APropertiesPropertyDetailParser.Mapper.characteristics
-import data.scrapp.aproperties.APropertiesPropertyDetailParser.Mapper.description
-import data.scrapp.aproperties.APropertiesPropertyDetailParser.Mapper.galleryImages
-import data.scrapp.aproperties.APropertiesPropertyDetailParser.Mapper.latLng
-import data.scrapp.aproperties.APropertiesPropertyDetailParser.Mapper.pdfUrl
-import data.scrapp.aproperties.APropertiesPropertyDetailParser.Mapper.reference
-import data.scrapp.aproperties.APropertiesPropertyDetailParser.Mapper.videoUrl
+import app.divWithClass
+import app.liWithClass
+import app.sectionWithClass
+import app.spanWithClass
+import data.parsers.APropertiesPropertyDetailParser.Mapper.characteristics
+import data.parsers.APropertiesPropertyDetailParser.Mapper.description
+import data.parsers.APropertiesPropertyDetailParser.Mapper.galleryImages
+import data.parsers.APropertiesPropertyDetailParser.Mapper.latLng
+import data.parsers.APropertiesPropertyDetailParser.Mapper.pdfUrl
+import data.parsers.APropertiesPropertyDetailParser.Mapper.reference
+import data.parsers.APropertiesPropertyDetailParser.Mapper.videoUrl
 import domain.valueobjects.PropertyDetail
 import it.skrape.selects.Doc
-import it.skrape.selects.eachAttribute
 import it.skrape.selects.eachHref
 import it.skrape.selects.html5.a
 import it.skrape.selects.text
@@ -58,7 +59,7 @@ internal class APropertiesPropertyDetailParser : Parser<PropertyDetail> {
                     findAll { eachHref }
                 }
             }
-        }.let { PropertyDetail.imagesFullPath(it) }
+        }.map { "https://www.aproperties.es$it" }
 
         fun Doc.latLng() = this.entireDocAsString()
             .substringAfter("var latlng = new google.maps.LatLng(")
