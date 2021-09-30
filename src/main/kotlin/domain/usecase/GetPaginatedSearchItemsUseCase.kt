@@ -23,7 +23,6 @@ class GetPaginatedSearchItemsUseCase(
             if (initialResults.pagination.pagesUrl.isEmpty()) {
                 emit(initialResults.items)
             } else {
-
                 logger.info { "Getting paginated results. Page size: ${initialResults.pagination.pagesUrl.size}" }
                 val combinedResults = ArrayList(initialResults.items)
                 initialResults.pagination.pagesUrl.forEach { propertyUrl ->

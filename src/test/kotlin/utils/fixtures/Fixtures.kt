@@ -1,8 +1,25 @@
 package utils.fixtures
 
-import domain.model.Mapper
-import domain.model.Property
-import domain.model.toTag
+import domain.model.*
+import utils.fixtures.EngelFixture.Fixtures.defaultSearchResults
+
+val emptyPagination = Pagination(0, emptyList())
+
+val searchResultWithNoPagination = PropertySearchResult(
+    pagination = emptyPagination,
+    items = defaultSearchResults.items
+)
+
+private val multipliedItems = mutableListOf<PropertyItem>().apply {
+    repeat(defaultSearchResults.pagination.pagesUrl.size + 1) {
+        addAll(defaultSearchResults.items)
+    }
+}
+
+val searchResultsWithPagination = Pair(
+    defaultSearchResults,
+    multipliedItems
+)
 
 val defaultProperty = Property(
     reference = "a reference",
