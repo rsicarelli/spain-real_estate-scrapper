@@ -103,12 +103,20 @@ internal class EngelSearchResultsParser : Parser<PropertySearchResult> {
             }
         }
 
-        fun Doc.totalItems() = h1WithClass(PAGINATION_LAST_CLASS) { findFirst { text.convertToInt() } }
+        fun Doc.totalItems() = runCatchingOrDefault(0) {
+            h1WithClass(PAGINATION_LAST_CLASS) {
+                findFirst {
+                    text.replaceBefore("has", "").convertToInt()
+                }
+            }
+        }
 
-        fun Doc.pageUrl() = divWithClass(PAGINATION_CONTAINER) {
-            findFirst {
-                liWithClass(PAGINATION_ITEM) {
-                    findFirst { eachHref.first() }
+        fun Doc.pageUrl() = runCatchingOrDefault("") {
+            divWithClass(PAGINATION_CONTAINER) {
+                findFirst {
+                    liWithClass(PAGINATION_ITEM) {
+                        findFirst { eachHref.first() }
+                    }
                 }
             }
         }
@@ -121,6 +129,9 @@ internal class EngelSearchResultsParser : Parser<PropertySearchResult> {
             val totalItems = totalItems()
             val pageUrl = pageUrl()
 
+            if (pageUrl.isEmpty()) {
+                return Pagination(totalItems, emptyList())
+            }
             var pageIndex = 16
             val pageIndexToken = "startIndex=0"
 
