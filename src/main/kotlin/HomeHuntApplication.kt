@@ -1,6 +1,6 @@
 import app.AppInitializer
 import di.appModules
-import domain.usecase.RentalPropertiesService
+import domain.service.RentalPropertiesService
 import kotlinx.coroutines.runBlocking
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject

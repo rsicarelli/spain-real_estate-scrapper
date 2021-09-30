@@ -1,4 +1,4 @@
-package data
+package data.datasource
 
 import it.skrape.core.document
 import it.skrape.fetcher.AsyncFetcher

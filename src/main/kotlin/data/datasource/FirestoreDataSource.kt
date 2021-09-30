@@ -1,13 +1,13 @@
-package data
+package data.datasource
 
 import com.google.api.core.ApiFuture
 import com.google.cloud.firestore.DocumentReference
 import com.google.cloud.firestore.Firestore
 import com.google.cloud.firestore.WriteBatch
 import com.google.cloud.firestore.WriteResult
-import data.FirestoreDataSourceImpl.FirestoreMap.IS_ACTIVE
-import data.FirestoreDataSourceImpl.FirestoreMap.LISTINGS_DOC
-import data.FirestoreDataSourceImpl.FirestoreMap.PROPERTY_COLLECTION
+import data.datasource.FirestoreDataSourceImpl.FirestoreMap.IS_ACTIVE
+import data.datasource.FirestoreDataSourceImpl.FirestoreMap.LISTINGS_DOC
+import data.datasource.FirestoreDataSourceImpl.FirestoreMap.PROPERTY_COLLECTION
 import domain.model.Property
 import domain.model.Property.Type
 import kotlinx.coroutines.Dispatchers
@@ -96,7 +96,7 @@ class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
 
     }.flowOn(Dispatchers.IO)
 
-    object FirestoreMap {
+    private object FirestoreMap {
         const val PROPERTY_COLLECTION = "properties"
         const val LISTINGS_DOC = "listings"
         const val IS_ACTIVE = "isActive"

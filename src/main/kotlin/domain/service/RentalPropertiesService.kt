@@ -1,12 +1,11 @@
-package domain.usecase
+package domain.service
 
 import domain.model.Property.Type.APROPERTIES
 import domain.model.Property.Type.ENGELS
+import domain.usecase.ScrapRealEstateUseCase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.launch
 
 class RentalPropertiesService(
     private val scrapRealEstate: ScrapRealEstateUseCase

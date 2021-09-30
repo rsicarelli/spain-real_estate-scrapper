@@ -1,9 +1,12 @@
 package di
 
 import app.AppInitializer
-import domain.usecase.RentalPropertiesService
+import domain.service.RentalPropertiesService
 import com.google.firebase.cloud.FirestoreClient
-import data.*
+import data.datasource.FirestoreDataSource
+import data.datasource.FirestoreDataSourceImpl
+import data.datasource.WebDataSource
+import data.datasource.WebDataSourceImpl
 import data.parser.*
 import data.repository.PropertyRepositoryImpl
 import domain.repository.PropertyRepository
