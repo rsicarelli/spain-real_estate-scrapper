@@ -107,15 +107,21 @@ internal class APropertiesSearchResultsParser : Parser<PropertySearchResult> {
                 }
             }
 
-            if (pageUrl.isEmpty()) return Pagination(pageCount, emptyList())
 
-            return Pagination(
-                totalItems = sectionWithClass(PAGE_COUNT) {
+            val totalItems = runCatchingOrDefault(0) {
+                sectionWithClass(PAGE_COUNT) {
                     findFirst {
                         h2 { findFirst { text.convertToInt() } }
                     }
-                },
+                }
+            }
+
+            if (pageUrl.isEmpty()) return Pagination(totalItems, emptyList())
+
+            return Pagination(
+                totalItems = totalItems,
                 pagesUrl = mutableListOf<String>().apply {
+                    if (pageUrl.isEmpty()) return@apply
                     //Drop first page
                     for (i in 2..pageCount) {
                         add("https://www.aproperties.es$pageUrl$i")
@@ -125,7 +131,7 @@ internal class APropertiesSearchResultsParser : Parser<PropertySearchResult> {
         }
 
         fun Doc.items(): List<PropertyItem> {
-            return ulWithClass("properties-list"){
+            return ulWithClass("properties-list") {
                 findFirst {
                     divWithClass(ROOT_CLASS) {
                         findAll {

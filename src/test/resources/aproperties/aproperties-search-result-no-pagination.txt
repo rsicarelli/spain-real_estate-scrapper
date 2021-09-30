@@ -16,7 +16,7 @@ gtag('config', 'AW-858563631');
 </script>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<TITLE>Rent properties in Valencia</TITLE>
+<TITLE>Rent properties in El Cabañal - El Grau</TITLE>
 <META name="description" content="Properties. You may also search properties by features like swimming pool, terrace, fireplace or garage.">
 <META name="keywords" content="">
 <meta name="resource-type" content="document" />
@@ -459,8 +459,8 @@ s.parentNode.insertBefore(b, s);})();
 
 		<section class="top-results title">
 			<div class="title right" style="margin-bottom: 10px;">
-				<h1>Homes for rent in  Valencia</h1>
-<h2>154  for rent in  Valencia</h2>			</div>
+				<h1>Homes for rent in  El Cabañal - El Grau</h1>
+<h2>11  for rent in  El Cabañal - El Grau</h2>			</div>
 		</section>
 
 		<div class="search-container">
@@ -677,7 +677,7 @@ ul.mod-select-pre {
 
             <div class="add-bottom-2 add-bottom-2--location">
                 <div id="selectlook-loc" name="selectlook-loc">
-                    <span>Valencia</span>
+                    <span>El Cabañal - El Grau</span>
                 </div>
                 <ul id="checkboxlook-loc" name="checkboxlook-loc">
                                                                                         <li type="checkbox" data-id="1" data-group="4,8,17,20" data-loc="1"
@@ -786,7 +786,7 @@ ul.mod-select-pre {
                             class="                            "
                             >Ciudad de las Ciencias</li>
                                                                                             <li type="checkbox" data-id="41" data-group="161" data-loc="42"
-                            class="                            "
+                            class=" selected                             "
                             >El Cabañal - El Grau</li>
                                                                                             <li type="checkbox" data-id="42" data-group="162,163" data-loc="42"
                             class="                            "
@@ -813,7 +813,7 @@ ul.mod-select-pre {
                             class="                            hidden"
                             >Sant Andreu</li>
                                                                                                                             
-                                            <input id="group" type="hidden" name="group" value="">
+                                            <input id="group" type="hidden" name="group" value="41">
                     
                 </ul>
 
@@ -913,46 +913,8 @@ ul.mod-select-pre {
                 <input id="dis" type="hidden" name="dis" value="">
                 <ul id="checkboxlook" name="checkboxlook">
 
-                                                                                                                                                                        <li type="checkbox" data-loc="42" data-dis="151" class="" />Alfahuir</li>
-                                                                                                                                                                                <li type="checkbox" data-loc="42" data-dis="131" class="" />Arrancapins</li>
-                                                                                                                                                                                <li type="checkbox" data-loc="42" data-dis="144" class="" />Ayora</li>
-                                                                                                                        <li type="checkbox" data-loc="42" data-dis="154" class="" />Benicalap</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="152" class="" />Benimaclet</li>
-                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="132" class="" />Botánico</li>
-                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="155" class="" />Campanar</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li type="checkbox" data-loc="42" data-dis="159" class="" />Ciudad de la Justicia</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="160" class="" />Ciudad de las Ciencias - Penya Roja</li>
-                                                                                            <li type="checkbox" data-loc="42" data-dis="148" class="" />Ciutat Jardí</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="143" class="" />Ciutat Universitaria</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li type="checkbox" data-loc="42" data-dis="161" class="" />El Cabañal - El Grau</li>
-                                                                                                                        <li type="checkbox" data-loc="42" data-dis="122" class="" />El Carme</li>
-                                                                                                                                                                                <li type="checkbox" data-loc="42" data-dis="123" class="" />El Mercat</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="124" class="" />El Pilar</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                <li type="checkbox" data-loc="42" data-dis="136" class="" />En Corts</li>
-                                                                                                                        <li type="checkbox" data-loc="42" data-dis="140" class="" />Exposició</li>
-                                                                                                                                                                                                                                                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="129" class="" />Gran Vía</li>
-                                                                                                                                                                                                            <li type="checkbox" data-loc="42" data-dis="141" class="" />Jaume Roig</li>
-                                                                                            <li type="checkbox" data-loc="42" data-dis="139" class="" />Jesús</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="133" class="" />La Petxina</li>
-                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="134" class="" />La Roqueta</li>
-                                                                                                                                                                                <li type="checkbox" data-loc="42" data-dis="125" class="" />La Seu</li>
-                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="126" class="" />La Xerea</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="145" class="" />La creu del Grau</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li type="checkbox" data-loc="42" data-dis="162" class="" />Malvarrosa</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="147" class="" />Marxalenes</li>
-                                                                                                                                                                                                            <li type="checkbox" data-loc="42" data-dis="142" class="" />Mestalla</li>
-                                                                                                                                                                                                                                                                                                <li type="checkbox" data-loc="42" data-dis="135" class="" />Monteolivete</li>
-                                                                                                                                                                                                            <li type="checkbox" data-loc="42" data-dis="158" class="" />Nou Campanar</li>
-                                                                                                                                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="163" class="" />Patacona</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="138" class="" />Patraix</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="178" class="" />Patraix - Vara de Quart</li>
-                                                                                                                        <li type="checkbox" data-loc="42" data-dis="128" class="" />Pla del remei</li>
-                                                                                                                                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="153" class="" />Rascanya</li>
-                                                                                                                                                    <li type="checkbox" data-loc="42" data-dis="130" class="" />Ruzafa</li>
-                                                                <li type="checkbox" data-loc="42" data-dis="127" class="" />San Francesc</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                            <li type="checkbox" data-loc="42" data-dis="157" class="" />Sant Pau</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li type="checkbox" data-loc="42" data-dis="177" class="" />Valterna</li>
-                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li type="checkbox" data-loc="42" data-dis="161" class="" />El Cabañal - El Grau</li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
                 </ul>
             </div>
             
@@ -1045,7 +1007,7 @@ ul.mod-select-pre {
                     <option value="700" >700 €</option>
                     <option value="800" >800 €</option>
                     <option value="1000" >1.000 €</option>
-                    <option value="1250" >1.250 €</option>
+                    <option value="1250" selected>1.250 €</option>
                     <option value="1500" >1.500 €</option>
                     <option value="1750" >1.750 €</option>
                     <option value="2000" >2.000 €</option>
@@ -1424,192 +1386,1241 @@ Url = {
 
 				<div class="properties-results fotos">
 						
-	                   <ul class="properties-list">
-                        <div class='propertyBlock col-third'>
-                            
-                            <div class=''>
-                                <a href='/en/valencia/exposicio/av2109076-spectacular-stately-home-in-the-alameda-area'>
-                                    <div class='propertyBlock__image _imgTagBg'>
-                                        <img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/31723/31723_16321439854418.jpg&w=320&h=240' alt='Flat for rent'>
-                                        
-                                    </div>
-                                    <div class='propertyBlock__info'>
-                                        <div class='propertyBlock__infoTop'>
-                                            <div class='propertyBlock__cols'>
-                                                <div class='propertyBlock__col'>
-                                                    <span class='propertyBlock__reference'>AV2109076</span>
-                                                </div>
-                                                <div class='propertyBlock__col'>
-                                                    <div class='propertyBlock__priceContainer'>
-                                                        <div class='propertyBlock__price'>3,000 &euro;</div>
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class='propertyBlock__infoContent'>
-                                            <h3 class='propertyBlock__title'>Spectacular stately home in the Alameda area</h3>
-                                            <div class='propertyBlock__location'>Exposició, Valencia city</div>
-                                        </div>
-                                        <div class='propertyBlock__infoBot'>
-                                            <div class='propertyBlock__content'>Two steps from the Paseo de la Alameda we find this stately home, with marble and parquet floors, unfurnished.
+	<ul class="properties-list"><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/el-cabanal-el-grau/av2109058-flat-for-rent-in-el-cabanal-el-grau-valencia'>
+									<div class='propertyBlock__image _imgTagBg'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/31618/31618_16317121137866.jpg&w=320&h=240' alt='Flat for rent'>
+										
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2109058</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>800 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent in El Cabañal - El Grau (Valencia)</h3>
+											<div class='propertyBlock__location'>El Cabañal - El Grau, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>40 sqm  flat in El Cabañal - El Grau, Valencia.The property has bedroom and 1 bathroom.</div>
 
-The location of this magnificent property is located in an excellent point between the Alameda and Blasco Iba&ntilde;ez, a few steps from art galleries, exclusive boutiques, the English Court, cinemas, EMT bus lines, Metro and just minutes walk from the street Col&oacute;n and X&agrave;tiva, the most commercial in Valencia, restaurants, all kinds of bars and entertainment venues.
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>40m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedroom</span>
+														<span class='propertyBlock__value'>1</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathroom </span>
+														<span class='propertyBlock__value'>1 </span>
+													</div>
+											</div>
 
-The house has two bedrooms with bathroom en suite and a master bedroom of 70 square meters with sauna and shower, all of stone, dressing room with fitted wardrobes and then the bedroom itself, with its own bathroom with bathtub. In addition to a large living room with access to a comfortable independent balcony, fully air-conditioned, where you can enjoy your relaxing moments after a day of work. For your convenience, it has a large garage.
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>800 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/el-cabanal-el-grau/temporary-apartment-for-rent-in-el-cabanyal'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/20035/20035_15913577048223.jpg&w=320&h=240' alt='Flat for rent'>
+										
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AVT2004008-2</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>950 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>TEMPORARY apartment for rent in El Cabanyal</h3>
+											<div class='propertyBlock__location'>El Cabañal - El Grau, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>Temporary rental
 
-It is a unique opportunity to live in the best area of ​​Valencia two steps from downtown.
+Price: 1050 eur / month (1850 eur in July and August)
+
+Beautiful 70m2 apartment completely renovated and perfectly furnished in the Caba&ntilde;al.
+
+It has a spacious dining room, two bedrooms, parquet flooring, a perfectly equipped kitchen with appliances and a balcony.
+
+As for its location, it is a few minutes walk from the beach. It is very well connected with respect to public transport, so it has easy communication with the city center.
+
+The area has all kinds of services, supermarkets, the well-known Caba&ntilde;al market, restaurants of all kinds, schools, institutes and pharmacies.
+
+If you want to live in one of the fashionable areas of Val&egrave;ncia in a renovated apartment, this is your chance.
 </div>
 
-                                            <div class='propertyBlock__details'><div class='propertyBlock__surface'>
-                                                        <span class='propertyBlock__label'>Surface</span>
-                                                        <span class='propertyBlock__value'>315m<sup>2</sup></span>
-                                                    </div><div class='propertyBlock__bedrooms'>
-                                                        <span class='propertyBlock__label'>Bedrooms</span>
-                                                        <span class='propertyBlock__value'>3</span>
-                                                    </div><div class='propertyBlock__bathrooms'>
-                                                        <span class='propertyBlock__label'>Bathrooms </span>
-                                                        <span class='propertyBlock__value'>5 </span>
-                                                    </div>
-                                            </div>
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>70m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>2</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathroom </span>
+														<span class='propertyBlock__value'>1 </span>
+													</div>
+											</div>
 
-                                            <div class='propertyBlock__cols'><div class='propertyBlock__col'>
-                                                    <div class='propertyBlock__priceContainer'>
-                                                        
-                                                        <div class='propertyBlock__price'>3,000 &euro;</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div><div class='propertyBlock col-third'>
-                            
-                            <div class=''>
-                                <a href='/en/valencia/pla-del-remei/av2010119-1-penthouse-for-rent-with-terrace-in-pla-del-remei-valencia'>
-                                    <div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
-                                        <img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/24325/24325_16040633643909.jpg&w=320&h=240' alt='Penthouse for rent'>
-                                        
-                                    </div>
-                                    <div class='propertyBlock__info'>
-                                        <div class='propertyBlock__infoTop'>
-                                            <div class='propertyBlock__cols'>
-                                                <div class='propertyBlock__col'>
-                                                    <span class='propertyBlock__reference'>AV2010119-1</span>
-                                                </div>
-                                                <div class='propertyBlock__col'>
-                                                    <div class='propertyBlock__priceContainer'>
-                                                        <div class='propertyBlock__price'>1,450 &euro;</div>
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class='propertyBlock__infoContent'>
-                                            <h3 class='propertyBlock__title'>Penthouse for rent with terrace in Pla del remei (Valencia)</h3>
-                                            <div class='propertyBlock__location'>Pla del remei, Valencia city</div>
-                                        </div>
-                                        <div class='propertyBlock__infoBot'>
-                                            <div class='propertyBlock__content'>Brand new 60 sqm penthouse with a 22sqm terrace and views in Pla del remei, Valencia.The property has 2 bedrooms, 1 bathroom, air conditioning, fitted wardrobes, laundry room and balcony.</div>
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>950 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/el-cabanal-el-grau/study-in-the-cabanal'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/22281/22281_15958568695649.jpg&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Reserved</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2007103</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>600 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Study in the Cabañal</h3>
+											<div class='propertyBlock__location'>El Cabañal - El Grau, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>For short and long stay. We present this beautiful furnished loft in the cozy and famous area of Caba&ntilde;al, completely renovated, and located on a ground floor.
 
-                                            <div class='propertyBlock__details'><div class='propertyBlock__surface'>
-                                                        <span class='propertyBlock__label'>Surface</span>
-                                                        <span class='propertyBlock__value'>60m<sup>2</sup></span>
-                                                    </div><div class='propertyBlock__bedrooms'>
-                                                        <span class='propertyBlock__label'>Bedrooms</span>
-                                                        <span class='propertyBlock__value'>2</span>
-                                                    </div><div class='propertyBlock__bathrooms'>
-                                                        <span class='propertyBlock__label'>Bathroom </span>
-                                                        <span class='propertyBlock__value'>1 </span>
-                                                    </div>
-                                            </div>
+The house of 47 m2, has an open space where we find a bright living room, dining room and fully equipped open kitchen and a bathroom with shower.
 
-                                            <div class='propertyBlock__cols'><div class='propertyBlock__col'>
-                                                        <div class='propertyBlock__vr'>
-                                                            <img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
-                                                            <span>Property with virtual tour</span>
-                                                        </div>
-                                                    </div><div class='propertyBlock__col'>
-                                                    <div class='propertyBlock__priceContainer'>
-                                                        
-                                                        <div class='propertyBlock__price'>1,450 &euro;</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div><div class='propertyBlock col-third'>
-                            
-                            <div class=''>
-                                <a href='/en/valencia/pla-del-remei/excellent-apartment-for-rent-in-pla-del-remei-valencia'>
-                                    <div class='propertyBlock__image _imgTagBg'>
-                                        <img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/9662/9662_16321486425714.jpg&w=320&h=240' alt='Flat for rent'>
-                                        <div class='propertyBlock__ribbon'>Rented</div>
-                                    </div>
-                                    <div class='propertyBlock__info'>
-                                        <div class='propertyBlock__infoTop'>
-                                            <div class='propertyBlock__cols'>
-                                                <div class='propertyBlock__col'>
-                                                    <span class='propertyBlock__reference'>AV1807026</span>
-                                                </div>
-                                                <div class='propertyBlock__col'>
-                                                    <div class='propertyBlock__priceContainer'>
-                                                        <div class='propertyBlock__price'>850 &euro;</div>
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class='propertyBlock__infoContent'>
-                                            <h3 class='propertyBlock__title'>Excellent apartment for rent in Plà del Remei Valencia</h3>
-                                            <div class='propertyBlock__location'>Pla del remei, Valencia city</div>
-                                        </div>
-                                        <div class='propertyBlock__infoBot'>
-                                            <div class='propertyBlock__content'>Magnificent bright apartment, recently renovated in Pl&agrave; del Remei, next to Col&oacute;n street. It has 1 living room with a small interior terrace. In the same room we find a kitchen, equipped with all appliances. The room is spacious, spacious and independent, has built-in wardrobes, for daily storage. The bathroom is complete with shower tray. The furniture of the apartment is of modern style, with very good taste, recently renovated and with parquet flooring. A hundred euros of supplies are included in the price. In case of exceeding this amount, the price of the monthly payment would increase.
+It has a single bed and a sofa bed. The recently renovated house has air conditioning hot and cold, high ceilings with restored joists and an interior terrace to rest in the open air Located in the best atmosphere of the city, 5 minutes walking from the beach Las Arenas and Malvarrosa, with availability of any public transport and close to the promenade, surrounded by the best restaurants and hotels.
 
-The area is ideal for living in the center of Valencia. It has around all kinds of areas to taste the best cuisine in Valencia and the best shopping areas in the city. In addition to having to a step the district of Ruzafa and Ciutat Vella. It has very good communication both by metro, train, bus and valen-bici.
+Do not miss or miss the opportunity to enjoy the experience of living here.
 </div>
 
-                                            <div class='propertyBlock__details'><div class='propertyBlock__surface'>
-                                                        <span class='propertyBlock__label'>Surface</span>
-                                                        <span class='propertyBlock__value'>60m<sup>2</sup></span>
-                                                    </div><div class='propertyBlock__bedrooms'>
-                                                        <span class='propertyBlock__label'>Bedroom</span>
-                                                        <span class='propertyBlock__value'>1</span>
-                                                    </div><div class='propertyBlock__bathrooms'>
-                                                        <span class='propertyBlock__label'>Bathroom </span>
-                                                        <span class='propertyBlock__value'>1 </span>
-                                                    </div>
-                                            </div>
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>47m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedroom</span>
+														<span class='propertyBlock__value'>1</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathroom </span>
+														<span class='propertyBlock__value'>1 </span>
+													</div>
+											</div>
 
-                                            <div class='propertyBlock__cols'><div class='propertyBlock__col'>
-                                                    <div class='propertyBlock__priceContainer'>
-                                                        
-                                                        <div class='propertyBlock__price'>850 &euro;</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        </ul>
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>600 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/el-cabanal-el-grau/av2107094-flat-for-rent-with-terrace-in-el-cabanal-el-grau-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/30776/30776_16273848716655.JPG&w=320&h=240' alt='Flat for rent'>
+										
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2107094</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>1,100 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent with terrace in El Cabañal - El Grau (Valencia)</h3>
+											<div class='propertyBlock__location'>El Cabañal - El Grau, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>103 sqm  flat with a 11sqm terrace in El Cabañal - El Grau, Valencia.The property has 2 bedrooms, 2 bathrooms, fitted wardrobes, balcony and  heating.</div>
 
-                    <style>
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>103m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>2</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathrooms </span>
+														<span class='propertyBlock__value'>2 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>1,100 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/el-cabanal-el-grau/av2106099-flat-for-rent-in-el-cabanal-el-grau-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/30005/30005_16242597469684.jpg&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Rented</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2106099</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>1,250 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent in El Cabañal - El Grau (Valencia)</h3>
+											<div class='propertyBlock__location'>El Cabañal - El Grau, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>200 sqm flat in El Caba&ntilde;al - El Grau, Valencia.
+</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>200m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>5</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathroom </span>
+														<span class='propertyBlock__value'>1 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>1,250 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/el-cabanal-el-grau/av2105049-flat-for-rent-with-views-in-el-cabanal-el-grau-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/28917/28917_16242733329609.jpg&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Reserved</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2105049</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>800 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent with views in El Cabañal - El Grau (Valencia)</h3>
+											<div class='propertyBlock__location'>El Cabañal - El Grau, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>100 sqm  flat with views in El Cabañal - El Grau, Valencia.The property has 3 bedrooms, 1 bathroom, fitted wardrobes and balcony.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>100m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>3</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathrooms </span>
+														<span class='propertyBlock__value'>2 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>800 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/el-cabanal-el-grau/av2103031-flat-with-terrace-for-rent-in-el-cabanal-el-grau-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/27189/27189_16149349565982.jpg&w=320&h=240' alt='Flat for rent'>
+										
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2103031</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>800 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat with terrace for rent in El Cabañal - El Grau (Valencia)</h3>
+											<div class='propertyBlock__location'>El Cabañal - El Grau, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>Brand new 70 sqm flat with terrace in El Cabañal - El Grau, Valencia.The property has 2 bedrooms, 2 bathrooms and fitted wardrobes.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>70m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>2</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathrooms </span>
+														<span class='propertyBlock__value'>2 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>800 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/el-cabanal-el-grau/av2103033-flat-for-rent-in-el-cabanal-el-grau-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/27191/27191_16149425043413.jpg&w=320&h=240' alt='Flat for rent'>
+										
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2103033</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>950 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent in El Cabañal - El Grau (Valencia)</h3>
+											<div class='propertyBlock__location'>El Cabañal - El Grau, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>Brand new 70 sqm flat in El Cabañal - El Grau, Valencia.The property has 2 bedrooms, 1 bathroom, fitted wardrobes and balcony.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>70m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>2</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathroom </span>
+														<span class='propertyBlock__value'>1 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>950 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/el-cabanal-el-grau/av2103034-flat-for-rent-in-el-cabanal-el-grau-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/27194/27194_16149438943054.jpg&w=320&h=240' alt='Flat for rent'>
+										
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2103034</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>1,050 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent in El Cabañal - El Grau (Valencia)</h3>
+											<div class='propertyBlock__location'>El Cabañal - El Grau, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>Brand new 69 sqm flat in El Cabañal - El Grau, Valencia.The property has 2 bedrooms, 2 bathrooms, fitted wardrobes and balcony.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>69m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>2</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathrooms </span>
+														<span class='propertyBlock__value'>2 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>1,050 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/el-cabanal-el-grau/house-for-rent-in-el-cabanal-el-grau-valencia'>
+									<div class='propertyBlock__image _imgTagBg'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/24067/24067_16032851265515.jpg&w=320&h=240' alt='House for rent'>
+										<div class="propertyBlock__tag">New</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2010076</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>1,200 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>House for rent in El Cabañal - El Grau (Valencia)</h3>
+											<div class='propertyBlock__location'>El Cabañal - El Grau, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>35 sqm house in El Cabañal - El Grau, Valencia.The property has bedroom, 1 bathroom, air conditioning, fitted wardrobes, laundry room and  heating.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>35m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedroom</span>
+														<span class='propertyBlock__value'>1</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathroom </span>
+														<span class='propertyBlock__value'>1 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>1,200 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/el-cabanal-el-grau/av2008007-3-bedroom-apartment-for-students'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/22437/22437_15964638819813.jpg&w=320&h=240' alt='Flat for rent'>
+										<div class="propertyBlock__tag">New</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2008007</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>750 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>3 bedroom apartment for students</h3>
+											<div class='propertyBlock__location'>El Cabañal - El Grau, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>In the popular area of El Grau, next to the beaches, there is this cozy furnished apartment of 54 m2 distributed in a bright living-dining room, an independent kitchen, equipped with all electrical appliances, three bedrooms with wardrobes, beds and desks, and a full bathroom.
+
+The house is ideal for students, it has air conditioning in the living room.
+
+The area in which this house is located is ideal, since it has all kinds of services at hand (cafes, supermarkets such as Mercadona and Consum, pharmacies, hospitals, and green and sports areas), and has a very good connection to transport public, being located a step away from the Port of Valencia. 10 minutes from the Aqua shopping center and the T&uacute;ria garden, 7 minutes walk from the metro and tram station.
+
+It is located on the third floor WITHOUT ELEVATOR.
+
+If you are interested in this wonderful home, do not miss the opportunity and contact us!
+</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>87m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>3</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathroom </span>
+														<span class='propertyBlock__value'>1 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>750 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div></ul><h3 class="title-others near">Other Homes for rent  near  El Cabañal - El Grau</h3>
+	<ul class="properties-list"><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/l-illa-perduda/flat-for-rent-with-views-in-l-39;illa-perduda-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/30372/30372_16261799272417.jpg&w=320&h=240' alt='Flat for rent'>
+										
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2107039</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>950 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent with views in L'Illa Perduda (Valencia)</h3>
+											<div class='propertyBlock__location'>L&#39;Illa Perduda, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>131 sqm flat with views in L'Illa Perduda, Valencia.The property has 4 bedrooms, 2 bathrooms, 1 parking space, air conditioning, fitted wardrobes and  heating.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>131m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>4</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathrooms </span>
+														<span class='propertyBlock__value'>2 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>950 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/ciutat-jardi/av2107037-fantastic-apartment-in-ciutat-jardi'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/30388/30388_16257329756076.jpg&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Rented</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2107037</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>800 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Fantastic apartment in Ciutat Jardí</h3>
+											<div class='propertyBlock__location'>Ciutat Jardí, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>This house, located in Ciutat Jard&iacute;, has an area of ​​94 square meters, which is distributed as follows: a living room with access to a terrace with a wide range of views to be on an eleventh floor; an independent kitchen equipped with appliances (fridge, oven, hob, dishwasher, washing machine); three rooms, one with a single bed, another with two single beds and the main one with a double bed and a full bathroom en suite; and another full bathroom.
+
+The apartment has hot and cold air conditioning in the main rooms and electric heating, terrace, furniture, elevator, and the possibility of GARAGE and storage for an additional 50 euros.
+
+Its location is very nice, it is close to supermarkets (Mercadona, Consum), pharmacies, Hospital (La Salud), universities, the beach area, and the busiest restaurant and pub areas of Valencia (El Cedro, Plaza Honduras and Plaza X&uacute;quer).
+
+If you are interested in this magnificent penthouse, do not hesitate to contact us, we will be happy to arrange a visit with you.
+</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>94m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>3</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathrooms </span>
+														<span class='propertyBlock__value'>2 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>800 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/ayora/av2104107-luminosa-vivienda-en-lamistat'>
+									<div class='propertyBlock__image _imgTagBg'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/28512/28512_16195139575294.jpg&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Reserved</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2104107</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>1,000 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Luminosa vivienda en L'Amistat.</h3>
+											<div class='propertyBlock__location'>Ayora, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>In the demanded neighborhood of L&acute;Amistat, and in one of its main roads, we find this spacious and comfortable apartment with four bedrooms and two bathrooms.
+
+Its unique distribution gives the main room a balcony-terrace that extends to the road where it has access. The spacious kitchen of this house, is fully equipped with top brand appliances. We highlight its brightness and location in a fully consolidated neighborhood, with all kinds of services, and with excellent communications (Metro Amistat), buses of different lines and a few steps from the Mestalla area. It is rented with and without furniture.
+
+It is an opportunity to live comfortably in a quiet neighborhood, well connected, with all services and just twenty minutes from the center of Valencia, where you can move on a walk.
+
+If you want to visit this magnificent home, do not hesitate to contact us, we will be happy to assist you
+</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>110m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>4</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathrooms </span>
+														<span class='propertyBlock__value'>2 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>1,000 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/malvarrosa/flat-for-rent-with-terrace-in-malvarrosa-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/30425/30425_16258210712797.jpg&w=320&h=240' alt='Flat for rent'>
+										
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2107070</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>1,000 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent with terrace in Malvarrosa (Valencia)</h3>
+											<div class='propertyBlock__location'>Malvarrosa, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>78 sqm  flat with terrace in Malvarrosa, Valencia.The property has 3 bedrooms, 1 bathroom, fitted wardrobes and balcony.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>78m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>3</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathroom </span>
+														<span class='propertyBlock__value'>1 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>1,000 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/mestalla/flat-for-rent-with-terrace-in-mestalla-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/30604/30604_16264301225511.jpg&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Rented</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2107068</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>1,100 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent with terrace in Mestalla (Valencia)</h3>
+											<div class='propertyBlock__location'>Mestalla, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>137 sqm flat with terrace and views in Mestalla, Valencia.The property has 3 bedrooms, 2 bathrooms, 1 parking space, air conditioning, fitted wardrobes, balcony and  heating.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>137m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>3</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathrooms </span>
+														<span class='propertyBlock__value'>2 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>1,100 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/ciudad-de-la-justicia/flat-for-rent-in-ciudad-de-la-justicia-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/23250/23250_16010213891499.jpg&w=320&h=240' alt='Flat for rent'>
+										
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2009081-2</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>1,200 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent in Ciudad de la Justicia (Valencia)</h3>
+											<div class='propertyBlock__location'>Ciudad de la Justicia, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>100 sqm  flat in Ciudad de la Justicia, Valencia.The property has 2 bedrooms, 2 bathrooms, air conditioning and  heating.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>100m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>2</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathrooms </span>
+														<span class='propertyBlock__value'>2 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>1,200 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/monteolivete/av2106084-flat-for-rent-with-views-in-monteolivete-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/29898/29898_16238466842797.jpg&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Rented</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2106084</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>700 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent with views in Monteolivete (Valencia)</h3>
+											<div class='propertyBlock__location'>Monteolivete, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>83 sqm flat with views in Monteolivete, Valencia.The property has 3 bedrooms, 2 bathrooms, fitted wardrobes and balcony.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>83m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>3</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathrooms </span>
+														<span class='propertyBlock__value'>2 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>700 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/gran-via/av2105035-flat-for-rent-with-views-in-gran-via-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/28815/28815_1620733294549.jpg&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Rented</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2105035</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>750 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent with views in Gran Vía (Valencia)</h3>
+											<div class='propertyBlock__location'>Gran Vía, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>77 sqm flat with views in Gran Vía, Valencia.The property has 2 bedrooms, 1 bathroom, air conditioning and concierge.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>77m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>2</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathroom </span>
+														<span class='propertyBlock__value'>1 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>750 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/exposicio/av2109054-flat-for-rent-in-exposicio-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/31586/31586_16316900976528.JPG&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Reserved</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2109054</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>750 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent in Exposició (Valencia)</h3>
+											<div class='propertyBlock__location'>Exposició, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>59 sqm flat in Exposició, Valencia.The property has bedroom, 1 bathroom, parking space, air conditioning, fitted wardrobes, balcony and  heating.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>59m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedroom</span>
+														<span class='propertyBlock__value'>1</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathroom </span>
+														<span class='propertyBlock__value'>1 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>750 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock col-third'>
+							
+							<div class=''>
+								<a href='/en/valencia/gran-via/flat-for-rent-with-terrace-in-gran-via-valencia'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/29203/29203_16215850194903.jpg&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Reserved</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2105089</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>825 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Flat for rent with terrace in Gran Vía (Valencia)</h3>
+											<div class='propertyBlock__location'>Gran Vía, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>90 sqm flat with terrace in Gran Vía, Valencia.The property has 4 bedrooms and 2 bathrooms.</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>90m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedrooms</span>
+														<span class='propertyBlock__value'>4</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathrooms </span>
+														<span class='propertyBlock__value'>2 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>825 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div></ul>					<style>
 						.properties-list {
 							overflow: auto;
 						}
 					</style>
 
-						                             <div class="pagination__container"><nav>
-		<ul class="pagination"><li class="pagination__moreresults moreresults"><span>More results</span></li><li class="pagination__page pagination__page--selected selected"><span class="number-now">1</span></li><li class="pagination__page"><a href="/en/search?searchbar=1&mod=rental&zone=3&area=7&group=&loc=42&dis=&p=2">2</a></li><li class="pagination__page"><a href="/en/search?searchbar=1&mod=rental&zone=3&area=7&group=&loc=42&dis=&p=3">3</a></li><li class="pagination__page"><a href="/en/search?searchbar=1&mod=rental&zone=3&area=7&group=&loc=42&dis=&p=4">4</a></li><li class="pagination__last"><a href="/en/search?searchbar=1&mod=rental&zone=3&area=7&group=&loc=42&dis=&p=6">6</a></li><li class="pagination__next"><a href="/en/search?searchbar=1&mod=rental&zone=3&area=7&group=&loc=42&dis=&p=2">Next</a></li></ul>
-	</nav></div>
 						 						
-						<div class="footer-text">You are looking at <strong>154 homes for rent in  Valencia</strong> which we have in our portfolio of properties.<br />Remember that you can also search for homes with other filters according to your interests like with pool, terrace, fireplace or lift.</div>
+						<div class="footer-text">You are looking at <strong>11 homes for rent in  El Cabañal - El Grau</strong> which we have in our portfolio of properties.<br />Remember that you can also search for homes with other filters according to your interests like with pool, terrace, fireplace or lift.</div>
 					<div class="clear"></div>
 				</div>
 				<div class="clear"></div>
@@ -1632,6 +2643,70 @@ The area is ideal for living in the center of Valencia. It has around all kinds 
 		<h4>Recently viewed properties</h4>
 
         <div class="row"><div class='propertyBlock propertyBlock--condensed propertyBlock--noContent col-three'>
+							
+							<div class=''>
+								<a href='/en/valencia/el-cabanal-el-grau/study-in-the-cabanal'>
+									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
+										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/22281/22281_15958568695649.jpg&w=320&h=240' alt='Flat for rent'>
+										<div class='propertyBlock__ribbon'>Reserved</div>
+									</div>
+									<div class='propertyBlock__info'>
+										<div class='propertyBlock__infoTop'>
+											<div class='propertyBlock__cols'>
+												<div class='propertyBlock__col'>
+													<span class='propertyBlock__reference'>AV2007103</span>
+												</div>
+												<div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														<div class='propertyBlock__price'>600 &euro;</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='propertyBlock__infoContent'>
+											<h3 class='propertyBlock__title'>Study in the Cabañal</h3>
+											<div class='propertyBlock__location'>El Cabañal - El Grau, Valencia city</div>
+										</div>
+										<div class='propertyBlock__infoBot'>
+											<div class='propertyBlock__content'>For short and long stay. We present this beautiful furnished loft in the cozy and famous area of Caba&ntilde;al, completely renovated, and located on a ground floor.
+
+The house of 47 m2, has an open space where we find a bright living room, dining room and fully equipped open kitchen and a bathroom with shower.
+
+It has a single bed and a sofa bed. The recently renovated house has air conditioning hot and cold, high ceilings with restored joists and an interior terrace to rest in the open air Located in the best atmosphere of the city, 5 minutes walking from the beach Las Arenas and Malvarrosa, with availability of any public transport and close to the promenade, surrounded by the best restaurants and hotels.
+
+Do not miss or miss the opportunity to enjoy the experience of living here.
+</div>
+
+											<div class='propertyBlock__details'><div class='propertyBlock__surface'>
+														<span class='propertyBlock__label'>Surface</span>
+														<span class='propertyBlock__value'>47m<sup>2</sup></span>
+													</div><div class='propertyBlock__bedrooms'>
+														<span class='propertyBlock__label'>Bedroom</span>
+														<span class='propertyBlock__value'>1</span>
+													</div><div class='propertyBlock__bathrooms'>
+														<span class='propertyBlock__label'>Bathroom </span>
+														<span class='propertyBlock__value'>1 </span>
+													</div>
+											</div>
+
+											<div class='propertyBlock__cols'><div class='propertyBlock__col'>
+														<div class='propertyBlock__vr'>
+															<img loading='lazy' width='20' height='12' src='/templates/images/icons/icon-eye.png'>
+															<span>Property with virtual tour</span>
+														</div>
+													</div><div class='propertyBlock__col'>
+													<div class='propertyBlock__priceContainer'>
+														
+														<div class='propertyBlock__price'>600 &euro;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div><div class='propertyBlock propertyBlock--condensed propertyBlock--noContent col-three'>
 							
 							<div class=''>
 								<a href='/en/valencia/botanico/flat-for-rent-with-views-in-botanico-valencia'>
@@ -1918,7 +2993,7 @@ The area is ideal for living in the center of Valencia. It has around all kinds 
 								<a href='/en/valencia/arrancapins/av2101119-loft-for-rent-with-terrace-in-arrancapins-valencia'>
 									<div class='propertyBlock__image _imgTagBg propertyBlock__image--media'>
 										<img loading='lazy' width='310' height='228' src='/thumb?src=/media/properties/26217/26217_16119186163488.jpg&w=320&h=240' alt='Loft for rent'>
-										<div class='propertyBlock__ribbon'>New</div>
+										<div class='propertyBlock__ribbon'>Reserved</div>
 									</div>
 									<div class='propertyBlock__info'>
 										<div class='propertyBlock__infoTop'>
@@ -2028,35 +3103,7 @@ Spectacular apartment with four bedrooms and three bathrooms located on the four
         </div>
 	</div>
 </div>
-							<div class="searchFooter__item _noPadTop">	<div class="sidebar-links">
-		<h4 class="sidebar-links__title">Other homes in Valencia</h4>
-		
-		<div class="sidebar-links__links">				<span data-idvs="728">
-					<a href="/en/luxury-flats-for-rent-valencia">Luxury flats for rent in Valencia</a>
-				</span>				<span data-idvs="730">
-					<a href="/en/flats-for-rent-valencia">Flats for rent in Valencia</a>
-				</span>				<span data-idvs="731">
-					<a href="/en/penthouses-for-rent-valencia">Penthouses for rent  in Valencia</a>
-				</span>				<span data-idvs="735">
-					<a href="/en/duplex-rent-valencia">Dúplex for rent in Valencia</a>
-				</span>				<span data-idvs="740">
-					<a href="/en/exclusive-flats-for-rent-valencia">Exclusive flats for rent in Valencia</a>
-				</span>				<span data-idvs="744">
-					<a href="/en/exclusive-duplex-rent-valencia">Exclusive duplex for rent in Valencia</a>
-				</span>				<span data-idvs="750">
-					<a href="/en/luxury-houses-for-rent-valencia">Luxury houses for rent in Valencia</a>
-				</span>				<span data-idvs="752">
-					<a href="/en/luxury-penthouses-for-rent-valencia">Luxury penthouses for rent in Valencia</a>
-				</span>				<span data-idvs="754">
-					<a href="/en/high-standing-flats-for-rent-valencia">High standing flats for rent in Valencia</a>
-				</span>				<span data-idvs="756">
-					<a href="/en/high-standing-houses-for-rent-valencia">High standing houses for rent in Valencia</a>
-				</span>				<span data-idvs="758">
-					<a href="/en/high-standing-penthouses-for-rent-valencia">High standing penthouses for rent in Valencia</a>
-				</span>				<span data-idvs="1103">
-					<a href="/en/properties-rent-valencia">Properties for rent  in Valencia</a>
-				</span></div>
-	</div></div>		</div>
+					</div>
 </section>
 <script>
 $(document).ready(function() {
@@ -2460,36 +3507,17 @@ $(document).ready(function() {
         
         gtag('event', 'view_item_list', 
         {'items': [
-                    {"id": "AV2109106","name": "Flat for rent with views in Les Tendetes (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":31,"quantity": 1,"price": 850.00},
-                    {"id": "AV2109104","name": "Ground Floor Duplex Loft in Patraix","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":32,"quantity": 1,"price": 800.00},
-                    {"id": "AV2109100","name": "Large house with four rooms in La Petxina, next to Administrative City.","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":33,"quantity": 1,"price": 850.00},
-                    {"id": "AV2109090","name": "Flat for rent with views in El Mercat (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":34,"quantity": 1,"price": 1300.00},
-                    {"id": "AV2109083","name": "Flat for rent with terrace in Arrancapins (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":35,"quantity": 1,"price": 600.00},
-                    {"id": "AV2109078","name": "Flat for rent with views in Benimaclet (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":36,"quantity": 1,"price": 750.00},
-                    {"id": "AV2109077","name": "duplex in Ciutat Vella","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":37,"quantity": 1,"price": 1750.00},
-                    {"id": "AV2109076","name": "Spectacular stately home in the Alameda area","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":38,"quantity": 1,"price": 3000.00},
-                    {"id": "AV2010119-1","name": "Penthouse for rent with terrace in Pla del remei (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":39,"quantity": 1,"price": 1450.00},
-                    {"id": "AV1807026","name": "Excellent apartment for rent in Plà del Remei Valencia","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":40,"quantity": 1,"price": 850.00},
-                    {"id": "AV2109066","name": "Penthouse with terrace for rent in Ruzafa (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":41,"quantity": 1,"price": 1450.00},
-                    {"id": "AV2109065","name": "Brand new 1 bedroom apartment for TEMPORARY rent, in Ruzafa","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":42,"quantity": 1,"price": 1150.00},
-                    {"id": "AV2109064","name": "Exquisite penthouse in historical street of the old town","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":43,"quantity": 1,"price": 1000.00},
-                    {"id": "AV2109063","name": "Flat for rent with terrace in Valencia","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":44,"quantity": 1,"price": 4000.00},
-                    {"id": "AV2109061","name": "Flat for rent in Gran Vía (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":45,"quantity": 1,"price": 1000.00},
-                    {"id": "AV2109031","name": "Spectacular apartment in Alameda","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":46,"quantity": 1,"price": 2400.00},
-                    {"id": "AV2001016","name": "Magnificent flat with views for rent in Ciudad de las Ciencias - Penya Roja (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":47,"quantity": 1,"price": 2400.00},
-                    {"id": "AV2109059","name": "Flat for rent with views in El Carme (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":48,"quantity": 1,"price": 1250.00},
-                    {"id": "AV2109058","name": "Flat for rent in El Cabañal - El Grau (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":49,"quantity": 1,"price": 800.00},
-                    {"id": "AV2109054","name": "Flat for rent in Exposició (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":50,"quantity": 1,"price": 750.00},
-                    {"id": "AV2109056","name": "Flat for rent in El Carme (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":51,"quantity": 1,"price": 950.00},
-                    {"id": "AV2109048","name": "Design loft in Patraix","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":52,"quantity": 1,"price": 750.00},
-                    {"id": "AV2109047","name": "Design loft in Patraix","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":53,"quantity": 1,"price": 750.00},
-                    {"id": "AV1803021-1","name": " Beautiful house in Sant Francesc","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":54,"quantity": 1,"price": 1300.00},
-                    {"id": "AV2109042","name": "Flat for rent in La Xerea (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":55,"quantity": 1,"price": 1500.00},
-                    {"id": "AVT2004008-2","name": "TEMPORARY apartment for rent in El Cabanyal","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":56,"quantity": 1,"price": 950.00},
-                    {"id": "AV2109039","name": "Flat for rent with views in Benimaclet (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":57,"quantity": 1,"price": 675.00},
-                    {"id": "AV2109033","name": "Flat for rent in San Francesc (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":58,"quantity": 1,"price": 2000.00},
-                    {"id": "AV2109032","name": "Flat for rent in Ruzafa (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":59,"quantity": 1,"price": 900.00},
-                    {"id": "AV2109027","name": "Penthouse for rent with terrace in Sant Pau (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":60,"quantity": 1,"price": 1100.00},
+                    {"id": "AV2109058","name": "Flat for rent in El Cabañal - El Grau (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":31,"quantity": 1,"price": 800.00},
+                    {"id": "AVT2004008-2","name": "TEMPORARY apartment for rent in El Cabanyal","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":32,"quantity": 1,"price": 950.00},
+                    {"id": "AV2007103","name": "Study in the Cabañal","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":33,"quantity": 1,"price": 600.00},
+                    {"id": "AV2107094","name": "Flat for rent with terrace in El Cabañal - El Grau (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":34,"quantity": 1,"price": 1100.00},
+                    {"id": "AV2106099","name": "Flat for rent in El Cabañal - El Grau (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":35,"quantity": 1,"price": 1250.00},
+                    {"id": "AV2105049","name": "Flat for rent with views in El Cabañal - El Grau (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":36,"quantity": 1,"price": 800.00},
+                    {"id": "AV2103031","name": "Flat with terrace for rent in El Cabañal - El Grau (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":37,"quantity": 1,"price": 800.00},
+                    {"id": "AV2103033","name": "Flat for rent in El Cabañal - El Grau (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":38,"quantity": 1,"price": 950.00},
+                    {"id": "AV2103034","name": "Flat for rent in El Cabañal - El Grau (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":39,"quantity": 1,"price": 1050.00},
+                    {"id": "AV2010076","name": "House for rent in El Cabañal - El Grau (Valencia)","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":40,"quantity": 1,"price": 1200.00},
+                    {"id": "AV2008007","name": "3 bedroom apartment for students","list_name": $("h1").text().replace(/ +(?= )/g,''),"category": "Propiedades","list_position":41,"quantity": 1,"price": 750.00},
                 ]});
         
         
@@ -2563,7 +3591,7 @@ $('a[href^="tel:"]').click(function () {
     
 	</script>    <script type="text/javascript">
         $("#CookiePolicyAccept").click(function () {
-            document.cookie = "CookiePolicyAccept=1; expires=28 Mar 2022 17:26:02 GMT; path=/";
+            document.cookie = "CookiePolicyAccept=1; expires=29 Mar 2022 10:41:29 GMT; path=/";
             $(".CookiePolicyWrapper").slideUp();
         });
     </script>
