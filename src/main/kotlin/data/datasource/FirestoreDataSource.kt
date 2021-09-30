@@ -1,10 +1,8 @@
 package data.datasource
 
-import com.google.api.core.ApiFuture
 import com.google.cloud.firestore.DocumentReference
 import com.google.cloud.firestore.Firestore
 import com.google.cloud.firestore.WriteBatch
-import com.google.cloud.firestore.WriteResult
 import data.datasource.FirestoreDataSourceImpl.FirestoreMap.IS_ACTIVE
 import data.datasource.FirestoreDataSourceImpl.FirestoreMap.LISTINGS_DOC
 import data.datasource.FirestoreDataSourceImpl.FirestoreMap.PROPERTY_COLLECTION
@@ -20,13 +18,13 @@ import mu.KotlinLogging
 private val logger = KotlinLogging.logger("FirestoreDataSource")
 
 interface FirestoreDataSource {
-    fun addAll(properties: List<Property>, type: Type): Flow<List<Property>>
-    fun getAll(type: Type): Flow<List<Property>>
-    fun markAvailability(removed: List<String>, active: List<String>, type: Type): Flow<Unit>
+    suspend fun addAll(properties: List<Property>, type: Type): Flow<List<Property>>
+    suspend fun getAll(type: Type): Flow<List<Property>>
+    suspend fun markAvailability(removed: List<String>, active: List<String>, type: Type): Flow<Unit>
 }
 
 class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
-    override fun addAll(properties: List<Property>, type: Type): Flow<List<Property>> {
+    override suspend fun addAll(properties: List<Property>, type: Type): Flow<List<Property>> {
         return flow {
             logger.info { "Adding properties do Firestore ${properties.size}" }
             val batch: WriteBatch = db.batch()
@@ -42,28 +40,29 @@ class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
                 batch.set(docRef, data)
             }
 
-            val future: ApiFuture<MutableList<WriteResult>> = batch.commit()
-            for (result in future.get()) {
-                logger.info { "Update time : " + result.updateTime }
-            }
+            batch.commit()
+
             emit(properties)
         }.flowOn(Dispatchers.IO)
     }
 
-    override fun getAll(type: Type): Flow<List<Property>> {
+    override suspend fun getAll(type: Type): Flow<List<Property>> {
         return flow {
             val docRef = db.collection(PROPERTY_COLLECTION)
                 .document(LISTINGS_DOC)
                 .collection(type.tag)
             val future = docRef.get()
 
-            emit(future.get()
+            val properties = future.get()
                 .map { Property.fromMap(it.data) }
-                .also { logger.info { "Got ${it.size} properties" } })
+
+            logger.info { "Got ${properties.size} properties" }
+
+            emit(properties)
         }.flowOn(Dispatchers.IO)
     }
 
-    override fun markAvailability(removed: List<String>, active: List<String>, type: Type) = flow {
+    override suspend fun markAvailability(removed: List<String>, active: List<String>, type: Type) = flow {
         val batch: WriteBatch = db.batch()
         logger.info { "Changing property availability. Removed: ${removed.size}, active: ${active.size}" }
 
@@ -91,9 +90,9 @@ class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
 
         batch.commit()
 
-        emit(Unit)
-            .also { logger.info { "Done" } }
+        logger.info { "Done marking visibility" }
 
+        emit(Unit)
     }.flowOn(Dispatchers.IO)
 
     private object FirestoreMap {

@@ -5,26 +5,30 @@ import it.skrape.fetcher.AsyncFetcher
 import it.skrape.fetcher.response
 import it.skrape.fetcher.skrape
 import it.skrape.selects.Doc
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 
 interface WebDataSource {
-    suspend fun <T> get(
-        url: String,
-        action: (Doc) -> T
-    ): T
+    suspend fun get(
+        url: String
+    ): Flow<Doc>
 }
 
 class WebDataSourceImpl : WebDataSource {
-    override suspend fun <T> get(url: String, action: (Doc) -> T): T {
-        return skrape(AsyncFetcher) {
-            request {
-                this.url = url
-                userAgent = "HomeHunt Scrapper"
-                timeout = 1000000 * 2 * 100
-            }
+    override suspend fun get(url: String): Flow<Doc> {
+        return flow {
+            val result = skrape(AsyncFetcher) {
+                request {
+                    this.url = url
+                    userAgent = "HomeHunt Scrapper"
+                    timeout = 1000000 * 2 * 100
+                }
 
-            return@skrape response {
-                action(this.document)
+                return@skrape response {
+                    this.document
+                }
             }
+            emit(result)
         }
     }
 }

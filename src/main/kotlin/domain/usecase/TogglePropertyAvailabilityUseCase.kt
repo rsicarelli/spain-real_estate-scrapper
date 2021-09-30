@@ -6,17 +6,13 @@ import domain.repository.PropertyRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.*
-import mu.KotlinLogging
-
-
-private val logger = KotlinLogging.logger("TogglePropertyAvailabilityUseCase")
 
 class TogglePropertyAvailabilityUseCase(
     private val repository: PropertyRepository
 ) {
 
     @OptIn(FlowPreview::class)
-    operator fun invoke(request: Request): Flow<Unit> {
+    suspend operator fun invoke(request: Request): Flow<Unit> {
         val (newProperties, type) = request
 
         return repository.getAll(type)

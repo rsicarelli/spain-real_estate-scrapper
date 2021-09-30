@@ -9,41 +9,25 @@ import domain.repository.PropertyRepository
 import domain.model.PropertyDetail
 import domain.model.PropertySearchResult
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.flowOn
+import kotlinx.coroutines.flow.*
 
 class PropertyRepositoryImpl(
     private val webDataSource: WebDataSource,
     private val firebaseDataSource: FirestoreDataSource,
     private val parserProxy: ParserProxy
 ) : PropertyRepository {
-    override suspend fun scrapSearchPage(
-        url: String,
-        type: Type
-    ): Flow<PropertySearchResult> {
-        return flow {
-            val value = webDataSource.get(url) { result ->
-                parserProxy.parseSearchResult(result, type)
-            }
-            emit(value)
-        }.flowOn(Dispatchers.IO)
-    }
+    override suspend fun scrapSearchPage(url: String, type: Type): Flow<PropertySearchResult> =
+        webDataSource.get(url).map { parserProxy.parseSearchResult(it, type) }
 
-    override suspend fun scrapPropertyDetails(url: String, type: Type): Flow<PropertyDetail> {
-        return flow {
-            emit(webDataSource.get(url) {
-                parserProxy.parsePropertyDetail(it, type)
-            })
-        }.flowOn(Dispatchers.IO)
-    }
+    override suspend fun scrapPropertyDetails(url: String, type: Type): Flow<PropertyDetail> =
+        webDataSource.get(url).map { parserProxy.parsePropertyDetail(it, type) }
 
-    override suspend fun save(properties: List<Property>, type: Type) =
+    override suspend fun save(properties: List<Property>, type: Type): Flow<List<Property>> =
         firebaseDataSource.addAll(properties, type)
 
-    override fun getAll(type: Type) = firebaseDataSource.getAll(type)
+    override suspend fun getAll(type: Type): Flow<List<Property>> = firebaseDataSource.getAll(type)
 
-    override fun markAvailability(removed: List<String>, active: List<String>, type: Type) =
+    override suspend fun markAvailability(removed: List<String>, active: List<String>, type: Type): Flow<Unit> =
         firebaseDataSource.markAvailability(removed, active, type)
 
 }
