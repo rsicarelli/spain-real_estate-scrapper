@@ -8,7 +8,7 @@ import it.skrape.core.htmlDocument
 import it.skrape.selects.Doc
 import utils.loadResource
 
-object Engel {
+object EngelFixture {
 
     inline fun <reified T> T.defaultSearchResults(): Pair<Doc, PropertySearchResult> {
         return Pair(htmlDocument(loadResource("/engel/engel-search-result.txt")), Fixtures.defaultSearchResults)

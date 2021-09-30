@@ -3,11 +3,10 @@ package data.parser
 import it.skrape.selects.ElementNotFoundException
 import org.junit.jupiter.api.Test
 import utils.extractAuthority
-import utils.fixtures.AProperties.defaultSearchResults
-import utils.fixtures.AProperties.emptySearchResult
-import utils.fixtures.AProperties.invalidSearchResult
-import utils.fixtures.AProperties.searchResultsWithPagination
-import utils.fixtures.AProperties.singleSearchResultWithMissingData
+import utils.fixtures.APropertiesFixture.defaultSearchResults
+import utils.fixtures.APropertiesFixture.invalidSearchResult
+import utils.fixtures.APropertiesFixture.searchResultsWithPagination
+import utils.fixtures.APropertiesFixture.singleSearchResultWithMissingData
 import kotlin.test.*
 
 class APropertiesSearchResultsParserTest {

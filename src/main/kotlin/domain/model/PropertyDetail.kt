@@ -11,3 +11,26 @@ data class PropertyDetail(
     val lng: Double?,
     val pdfUrl: String?
 )
+
+fun PropertyDetail.toProperty(propertyItem: PropertyItem) =
+    Property(
+        reference = propertyItem.reference,
+        price = propertyItem.price,
+        title = propertyItem.title,
+        location = propertyItem.location,
+        surface = propertyItem.surface,
+        dormCount = propertyItem.dormCount,
+        description = propertyItem.description,
+        bathCount = propertyItem.bathCount,
+        avatarUrl = propertyItem.imageUrl,
+        tag = propertyItem.tag,
+        propertyUrl = propertyItem.propertyUrl,
+        videoUrl = videoUrl,
+        fullDescription = fullDescription,
+        characteristics = characteristics,
+        photoGalleryUrls = photosGalleryUrls,
+        lat = lat,
+        lng = lng,
+        locationDescription = locationDescription,
+        pdfUrl = pdfUrl
+    )

@@ -3,8 +3,8 @@ package data.parser
 import it.skrape.selects.ElementNotFoundException
 import org.junit.jupiter.api.Test
 import utils.extractAuthority
-import utils.fixtures.Engel.badPropertyDetailMissing
-import utils.fixtures.Engel.defaultPropertyDetail
+import utils.fixtures.EngelFixture.badPropertyDetailMissing
+import utils.fixtures.EngelFixture.defaultPropertyDetail
 import kotlin.test.*
 
 class EngelPropertyDetailParserTest {

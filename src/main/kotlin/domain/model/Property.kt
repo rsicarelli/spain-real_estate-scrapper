@@ -1,5 +1,7 @@
 package domain.model
 
+import com.google.common.annotations.VisibleForTesting
+
 data class Property(
     val reference: String,
     val price: Double,
@@ -21,100 +23,105 @@ data class Property(
     val lng: Double?,
     val pdfUrl: String?
 ) {
-    fun toMap() =
-        mapOf(
-            "reference" to reference,
-            "price" to price,
-            "title" to title,
-            "location" to location,
-            "surface" to surface,
-            "dormCount" to dormCount,
-            "description" to description,
-            "bathCount" to bathCount,
-            "avatarUrl" to avatarUrl,
-            "tag" to Tags.fromString(tag)::class.simpleName,
-            "propertyUrl" to propertyUrl,
-            "videoUrl" to videoUrl,
-            "fullDescription" to fullDescription,
-            "characteristics" to characteristics,
-            "photoGalleryUrls" to photoGalleryUrls,
-            "lat" to lat,
-            "lng" to lng,
-            "pdfUrl" to pdfUrl,
-            "locationDescription" to locationDescription
-        )
-
-    sealed class Tags(val identifier: String) {
-        object EMPTY : Tags("")
-        object NEW : Tags("new")
-        object RESERVED : Tags("rented")
-        object RENTED : Tags("reserved")
-
-        companion object {
-            fun fromString(tag: String?): Tags {
-                return tag?.let {
-                    return@let when (it.toLowerCase()) {
-                        NEW.identifier -> NEW
-                        RESERVED.identifier -> RESERVED
-                        RENTED.identifier -> RENTED
-                        else -> EMPTY
-                    }
-                } ?: EMPTY
-            }
-
-        }
-    }
-
-    companion object {
-        fun combine(propertySearchResult: PropertyItem, propertyDetail: PropertyDetail) =
-            Property(
-                reference = propertySearchResult.reference,
-                price = propertySearchResult.price,
-                title = propertySearchResult.title,
-                location = propertySearchResult.location,
-                surface = propertySearchResult.surface,
-                dormCount = propertySearchResult.dormCount,
-                description = propertySearchResult.description,
-                bathCount = propertySearchResult.bathCount,
-                avatarUrl = propertySearchResult.imageUrl,
-                tag = propertySearchResult.tag,
-                propertyUrl = propertySearchResult.propertyUrl,
-                videoUrl = propertyDetail.videoUrl,
-                fullDescription = propertyDetail.fullDescription,
-                characteristics = propertyDetail.characteristics,
-                photoGalleryUrls = propertyDetail.photosGalleryUrls,
-                lat = propertyDetail.lat,
-                lng = propertyDetail.lng,
-                locationDescription = propertyDetail.locationDescription,
-                pdfUrl = propertyDetail.pdfUrl
-            )
-
-        fun fromMap(data: Map<String, Any>) =
-            Property(
-                reference = data["reference"] as String,
-                price = data["price"] as Double,
-                title = data["title"] as String,
-                location = data["location"] as String,
-                surface = data["surface"] as String?,
-                dormCount = (data["dormCount"] as Long?)?.toInt(),
-                description = data["description"] as String? ?: "",
-                bathCount = (data["bathCount"] as Long?)?.toInt(),
-                avatarUrl = data["avatarUrl"] as String,
-                tag = data["tag"] as String?,
-                propertyUrl = data["propertyUrl"] as String,
-                videoUrl = data["videoUrl"] as String?,
-                fullDescription = data["fullDescription"] as String?,
-                characteristics = data["characteristics"] as List<String?>,
-                photoGalleryUrls = data["photoGalleryUrls"] as List<String?>,
-                lat = data["lat"] as Double?,
-                lng = data["lng"] as Double?,
-                pdfUrl = data["pdfUrl"] as String? ?: "",
-                locationDescription = data["locationDescription"] as String? ?: ""
-            )
-    }
 
     sealed class Type(val tag: String) {
         object APROPERTIES : Type("aProperties")
         object ENGELS : Type("engels")
     }
+
+    sealed class Tag(val identifier: String) {
+        object EMPTY : Tag("")
+        object NEW : Tag("NEW")
+        object RESERVED : Tag("RESERVED")
+        object RENTED : Tag("RENTED")
+    }
 }
+
+fun String?.toTag() = this?.let {
+    return@let when (it.uppercase()) {
+        Property.Tag.NEW.identifier -> Property.Tag.NEW
+        Property.Tag.RESERVED.identifier -> Property.Tag.RESERVED
+        Property.Tag.RENTED.identifier -> Property.Tag.RENTED
+        else -> Property.Tag.EMPTY
+    }
+} ?: Property.Tag.EMPTY
+
+fun Property.toMap(): Map<String, Any?> =
+    mapOf(
+        Mapper.REFERENCE to reference,
+        Mapper.PRICE to price,
+        Mapper.TITLE to title,
+        Mapper.LOCATION to location,
+        Mapper.SURFACE to surface,
+        Mapper.DORM_COUNT to dormCount,
+        Mapper.DESCRIPTION to description,
+        Mapper.BATH_COUNT to bathCount,
+        Mapper.AVATAR_URL to avatarUrl,
+        Mapper.TAG to tag.toTag(),
+        Mapper.PROPERTY_URL to propertyUrl,
+        Mapper.VIDEO_URL to videoUrl,
+        Mapper.FULL_DESCRIPTION to fullDescription,
+        Mapper.CHARACTERISTICS to characteristics,
+        Mapper.PHOTO_GALLERY_URLS to photoGalleryUrls,
+        Mapper.LAT to lat,
+        Mapper.LNG to lng,
+        Mapper.PDF_URL to pdfUrl,
+        Mapper.LOCATION_DESCRIPTION to locationDescription
+    )
+
+fun Map<String, Any?>.toProperty() =
+    Property(
+        reference = asString(Mapper.REFERENCE),
+        price = asDouble(Mapper.PRICE),
+        title = asString(Mapper.TITLE),
+        location = asString(Mapper.LOCATION),
+        surface = asNullableString(Mapper.SURFACE),
+        dormCount = asNullableInt(Mapper.DORM_COUNT),
+        description = asString(Mapper.DESCRIPTION),
+        bathCount = asNullableInt(Mapper.BATH_COUNT),
+        avatarUrl = asString(Mapper.AVATAR_URL),
+        tag = asNullableString(Mapper.TAG, default = Property.Tag.EMPTY.identifier),
+        propertyUrl = asString(Mapper.PROPERTY_URL),
+        videoUrl = asNullableString(Mapper.VIDEO_URL),
+        fullDescription = asNullableString(Mapper.FULL_DESCRIPTION),
+        characteristics = asStringList(Mapper.CHARACTERISTICS),
+        photoGalleryUrls = asStringList(Mapper.PHOTO_GALLERY_URLS),
+        lat = asNullableDouble(Mapper.LAT),
+        lng = asNullableDouble(Mapper.LNG),
+        pdfUrl = asNullableString(Mapper.PDF_URL),
+        locationDescription = asNullableString(Mapper.LOCATION_DESCRIPTION)
+    )
+
+@VisibleForTesting
+object Mapper {
+    const val REFERENCE = "reference"
+    const val PRICE = "price"
+    const val TITLE = "title"
+    const val LOCATION = "location"
+    const val SURFACE = "surface"
+    const val DORM_COUNT = "dormCount"
+    const val DESCRIPTION = "description"
+    const val BATH_COUNT = "bathCount"
+    const val AVATAR_URL = "avatarUrl"
+    const val TAG = "tag"
+    const val PROPERTY_URL = "propertyUrl"
+    const val VIDEO_URL = "videoUrl"
+    const val FULL_DESCRIPTION = "fullDescription"
+    const val CHARACTERISTICS = "characteristics"
+    const val PHOTO_GALLERY_URLS = "photoGalleryUrls"
+    const val LAT = "lat"
+    const val LNG = "lng"
+    const val PDF_URL = "pdfUrl"
+    const val LOCATION_DESCRIPTION = "locationDescription"
+}
+
+private fun Map<String, Any?>.asString(token: String) = this[token] as String
+private fun Map<String, Any?>.asNullableString(token: String, default: String? = null) =
+    (this[token] as String?) ?: default
+
+private fun Map<String, Any?>.asDouble(token: String) = this[token] as Double
+private fun Map<String, Any?>.asNullableDouble(token: String) = this[token] as Double?
+private fun Map<String, Any?>.asNullableInt(token: String, default: Int? = null) =
+    (this[token] as Long?)?.toInt() ?: default
+
+private fun Map<String, Any?>.asStringList(token: String) = this[token] as List<String?>

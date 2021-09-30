@@ -3,10 +3,10 @@ package data.parser
 import it.skrape.selects.ElementNotFoundException
 import org.junit.jupiter.api.Test
 import utils.extractAuthority
-import utils.fixtures.Engel.defaultSearchResults
-import utils.fixtures.Engel.defaultSearchResultsWithPagination
-import utils.fixtures.Engel.emptySearchResult
-import utils.fixtures.Engel.singleSearchResult
+import utils.fixtures.EngelFixture.defaultSearchResults
+import utils.fixtures.EngelFixture.defaultSearchResultsWithPagination
+import utils.fixtures.EngelFixture.emptySearchResult
+import utils.fixtures.EngelFixture.singleSearchResult
 import kotlin.test.*
 
 class EngelSearchResultsParserTest {

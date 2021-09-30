@@ -8,7 +8,7 @@ import it.skrape.core.htmlDocument
 import it.skrape.selects.Doc
 import utils.loadResource
 
-object AProperties {
+object APropertiesFixture {
     inline fun <reified T> T.defaultSearchResults(): Pair<Doc, PropertySearchResult> {
         return Pair(
             htmlDocument(loadResource("/aproperties/aproperties-search-result-no-pagination.txt")),

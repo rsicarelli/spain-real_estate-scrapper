@@ -8,6 +8,8 @@ import data.datasource.FirestoreDataSourceImpl.FirestoreMap.LISTINGS_DOC
 import data.datasource.FirestoreDataSourceImpl.FirestoreMap.PROPERTY_COLLECTION
 import domain.model.Property
 import domain.model.Property.Type
+import domain.model.toMap
+import domain.model.toProperty
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -54,7 +56,7 @@ class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
             val future = docRef.get()
 
             val properties = future.get()
-                .map { Property.fromMap(it.data) }
+                .map { it.data.toProperty() }
 
             logger.info { "Got ${properties.size} properties" }
 
