@@ -1,13 +1,11 @@
 package data.parser
 
+import it.skrape.selects.ElementNotFoundException
 import org.junit.jupiter.api.Test
 import utils.extractAuthority
 import utils.fixtures.Engel.badPropertyDetailMissing
 import utils.fixtures.Engel.defaultPropertyDetail
-import kotlin.test.assertEquals
-import kotlin.test.assertNotNull
-import kotlin.test.assertNull
-import kotlin.test.assertTrue
+import kotlin.test.*
 
 class EngelPropertyDetailParserTest {
 
@@ -32,7 +30,7 @@ class EngelPropertyDetailParserTest {
         val (propertyDetailDocument, expectedResult) = defaultPropertyDetail()
 
         //when
-        val result = parser.parse(propertyDetailDocument)!!
+        val result = parser.parse(propertyDetailDocument)
 
         //then
         assertTrue(result.reference.startsWith("W-"))
@@ -45,7 +43,7 @@ class EngelPropertyDetailParserTest {
         val (propertyDetailDocument, expectedResult) = defaultPropertyDetail()
 
         //when
-        val result = parser.parse(propertyDetailDocument)!!
+        val result = parser.parse(propertyDetailDocument)
 
         //then
         assertEquals("", result.videoUrl)
@@ -58,7 +56,7 @@ class EngelPropertyDetailParserTest {
         val (propertyDetailDocument, expectedResult) = defaultPropertyDetail()
 
         //when
-        val result = parser.parse(propertyDetailDocument)!!
+        val result = parser.parse(propertyDetailDocument)
 
         //then
         result.photosGalleryUrls.forEach { photoUrl ->
@@ -73,7 +71,7 @@ class EngelPropertyDetailParserTest {
         val (propertyDetailDocument, expectedResult) = defaultPropertyDetail()
 
         //when
-        val result = parser.parse(propertyDetailDocument)!!
+        val result = parser.parse(propertyDetailDocument)
 
         //then
         assertEquals("", result.pdfUrl)
@@ -81,15 +79,18 @@ class EngelPropertyDetailParserTest {
     }
 
     @Test
-    fun `given a bad property detail when parse then should return null`() {
+    fun `given a bad property detail when parse then should return throw error`() {
         //given
         val propertyDetailDocument = badPropertyDetailMissing()
 
         //when
-        val result = parser.parse(propertyDetailDocument)
+        val result = runCatching { parser.parse(propertyDetailDocument) }
 
         //then
-        assertNull(result)
+        assertFalse(result.isSuccess)
+        assertNotNull(result.exceptionOrNull())
+        assertEquals(ElementNotFoundException::class, result.exceptionOrNull()!!::class)
+        assertNull(result.getOrNull())
     }
 
 }
