@@ -1,8 +1,10 @@
 package data.datasource
 
+import com.google.api.core.ApiFuture
 import com.google.cloud.firestore.DocumentReference
 import com.google.cloud.firestore.Firestore
 import com.google.cloud.firestore.WriteBatch
+import com.google.cloud.firestore.WriteResult
 import data.datasource.FirestoreDataSourceImpl.FirestoreMap.IS_ACTIVE
 import data.datasource.FirestoreDataSourceImpl.FirestoreMap.LISTINGS_DOC
 import data.datasource.FirestoreDataSourceImpl.FirestoreMap.PROPERTY_COLLECTION
@@ -37,13 +39,14 @@ class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
                         .document(LISTINGS_DOC)
                         .collection(type.tag)
                         .document(property.reference)
-                val data = property.toMap()
 
-                batch.set(docRef, data)
+                batch.set(docRef, property.toMap())
             }
 
-            batch.commit()
-
+            val future: ApiFuture<MutableList<WriteResult>> = batch.commit()
+            for (result in future.get()) {
+                logger.info { "Update time : " + result.updateTime }
+            }
             emit(properties)
         }.flowOn(Dispatchers.IO)
     }

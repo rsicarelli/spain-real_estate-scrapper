@@ -36,9 +36,8 @@ class GetPropertyUseCase(
                         }
                     }
                     .catch { failures.add(propertyItem) }
-                    .collect { propertyDetail ->
-                        properties.add(propertyDetail.toProperty(propertyItem))
-                    }
+                    .map { it.toProperty(propertyItem) }
+                    .collect { property -> properties.add(property) }
 
                 logger.info { "Done. Succeeds: ${properties.size}, failures: ${failures.size}" }
             }
