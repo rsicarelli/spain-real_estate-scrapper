@@ -21,12 +21,11 @@ fun main() {
 
     val app = HomeHuntApplication()
 
-    measureDuration {
-
+    val executionTime = measureDuration {
         with(app) {
             appInitializer.invoke()
             runBlocking { service.invoke() }
-
         }
     }
+    println("Finish. Took $executionTime")
 }
