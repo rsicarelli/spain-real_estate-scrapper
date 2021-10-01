@@ -10,9 +10,11 @@ Real estate experiences lacks many features for home hunting, making it really d
 
 ## How to use it
 1. Clone the project and open in your favourite IDE or Code Editor;
-2. Open `RentalPropertiesService.kt` and update default URL's. Note that the default url's are only scrapping properties from Valencia;
-3. Open `HomeHuntApplication.kt` and executes the `main()` function;
-4. Grab a coffee and check the progress on console until it ends.
+2. Follow [Firebase: create and enable service accounts](https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances) to create and export a new service accounts.
+3. Follow [Firebase: get started with Cloud Firestore](https://firebase.google.com/docs/firestore/quickstart) to set up the database. 
+4. Open `RentalPropertiesService.kt` and update default URLs. Note that the default URLs are only scrapping properties from Valencia.
+5. Open `HomeHuntApplication.kt` and executes the `main()` function.
+6. Grab a coffee and check the progress on console until it ends.
 
 ## Built with
 - [Kotlin](https://kotlinlang.org/) :rocket:
