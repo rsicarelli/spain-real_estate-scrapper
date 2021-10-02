@@ -12,7 +12,7 @@ data class PropertyDetail(
     val pdfUrl: String?
 )
 
-fun PropertyDetail.toProperty(propertyItem: PropertyItem) =
+fun PropertyDetail.toProperty(propertyItem: PropertyItem, origin: Property.Type) =
     Property(
         reference = propertyItem.reference,
         price = propertyItem.price,
@@ -32,5 +32,6 @@ fun PropertyDetail.toProperty(propertyItem: PropertyItem) =
         lat = lat,
         lng = lng,
         locationDescription = locationDescription,
-        pdfUrl = pdfUrl
+        pdfUrl = pdfUrl,
+        origin = origin.tag
     )

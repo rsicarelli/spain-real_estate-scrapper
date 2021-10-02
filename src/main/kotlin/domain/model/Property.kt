@@ -21,7 +21,8 @@ data class Property(
     val photoGalleryUrls: List<String?>,
     val lat: Double?,
     val lng: Double?,
-    val pdfUrl: String?
+    val pdfUrl: String?,
+    val origin: String
 ) {
 
     sealed class Type(val tag: String) {
@@ -66,7 +67,9 @@ fun Property.toMap(): Map<String, Any?> =
         Mapper.LAT to lat,
         Mapper.LNG to lng,
         Mapper.PDF_URL to pdfUrl,
-        Mapper.LOCATION_DESCRIPTION to locationDescription
+        Mapper.LOCATION_DESCRIPTION to locationDescription,
+        Mapper.ORIGIN to origin,
+        Mapper.VIEWED_BY to emptyList<String>()
     )
 
 fun Map<String, Any?>.toProperty() =
@@ -89,7 +92,8 @@ fun Map<String, Any?>.toProperty() =
         lat = asNullableDouble(Mapper.LAT),
         lng = asNullableDouble(Mapper.LNG),
         pdfUrl = asNullableString(Mapper.PDF_URL),
-        locationDescription = asNullableString(Mapper.LOCATION_DESCRIPTION)
+        locationDescription = asNullableString(Mapper.LOCATION_DESCRIPTION),
+        origin = asString(Mapper.ORIGIN)
     )
 
 @VisibleForTesting
@@ -113,6 +117,8 @@ object Mapper {
     const val LNG = "lng"
     const val PDF_URL = "pdfUrl"
     const val LOCATION_DESCRIPTION = "locationDescription"
+    const val ORIGIN = "origin"
+    const val VIEWED_BY = "viewedBy"
 }
 
 private fun Map<String, Any?>.asString(token: String) = this[token] as String

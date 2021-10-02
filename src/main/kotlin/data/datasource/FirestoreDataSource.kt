@@ -36,8 +36,6 @@ class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
             properties.forEach { property ->
                 val docRef: DocumentReference =
                     db.collection(PROPERTY_COLLECTION)
-                        .document(LISTINGS_DOC)
-                        .collection(type.tag)
                         .document(property.reference)
 
                 batch.set(docRef, property.toMap())
@@ -53,9 +51,7 @@ class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
 
     override suspend fun getAll(type: Type): Flow<List<Property>> {
         return flow {
-            val docRef = db.collection(PROPERTY_COLLECTION)
-                .document(LISTINGS_DOC)
-                .collection(type.tag)
+            val docRef = db.collection(PROPERTY_COLLECTION).whereEqualTo(Mapper.ORIGIN, type.tag)
             val future = docRef.get()
 
             val properties = future.get()
@@ -72,10 +68,7 @@ class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
         logger.info { "Changing property availability. Removed: ${removed.size}, active: ${active.size}" }
 
         removed.forEach { reference ->
-            val docRef: DocumentReference = db.collection(PROPERTY_COLLECTION)
-                .document(LISTINGS_DOC)
-                .collection(type.tag)
-                .document(reference)
+            val docRef: DocumentReference = db.collection(PROPERTY_COLLECTION).document(reference)
 
             val data = mapOf(IS_ACTIVE to false)
 
@@ -83,10 +76,7 @@ class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
         }
 
         active.forEach { reference ->
-            val docRef: DocumentReference = db.collection(PROPERTY_COLLECTION)
-                .document(LISTINGS_DOC)
-                .collection(type.tag)
-                .document(reference)
+            val docRef: DocumentReference = db.collection(PROPERTY_COLLECTION).document(reference)
 
             val data = mapOf(IS_ACTIVE to true)
 
@@ -102,7 +92,6 @@ class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
 
     private object FirestoreMap {
         const val PROPERTY_COLLECTION = "properties"
-        const val LISTINGS_DOC = "listings"
         const val IS_ACTIVE = "isActive"
     }
 }
