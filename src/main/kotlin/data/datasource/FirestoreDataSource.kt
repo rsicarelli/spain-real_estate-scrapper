@@ -6,8 +6,8 @@ import com.google.cloud.firestore.Firestore
 import com.google.cloud.firestore.WriteBatch
 import com.google.cloud.firestore.WriteResult
 import data.datasource.FirestoreDataSourceImpl.FirestoreMap.IS_ACTIVE
-import data.datasource.FirestoreDataSourceImpl.FirestoreMap.LISTINGS_DOC
 import data.datasource.FirestoreDataSourceImpl.FirestoreMap.PROPERTY_COLLECTION
+import domain.model.Mapper
 import domain.model.Property
 import domain.model.Property.Type
 import domain.model.toMap
@@ -29,6 +29,7 @@ interface FirestoreDataSource {
 
 class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
     override suspend fun addAll(properties: List<Property>, type: Type): Flow<List<Property>> {
+
         return flow {
             logger.info { "Adding properties do Firestore ${properties.size}" }
             val batch: WriteBatch = db.batch()
