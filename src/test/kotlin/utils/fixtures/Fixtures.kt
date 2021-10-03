@@ -41,7 +41,9 @@ val defaultProperty = Property(
     lat = 4.0,
     lng = 2.0,
     pdfUrl = "https://apdf.com",
-    origin = ""
+    origin = "",
+    viewedBy = emptyList(),
+    favouriteBy = emptyList()
 )
 
 val defaultPropertyMap: () -> Map<String, Any?> = {

@@ -7,15 +7,10 @@ import com.google.cloud.firestore.WriteBatch
 import com.google.cloud.firestore.WriteResult
 import data.datasource.FirestoreDataSourceImpl.FirestoreMap.IS_ACTIVE
 import data.datasource.FirestoreDataSourceImpl.FirestoreMap.PROPERTY_COLLECTION
-import domain.model.Mapper
-import domain.model.Property
+import domain.model.*
 import domain.model.Property.Type
-import domain.model.toMap
-import domain.model.toProperty
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.flowOn
+import kotlinx.coroutines.flow.*
 import mu.KotlinLogging
 
 
@@ -29,8 +24,9 @@ interface FirestoreDataSource {
 
 class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
     override suspend fun addAll(properties: List<Property>, type: Type): Flow<List<Property>> {
-
         return flow {
+            val all = getAll(type).first()
+
             logger.info { "Adding properties do Firestore ${properties.size}" }
             val batch: WriteBatch = db.batch()
 
@@ -39,7 +35,12 @@ class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
                     db.collection(PROPERTY_COLLECTION)
                         .document(property.reference)
 
-                batch.set(docRef, property.toMap())
+                var propertyToSave: Property = property
+                all.find { it.reference == property.reference }?.let {
+                    propertyToSave = property.copy(viewedBy = it.viewedBy, favouriteBy = it.favouriteBy)
+                }
+
+                batch.set(docRef, propertyToSave.toMap())
             }
 
             val future: ApiFuture<MutableList<WriteResult>> = batch.commit()

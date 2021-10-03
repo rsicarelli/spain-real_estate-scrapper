@@ -33,5 +33,7 @@ fun PropertyDetail.toProperty(propertyItem: PropertyItem, origin: Property.Type)
         lng = lng,
         locationDescription = locationDescription,
         pdfUrl = pdfUrl,
-        origin = origin.tag
+        origin = origin.tag,
+        viewedBy = emptyList(),
+        favouriteBy = emptyList()
     )
