@@ -42,12 +42,10 @@ internal class APropertiesSearchResultsParser : Parser<PropertySearchResult> {
 
         private fun DocElement.description() = divWithClass(CONTENT_CLASS) { findFirst { text } }
 
-        private fun DocElement.surface() = runCatchingOrDefault(null) {
-            this.divWithClass(SURFACE_CLASS) {
-                findFirst {
-                    spanWithClass(VALUE_FIELD_CLASS) {
-                        findFirst { text }
-                    }
+        private fun DocElement.surface() = this.divWithClass(SURFACE_CLASS) {
+            findFirst {
+                spanWithClass(VALUE_FIELD_CLASS) {
+                    findFirst { text.replace("m", "").replace("2", "").trim().convertToInt() }
                 }
             }
         }
@@ -143,7 +141,7 @@ internal class APropertiesSearchResultsParser : Parser<PropertySearchResult> {
                                         reference = reference(),
                                         price = price(),
                                         title = title(),
-                                        location = location(),
+                                        location = location().split(",").first().trim(),
                                         description = description(),
                                         surface = surface(),
                                         dormCount = dormCount(),

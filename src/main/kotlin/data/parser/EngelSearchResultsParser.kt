@@ -53,11 +53,11 @@ internal class EngelSearchResultsParser : Parser<PropertySearchResult> {
             divWithClass(SUBTITLE) { findFirst { text } }
         }
 
-        fun DocElement.surface() = runCatchingOrDefault("") {
+        fun DocElement.surface() = runCatchingOrDefault(999) {
             divWithClass(ATTRIBUTE) {
                 findThird {
                     spanWithClass(ATTRIBUTE_VALUE) {
-                        findFirst { text }
+                        findFirst { text.replace("m", "").replace("²", "").trim().convertToInt() }
                     }
                 }
             }
@@ -161,7 +161,7 @@ internal class EngelSearchResultsParser : Parser<PropertySearchResult> {
                                 reference = reference(),
                                 price = price(),
                                 title = title(),
-                                location = location(),
+                                location = location().split(",").last().trim(),
                                 surface = surface(),
                                 dormCount = dormCount(),
                                 bathCount = bathCount(),
