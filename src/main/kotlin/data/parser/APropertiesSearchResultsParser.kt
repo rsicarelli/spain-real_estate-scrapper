@@ -30,7 +30,7 @@ internal class APropertiesSearchResultsParser : Parser<PropertySearchResult> {
         private fun DocElement.propertyUrl(): String = a { findAll { "https://www.aproperties.es${eachHref.first()}" } }
 
         private fun DocElement.avatarUrl(): String =
-            divWithClass(IMAGE_CLASS) { findFirst { "https://www.aproperties.es${eachSrc.first()}" } }
+            divWithClass(IMAGE_CLASS) { findFirst { "https://www.aproperties.es${eachSrc.first()}".replaceAfter("jpg", "").replace("thumb?src=/", "") } }
 
         private fun DocElement.reference(): String = spanWithClass(REFERENCE_CLASS) { findFirst { text } }
 

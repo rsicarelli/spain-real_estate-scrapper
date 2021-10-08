@@ -18,7 +18,6 @@ interface FirestoreDataSource {
     suspend fun addAll(properties: List<Property>, type: Type): Flow<List<Property>>
     suspend fun getAll(type: Type): Flow<List<Property>>
     suspend fun markAvailability(removed: List<String>, active: List<String>, type: Type): Flow<Unit>
-    suspend fun saveLocations(locations: List<Property>)
 }
 
 class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
@@ -47,14 +46,8 @@ class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
                 logger.info { "Update time : " + result.updateTime }
             }
 
-            saveLocations(properties)
             emit(properties)
         }.flowOn(Dispatchers.IO)
-    }
-
-    override suspend fun saveLocations(properties: List<Property>) {
-        val locations = properties.map { it.location }.toSet()
-        db.collection(LOCATIONS_COLLECTION).document().set(locations, SetOptions.merge())
     }
 
     override suspend fun getAll(type: Type): Flow<List<Property>> {
