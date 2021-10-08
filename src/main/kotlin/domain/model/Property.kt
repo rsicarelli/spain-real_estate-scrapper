@@ -24,7 +24,7 @@ data class Property(
     val pdfUrl: String?,
     val origin: String,
     val viewedBy: List<String?>,
-    val favouriteBy: List<String?>
+    val isFavourited: Boolean
 ) {
 
     sealed class Type(val tag: String) {
@@ -72,7 +72,7 @@ fun Property.toMap(): Map<String, Any?> =
         Mapper.LOCATION_DESCRIPTION to locationDescription,
         Mapper.ORIGIN to origin,
         Mapper.VIEWED_BY to viewedBy,
-        Mapper.FAVOURITE_BY to favouriteBy
+        Mapper.IS_FAVORITED to isFavourited
     )
 
 fun Map<String, Any?>.toProperty() =
@@ -98,7 +98,7 @@ fun Map<String, Any?>.toProperty() =
         locationDescription = asNullableString(Mapper.LOCATION_DESCRIPTION),
         origin = asString(Mapper.ORIGIN),
         viewedBy = asStringList(Mapper.VIEWED_BY),
-        favouriteBy = asStringList(Mapper.FAVOURITE_BY)
+        isFavourited = asBoolean(Mapper.IS_FAVORITED)
     )
 
 @VisibleForTesting
@@ -124,7 +124,7 @@ object Mapper {
     const val LOCATION_DESCRIPTION = "locationDescription"
     const val ORIGIN = "origin"
     const val VIEWED_BY = "viewedBy"
-    const val FAVOURITE_BY = "favouriteBy"
+    const val IS_FAVORITED = "isFavourited"
 }
 
 private fun Map<String, Any?>.asString(token: String) = this[token] as String
@@ -134,6 +134,7 @@ private fun Map<String, Any?>.asNullableString(token: String, default: String? =
 private fun Map<String, Any?>.asDouble(token: String) = this[token] as Double
 private fun Map<String, Any?>.asNullableDouble(token: String) = this[token] as Double?
 private fun Map<String, Any?>.asInt(token: String) = (this[token] as Long).toInt()
+private fun Map<String, Any?>.asBoolean(token: String) = this[token] as Boolean
 private fun Map<String, Any?>.asNullableInt(token: String, default: Int? = null) =
     (this[token] as Long?)?.toInt() ?: default
 

@@ -3,7 +3,6 @@ package data.datasource
 import com.google.api.core.ApiFuture
 import com.google.cloud.firestore.*
 import data.datasource.FirestoreDataSourceImpl.FirestoreMap.IS_ACTIVE
-import data.datasource.FirestoreDataSourceImpl.FirestoreMap.LOCATIONS_COLLECTION
 import data.datasource.FirestoreDataSourceImpl.FirestoreMap.PROPERTY_COLLECTION
 import domain.model.*
 import domain.model.Property.Type
@@ -35,7 +34,7 @@ class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
 
                 var propertyToSave: Property = property
                 all.find { it.reference == property.reference }?.let {
-                    propertyToSave = property.copy(viewedBy = it.viewedBy, favouriteBy = it.favouriteBy)
+                    propertyToSave = property.copy(viewedBy = it.viewedBy, isFavourited = it.isFavourited)
                 }
 
                 batch.set(docRef, propertyToSave.toMap())

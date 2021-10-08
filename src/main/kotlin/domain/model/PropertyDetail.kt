@@ -35,5 +35,5 @@ fun PropertyDetail.toProperty(propertyItem: PropertyItem, origin: Property.Type)
         pdfUrl = pdfUrl,
         origin = origin.tag,
         viewedBy = emptyList(),
-        favouriteBy = emptyList()
+        isFavourited = false
     )
