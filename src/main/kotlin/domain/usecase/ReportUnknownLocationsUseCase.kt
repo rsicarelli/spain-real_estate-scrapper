@@ -13,7 +13,9 @@ class ReportUnknownLocationsUseCase(
         return propertyRepository.getAll()
             .map { cachedProperties ->
                 cachedProperties.filter { it.location.isUnknown }.map { it.location }
-            }.flatMapConcat {
+            }
+            .filter { it.isNotEmpty() }
+            .flatMapConcat {
                 propertyRepository.saveUnknownLocations(it)
             }
     }
