@@ -3,6 +3,7 @@ package di
 import app.AppInitializer
 import domain.service.RentalPropertiesService
 import com.google.firebase.cloud.FirestoreClient
+import com.google.firebase.database.core.Repo
 import data.datasource.FirestoreDataSource
 import data.datasource.FirestoreDataSourceImpl
 import data.datasource.WebDataSource
@@ -18,7 +19,7 @@ import org.koin.dsl.module
 val appModules by lazy { listOf(homeHuntModule, dataModule, domainModule) }
 
 val homeHuntModule = module {
-    single { RentalPropertiesService(get()) }
+    single { RentalPropertiesService(get(), get()) }
     single { AppInitializer("src/main/resources/homehunt-service-account.json") }
 }
 
@@ -49,6 +50,7 @@ val domainModule = module {
     single { GetFirstSearchPageUseCase(get()) }
     single { SavePropertiesUseCase(get()) }
     single { FixPropertiesLocationUseCase() }
+    single { ReportUnknownLocationsUseCase(get()) }
 
     single {
         ScrapRealEstateUseCase(

@@ -15,7 +15,7 @@ class TogglePropertyAvailabilityUseCase(
     suspend operator fun invoke(request: Request): Flow<Unit> {
         val (newProperties, type) = request
 
-        return repository.getAll(type)
+        return repository.getAllFromType(type)
             .map { cachedProperties ->
                 val first = cachedProperties.map { it.reference }
                 val second = newProperties.map { it.reference }

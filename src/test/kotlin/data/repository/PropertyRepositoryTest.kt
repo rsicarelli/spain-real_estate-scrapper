@@ -123,14 +123,14 @@ class PropertyRepositoryTest {
     @Test
     fun `given data source has list of properties when get all then should call data source`() = runBlocking {
         //given
-        coEvery { firebaseDataSource.getAll(any()) } returns flow { emit(mockk<List<Property>>()) }
+        coEvery { firebaseDataSource.getAllFromType(any()) } returns flow { emit(mockk<List<Property>>()) }
 
         //when
-        val result = repository.getAll(type).first()
+        val result = repository.getAllFromType(type).first()
 
         //then
         assertNotNull(result)
-        coVerify(exactly = 1) { firebaseDataSource.getAll(any()) }
+        coVerify(exactly = 1) { firebaseDataSource.getAllFromType(any()) }
     }
 
     @Test

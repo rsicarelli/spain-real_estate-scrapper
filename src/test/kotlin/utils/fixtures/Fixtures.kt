@@ -25,7 +25,7 @@ val defaultProperty = Property(
     reference = "a reference",
     price = 100.0,
     title = "a title",
-    location = Location(name = "a location", lat = 0.0, lng = 0.0, isApproximated = false),
+    location = Location(name = "a location", lat = 0.0, lng = 0.0, isApproximated = false, isUnknown = false),
     surface = 30,
     dormCount = 2,
     description = "a description",

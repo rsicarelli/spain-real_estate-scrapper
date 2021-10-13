@@ -2,18 +2,20 @@ package domain.service
 
 import domain.model.Property.Type.APROPERTIES
 import domain.model.Property.Type.ENGELS
+import domain.usecase.ReportUnknownLocationsUseCase
 import domain.usecase.ScrapRealEstateUseCase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collect
 
 class RentalPropertiesService(
-    private val scrapRealEstate: ScrapRealEstateUseCase
+    private val scrapRealEstate: ScrapRealEstateUseCase,
+    private val reportUnknownLocations: ReportUnknownLocationsUseCase
 ) {
-
     suspend operator fun invoke() {
-        scrapRealEstate.invoke(ScrapRealEstateUseCase.Request(APROPERTIES_DEFAULT_URL, APROPERTIES)).collect()
-        scrapRealEstate.invoke(ScrapRealEstateUseCase.Request(ENGEL_DEFAULT_URL, ENGELS)).collect()
+//        scrapRealEstate.invoke(ScrapRealEstateUseCase.Request(APROPERTIES_DEFAULT_URL, APROPERTIES)).collect()
+//        scrapRealEstate.invoke(ScrapRealEstateUseCase.Request(ENGEL_DEFAULT_URL, ENGELS)).collect()
+        reportUnknownLocations.invoke().collect()
     }
 
     companion object {

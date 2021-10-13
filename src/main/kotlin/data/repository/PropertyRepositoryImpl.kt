@@ -3,12 +3,12 @@ package data.repository
 import data.datasource.FirestoreDataSource
 import data.datasource.WebDataSource
 import data.parser.ParserProxy
+import domain.model.Location
 import domain.model.Property
 import domain.model.Property.Type
 import domain.repository.PropertyRepository
 import domain.model.PropertyDetail
 import domain.model.PropertySearchResult
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
 
 class PropertyRepositoryImpl(
@@ -25,9 +25,14 @@ class PropertyRepositoryImpl(
     override suspend fun save(properties: List<Property>, type: Type): Flow<List<Property>> =
         firebaseDataSource.addAll(properties, type)
 
-    override suspend fun getAll(type: Type): Flow<List<Property>> = firebaseDataSource.getAll(type)
+    override suspend fun getAllFromType(type: Type): Flow<List<Property>> = firebaseDataSource.getAllFromType(type)
+
+    override suspend fun getAll(): Flow<List<Property>> = firebaseDataSource.getAll()
 
     override suspend fun markAvailability(removed: List<String>, active: List<String>, type: Type): Flow<Unit> =
         firebaseDataSource.markAvailability(removed, active, type)
+
+    override suspend fun saveUnknownLocations(locations: List<Location>): Flow<Unit> =
+        firebaseDataSource.saveUnknownLocations(locations)
 
 }

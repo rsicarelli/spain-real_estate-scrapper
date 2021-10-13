@@ -4,6 +4,7 @@ import com.google.api.core.ApiFuture
 import com.google.cloud.firestore.*
 import data.datasource.FirestoreDataSourceImpl.FirestoreMap.IS_ACTIVE
 import data.datasource.FirestoreDataSourceImpl.FirestoreMap.PROPERTY_COLLECTION
+import data.datasource.FirestoreDataSourceImpl.FirestoreMap.UNKNOWN_LOCATIONS_COLLECTION
 import domain.model.*
 import domain.model.Property.Type
 import kotlinx.coroutines.Dispatchers
@@ -15,14 +16,16 @@ private val logger = KotlinLogging.logger("FirestoreDataSource")
 
 interface FirestoreDataSource {
     suspend fun addAll(properties: List<Property>, type: Type): Flow<List<Property>>
-    suspend fun getAll(type: Type): Flow<List<Property>>
+    suspend fun getAllFromType(type: Type): Flow<List<Property>>
+    suspend fun getAll(): Flow<List<Property>>
+    suspend fun saveUnknownLocations(locations: List<Location>): Flow<Unit>
     suspend fun markAvailability(removed: List<String>, active: List<String>, type: Type): Flow<Unit>
 }
 
 class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
     override suspend fun addAll(properties: List<Property>, type: Type): Flow<List<Property>> {
         return flow {
-            val all = getAll(type).first()
+            val all = getAllFromType(type).first()
 
             logger.info { "Adding properties do Firestore ${properties.size}" }
             val batch: WriteBatch = db.batch()
@@ -49,7 +52,7 @@ class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
         }.flowOn(Dispatchers.IO)
     }
 
-    override suspend fun getAll(type: Type): Flow<List<Property>> {
+    override suspend fun getAllFromType(type: Type): Flow<List<Property>> {
         return flow {
             val docRef = db.collection(PROPERTY_COLLECTION).whereEqualTo(Mapper.ORIGIN, type.tag)
             val future = docRef.get()
@@ -62,6 +65,38 @@ class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
             emit(properties)
         }.flowOn(Dispatchers.IO)
     }
+
+    override suspend fun getAll(): Flow<List<Property>> {
+        return flow {
+            val docRef = db.collection(PROPERTY_COLLECTION)
+            val future = docRef.get()
+
+            val properties = future.get()
+                .map { it.data.toProperty() }
+
+            logger.info { "Got ${properties.size} properties" }
+
+            emit(properties)
+        }.flowOn(Dispatchers.IO)
+    }
+
+    override suspend fun saveUnknownLocations(locations: List<Location>): Flow<Unit> = flow<Unit> {
+        logger.info { "Reporting unknown locations ${locations.size}" }
+
+        val batch: WriteBatch = db.batch()
+
+        val docRef: CollectionReference = db.collection(UNKNOWN_LOCATIONS_COLLECTION)
+
+        locations.forEach {
+            batch.set(docRef.document(it.name), it)
+        }
+
+        batch.commit()
+
+        logger.info { "Done reporting locations ${locations.size}" }
+
+        emit(Unit)
+    }.flowOn(Dispatchers.IO)
 
     override suspend fun markAvailability(removed: List<String>, active: List<String>, type: Type) = flow {
         val batch: WriteBatch = db.batch()
@@ -92,7 +127,7 @@ class FirestoreDataSourceImpl(private val db: Firestore) : FirestoreDataSource {
 
     private object FirestoreMap {
         const val PROPERTY_COLLECTION = "properties"
-        const val LOCATIONS_COLLECTION = "locations"
+        const val UNKNOWN_LOCATIONS_COLLECTION = "unknownLocations"
         const val IS_ACTIVE = "isActive"
     }
 }

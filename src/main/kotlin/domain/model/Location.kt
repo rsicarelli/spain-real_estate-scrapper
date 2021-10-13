@@ -17,16 +17,17 @@ data class Location(
 
         filtered.firstOrNull()?.let {
             return this.copy(
+                name = it.name,
                 lat = it.lat,
                 lng = it.lng,
-                name = it.name,
-                isApproximated = true
+                isApproximated = true,
+                isUnknown = false
             )
         } ?: return this.copy(
+            name = this.name,
             lat = Valencia.lat,
             lng = Valencia.lng,
             isApproximated = true,
-            name = this.name,
             isUnknown = true
         )
     }
@@ -55,7 +56,7 @@ data class Location(
 }
 
 
-@Suppress("SpellCheckingInspection")
+@Suppress("SpellCheckingInspection", "unused")
 sealed class LocationMapper(val name: String, val lat: Double, val lng: Double, val variants: List<String>) {
     object LaPetxina : LocationMapper("La Petxina", 39.4739599, -0.3958677, variants = emptyList())
     object SantFrancesc : LocationMapper("Sant Francesc", 39.4704735, -0.3782936, variants = listOf("San Francesc"))
