@@ -48,6 +48,7 @@ val domainModule = module {
     single { TogglePropertyAvailabilityUseCase(get()) }
     single { GetFirstSearchPageUseCase(get()) }
     single { SavePropertiesUseCase(get()) }
+    single { FixPropertiesLocationUseCase() }
 
     single {
         ScrapRealEstateUseCase(
@@ -55,7 +56,8 @@ val domainModule = module {
             getPaginatedSearchItems = get(),
             getProperties = get(),
             saveProperties = get(),
-            toggleAvailability = get()
+            toggleAvailability = get(),
+            fixPropertiesLocation = get()
         )
     }
 }

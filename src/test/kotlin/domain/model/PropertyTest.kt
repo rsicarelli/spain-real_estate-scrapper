@@ -80,8 +80,8 @@ class PropertyTest {
             propertyMap.assertEquals(Mapper.FULL_DESCRIPTION, fullDescription)
             propertyMap.assertEquals(Mapper.CHARACTERISTICS, characteristics)
             propertyMap.assertEquals(Mapper.PHOTO_GALLERY_URLS, photoGalleryUrls)
-            propertyMap.assertEquals(Mapper.LAT, lat)
-            propertyMap.assertEquals(Mapper.LNG, lng)
+            /*propertyMap.assertEquals(Mapper.LAT, lat)
+            propertyMap.assertEquals(Mapper.LNG, lng)*/
             propertyMap.assertEquals(Mapper.PDF_URL, pdfUrl)
             propertyMap.assertEquals(Mapper.LOCATION_DESCRIPTION, locationDescription)
         }

@@ -16,6 +16,7 @@ dependencies {
     implementation(Dependencies.firestoreAdmin)
     implementation(Dependencies.kotlinLogging)
     implementation(Dependencies.koin)
+    implementation(Dependencies.kotlinReflection)
     testImplementation(Dependencies.jUnit5)
     testImplementation(kotlin(Kotlin.test))
     testImplementation(Dependencies.koinTest) {
@@ -32,6 +33,8 @@ tasks.test {
 }
 
 tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions {
+        jvmTarget = "1.8"
+        freeCompilerArgs = freeCompilerArgs + "-Xopt-in=kotlin.RequiresOptIn"
+    }
 }
-

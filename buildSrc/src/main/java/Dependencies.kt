@@ -18,6 +18,9 @@ object Dependencies {
 
     private const val mokkVersion = "1.12.0"
     const val mokk = "io.mockk:mockk:$mokkVersion"
+
+    private const val kotlinReflectionVersion = "1.5.31"
+    const val kotlinReflection = "org.jetbrains.kotlin:kotlin-reflect:$kotlinReflectionVersion"
 }
 
 object Kotlin {

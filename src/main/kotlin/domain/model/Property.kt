@@ -6,7 +6,7 @@ data class Property(
     val reference: String,
     val price: Double,
     val title: String,
-    val location: String,
+    val location: Location,
     val surface: Int,
     val dormCount: Int?,
     val description: String,
@@ -19,8 +19,6 @@ data class Property(
     val locationDescription: String?,
     val characteristics: List<String?>,
     val photoGalleryUrls: List<String?>,
-    val lat: Double?,
-    val lng: Double?,
     val pdfUrl: String?,
     val origin: String,
     val viewedBy: List<String?>,
@@ -66,8 +64,6 @@ fun Property.toMap(): Map<String, Any?> =
         Mapper.FULL_DESCRIPTION to fullDescription,
         Mapper.CHARACTERISTICS to characteristics,
         Mapper.PHOTO_GALLERY_URLS to photoGalleryUrls,
-        Mapper.LAT to lat,
-        Mapper.LNG to lng,
         Mapper.PDF_URL to pdfUrl,
         Mapper.LOCATION_DESCRIPTION to locationDescription,
         Mapper.ORIGIN to origin,
@@ -80,7 +76,7 @@ fun Map<String, Any?>.toProperty() =
         reference = asString(Mapper.REFERENCE),
         price = asDouble(Mapper.PRICE),
         title = asString(Mapper.TITLE),
-        location = asString(Mapper.LOCATION),
+        location = asLocation(Mapper.LOCATION),
         surface = asInt(Mapper.SURFACE),
         dormCount = asNullableInt(Mapper.DORM_COUNT),
         description = asString(Mapper.DESCRIPTION),
@@ -92,8 +88,6 @@ fun Map<String, Any?>.toProperty() =
         fullDescription = asNullableString(Mapper.FULL_DESCRIPTION),
         characteristics = asStringList(Mapper.CHARACTERISTICS),
         photoGalleryUrls = asStringList(Mapper.PHOTO_GALLERY_URLS),
-        lat = asNullableDouble(Mapper.LAT),
-        lng = asNullableDouble(Mapper.LNG),
         pdfUrl = asNullableString(Mapper.PDF_URL),
         locationDescription = asNullableString(Mapper.LOCATION_DESCRIPTION),
         origin = asString(Mapper.ORIGIN),
@@ -127,12 +121,22 @@ object Mapper {
     const val IS_FAVORITED = "isFavourited"
 }
 
+private fun Map<String, Any?>.asLocation(token: String): Location {
+    val locationMap = this[token] as HashMap<String, Any?>
+    return Location(
+        name = locationMap.asString("name"),
+        lat = locationMap.asDouble("lat"),
+        lng = locationMap.asDouble("lng"),
+        isApproximated = locationMap.asBoolean("approximated"),
+        isUnknown = locationMap.asBoolean("unknown"),
+    )
+}
+
 private fun Map<String, Any?>.asString(token: String) = this[token] as String
 private fun Map<String, Any?>.asNullableString(token: String, default: String? = null) =
     (this[token] as String?) ?: default
 
 private fun Map<String, Any?>.asDouble(token: String) = this[token] as Double
-private fun Map<String, Any?>.asNullableDouble(token: String) = this[token] as Double?
 private fun Map<String, Any?>.asInt(token: String) = (this[token] as Long).toInt()
 private fun Map<String, Any?>.asBoolean(token: String) = this[token] as Boolean
 private fun Map<String, Any?>.asNullableInt(token: String, default: Int? = null) =

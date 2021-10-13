@@ -25,7 +25,7 @@ val defaultProperty = Property(
     reference = "a reference",
     price = 100.0,
     title = "a title",
-    location = "a location",
+    location = Location(name = "a location", lat = 0.0, lng = 0.0, isApproximated = false),
     surface = 30,
     dormCount = 2,
     description = "a description",
@@ -38,12 +38,10 @@ val defaultProperty = Property(
     locationDescription = "a location description",
     characteristics = listOf("foo", "bar"),
     photoGalleryUrls = listOf("https://aimage.com", "https://anotherimage.com"),
-    lat = 4.0,
-    lng = 2.0,
     pdfUrl = "https://apdf.com",
     origin = "",
     viewedBy = emptyList(),
-    favouriteBy = emptyList()
+    isFavourited = false
 )
 
 val defaultPropertyMap: () -> Map<String, Any?> = {
@@ -64,8 +62,6 @@ val defaultPropertyMap: () -> Map<String, Any?> = {
             Mapper.FULL_DESCRIPTION to fullDescription,
             Mapper.CHARACTERISTICS to characteristics,
             Mapper.PHOTO_GALLERY_URLS to photoGalleryUrls,
-            Mapper.LAT to lat,
-            Mapper.LNG to lng,
             Mapper.PDF_URL to pdfUrl,
             Mapper.LOCATION_DESCRIPTION to locationDescription
         )
