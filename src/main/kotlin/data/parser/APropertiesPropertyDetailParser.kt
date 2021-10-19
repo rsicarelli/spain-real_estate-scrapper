@@ -84,7 +84,7 @@ internal class APropertiesPropertyDetailParser : Parser<PropertyDetail> {
             }
         }.replace("Ref. ", "")
 
-        fun Doc.pdfUrl() = "https://www.aproperties.es/pdf/properties/es/${this.reference().toLowerCase()}.pdf"
+        fun Doc.pdfUrl() = "https://www.aproperties.es/pdf/properties/es/${this.reference().lowercase()}.pdf"
 
         private const val PROPERTY_CONTENT = "propertyContent"
         private const val PROPERTY_CHARACTERISTICS = "description__featuresCaractListItem"
