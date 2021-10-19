@@ -1,0 +1,1 @@
+web: java -jar build/libs/home-hunt-1.0-SNAPSHOT-all.jar

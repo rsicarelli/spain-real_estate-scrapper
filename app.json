@@ -1,0 +1,5 @@
+{
+  "name": "Home Hunt",
+  "description": "Home Hunt GraphQL Server",
+  "image": "heroku/java"
+}
