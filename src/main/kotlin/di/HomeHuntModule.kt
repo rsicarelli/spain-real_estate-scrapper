@@ -9,10 +9,13 @@ import domain.service.PropertyService
 import domain.usecase.*
 import me.rsicarelli.data.repository.FavouriteRepositoryImpl
 import me.rsicarelli.data.repository.UserRepositoryImpl
+import me.rsicarelli.data.repository.ViewedPropertiesRepositoryImpl
 import me.rsicarelli.domain.repository.FavouritesRepository
 import me.rsicarelli.domain.repository.UserRepository
+import me.rsicarelli.domain.repository.ViewedPropertiesRepository
 import me.rsicarelli.domain.service.AuthService
 import me.rsicarelli.domain.service.FavouritesService
+import me.rsicarelli.domain.service.ViewedPropertiesService
 import org.koin.core.qualifier.named
 import org.koin.dsl.bind
 import org.koin.dsl.module
@@ -29,6 +32,7 @@ val dataModule = module {
     single { PropertyRepositoryImpl(get(), get(), get()) } bind PropertyRepository::class
     single { FavouriteRepositoryImpl(get()) } bind FavouritesRepository::class
     single { UserRepositoryImpl(get()) } bind UserRepository::class
+    single { ViewedPropertiesRepositoryImpl(get()) } bind ViewedPropertiesRepository::class
 
     single(named(APROPERTIES_SEARCH_RESULT_PARSER_QUALIFIER)) { APropertiesSearchResultsParser() } bind Parser::class
     single(named(APROPERTIES_PROPERTY_DETAIL_PARSER_QUALIFIER)) { APropertiesPropertyDetailParser() } bind Parser::class
@@ -67,4 +71,5 @@ val domainModule = module {
     single { PropertyService() }
     single { AuthService() }
     single { FavouritesService() }
+    single { ViewedPropertiesService() }
 }
