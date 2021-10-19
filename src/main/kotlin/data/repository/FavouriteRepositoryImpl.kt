@@ -22,7 +22,10 @@ class FavouriteRepositoryImpl(client: MongoClient) : FavouritesRepository {
             col.findOne(Favourites::userId eq userId)
                 ?.let {
                     val favourites = if (isFavourited) {
-                        it.propertyIds + listOf(propertyId)
+                        if (it.propertyIds.contains(propertyId))
+                            it.propertyIds
+                        else
+                            it.propertyIds + listOf(propertyId)
                     } else {
                         it.propertyIds.filter { id -> id != propertyId }
                     }
