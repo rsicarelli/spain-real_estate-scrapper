@@ -11,23 +11,26 @@ import data.datasource.WebDataSourceImpl
 import data.parser.*
 import data.repository.PropertyRepositoryImpl
 import domain.repository.PropertyRepository
+import domain.service.PropertyService
 import domain.usecase.*
 import org.koin.core.qualifier.named
 import org.koin.dsl.bind
 import org.koin.dsl.module
+import org.litote.kmongo.KMongo
 
 val appModules by lazy { listOf(homeHuntModule, dataModule, domainModule) }
 
-val homeHuntModule = module {
+val homeHuntModule = module(createdAtStart = true) {
     single { RentalPropertiesService(get(), get()) }
     single { AppInitializer("src/main/resources/homehunt-service-account.json") }
+    factory { KMongo.createClient(System.getenv("MONGO_URI") ?: "") }
 }
 
 val dataModule = module {
-    single { FirestoreClient.getFirestore() }
-    single { FirestoreDataSourceImpl(get()) } bind FirestoreDataSource::class
+//    single { FirestoreClient.getFirestore() }
+    single { FirestoreDataSourceImpl() } bind FirestoreDataSource::class
     single { WebDataSourceImpl() } bind WebDataSource::class
-    single { PropertyRepositoryImpl(get(), get(), get()) } bind PropertyRepository::class
+    single { PropertyRepositoryImpl(get(), get(), get(), get()) } bind PropertyRepository::class
 
     single(named(APROPERTIES_SEARCH_RESULT_PARSER_QUALIFIER)) { APropertiesSearchResultsParser() } bind Parser::class
     single(named(APROPERTIES_PROPERTY_DETAIL_PARSER_QUALIFIER)) { APropertiesPropertyDetailParser() } bind Parser::class
@@ -62,4 +65,6 @@ val domainModule = module {
             fixPropertiesLocation = get()
         )
     }
+
+    single { PropertyService() }
 }

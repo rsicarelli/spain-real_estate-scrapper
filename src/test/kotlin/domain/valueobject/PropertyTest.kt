@@ -1,6 +1,10 @@
-package domain.model
+package domain.valueobject
 
-import domain.model.Property.Tag.*
+import domain.entity.Mapper
+import domain.entity.Property.Tag.*
+import domain.entity.toMap
+import domain.entity.toProperty
+import domain.entity.toTag
 import org.junit.jupiter.api.Test
 import utils.fixtures.*
 import kotlin.test.assertEquals

@@ -1,6 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
+    application
     kotlin("jvm") version Kotlin.version
     id(Plugins.gradleShadow) version Plugins.gradleShadowVersion
 }
@@ -11,6 +12,10 @@ version = "1.0-SNAPSHOT"
 repositories {
     mavenCentral()
     jcenter()
+}
+
+application {
+    mainClassName = "io.ktor.server.netty.EngineMain"
 }
 
 dependencies {
@@ -59,3 +64,15 @@ tasks.withType<KotlinCompile> {
         freeCompilerArgs = freeCompilerArgs + "-Xopt-in=kotlin.RequiresOptIn"
     }
 }
+
+tasks.withType<Jar> {
+    manifest {
+        attributes(
+            mapOf(
+                "Main-Class" to application.mainClassName
+            )
+        )
+    }
+}
+
+sourceSets["main"].resources.srcDirs("resources")

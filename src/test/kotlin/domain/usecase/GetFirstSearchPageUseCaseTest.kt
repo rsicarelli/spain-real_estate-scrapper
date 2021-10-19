@@ -1,7 +1,7 @@
 package domain.usecase
 
-import domain.model.Property
-import domain.model.PropertySearchResult
+import domain.entity.Property
+import domain.entity.PropertySearchResult
 import domain.repository.PropertyRepository
 import io.mockk.coEvery
 import io.mockk.coVerify
@@ -9,7 +9,6 @@ import io.mockk.impl.annotations.InjectMockKs
 import io.mockk.impl.annotations.MockK
 import io.mockk.junit5.MockKExtension
 import io.mockk.mockk
-import io.mockk.verify
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.runBlocking

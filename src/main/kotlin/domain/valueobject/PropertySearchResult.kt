@@ -1,4 +1,4 @@
-package domain.model
+package domain.entity
 
 data class PropertySearchResult(
     val items: List<PropertyItem>,

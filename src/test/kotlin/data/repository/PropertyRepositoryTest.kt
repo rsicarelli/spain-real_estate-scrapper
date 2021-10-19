@@ -6,7 +6,7 @@ package data.repository
 import data.datasource.FirestoreDataSource
 import data.datasource.WebDataSource
 import data.parser.ParserProxy
-import domain.model.Property
+import domain.entity.Property
 import io.mockk.*
 import io.mockk.impl.annotations.InjectMockKs
 import io.mockk.impl.annotations.MockK

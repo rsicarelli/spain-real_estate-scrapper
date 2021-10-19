@@ -1,31 +1,60 @@
+package me.rsicarelli
+
 import app.AppInitializer
+import com.apurebase.kgraphql.GraphQL
+import data.graphql.propertySchema
 import di.appModules
+import domain.service.PropertyService
 import domain.service.RentalPropertiesService
-import kotlinx.coroutines.runBlocking
+import io.ktor.application.*
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import org.koin.core.context.startKoin
-import org.koin.core.time.measureDuration
-
 
 class HomeHuntApplication : KoinComponent {
     val service: RentalPropertiesService by inject()
+    val propertyService: PropertyService by inject()
     val appInitializer: AppInitializer by inject()
 }
 
-fun main() {
+fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
+
+@Suppress("unused") // Referenced in application.conf
+@kotlin.jvm.JvmOverloads
+fun Application.module(testing: Boolean = false) {
+
     startKoin {
         printLogger()
         modules(appModules)
     }
 
     val app = HomeHuntApplication()
+    app.appInitializer.invoke()
 
-    val executionTime = measureDuration {
-        with(app) {
-            appInitializer.invoke()
-            runBlocking { service.invoke() }
+    install(GraphQL) {
+        playground = true
+//        context { call ->
+//            authService.verifyToken(call)?.let { +it }
+//            +log
+//            +call
+//        }
+
+        schema {
+            propertySchema(app.propertyService)
         }
     }
-    println("Finish. Took $executionTime")
 }
+
+//fun main() {
+//
+//
+//    val app = HomeHuntApplication()
+//
+//    val executionTime = measureDuration {
+//        with(app) {
+//            appInitializer.invoke()
+//            runBlocking { service.invoke() }
+//        }
+//    }
+//    println("Finish. Took $executionTime")
+//}

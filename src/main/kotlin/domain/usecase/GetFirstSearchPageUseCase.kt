@@ -1,8 +1,8 @@
 package domain.usecase
 
-import domain.model.Property.Type
+import domain.entity.Property.Type
 import domain.repository.PropertyRepository
-import domain.model.PropertySearchResult
+import domain.entity.PropertySearchResult
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.onEach
 import mu.KotlinLogging

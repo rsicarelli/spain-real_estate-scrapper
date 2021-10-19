@@ -1,10 +1,11 @@
 package domain.usecase
 
-import domain.model.Property
-import domain.model.Property.Type
+import domain.entity.Property
+import domain.entity.Property.Type
 import domain.repository.PropertyRepository
-import domain.model.PropertyItem
-import domain.model.toProperty
+import domain.entity.PropertyItem
+import domain.entity.toProperty
+import domain.valueobject.toProperty
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.*
 import mu.KotlinLogging

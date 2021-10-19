@@ -1,8 +1,11 @@
-package domain.model
+package domain.entity
 
+import app.*
 import com.google.common.annotations.VisibleForTesting
+import java.util.*
 
 data class Property(
+    override val id: String,
     val reference: String,
     val price: Double,
     val title: String,
@@ -23,7 +26,7 @@ data class Property(
     val origin: String,
     val viewedBy: List<String?>,
     val isFavourited: Boolean
-) {
+) : Model {
 
     sealed class Type(val tag: String) {
         object APROPERTIES : Type("aProperties")
@@ -73,6 +76,7 @@ fun Property.toMap(): Map<String, Any?> =
 
 fun Map<String, Any?>.toProperty() =
     Property(
+        id = UUID.randomUUID().toString(),
         reference = asString(Mapper.REFERENCE),
         price = asDouble(Mapper.PRICE),
         title = asString(Mapper.TITLE),
@@ -120,26 +124,3 @@ object Mapper {
     const val VIEWED_BY = "viewedBy"
     const val IS_FAVORITED = "isFavourited"
 }
-
-private fun Map<String, Any?>.asLocation(token: String): Location {
-    val locationMap = this[token] as HashMap<String, Any?>
-    return Location(
-        name = locationMap.asString("name"),
-        lat = locationMap.asDouble("lat"),
-        lng = locationMap.asDouble("lng"),
-        isApproximated = locationMap.asBoolean("approximated"),
-        isUnknown = locationMap.asBoolean("unknown"),
-    )
-}
-
-private fun Map<String, Any?>.asString(token: String) = this[token] as String
-private fun Map<String, Any?>.asNullableString(token: String, default: String? = null) =
-    (this[token] as String?) ?: default
-
-private fun Map<String, Any?>.asDouble(token: String) = this[token] as Double
-private fun Map<String, Any?>.asInt(token: String) = (this[token] as Long).toInt()
-private fun Map<String, Any?>.asBoolean(token: String) = this[token] as Boolean
-private fun Map<String, Any?>.asNullableInt(token: String, default: Int? = null) =
-    (this[token] as Long?)?.toInt() ?: default
-
-private fun Map<String, Any?>.asStringList(token: String) = this[token] as List<String?>

@@ -1,9 +1,9 @@
 package domain.usecase
 
-import domain.model.Property.Type
+import domain.entity.Property.Type
 import domain.repository.PropertyRepository
-import domain.model.PropertyItem
-import domain.model.PropertySearchResult
+import domain.entity.PropertyItem
+import domain.entity.PropertySearchResult
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collect

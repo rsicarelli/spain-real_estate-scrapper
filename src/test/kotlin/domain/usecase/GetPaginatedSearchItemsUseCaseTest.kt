@@ -1,6 +1,6 @@
 package domain.usecase
 
-import domain.model.Property
+import domain.entity.Property
 import domain.repository.PropertyRepository
 import io.mockk.coEvery
 import io.mockk.coVerify

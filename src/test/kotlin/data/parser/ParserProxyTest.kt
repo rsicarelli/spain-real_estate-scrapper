@@ -1,6 +1,6 @@
 package data.parser
 
-import domain.model.Property
+import domain.entity.Property
 import io.mockk.every
 import io.mockk.impl.annotations.InjectMockKs
 import io.mockk.impl.annotations.MockK

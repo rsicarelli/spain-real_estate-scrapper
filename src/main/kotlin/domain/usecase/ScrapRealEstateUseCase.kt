@@ -1,6 +1,6 @@
 package domain.usecase
 
-import domain.model.Property.Type
+import domain.entity.Property.Type
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.*

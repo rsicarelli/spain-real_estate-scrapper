@@ -10,14 +10,17 @@ class ReportUnknownLocationsUseCase(
 
     @OptIn(FlowPreview::class)
     suspend operator fun invoke(): Flow<Unit> {
-        return propertyRepository.getAll()
-            .map { cachedProperties ->
-                cachedProperties.filter { it.location.isUnknown }.map { it.location }
-            }
-            .filter { it.isNotEmpty() }
-            .flatMapConcat {
-                propertyRepository.saveUnknownLocations(it)
-            }
+        //TODO: refactor after update
+        return flow { emit(Unit) }
+//        return propertyRepository.getAll()
+//            .filter { cachedProperties ->
+//                cachedProperties.location.isUnknown
+//            }.map {
+//                it.location
+//            }
+//            .flatMapConcat {
+//                propertyRepository.saveUnknownLocations(it)
+//            }
     }
 
 }

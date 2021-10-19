@@ -1,11 +1,9 @@
 package domain.service
 
-import domain.model.Property.Type.APROPERTIES
-import domain.model.Property.Type.ENGELS
+import domain.entity.Property.Type.APROPERTIES
+import domain.entity.Property.Type.ENGELS
 import domain.usecase.ReportUnknownLocationsUseCase
 import domain.usecase.ScrapRealEstateUseCase
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collect
 
 class RentalPropertiesService(

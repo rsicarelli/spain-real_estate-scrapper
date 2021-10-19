@@ -7,7 +7,7 @@ import data.parser.EngelPropertyDetailParser.Mapper.fullDescription
 import data.parser.EngelPropertyDetailParser.Mapper.locationDescription
 import data.parser.EngelPropertyDetailParser.Mapper.photosGalleryUrls
 import data.parser.EngelPropertyDetailParser.Mapper.reference
-import domain.model.PropertyDetail
+import domain.valueobject.PropertyDetail
 import it.skrape.selects.Doc
 import it.skrape.selects.DocElement
 import it.skrape.selects.eachHref

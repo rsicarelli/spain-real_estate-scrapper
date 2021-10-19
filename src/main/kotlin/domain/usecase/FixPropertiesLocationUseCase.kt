@@ -1,6 +1,6 @@
 package domain.usecase
 
-import domain.model.Property
+import domain.entity.Property
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 

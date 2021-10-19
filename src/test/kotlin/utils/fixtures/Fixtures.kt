@@ -1,7 +1,8 @@
 package utils.fixtures
 
-import domain.model.*
+import domain.entity.*
 import utils.fixtures.EngelFixture.Fixtures.defaultSearchResults
+import java.util.*
 
 val emptyPagination = Pagination(0, emptyList())
 
@@ -22,6 +23,7 @@ val searchResultsWithPagination = Pair(
 )
 
 val defaultProperty = Property(
+    id = UUID.randomUUID().toString(),
     reference = "a reference",
     price = 100.0,
     title = "a title",

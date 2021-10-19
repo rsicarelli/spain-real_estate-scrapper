@@ -1,6 +1,6 @@
-package domain.model
+package domain.entity
 
-import domain.model.LocationMapper.Valencia
+import domain.entity.LocationMapper.Valencia
 
 data class Location(
     val lat: Double,

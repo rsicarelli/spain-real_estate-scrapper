@@ -11,7 +11,7 @@ import data.parser.APropertiesPropertyDetailParser.Mapper.latLng
 import data.parser.APropertiesPropertyDetailParser.Mapper.pdfUrl
 import data.parser.APropertiesPropertyDetailParser.Mapper.reference
 import data.parser.APropertiesPropertyDetailParser.Mapper.videoUrl
-import domain.model.PropertyDetail
+import domain.valueobject.PropertyDetail
 import it.skrape.selects.Doc
 import it.skrape.selects.eachHref
 import it.skrape.selects.html5.a

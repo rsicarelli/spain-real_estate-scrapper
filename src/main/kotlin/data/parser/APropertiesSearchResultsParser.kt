@@ -3,9 +3,9 @@ package data.parser
 import app.*
 import data.parser.APropertiesSearchResultsParser.Mapper.items
 import data.parser.APropertiesSearchResultsParser.Mapper.pagination
-import domain.model.Pagination
-import domain.model.PropertyItem
-import domain.model.PropertySearchResult
+import domain.entity.Pagination
+import domain.entity.PropertyItem
+import domain.entity.PropertySearchResult
 import it.skrape.selects.Doc
 import it.skrape.selects.DocElement
 import it.skrape.selects.ElementNotFoundException

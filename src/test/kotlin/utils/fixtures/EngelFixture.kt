@@ -1,9 +1,9 @@
 package utils.fixtures
 
-import domain.model.Pagination
-import domain.model.PropertyDetail
-import domain.model.PropertyItem
-import domain.model.PropertySearchResult
+import domain.entity.Pagination
+import domain.entity.PropertyItem
+import domain.entity.PropertySearchResult
+import domain.valueobject.PropertyDetail
 import it.skrape.core.htmlDocument
 import it.skrape.selects.Doc
 import utils.loadResource
