@@ -21,8 +21,6 @@ application {
 dependencies {
     implementation(Bcrypt.bCrypt)
 
-    implementation(Firebase.firestoreAdmin)
-
     implementation(KGraphQl.kGraphQL)
     implementation(KGraphQl.kGraphQLKtor)
 

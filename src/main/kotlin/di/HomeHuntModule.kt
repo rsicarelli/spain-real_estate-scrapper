@@ -1,9 +1,5 @@
 package di
 
-import app.AppInitializer
-import domain.service.RentalPropertiesService
-import data.datasource.FirestoreDataSource
-import data.datasource.FirestoreDataSourceImpl
 import data.datasource.WebDataSource
 import data.datasource.WebDataSourceImpl
 import data.parser.*
@@ -25,13 +21,10 @@ import org.litote.kmongo.KMongo
 val appModules by lazy { listOf(homeHuntModule, dataModule, domainModule) }
 
 val homeHuntModule = module(createdAtStart = true) {
-    single { RentalPropertiesService(get(), get()) }
-    single { AppInitializer("src/main/resources/homehunt-service-account.json") }
     factory { KMongo.createClient(System.getenv("MONGO_URI") ?: "") }
 }
 
 val dataModule = module {
-    single { FirestoreDataSourceImpl() } bind FirestoreDataSource::class
     single { WebDataSourceImpl() } bind WebDataSource::class
     single { PropertyRepositoryImpl(get(), get(), get()) } bind PropertyRepository::class
     single { FavouriteRepositoryImpl(get()) } bind FavouritesRepository::class

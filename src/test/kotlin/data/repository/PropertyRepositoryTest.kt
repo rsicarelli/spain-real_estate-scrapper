@@ -3,7 +3,6 @@
 
 package data.repository
 
-import data.datasource.FirestoreDataSource
 import data.datasource.WebDataSource
 import data.parser.ParserProxy
 import domain.entity.Property
@@ -23,9 +22,6 @@ import org.junit.jupiter.api.extension.ExtendWith
 class PropertyRepositoryTest {
     @MockK
     private lateinit var webDataSource: WebDataSource
-
-    @MockK
-    private lateinit var firebaseDataSource: FirestoreDataSource
 
     @MockK
     private lateinit var parserProxy: ParserProxy
@@ -106,42 +102,4 @@ class PropertyRepositoryTest {
             //then
             assertNotNull(result)
         }
-
-    @Test
-    fun `given a list of properties when save then should call data source`() = runBlocking {
-        //given
-        coEvery { firebaseDataSource.addAll(any(), any()) } returns flow { emit(mockk<List<Property>>()) }
-
-        //when
-        val result = repository.addAll(listOf()).first()
-
-        //then
-        assertNotNull(result)
-        coVerify(exactly = 1) { firebaseDataSource.addAll(any(), any()) }
-    }
-
-    @Test
-    fun `given data source has list of properties when get all then should call data source`() = runBlocking {
-        //given
-        coEvery { firebaseDataSource.getAllFromType(any()) } returns flow { emit(mockk<List<Property>>()) }
-
-        //when
-        val result = repository.getAllFromType(type).first()
-
-        //then
-        assertNotNull(result)
-        coVerify(exactly = 1) { firebaseDataSource.getAllFromType(any()) }
-    }
-
-    @Test
-    fun `given a valid data source when mark availability then should return unit`() = runBlocking {
-        //given
-        coEvery { firebaseDataSource.markAvailability(any(), any(), any()) } returns flow { emit(Unit) }
-
-        //when
-        repository.markAvailability(emptyList()).first()
-
-        //then
-        coVerify(exactly = 1) { firebaseDataSource.markAvailability(any(), any(), any()) }
-    }
 }
