@@ -36,6 +36,4 @@ fun PropertyDetail.toProperty(propertyItem: PropertyItem, origin: Property.Type)
         locationDescription = locationDescription,
         pdfUrl = pdfUrl,
         origin = origin.tag,
-        viewedBy = emptyList(),
-        isFavourited = false
     )

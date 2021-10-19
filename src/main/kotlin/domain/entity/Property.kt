@@ -22,8 +22,7 @@ data class Property(
     val photoGalleryUrls: List<String?>,
     val pdfUrl: String?,
     val origin: String,
-    val viewedBy: List<String?>,
-    val isFavourited: Boolean
+    val isActive: Boolean = true,
 ) : Model {
 
     sealed class Type(val tag: String) {
@@ -68,8 +67,6 @@ fun Property.toMap(): Map<String, Any?> =
         Mapper.PDF_URL to pdfUrl,
         Mapper.LOCATION_DESCRIPTION to locationDescription,
         Mapper.ORIGIN to origin,
-        Mapper.VIEWED_BY to viewedBy,
-        Mapper.IS_FAVORITED to isFavourited
     )
 
 fun Map<String, Any?>.toProperty() =
@@ -92,8 +89,6 @@ fun Map<String, Any?>.toProperty() =
         pdfUrl = asNullableString(Mapper.PDF_URL),
         locationDescription = asNullableString(Mapper.LOCATION_DESCRIPTION),
         origin = asString(Mapper.ORIGIN),
-        viewedBy = asStringList(Mapper.VIEWED_BY),
-        isFavourited = asBoolean(Mapper.IS_FAVORITED)
     )
 
 @VisibleForTesting

@@ -30,7 +30,7 @@ val dataModule = module {
 //    single { FirestoreClient.getFirestore() }
     single { FirestoreDataSourceImpl() } bind FirestoreDataSource::class
     single { WebDataSourceImpl() } bind WebDataSource::class
-    single { PropertyRepositoryImpl(get(), get(), get(), get()) } bind PropertyRepository::class
+    single { PropertyRepositoryImpl(get(), get(), get()) } bind PropertyRepository::class
 
     single(named(APROPERTIES_SEARCH_RESULT_PARSER_QUALIFIER)) { APropertiesSearchResultsParser() } bind Parser::class
     single(named(APROPERTIES_PROPERTY_DETAIL_PARSER_QUALIFIER)) { APropertiesPropertyDetailParser() } bind Parser::class

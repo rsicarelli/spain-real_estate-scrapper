@@ -12,14 +12,13 @@ import domain.entity.PropertySearchResult
 import domain.repository.PropertyRepository
 import domain.valueobject.PropertyDetail
 import kotlinx.coroutines.flow.Flow
-import org.litote.kmongo.*
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
-import me.rsicarelli.data.repository.Repository
+import org.litote.kmongo.*
 
 class PropertyRepositoryImpl(
-    private val client: MongoClient,
+    client: MongoClient,
     private val webDataSource: WebDataSource,
-    private val firebaseDataSource: FirestoreDataSource,
     private val parserProxy: ParserProxy
 ) : PropertyRepository {
 
@@ -36,12 +35,19 @@ class PropertyRepositoryImpl(
     override suspend fun scrapPropertyDetails(url: String, type: Type): Flow<PropertyDetail> =
         webDataSource.get(url).map { parserProxy.parsePropertyDetail(it, type) }
 
-    override suspend fun getAllFromType(type: Type): Flow<List<Property>> = firebaseDataSource.getAllFromType(type)
+    override suspend fun getAllFromType(type: Type): Flow<List<Property>> {
+        return flow {
+            val properties = col.find("{origin:'${type.tag}',isActive: true}").toList()
+            emit(properties)
+        }
+    }
 
-    override suspend fun markAvailability(removed: List<String>, active: List<String>, type: Type): Flow<Unit> =
-        firebaseDataSource.markAvailability(removed, active, type)
-
-    override suspend fun saveUnknownLocations(locations: List<Location>): Flow<Unit> =
-        firebaseDataSource.saveUnknownLocations(locations)
+    override suspend fun markAvailability(removed: List<String>): Flow<Unit> {
+        return flow {
+            removed.forEach {
+                col.findOneAndUpdate(Property::_id eq it, setValue(Property::isActive, false))
+            }
+        }
+    }
 
 }

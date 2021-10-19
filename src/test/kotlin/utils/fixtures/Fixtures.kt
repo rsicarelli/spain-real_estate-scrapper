@@ -41,8 +41,6 @@ val defaultProperty = Property(
     photoGalleryUrls = listOf("https://aimage.com", "https://anotherimage.com"),
     pdfUrl = "https://apdf.com",
     origin = "",
-    viewedBy = emptyList(),
-    isFavourited = false
 )
 
 val defaultPropertyMap: () -> Map<String, Any?> = {

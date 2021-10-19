@@ -19,9 +19,10 @@ class TogglePropertyAvailabilityUseCase(
             .map { cachedProperties ->
                 val first = cachedProperties.map { it._id }
                 val second = newProperties.map { it._id }
-                Pair(first.minus(second), second)
+                first.minus(second)
             }
-            .flatMapConcat { repository.markAvailability(it.first, it.second, type) }
+            .filter { it.isNotEmpty() }
+            .flatMapConcat { repository.markAvailability(it) }
             .flowOn(Dispatchers.IO)
     }
 

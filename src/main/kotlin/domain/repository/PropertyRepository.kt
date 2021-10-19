@@ -12,6 +12,5 @@ interface PropertyRepository : Repository<Property> {
     suspend fun scrapSearchPage(url: String, type: Type): Flow<PropertySearchResult>
     suspend fun scrapPropertyDetails(url: String, type: Type): Flow<PropertyDetail>
     suspend fun getAllFromType(type: Type): Flow<List<Property>>
-    suspend fun markAvailability(removed: List<String>, active: List<String>, type: Type): Flow<Unit>
-    suspend fun saveUnknownLocations(locations: List<Location>): Flow<Unit>
+    suspend fun markAvailability(removed: List<String>): Flow<Unit>
 }

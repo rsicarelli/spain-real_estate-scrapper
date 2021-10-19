@@ -139,7 +139,7 @@ class PropertyRepositoryTest {
         coEvery { firebaseDataSource.markAvailability(any(), any(), any()) } returns flow { emit(Unit) }
 
         //when
-        repository.markAvailability(emptyList(), emptyList(), type).first()
+        repository.markAvailability(emptyList()).first()
 
         //then
         coVerify(exactly = 1) { firebaseDataSource.markAvailability(any(), any(), any()) }
