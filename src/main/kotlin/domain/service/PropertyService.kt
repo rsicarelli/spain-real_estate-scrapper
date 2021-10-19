@@ -21,7 +21,6 @@ import kotlin.time.hours
 class PropertyService : KoinComponent {
     private val repository: PropertyRepository by inject()
     private val scrapRealEstate: ScrapRealEstateUseCase by inject()
-    private val reportUnknownLocations: ReportUnknownLocationsUseCase by inject()
 
     init {
         CoroutineScope(Dispatchers.IO).launchPeriodicAsync(Duration.hours(12)) {
@@ -40,20 +39,12 @@ class PropertyService : KoinComponent {
         }
     }
 
-    fun addProperties(list: List<Property>): List<Property> {
-        return repository.addAll(list)
-    }
-
     fun getProperties(): List<Property> {
         return repository.getAll()
     }
 
     fun getProperty(id: String): Property {
         return repository.getById(id)
-    }
-
-    fun updateProperty(property: Property): Property {
-        return repository.update(property) as Property
     }
 
     companion object {

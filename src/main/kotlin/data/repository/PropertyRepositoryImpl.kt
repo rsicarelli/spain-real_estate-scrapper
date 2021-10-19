@@ -2,10 +2,8 @@ package data.repository
 
 import com.mongodb.client.MongoClient
 import com.mongodb.client.MongoCollection
-import data.datasource.FirestoreDataSource
 import data.datasource.WebDataSource
 import data.parser.ParserProxy
-import domain.entity.Location
 import domain.entity.Property
 import domain.entity.Property.Type
 import domain.entity.PropertySearchResult
@@ -48,6 +46,10 @@ class PropertyRepositoryImpl(
                 col.findOneAndUpdate(Property::_id eq it, setValue(Property::isActive, false))
             }
         }
+    }
+
+    override fun getByIds(ids: List<String>): List<Property> {
+        return col.find(Property::_id `in` ids).toList()
     }
 
 }

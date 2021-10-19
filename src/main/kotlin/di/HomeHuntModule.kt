@@ -2,8 +2,6 @@ package di
 
 import app.AppInitializer
 import domain.service.RentalPropertiesService
-import com.google.firebase.cloud.FirestoreClient
-import com.google.firebase.database.core.Repo
 import data.datasource.FirestoreDataSource
 import data.datasource.FirestoreDataSourceImpl
 import data.datasource.WebDataSource
@@ -13,7 +11,12 @@ import data.repository.PropertyRepositoryImpl
 import domain.repository.PropertyRepository
 import domain.service.PropertyService
 import domain.usecase.*
+import me.rsicarelli.data.repository.FavouriteRepositoryImpl
+import me.rsicarelli.data.repository.UserRepositoryImpl
+import me.rsicarelli.domain.repository.FavouritesRepository
+import me.rsicarelli.domain.repository.UserRepository
 import me.rsicarelli.domain.service.AuthService
+import me.rsicarelli.domain.service.FavouritesService
 import org.koin.core.qualifier.named
 import org.koin.dsl.bind
 import org.koin.dsl.module
@@ -28,10 +31,11 @@ val homeHuntModule = module(createdAtStart = true) {
 }
 
 val dataModule = module {
-//    single { FirestoreClient.getFirestore() }
     single { FirestoreDataSourceImpl() } bind FirestoreDataSource::class
     single { WebDataSourceImpl() } bind WebDataSource::class
     single { PropertyRepositoryImpl(get(), get(), get()) } bind PropertyRepository::class
+    single { FavouriteRepositoryImpl(get()) } bind FavouritesRepository::class
+    single { UserRepositoryImpl(get()) } bind UserRepository::class
 
     single(named(APROPERTIES_SEARCH_RESULT_PARSER_QUALIFIER)) { APropertiesSearchResultsParser() } bind Parser::class
     single(named(APROPERTIES_PROPERTY_DETAIL_PARSER_QUALIFIER)) { APropertiesPropertyDetailParser() } bind Parser::class
@@ -69,4 +73,5 @@ val domainModule = module {
 
     single { PropertyService() }
     single { AuthService() }
+    single { FavouritesService() }
 }

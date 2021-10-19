@@ -9,15 +9,15 @@ import domain.entity.User
 import domain.valueobject.UserInput
 import domain.valueobject.UserResponse
 import io.ktor.application.*
-import me.rsicarelli.data.repository.UserRepository
+import me.rsicarelli.domain.repository.UserRepository
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import java.nio.charset.StandardCharsets
 import java.util.*
 
 class AuthService : KoinComponent {
-    private val client: MongoClient by inject()
-    private val repo: UserRepository = UserRepository(client)
+    private val repo: UserRepository by inject()
+
     private val secret: String = "secret"
     private val algorithm: Algorithm = Algorithm.HMAC256(secret)
     private val verifier: JWTVerifier = JWT.require(algorithm).build()

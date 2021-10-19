@@ -8,7 +8,7 @@ import org.litote.kmongo.eq
 import org.litote.kmongo.findOne
 import org.litote.kmongo.getCollection
 
-class UserRepository(client: MongoClient) : UserRepository {
+class UserRepositoryImpl(client: MongoClient) : UserRepository {
     override lateinit var col: MongoCollection<User>
 
     init {
