@@ -3,7 +3,6 @@ package domain.valueobject
 import domain.entity.Location
 import domain.entity.Property
 import domain.entity.PropertyItem
-import java.util.*
 
 data class PropertyDetail(
     val reference: String,
@@ -19,8 +18,7 @@ data class PropertyDetail(
 
 fun PropertyDetail.toProperty(propertyItem: PropertyItem, origin: Property.Type) =
     Property(
-        id = UUID.randomUUID().toString(),
-        reference = propertyItem.reference,
+        _id = propertyItem.reference,
         price = propertyItem.price,
         title = propertyItem.title,
         location = Location.fromLatLng(propertyItem.location, lat, lng),

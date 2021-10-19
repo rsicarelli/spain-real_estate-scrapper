@@ -4,14 +4,18 @@ import domain.entity.Property
 import domain.entity.Property.Type
 import domain.repository.PropertyRepository
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 
 class SavePropertiesUseCase(
     private val repository: PropertyRepository
 ) {
 
     suspend operator fun invoke(request: Request): Flow<List<Property>> {
-        val (properties, type) = request
-        return repository.save(properties, type)
+        return flow {
+            val (properties, type) = request
+
+            emit(repository.addAll(properties))
+        }
     }
 
     data class Request(

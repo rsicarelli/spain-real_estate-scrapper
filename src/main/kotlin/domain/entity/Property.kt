@@ -2,11 +2,9 @@ package domain.entity
 
 import app.*
 import com.google.common.annotations.VisibleForTesting
-import java.util.*
 
 data class Property(
-    override val id: String,
-    val reference: String,
+    override val _id: String,
     val price: Double,
     val title: String,
     val location: Location,
@@ -52,7 +50,7 @@ fun String?.toTag() = this?.let {
 
 fun Property.toMap(): Map<String, Any?> =
     mapOf(
-        Mapper.REFERENCE to reference,
+        Mapper.REFERENCE to _id,
         Mapper.PRICE to price,
         Mapper.TITLE to title,
         Mapper.LOCATION to location,
@@ -76,8 +74,7 @@ fun Property.toMap(): Map<String, Any?> =
 
 fun Map<String, Any?>.toProperty() =
     Property(
-        id = UUID.randomUUID().toString(),
-        reference = asString(Mapper.REFERENCE),
+        _id = asString(Mapper.REFERENCE),
         price = asDouble(Mapper.PRICE),
         title = asString(Mapper.TITLE),
         location = asLocation(Mapper.LOCATION),

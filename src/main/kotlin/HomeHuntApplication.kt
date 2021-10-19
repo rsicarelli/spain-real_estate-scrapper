@@ -1,12 +1,16 @@
 package me.rsicarelli
 
 import app.AppInitializer
+import app.launchPeriodicAsync
 import com.apurebase.kgraphql.GraphQL
 import data.graphql.propertySchema
 import di.appModules
 import domain.service.PropertyService
 import domain.service.RentalPropertiesService
 import io.ktor.application.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import org.koin.core.context.startKoin

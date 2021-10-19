@@ -9,6 +9,8 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import java.util.concurrent.TimeUnit
+import kotlin.time.Duration
+import kotlin.time.ExperimentalTime
 
 fun String.convertToDouble() = this.replace(Regex("[^0-9]"), "").toDouble()
 fun String.convertToInt() = this.replace(Regex("[^0-9]"), "").toInt()
@@ -21,15 +23,16 @@ inline fun <T> runCatchingOrDefault(defaultValue: T, action: () -> T): T {
     }
 }
 
+@OptIn(ExperimentalTime::class)
 fun CoroutineScope.launchPeriodicAsync(
-    repeatMillis: Long,
-    timeUnit: TimeUnit,
-    action: () -> Unit
+    duration: Duration,
+    action: suspend () -> Unit
 ) = this.async {
-    if (repeatMillis > 0) {
+    val millis = duration.inWholeMilliseconds
+    if (millis > 0) {
         while (isActive) {
             action()
-            delay(timeUnit.toMillis(repeatMillis))
+            delay(millis)
         }
     } else {
         action()
@@ -122,3 +125,18 @@ fun Map<String, Any?>.asNullableInt(token: String, default: Int? = null) =
     (this[token] as Long?)?.toInt() ?: default
 
 fun Map<String, Any?>.asStringList(token: String) = this[token] as List<String?>
+
+
+fun CoroutineScope.launchPeriodicAsync(
+    repeatMillis: Long,
+    action: suspend () -> Unit
+) = this.async {
+    if (repeatMillis > 0) {
+        while (isActive) {
+            action()
+            delay(repeatMillis)
+        }
+    } else {
+        action()
+    }
+}

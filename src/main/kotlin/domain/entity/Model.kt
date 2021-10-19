@@ -1,5 +1,5 @@
 package domain.entity
 
 interface Model {
-    val id: String
+    val _id: String
 }

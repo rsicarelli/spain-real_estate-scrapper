@@ -25,7 +25,8 @@ class ScrapRealEstateUseCase(
             .flatMapConcat { getProperties(GetPropertyUseCase.Request(it, type)) }
             .flatMapConcat { fixPropertiesLocation.invoke(FixPropertiesLocationUseCase.Request(it)) }
             .flatMapConcat { saveProperties.invoke(SavePropertiesUseCase.Request(it, type)) }
-            .flatMapConcat { toggleAvailability.invoke(TogglePropertyAvailabilityUseCase.Request(it, type)) }
+//            .flatMapConcat { toggleAvailability.invoke(TogglePropertyAvailabilityUseCase.Request(it, type)) }
+            .map { }
             .catch { logger.error { it } }
             .flowOn(Dispatchers.IO)
     }

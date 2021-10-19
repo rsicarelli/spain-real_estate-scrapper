@@ -17,8 +17,8 @@ class TogglePropertyAvailabilityUseCase(
 
         return repository.getAllFromType(type)
             .map { cachedProperties ->
-                val first = cachedProperties.map { it.reference }
-                val second = newProperties.map { it.reference }
+                val first = cachedProperties.map { it._id }
+                val second = newProperties.map { it._id }
                 Pair(first.minus(second), second)
             }
             .flatMapConcat { repository.markAvailability(it.first, it.second, type) }

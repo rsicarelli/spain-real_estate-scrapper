@@ -13,7 +13,7 @@ class RentalPropertiesService(
     suspend operator fun invoke() {
         scrapRealEstate.invoke(ScrapRealEstateUseCase.Request(APROPERTIES_DEFAULT_URL, APROPERTIES)).collect()
         scrapRealEstate.invoke(ScrapRealEstateUseCase.Request(ENGEL_DEFAULT_URL, ENGELS)).collect()
-        reportUnknownLocations.invoke().collect()
+//        reportUnknownLocations.invoke().collect()
     }
 
     companion object {

@@ -34,7 +34,11 @@ internal class APropertiesSearchResultsParser : Parser<PropertySearchResult> {
 
         private fun DocElement.reference(): String = spanWithClass(REFERENCE_CLASS) { findFirst { text } }
 
-        private fun DocElement.price(): Double = divWithClass(PRICE_CLASS) { findFirst { text.convertToDouble() } }
+        private fun DocElement.price(): Double = runCatchingOrDefault(0.0) {
+            divWithClass(PRICE_CLASS) { findFirst {
+                text.convertToDouble() }
+            }
+        }
 
         private fun DocElement.title(): String = h3WithClass(TITLE_CLASS) { findFirst { text } }
 

@@ -23,7 +23,7 @@ val searchResultsWithPagination = Pair(
 )
 
 val defaultProperty = Property(
-    id = UUID.randomUUID().toString(),
+    _id = UUID.randomUUID().toString(),
     reference = "a reference",
     price = 100.0,
     title = "a title",

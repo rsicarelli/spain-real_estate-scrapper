@@ -6,6 +6,7 @@ import data.datasource.FirestoreDataSource
 import data.datasource.WebDataSource
 import data.parser.ParserProxy
 import domain.entity.Location
+import domain.entity.Model
 import domain.entity.Property
 import domain.entity.Property.Type
 import domain.entity.PropertySearchResult
