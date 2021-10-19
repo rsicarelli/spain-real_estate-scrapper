@@ -24,7 +24,6 @@ val searchResultsWithPagination = Pair(
 
 val defaultProperty = Property(
     _id = UUID.randomUUID().toString(),
-    reference = "a reference",
     price = 100.0,
     title = "a title",
     location = Location(name = "a location", lat = 0.0, lng = 0.0, isApproximated = false, isUnknown = false),
@@ -49,7 +48,7 @@ val defaultProperty = Property(
 val defaultPropertyMap: () -> Map<String, Any?> = {
     with(defaultProperty) {
         return@with mapOf(
-            Mapper.REFERENCE to reference,
+            Mapper.REFERENCE to _id,
             Mapper.PRICE to price,
             Mapper.TITLE to title,
             Mapper.LOCATION to location,

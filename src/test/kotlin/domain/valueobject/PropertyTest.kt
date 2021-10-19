@@ -69,7 +69,7 @@ class PropertyTest {
 
         //then
         with(property) {
-            propertyMap.assertEquals(Mapper.REFERENCE, reference)
+            propertyMap.assertEquals(Mapper.REFERENCE, _id)
             propertyMap.assertEquals(Mapper.PRICE, price)
             propertyMap.assertEquals(Mapper.TITLE, title)
             propertyMap.assertEquals(Mapper.LOCATION, location)

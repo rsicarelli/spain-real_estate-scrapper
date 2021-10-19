@@ -6,16 +6,15 @@ import data.datasource.FirestoreDataSource
 import data.datasource.WebDataSource
 import data.parser.ParserProxy
 import domain.entity.Location
-import domain.entity.Model
 import domain.entity.Property
 import domain.entity.Property.Type
 import domain.entity.PropertySearchResult
 import domain.repository.PropertyRepository
-import domain.repository.Repository
 import domain.valueobject.PropertyDetail
 import kotlinx.coroutines.flow.Flow
 import org.litote.kmongo.*
 import kotlinx.coroutines.flow.map
+import me.rsicarelli.data.repository.Repository
 
 class PropertyRepositoryImpl(
     private val client: MongoClient,
@@ -36,9 +35,6 @@ class PropertyRepositoryImpl(
 
     override suspend fun scrapPropertyDetails(url: String, type: Type): Flow<PropertyDetail> =
         webDataSource.get(url).map { parserProxy.parsePropertyDetail(it, type) }
-
-    override suspend fun save(properties: List<Property>, type: Type): Flow<List<Property>> =
-        firebaseDataSource.addAll(properties, type)
 
     override suspend fun getAllFromType(type: Type): Flow<List<Property>> = firebaseDataSource.getAllFromType(type)
 

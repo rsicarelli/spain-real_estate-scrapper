@@ -1,4 +1,4 @@
-package domain.repository
+package me.rsicarelli.data.repository
 
 import com.mongodb.client.MongoCollection
 import domain.entity.Model

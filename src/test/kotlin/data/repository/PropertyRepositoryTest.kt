@@ -113,7 +113,7 @@ class PropertyRepositoryTest {
         coEvery { firebaseDataSource.addAll(any(), any()) } returns flow { emit(mockk<List<Property>>()) }
 
         //when
-        val result = repository.save(listOf(), type).first()
+        val result = repository.addAll(listOf()).first()
 
         //then
         assertNotNull(result)
