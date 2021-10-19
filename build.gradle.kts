@@ -18,9 +18,6 @@ dependencies {
 
     implementation(Firebase.firestoreAdmin)
 
-    implementation(KotlinLogging.kotlinLogging)
-    implementation(Kotlin.reflection)
-
     implementation(KGraphQl.kGraphQL)
     implementation(KGraphQl.kGraphQLKtor)
 
@@ -28,6 +25,10 @@ dependencies {
 
     implementation(Koin.koin)
     implementation(Koin.koinKtor)
+
+    implementation(Kotlin.reflection)
+
+    implementation(KotlinLogging.kotlinLogging)
 
     implementation(Ktor.ktorAuth)
     implementation(Ktor.ktorAuthJwt)
