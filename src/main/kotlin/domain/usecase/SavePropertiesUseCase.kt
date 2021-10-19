@@ -12,7 +12,7 @@ class SavePropertiesUseCase(
 
     suspend operator fun invoke(request: Request): Flow<List<Property>> {
         return flow {
-            val (properties, type) = request
+            val (properties, _) = request
 
             emit(repository.addAll(properties))
         }

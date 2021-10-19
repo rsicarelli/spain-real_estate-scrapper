@@ -13,6 +13,7 @@ import data.repository.PropertyRepositoryImpl
 import domain.repository.PropertyRepository
 import domain.service.PropertyService
 import domain.usecase.*
+import me.rsicarelli.domain.service.AuthService
 import org.koin.core.qualifier.named
 import org.koin.dsl.bind
 import org.koin.dsl.module
@@ -67,4 +68,5 @@ val domainModule = module {
     }
 
     single { PropertyService() }
+    single { AuthService() }
 }
