@@ -40,6 +40,10 @@ class PropertyRepositoryImpl(
         }
     }
 
+    override fun getAllActive(): List<Property> {
+        return col.find(Property::isActive eq true).toList()
+    }
+
     override suspend fun markAvailability(removed: List<String>): Flow<Unit> {
         return flow {
             removed.forEach {

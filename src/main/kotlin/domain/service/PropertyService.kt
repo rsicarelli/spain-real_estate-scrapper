@@ -1,46 +1,60 @@
 package domain.service
 
 import app.launchPeriodicAsync
-import com.mongodb.client.MongoClient
-import data.repository.PropertyRepositoryImpl
 import domain.entity.Property
 import domain.repository.PropertyRepository
-import domain.usecase.ReportUnknownLocationsUseCase
 import domain.usecase.ScrapRealEstateUseCase
+import domain.valueobject.PropertyItem
+import domain.valueobject.PropertyResponse
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.single
+import me.rsicarelli.domain.repository.FavouritesRepository
+import me.rsicarelli.domain.repository.ViewedPropertiesRepository
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
-import java.util.*
 import kotlin.time.Duration
 import kotlin.time.ExperimentalTime
-import kotlin.time.hours
 
-@OptIn(ExperimentalTime::class)
+@OptIn(ExperimentalTime::class, kotlinx.coroutines.InternalCoroutinesApi::class)
 class PropertyService : KoinComponent {
     private val repository: PropertyRepository by inject()
+    private val viewedPropertiesRepository: ViewedPropertiesRepository by inject()
+    private val favouritesRepository: FavouritesRepository by inject()
     private val scrapRealEstate: ScrapRealEstateUseCase by inject()
 
     init {
-//        CoroutineScope(Dispatchers.IO).launchPeriodicAsync(Duration.hours(12)) {
-//            scrapRealEstate.invoke(
-//                ScrapRealEstateUseCase.Request(
-//                    APROPERTIES_DEFAULT_URL,
-//                    Property.Type.APROPERTIES
-//                )
-//            ).collect()
-//            scrapRealEstate.invoke(
-//                ScrapRealEstateUseCase.Request(
-//                    ENGEL_DEFAULT_URL,
-//                    Property.Type.ENGELS
-//                )
-//            ).collect()
-//        }
+        CoroutineScope(Dispatchers.IO).launchPeriodicAsync(Duration.hours(12)) {
+            scrapRealEstate.invoke(
+                ScrapRealEstateUseCase.Request(
+                    APROPERTIES_DEFAULT_URL,
+                    Property.Type.APROPERTIES
+                )
+            ).single()
+            scrapRealEstate.invoke(
+                ScrapRealEstateUseCase.Request(
+                    ENGEL_DEFAULT_URL,
+                    Property.Type.ENGELS
+                )
+            ).single()
+        }
     }
 
-    fun getProperties(): List<Property> {
-        return repository.getAll()
+    fun getProperties(userId: String): PropertyResponse {
+        val properties = repository.getAllActive()
+        val favourites = favouritesRepository.getAllByUserId(userId)
+        val viewedProperties = viewedPropertiesRepository.getAllByUserId(userId)
+
+        return PropertyResponse(
+            properties.map {
+                PropertyItem(
+                    property = it,
+                    isFavourited = favourites?.propertyIds?.contains(it._id) ?: false,
+                    isViewed = viewedProperties?.propertyIds?.contains(it._id) ?: false
+                )
+            },
+            totalItems = properties.size
+        )
     }
 
     fun getProperty(id: String): Property {
