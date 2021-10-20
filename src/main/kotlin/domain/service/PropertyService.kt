@@ -24,20 +24,20 @@ class PropertyService : KoinComponent {
     private val scrapRealEstate: ScrapRealEstateUseCase by inject()
 
     init {
-//        CoroutineScope(Dispatchers.IO).launchPeriodicAsync(Duration.hours(12)) {
-//            scrapRealEstate.invoke(
-//                ScrapRealEstateUseCase.Request(
-//                    APROPERTIES_DEFAULT_URL,
-//                    Property.Type.APROPERTIES
-//                )
-//            ).single()
-//            scrapRealEstate.invoke(
-//                ScrapRealEstateUseCase.Request(
-//                    ENGEL_DEFAULT_URL,
-//                    Property.Type.ENGELS
-//                )
-//            ).single()
-//        }
+        CoroutineScope(Dispatchers.IO).launchPeriodicAsync(Duration.hours(6)) {
+            scrapRealEstate.invoke(
+                ScrapRealEstateUseCase.Request(
+                    APROPERTIES_DEFAULT_URL,
+                    Property.Type.APROPERTIES
+                )
+            ).single()
+            scrapRealEstate.invoke(
+                ScrapRealEstateUseCase.Request(
+                    ENGEL_DEFAULT_URL,
+                    Property.Type.ENGELS
+                )
+            ).single()
+        }
     }
 
     fun getProperties(userId: String): PropertyResponse {
@@ -45,16 +45,20 @@ class PropertyService : KoinComponent {
         val ratings = ratingsRepository.getAllByUserId(userId)
         val viewedProperties = viewedPropertiesRepository.getAllByUserId(userId)
 
+        val filteredProperties = properties.filter { property ->
+            ratings?.let {
+                property._id !in it.downVotedProperties
+            } ?: true
+        }
         return PropertyResponse(
-            properties.map {
+            filteredProperties.map {
                 PropertyItem(
                     property = it,
                     isUpVoted = ratings?.upVotedProperties?.contains(it._id) ?: false,
-                    isDownVoted = ratings?.downVotedProperties?.contains(it._id) ?: false,
                     isViewed = viewedProperties?.propertyIds?.contains(it._id) ?: false
                 )
             },
-            totalItems = properties.size
+            totalItems = filteredProperties.size
         )
     }
 
