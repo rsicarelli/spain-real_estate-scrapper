@@ -16,13 +16,13 @@ class UserRepositoryImpl(client: MongoClient) : UserRepository {
         col = database.getCollection<User>("User")
     }
 
-    override fun getUserByEmail(email: String?): User? {
+    override fun getUserByUserName(userName: String?): User? {
         return try {
             col.findOne(
-                User::email eq email,
+                User::userName eq userName,
             )
         } catch (t: Throwable) {
-            throw Exception("Cannot get user with that email")
+            throw Exception("Cannot get user with that username")
         }
     }
 }

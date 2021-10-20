@@ -4,7 +4,6 @@ import at.favre.lib.crypto.bcrypt.BCrypt
 import com.auth0.jwt.JWT
 import com.auth0.jwt.JWTVerifier
 import com.auth0.jwt.algorithms.Algorithm
-import com.mongodb.client.MongoClient
 import domain.entity.User
 import domain.valueobject.UserInput
 import domain.valueobject.UserResponse
@@ -23,7 +22,7 @@ class AuthService : KoinComponent {
     private val verifier: JWTVerifier = JWT.require(algorithm).build()
 
     fun signIn(userInput: UserInput): UserResponse {
-        val user = repo.getUserByEmail(userInput.email) ?: error("No such user by that email")
+        val user = repo.getUserByUserName(userInput.userName) ?: error("No such user by that userName")
         // hash incoming password and compare it to saved
         if (!BCrypt.verifyer()
                 .verify(
@@ -41,14 +40,14 @@ class AuthService : KoinComponent {
     fun signUp(userInput: UserInput): UserResponse {
         val hashedPassword = BCrypt.withDefaults().hash(10, userInput.password.toByteArray(StandardCharsets.UTF_8))
         val id = UUID.randomUUID().toString()
-        val emailUser = repo.getUserByEmail(userInput.email)
-        if (emailUser != null) {
-            error("Email already in use")
+        val userName = repo.getUserByUserName(userInput.userName)
+        if (userName != null) {
+            error("userName already in use")
         }
         val newUser = repo.add(
             User(
                 _id = id,
-                email = userInput.email,
+                userName = userInput.userName,
                 hashedPass = hashedPassword,
             )
         )
@@ -69,7 +68,7 @@ class AuthService : KoinComponent {
             val token = authHeader.split("Bearer ").last()
             val accessToken = verifier.verify(JWT.decode(token))
             val userId = accessToken.getClaim("userId").asString()
-            return User(_id = userId, email = "", hashedPass = ByteArray(0))
+            return User(_id = userId, userName = "", hashedPass = ByteArray(0))
         } catch (e: Exception) {
             null
         }
