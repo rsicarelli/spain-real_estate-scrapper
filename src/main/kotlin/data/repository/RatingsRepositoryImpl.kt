@@ -50,8 +50,13 @@ class RatingsRepositoryImpl(client: MongoClient) : RatingsRepository {
         val downVotedProperties = mutableListOf<String>().apply { addAll(currentRatings.downVotedProperties) }
 
         when {
-            isUpVoted && !upVotedProperties.contains(propertyId) -> {
-                upVotedProperties.add(propertyId)
+            isUpVoted -> {
+                if (!upVotedProperties.contains(propertyId)) {
+                    upVotedProperties.add(propertyId)
+                } else {
+                    upVotedProperties.remove(propertyId)
+                }
+
                 runCatching { downVotedProperties.remove(propertyId) }
             }
             !isUpVoted && !downVotedProperties.contains(propertyId) -> {
