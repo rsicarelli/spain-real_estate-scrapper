@@ -29,7 +29,6 @@ val defaultProperty = Property(
     location = Location(name = "a location", lat = 0.0, lng = 0.0, isApproximated = false, isUnknown = false),
     surface = 30,
     dormCount = 2,
-    description = "a description",
     bathCount = 2,
     avatarUrl = "https://someimage.com",
     tag = "EMPTY",

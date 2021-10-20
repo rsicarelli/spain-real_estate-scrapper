@@ -24,7 +24,6 @@ fun PropertyDetail.toProperty(propertyItem: PropertyItem, origin: Property.Type)
         location = Location.fromLatLng(propertyItem.location, lat, lng),
         surface = propertyItem.surface,
         dormCount = propertyItem.dormCount,
-        description = propertyItem.description,
         bathCount = propertyItem.bathCount,
         avatarUrl = propertyItem.imageUrl,
         tag = propertyItem.tag,

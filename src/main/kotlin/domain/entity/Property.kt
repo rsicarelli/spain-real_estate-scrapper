@@ -7,7 +7,6 @@ data class Property(
     val location: Location,
     val surface: Int,
     val dormCount: Int?,
-    val description: String,
     val bathCount: Int?,
     val avatarUrl: String,
     val tag: String?,

@@ -56,7 +56,16 @@ internal class EngelPropertyDetailParser : Parser<PropertyDetail> {
             ulWithClass(CHARACTERISTICS_ROOT) {
                 findByIndex(3) {
                     liWithClass(CHARACTERISTICS) {
-                        findAll { eachText }
+                        findAll { eachText }.filterNot {
+                            it.lowercase().contains("rooms")
+                        }.filterNot {
+                            it.lowercase().contains("surface")
+                        }.map {
+                            if (it.lowercase().contains("property subtype"))
+                                it.replace("Property subtype ", "")
+                            else
+                                it
+                        }
                     }
                 }
             }
