@@ -70,7 +70,9 @@ class PropertyRepositoryImpl(
                 }
             }
 
-            (properties - cachedProperties).forEach {
+            properties.filterNot { property ->
+                cachedProperties.any { it._id == property._id }
+            } .forEach {
                 col.save(it)
             }
             properties
