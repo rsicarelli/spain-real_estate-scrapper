@@ -14,8 +14,6 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
 import org.litote.kmongo.*
-import org.litote.kmongo.replaceOneById
-import org.litote.kmongo.util.KMongoUtil
 
 class PropertyRepositoryImpl(
     client: MongoClient,
@@ -61,13 +59,19 @@ class PropertyRepositoryImpl(
 
     override fun addAll(properties: List<Property>): List<Property> {
         return try {
-            properties.forEach {
-                val id = KMongoUtil.getIdValue(it)
-                if (id != null) {
-                    col.replaceOneById(id, it, ReplaceOptions().upsert(true))
-                } else {
-                    col.insertOne(it)
+            val cachedProperties = col.find(Property::_id `in` properties.map { it._id }).toList()
+            cachedProperties.forEach { cachedProperty ->
+                properties.find { it._id == cachedProperty._id }?.let {
+                    col.replaceOne(
+                        Property::_id eq cachedProperty._id,
+                        it.copy(createdAt = cachedProperty.createdAt),
+                        ReplaceOptions().upsert(true)
+                    )
                 }
+            }
+
+            (properties - cachedProperties).forEach {
+                col.save(it)
             }
             properties
         } catch (t: Throwable) {
