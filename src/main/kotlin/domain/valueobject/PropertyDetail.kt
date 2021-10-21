@@ -13,7 +13,8 @@ data class PropertyDetail(
     val photosGalleryUrls: List<String?>,
     val lat: Double?,
     val lng: Double?,
-    val pdfUrl: String?
+    val pdfUrl: String?,
+    val surface: Int? = null,
 )
 
 fun PropertyDetail.toProperty(propertyItem: PropertyItem, origin: Property.Type) =
@@ -22,7 +23,7 @@ fun PropertyDetail.toProperty(propertyItem: PropertyItem, origin: Property.Type)
         price = propertyItem.price,
         title = propertyItem.title,
         location = Location.fromLatLng(propertyItem.location, lat, lng),
-        surface = propertyItem.surface,
+        surface = propertyItem.surface ?: surface ?: 0,
         dormCount = propertyItem.dormCount,
         bathCount = propertyItem.bathCount,
         avatarUrl = propertyItem.imageUrl,

@@ -10,7 +10,7 @@ data class PropertyItem(
     val price: Double,
     val title: String,
     val location: String,
-    val surface: Int,
+    val surface: Int?,
     val dormCount: Int?,
     val description: String,
     val bathCount: Int?,

@@ -1,15 +1,13 @@
 package data.parser
 
-import app.divWithClass
-import app.liWithClass
-import app.sectionWithClass
-import app.spanWithClass
+import app.*
 import data.parser.APropertiesPropertyDetailParser.Mapper.characteristics
 import data.parser.APropertiesPropertyDetailParser.Mapper.description
 import data.parser.APropertiesPropertyDetailParser.Mapper.galleryImages
 import data.parser.APropertiesPropertyDetailParser.Mapper.latLng
 import data.parser.APropertiesPropertyDetailParser.Mapper.pdfUrl
 import data.parser.APropertiesPropertyDetailParser.Mapper.reference
+import data.parser.APropertiesPropertyDetailParser.Mapper.surface
 import data.parser.APropertiesPropertyDetailParser.Mapper.videoUrl
 import domain.valueobject.PropertyDetail
 import it.skrape.selects.Doc
@@ -33,7 +31,8 @@ internal class APropertiesPropertyDetailParser : Parser<PropertyDetail> {
             lat = latLng.first,
             lng = latLng.second,
             locationDescription = "",
-            pdfUrl = pdfUrl()
+            pdfUrl = pdfUrl(),
+            surface = surface()
         )
     }
 
@@ -86,11 +85,23 @@ internal class APropertiesPropertyDetailParser : Parser<PropertyDetail> {
 
         fun Doc.pdfUrl() = "https://www.aproperties.es/pdf/properties/es/${this.reference().lowercase()}.pdf"
 
+        fun Doc.surface(): Int {
+            return divWithClass(PROPERTY_HEADER_ITEM) {
+                findFirst {
+                    divWithClass(PROPERTY_HEADER_VALUE) {
+                        findFirst { text.replace("m", "").replace("2", "").trim().convertToInt() }
+                    }
+                }
+            }
+        }
+
         private const val PROPERTY_CONTENT = "propertyContent"
         private const val PROPERTY_CHARACTERISTICS = "description__featuresCaractListItem"
         private const val PROPERTY_GALLERY = "propertyGallery__mainViewer"
         private const val PROPERTY_GALLERY_ITEM = "data-fancybox"
         private const val PROPERTY_REFERENCE = "_leadform__titles"
         private const val PROPERTY_REF = "ref"
+        private const val PROPERTY_HEADER_ITEM = "propHeader__specs__item"
+        private const val PROPERTY_HEADER_VALUE = "propHeader__specs__itemValue"
     }
 }
