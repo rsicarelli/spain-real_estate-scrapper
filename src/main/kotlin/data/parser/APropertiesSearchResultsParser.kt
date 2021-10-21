@@ -50,7 +50,7 @@ internal class APropertiesSearchResultsParser : Parser<PropertySearchResult> {
             this.divWithClass(SURFACE_CLASS) {
                 findFirst {
                     spanWithClass(VALUE_FIELD_CLASS) {
-                        findFirst { text.replace("m", "").replace("2", "").trim().convertToInt() }
+                        findFirst { text.dropLast(2).trim().convertToInt() }
                     }
                 }
             }

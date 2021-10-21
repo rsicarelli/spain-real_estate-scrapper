@@ -8,6 +8,7 @@ import domain.valueobject.PropertyItem
 import domain.valueobject.PropertyResponse
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.single
 import me.rsicarelli.domain.repository.RatingsRepository
 import me.rsicarelli.domain.repository.ViewedPropertiesRepository
@@ -30,13 +31,13 @@ class PropertyService : KoinComponent {
                     APROPERTIES_DEFAULT_URL,
                     Property.Type.APROPERTIES
                 )
-            ).single()
+            ).collect()
             scrapRealEstate.invoke(
                 ScrapRealEstateUseCase.Request(
                     ENGEL_DEFAULT_URL,
                     Property.Type.ENGELS
                 )
-            ).single()
+            ).collect()
         }
     }
 

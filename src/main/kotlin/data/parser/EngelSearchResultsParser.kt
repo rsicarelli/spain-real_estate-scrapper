@@ -53,11 +53,11 @@ internal class EngelSearchResultsParser : Parser<PropertySearchResult> {
             divWithClass(SUBTITLE) { findFirst { text } }
         }
 
-        fun DocElement.surface() = runCatchingOrDefault(999) {
+        fun DocElement.surface() = runCatchingOrDefault(null) {
             divWithClass(ATTRIBUTE) {
                 findThird {
                     spanWithClass(ATTRIBUTE_VALUE) {
-                        findFirst { text.replace("m", "").replace("²", "").trim().convertToInt() }
+                        findFirst { text.dropLast(2).trim().convertToInt() }
                     }
                 }
             }

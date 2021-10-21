@@ -89,7 +89,7 @@ internal class APropertiesPropertyDetailParser : Parser<PropertyDetail> {
             return divWithClass(PROPERTY_HEADER_ITEM) {
                 findFirst {
                     divWithClass(PROPERTY_HEADER_VALUE) {
-                        findFirst { text.replace("m", "").replace("2", "").trim().convertToInt() }
+                        findFirst { text.dropLast(2).trim().convertToInt() }
                     }
                 }
             }
