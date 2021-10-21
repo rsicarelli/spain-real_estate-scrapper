@@ -15,6 +15,7 @@ import me.rsicarelli.domain.repository.UserRepository
 import me.rsicarelli.domain.repository.ViewedPropertiesRepository
 import me.rsicarelli.domain.service.AuthService
 import me.rsicarelli.domain.service.RatingsService
+import me.rsicarelli.domain.service.ScrapperService
 import me.rsicarelli.domain.service.ViewedPropertiesService
 import org.koin.core.qualifier.named
 import org.koin.dsl.bind
@@ -69,6 +70,7 @@ val domainModule = module {
     }
 
     single { PropertyService() }
+    single { ScrapperService() }
     single { AuthService() }
     single { RatingsService() }
     single { ViewedPropertiesService() }
