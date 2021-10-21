@@ -2,6 +2,7 @@ package data.repository
 
 import com.mongodb.client.MongoClient
 import com.mongodb.client.MongoCollection
+import com.mongodb.client.model.ReplaceOptions
 import data.datasource.WebDataSource
 import data.parser.ParserProxy
 import domain.entity.Property
@@ -13,6 +14,8 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
 import org.litote.kmongo.*
+import org.litote.kmongo.replaceOneById
+import org.litote.kmongo.util.KMongoUtil
 
 class PropertyRepositoryImpl(
     client: MongoClient,
@@ -56,4 +59,19 @@ class PropertyRepositoryImpl(
         return col.find(Property::_id `in` ids).toList()
     }
 
+    override fun addAll(properties: List<Property>): List<Property> {
+        return try {
+            properties.forEach {
+                val id = KMongoUtil.getIdValue(it)
+                if (id != null) {
+                    col.replaceOneById(id, it, ReplaceOptions().upsert(true))
+                } else {
+                    col.insertOne(it)
+                }
+            }
+            properties
+        } catch (t: Throwable) {
+            throw Exception("Cannot add items")
+        }
+    }
 }

@@ -1,5 +1,7 @@
 package domain.entity
 
+import app.currentTimeAtUTC
+
 data class Property(
     override val _id: String,
     val price: Double,
@@ -19,6 +21,7 @@ data class Property(
     val pdfUrl: String?,
     val origin: String,
     val isActive: Boolean = true,
+    val createdAt: String = currentTimeAtUTC()
 ) : Model {
 
     sealed class Type(val tag: String) {

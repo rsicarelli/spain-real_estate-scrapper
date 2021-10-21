@@ -8,7 +8,9 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
-import java.util.concurrent.TimeUnit
+import java.time.LocalTime
+import java.time.ZoneId
+import java.time.ZonedDateTime
 import kotlin.time.Duration
 import kotlin.time.ExperimentalTime
 
@@ -139,4 +141,8 @@ fun CoroutineScope.launchPeriodicAsync(
     } else {
         action()
     }
+}
+
+fun currentTimeAtUTC(): String {
+    return ZonedDateTime.now(ZoneId.of("UTC")).toLocalDateTime().toString()
 }
