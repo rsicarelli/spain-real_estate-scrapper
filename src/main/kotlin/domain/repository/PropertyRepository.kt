@@ -14,5 +14,5 @@ interface PropertyRepository : Repository<Property> {
     fun getAllActive(): List<Property>
     suspend fun markAvailability(removed: List<String>): Flow<Unit>
     fun getByIds(ids: List<String>): List<Property>
-    fun addAll(properties: List<Property>): List<Property>
+    fun addAll(propertiesToSave: List<Property>): List<Property>
 }

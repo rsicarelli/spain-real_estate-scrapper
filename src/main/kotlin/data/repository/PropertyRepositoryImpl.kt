@@ -2,7 +2,10 @@ package data.repository
 
 import com.mongodb.client.MongoClient
 import com.mongodb.client.MongoCollection
+import com.mongodb.client.model.InsertOneModel
+import com.mongodb.client.model.ReplaceOneModel
 import com.mongodb.client.model.ReplaceOptions
+import com.mongodb.client.model.WriteModel
 import data.datasource.WebDataSource
 import data.parser.ParserProxy
 import domain.entity.Property
@@ -13,7 +16,9 @@ import domain.valueobject.PropertyDetail
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
+import org.bson.Document
 import org.litote.kmongo.*
+
 
 class PropertyRepositoryImpl(
     client: MongoClient,
@@ -57,25 +62,30 @@ class PropertyRepositoryImpl(
         return col.find(Property::_id `in` ids).toList()
     }
 
-    override fun addAll(properties: List<Property>): List<Property> {
+    override fun addAll(propertiesToSave: List<Property>): List<Property> {
         return try {
-            val cachedProperties = col.find(Property::_id `in` properties.map { it._id }).toList()
+            val writes: MutableList<WriteModel<Property>> = mutableListOf()
+
+            val cachedProperties = col.find(Property::_id `in` propertiesToSave.map { it._id }).toList()
             cachedProperties.forEach { cachedProperty ->
-                properties.find { it._id == cachedProperty._id }?.let {
-                    col.replaceOne(
-                        Property::_id eq cachedProperty._id,
-                        it.copy(createdAt = cachedProperty.createdAt),
-                        ReplaceOptions().upsert(true)
+                propertiesToSave.find { it._id == cachedProperty._id }?.let {
+                    writes.add(
+                        ReplaceOneModel(
+                            Document("_id", it._id),
+                            it.copy(createdAt = cachedProperty.createdAt),
+                            ReplaceOptions().upsert(true)
+                        )
                     )
                 }
             }
 
-            properties.filterNot { property ->
-                cachedProperties.any { it._id == property._id }
-            } .forEach {
-                col.save(it)
-            }
-            properties
+            propertiesToSave.filterNot { property -> cachedProperties.any { it._id == property._id } }
+                .map { InsertOneModel(it) }
+                .forEach { writes.add(it) }
+
+            col.bulkWrite(writes)
+
+            propertiesToSave
         } catch (t: Throwable) {
             throw Exception("Cannot add items")
         }
