@@ -46,7 +46,7 @@ internal class APropertiesSearchResultsParser : Parser<PropertySearchResult> {
 
         private fun DocElement.description() = divWithClass(CONTENT_CLASS) { findFirst { text } }
 
-        private fun DocElement.surface() = runCatchingOrDefault(null){
+        private fun DocElement.surface() = runCatchingOrDefault(0){
             this.divWithClass(SURFACE_CLASS) {
                 findFirst {
                     spanWithClass(VALUE_FIELD_CLASS) {
@@ -56,7 +56,7 @@ internal class APropertiesSearchResultsParser : Parser<PropertySearchResult> {
             }
         }
 
-        private fun DocElement.dormCount() = runCatchingOrDefault(null) {
+        private fun DocElement.dormCount() = runCatchingOrDefault(0) {
             this.divWithClass(BEDROOMS_CLASS) {
                 findFirst {
                     spanWithClass(VALUE_FIELD_CLASS) {
@@ -66,7 +66,7 @@ internal class APropertiesSearchResultsParser : Parser<PropertySearchResult> {
             }
         }
 
-        private fun DocElement.bathCount() = runCatchingOrDefault(null) {
+        private fun DocElement.bathCount() = runCatchingOrDefault(0) {
             divWithClass(BATHROOMS_CLASS) {
                 findFirst {
                     spanWithClass(VALUE_FIELD_CLASS) {

@@ -52,7 +52,7 @@ internal class EngelPropertyDetailParser : Parser<PropertyDetail> {
             pWithClass(PROPERTY_DETAILS) { findFirst { text } }
         }
 
-        fun DocElement.characteristics(): List<String?> = runCatchingOrDefault(emptyList()) {
+        fun DocElement.characteristics(): List<String> = runCatchingOrDefault(emptyList()) {
             ulWithClass(CHARACTERISTICS_ROOT) {
                 findByIndex(3) {
                     liWithClass(CHARACTERISTICS) {

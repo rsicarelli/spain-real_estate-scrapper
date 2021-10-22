@@ -53,7 +53,7 @@ internal class EngelSearchResultsParser : Parser<PropertySearchResult> {
             divWithClass(SUBTITLE) { findFirst { text } }
         }
 
-        fun DocElement.surface() = runCatchingOrDefault(null) {
+        fun DocElement.surface() = runCatchingOrDefault(0) {
             divWithClass(ATTRIBUTE) {
                 findThird {
                     spanWithClass(ATTRIBUTE_VALUE) {

@@ -237,9 +237,9 @@ object APropertiesFixture {
                         title = "Study in the Cabañal",
                         location = "El Cabañal - El Grau, Valencia city",
                         surface = 0,
-                        dormCount = null,
+                        dormCount = 0,
                         description = "For short and long stay. We present this beautiful furnished loft in the cozy and famous area of Cabañal, completely renovated, and located on a ground floor. The house of 47 m2, has an open space where we find a bright living room, dining room and fully equipped open kitchen and a bathroom with shower. It has a single bed and a sofa bed. The recently renovated house has air conditioning hot and cold, high ceilings with restored joists and an interior terrace to rest in the open air Located in the best atmosphere of the city, 5 minutes walking from the beach Las Arenas and Malvarrosa, with availability of any public transport and close to the promenade, surrounded by the best restaurants and hotels. Do not miss or miss the opportunity to enjoy the experience of living here.",
-                        bathCount = null,
+                        bathCount = 0,
                         imageUrl = "https://www.aproperties.es/thumb?src=/media/properties/22281/22281_15958568695649.jpg&w=320&h=240",
                         tag = "Reserved",
                         propertyUrl = "https://www.aproperties.es/en/valencia/el-cabanal-el-grau/study-in-the-cabanal"
