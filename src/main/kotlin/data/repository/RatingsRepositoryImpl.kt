@@ -16,29 +16,28 @@ class RatingsRepositoryImpl(client: MongoClient) : RatingsRepository {
         col = database.getCollection<Ratings>("UserRatings")
     }
 
-    override fun toggleRating(isUpVoted: Boolean, propertyId: String, userId: String): String {
+    override fun toggleRating(isUpVoted: Boolean, propertyId: String, userId: String): Ratings? {
+        var ratings: Ratings? = null
         try {
-            col.findOne(Ratings::userId eq userId)
-                ?.let {
-                    val (upVotedProperties, downVotedProperties) = handleUpAndDownVotedProperties(
-                        isUpVoted = isUpVoted, currentRatings = it, propertyId = propertyId
-                    )
-                    col.updateOne(
-                        Ratings::userId eq userId,
-                        it.copy(upVotedProperties = upVotedProperties, downVotedProperties = downVotedProperties)
-                    )
-                } ?: col.save(
+            col.findOne(Ratings::userId eq userId)?.let { currentRatings ->
+                val (upVoted, downVoted) = handleUpAndDownVotedProperties(isUpVoted, currentRatings, propertyId)
+                col.updateOne(
+                    filter = Ratings::userId eq userId,
+                    target = currentRatings.copy(upVotedProperties = upVoted, downVotedProperties = downVoted)
+                        .also { ratings = it })
+            } ?: col.save(
                 Ratings(
                     _id = UUID.randomUUID().toString(),
                     userId = userId,
                     upVotedProperties = if (isUpVoted) listOf(propertyId) else emptyList(),
                     downVotedProperties = if (!isUpVoted) listOf(propertyId) else emptyList()
-                )
+                ).also { ratings = it }
             )
         } catch (e: Exception) {
             e.printStackTrace()
         }
-        return propertyId
+
+        return ratings
     }
 
     private fun handleUpAndDownVotedProperties(
@@ -46,22 +45,20 @@ class RatingsRepositoryImpl(client: MongoClient) : RatingsRepository {
         currentRatings: Ratings,
         propertyId: String
     ): Pair<List<String>, List<String>> {
-        val upVotedProperties = mutableListOf<String>().apply { addAll(currentRatings.upVotedProperties) }
-        val downVotedProperties = mutableListOf<String>().apply { addAll(currentRatings.downVotedProperties) }
+        val upVotedProperties = currentRatings.upVotedProperties.toMutableList()
+        val downVotedProperties = currentRatings.downVotedProperties.toMutableList()
 
         when {
             isUpVoted -> {
-                if (!upVotedProperties.contains(propertyId)) {
-                    upVotedProperties.add(propertyId)
-                } else {
-                    upVotedProperties.remove(propertyId)
-                }
+                upVotedProperties.takeIf { !upVotedProperties.contains(propertyId) }
+                    ?.let { upVotedProperties.add(propertyId) }
+                    ?: upVotedProperties.remove(propertyId)
 
-                runCatching { downVotedProperties.remove(propertyId) }
+                downVotedProperties.remove(propertyId)
             }
             !isUpVoted && !downVotedProperties.contains(propertyId) -> {
                 downVotedProperties.add(propertyId)
-                runCatching { upVotedProperties.remove(propertyId) }
+                    .also { upVotedProperties.remove(propertyId) }
             }
         }
         return Pair(upVotedProperties, downVotedProperties)
