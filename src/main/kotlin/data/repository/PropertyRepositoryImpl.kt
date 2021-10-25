@@ -46,15 +46,10 @@ class PropertyRepositoryImpl(
         }
     }
 
-    override fun getAllActive(): List<Property> {
-        return col.find(Property::isActive eq true).toList()
-    }
-
-    override suspend fun markAvailability(removed: List<String>): Flow<Unit> {
+    override suspend fun deleteAll(removed: List<String>): Flow<Unit> {
         return flow {
-            removed.forEach {
-                col.findOneAndUpdate(Property::_id eq it, setValue(Property::isActive, false))
-            }
+            col.deleteMany(Property::_id `in` removed)
+            emit(Unit)
         }
     }
 

@@ -13,7 +13,7 @@ class ScrapRealEstateUseCase(
     private val getPaginatedSearchItems: GetPaginatedSearchItemsUseCase,
     private val getProperties: GetPropertyUseCase,
     private val saveProperties: SavePropertiesUseCase,
-    private val toggleAvailability: TogglePropertyAvailabilityUseCase,
+    private val toggleAvailability: DeleteUnavailablePropertiesUseCase,
     private val fixPropertiesLocation: FixPropertiesLocationUseCase
 ) {
     @OptIn(FlowPreview::class)
@@ -25,7 +25,7 @@ class ScrapRealEstateUseCase(
             .flatMapConcat { getProperties(GetPropertyUseCase.Request(it, type)) }
             .flatMapConcat { fixPropertiesLocation.invoke(FixPropertiesLocationUseCase.Request(it)) }
             .flatMapConcat { saveProperties.invoke(SavePropertiesUseCase.Request(it, type)) }
-            .flatMapConcat { toggleAvailability.invoke(TogglePropertyAvailabilityUseCase.Request(it, type)) }
+            .flatMapConcat { toggleAvailability.invoke(DeleteUnavailablePropertiesUseCase.Request(it, type)) }
             .catch { logger.error { it } }
             .flowOn(Dispatchers.IO)
     }

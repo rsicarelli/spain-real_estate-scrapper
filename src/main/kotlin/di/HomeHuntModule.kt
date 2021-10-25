@@ -52,7 +52,7 @@ val dataModule = module {
 val domainModule = module {
     single { GetPropertyUseCase(get()) }
     single { GetPaginatedSearchItemsUseCase(get()) }
-    single { TogglePropertyAvailabilityUseCase(get()) }
+    single { DeleteUnavailablePropertiesUseCase(get()) }
     single { GetFirstSearchPageUseCase(get()) }
     single { SavePropertiesUseCase(get()) }
     single { FixPropertiesLocationUseCase() }

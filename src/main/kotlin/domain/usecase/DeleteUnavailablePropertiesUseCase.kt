@@ -7,7 +7,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.*
 
-class TogglePropertyAvailabilityUseCase(
+class DeleteUnavailablePropertiesUseCase(
     private val repository: PropertyRepository
 ) {
 
@@ -22,7 +22,7 @@ class TogglePropertyAvailabilityUseCase(
                 first.minus(second)
             }
             .filter { it.isNotEmpty() }
-            .flatMapConcat { repository.markAvailability(it) }
+            .flatMapConcat { repository.deleteAll(it) }
             .flowOn(Dispatchers.IO)
     }
 

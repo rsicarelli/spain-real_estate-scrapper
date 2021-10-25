@@ -15,24 +15,20 @@ class PropertyService : KoinComponent {
     private val ratingsRepository: RatingsRepository by inject()
 
     fun getProperties(userId: String): PropertyResponse {
-        val properties = repository.getAllActive()
+        val properties = repository.getAll()
         val ratings = ratingsRepository.getAllByUserId(userId)
         val viewedProperties = viewedPropertiesRepository.getAllByUserId(userId)
 
-        val filteredProperties = properties.filter { property ->
-            ratings?.let {
-                property._id !in it.downVotedProperties
-            } ?: true
-        }
         return PropertyResponse(
-            filteredProperties.map {
+            properties.map {
                 PropertyItem(
                     property = it,
                     isUpVoted = ratings?.upVotedProperties?.contains(it._id) ?: false,
+                    isDownVoted = ratings?.downVotedProperties?.contains(it._id) ?: false,
                     isViewed = viewedProperties?.propertyIds?.contains(it._id) ?: false
                 )
             },
-            totalItems = filteredProperties.size
+            totalItems = properties.size
         )
     }
 
