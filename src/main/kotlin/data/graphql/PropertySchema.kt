@@ -23,11 +23,11 @@ fun SchemaBuilder.propertySchema(propertyService: PropertyService) {
     }
 
     query("properties") {
-        resolver { ctx: Context ->
+        resolver { page: Int?, size: Int?, ctx: Context ->
             try {
-                val userId = ctx.get<User>()?._id ?: error("Not signed in")
+                ctx.get<User>()?._id ?: error("Not signed in")
 
-                propertyService.getProperties(userId)
+                propertyService.getPropertiesPage(page ?: 0, size ?: 10)
             } catch (e: Exception) {
                 null
             }

@@ -12,6 +12,8 @@ import domain.entity.Property
 import domain.entity.Property.Type
 import domain.entity.PropertySearchResult
 import domain.repository.PropertyRepository
+import domain.valueobject.PagingInfo
+import domain.valueobject.PropertiesPage
 import domain.valueobject.PropertyDetail
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -43,6 +45,24 @@ class PropertyRepositoryImpl(
         return flow {
             val properties = col.find("{origin:'${type.tag}',isActive: true}").toList()
             emit(properties)
+        }
+    }
+
+    override fun getPropertiesPage(page: Int, size: Int): PropertiesPage {
+        try {
+            val skips = page * size
+            val res = col.find().skip(skips).limit(size)
+            val results = res.asIterable().map { it }
+
+            val totalDesserts = col.estimatedDocumentCount()
+            val totalPages = (totalDesserts / size) + 1
+            val next = if (results.isNotEmpty()) page + 1 else null
+            val prev = if (page > 0) page - 1 else null
+
+            val info = PagingInfo(totalDesserts.toInt(), totalPages.toInt(), next, prev)
+            return PropertiesPage(results, info)
+        } catch (t: Throwable) {
+            throw Exception("Cannot get desserts page")
         }
     }
 
