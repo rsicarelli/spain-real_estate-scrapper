@@ -11,7 +11,7 @@ Real estate experiences lacks many features for home hunting, making it really d
 ## Built with
 - [Kotlin](https://kotlinlang.org/) :rocket:
 - [Skrape{it}](https://github.com/skrapeit/skrape.it)
-- [KGraphQL](https://kgraphql.io/)\
+- [KGraphQL](https://kgraphql.io/)
 - [Ktor](https://ktor.io/)
 - [KMongo](https://litote.org/kmongo/)
 - [Kotlin Logging](https://github.com/MicroUtils/kotlin-logging)
