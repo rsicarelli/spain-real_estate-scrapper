@@ -1,5 +1,5 @@
 ## Spain Real Estate Scrapper
-Kotlin based scrapper that scraps real estate properties and export it to Firebase Cloud Firestore.
+Kotlin based scrapper that scraps real estate properties thought a GraphQL server.
 
 ## Motivation
 Real estate experiences lacks many features for home hunting, making it really difficult to navigate, apply filters etc. The scrap is used for personal usage only.
