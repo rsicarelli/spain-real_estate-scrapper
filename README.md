@@ -14,6 +14,7 @@ Real estate experiences lacks many features for home hunting, making it really d
 - [KGraphQL](https://kgraphql.io/)
 - [Ktor](https://ktor.io/)
 - [KMongo](https://litote.org/kmongo/)
+- [Heroku](https://www.heroku.com)
 - [Kotlin Logging](https://github.com/MicroUtils/kotlin-logging)
 - [Koin](https://github.com/InsertKoinIO/koin)
 - [JUnit5](https://junit.org/junit5/docs/current/user-guide/)
