@@ -23,11 +23,26 @@ fun SchemaBuilder.propertySchema(propertyService: PropertyService) {
     }
 
     query("properties") {
-        resolver { page: Int?, size: Int?, ctx: Context ->
+        description = "Get all properties, filtering out down voted ones"
+        resolver { ctx: Context ->
             try {
-                ctx.get<User>()?._id ?: error("Not signed in")
+                val userId = ctx.get<User>()?._id ?: error("Not signed in")
 
-                propertyService.getPropertiesPage(page ?: 0, size ?: 10)
+                propertyService.getProperties(userId)
+            } catch (e: Exception) {
+                null
+            }
+        }
+    }
+
+    query("recommendedProperties") {
+        description = "Get recommended properties, filtering out up and down voted"
+
+        resolver { ctx: Context ->
+            try {
+                val userId = ctx.get<User>()?._id ?: error("Not signed in")
+
+                propertyService.getRecommendations(userId)
             } catch (e: Exception) {
                 null
             }
