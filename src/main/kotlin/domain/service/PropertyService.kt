@@ -13,17 +13,10 @@ class PropertyService : KoinComponent {
 
     fun getProperties(userId: String): PropertyResponse {
         val properties = repository.getAll()
-        val ratings = ratingsRepository.getAllByUserId(userId) //TODO refactor to Mongo aggregates
-
-        val filteredProperties = properties.filterNot { property ->
-            ratings?.let {
-                property._id in it.downVotedProperties
-            } ?: true
-        }
 
         return PropertyResponse(
-            count = filteredProperties.size,
-            results = filteredProperties,
+            count = properties.size,
+            results = properties,
         )
     }
 
