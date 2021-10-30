@@ -17,20 +17,20 @@ class ScrapperService : KoinComponent {
     private val scrapRealEstate: ScrapRealEstateUseCase by inject()
 
     operator fun invoke() {
-//        CoroutineScope(Dispatchers.IO).launchPeriodicAsync(Duration.hours(6)) {
-//            scrapRealEstate.invoke(
-//                ScrapRealEstateUseCase.Request(
-//                    APROPERTIES_DEFAULT_URL,
-//                    Property.Type.APROPERTIES
-//                )
-//            ).collect()
-//            scrapRealEstate.invoke(
-//                ScrapRealEstateUseCase.Request(
-//                    ENGEL_DEFAULT_URL,
-//                    Property.Type.ENGELS
-//                )
-//            ).collect()
-//        }
+        CoroutineScope(Dispatchers.IO).launchPeriodicAsync(Duration.hours(6)) {
+            scrapRealEstate.invoke(
+                ScrapRealEstateUseCase.Request(
+                    APROPERTIES_DEFAULT_URL,
+                    Property.Type.APROPERTIES
+                )
+            ).collect()
+            scrapRealEstate.invoke(
+                ScrapRealEstateUseCase.Request(
+                    ENGEL_DEFAULT_URL,
+                    Property.Type.ENGELS
+                )
+            ).collect()
+        }
     }
 
     companion object {
