@@ -1,0 +1,80 @@
+[versions]
+bcrypt = "0.9.0"
+kGraphQL = "0.17.14"
+kMongo = "4.3.0"
+koin = "3.1.5"
+kotlin = "1.6.10"
+kotlinLogging = "1.5.9"
+ktor = "1.6.4"
+logback = "1.2.6"
+gradleShadow = "7.1.0"
+skrapeIt = "1.1.5"
+gradle = "7.3.3"
+jUnit5 = "5.7.0"
+mokk = "1.12.0"
+
+
+[libraries]
+# BCrypt
+bcrypt = { module = "at.favre.lib:bcrypt", version.ref = "bcrypt" }
+
+# KGraphQL
+kgrapql = { module = "com.apurebase:kgraphql", version.ref = "kGraphQL" }
+kgrapql-ktor = { module = "com.apurebase:kgraphql-ktor", version.ref = "kGraphQL" }
+
+# Kmongo
+kmongo = { module = "org.litote.kmongo:kmongo", version.ref = "kMongo" }
+
+# Koin
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-ktor = { module = "io.insert-koin:koin-ktor", version.ref = "koin" }
+
+# Gradle Plugins
+gradle-shadow = { module = "gradle.plugin.com.github.jengelman.gradle.plugins:shadow", version.ref = "gradleShadow" }
+
+# Kotlin
+kotlin-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlin" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-scripting-compiler-embeddable = { module = "org.jetbrains.kotlin:kotlin-scripting-compiler-embeddable", version.ref = "kotlin" }
+kotlin-logging = { module = "io.github.microutils:kotlin-logging", version.ref = "kotlinLogging" }
+
+# Ktor
+ktor-auth = { module = "io.ktor:ktor-server-netty", version.ref = "ktor" }
+ktor-netty = { module = "io.ktor:ktor-auth", version.ref = "ktor" }
+ktor-auth-jwt = { module = "io.ktor:ktor-auth-jwt", version.ref = "ktor" }
+
+# Logback
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+
+# SkrapeIt
+skrapeIt = { module = "it.skrape:skrapeit", version.ref = "skrapeIt" }
+
+# Tests
+jUnit5 = { module = "org.junit.jupiter:junit-jupiter", version.ref = "jUnit5" }
+mokk = { module = "io.mockk:mockk", version.ref = "mokk" }
+kotlin-test-junit5 = { module = "org.jetbrains.kotlin:kotlin-test-junit5", version.ref = "kotlin" }
+koin-test = { module = "io.insert-koin:koin-test", version.ref = "koin" }
+koin-test-junit5 = { module = "io.insert-koin:koin-test-junit5", version.ref = "koin" }
+
+[bundles]
+kGraphQL = [
+    "kgrapql",
+    "kgrapql-ktor",
+]
+koin = [
+    "koin-core",
+    "koin-ktor"
+]
+ktor = [
+    "ktor-auth",
+    "ktor-netty",
+    "ktor-auth-jwt"
+]
+test = [
+    "jUnit5",
+    "mokk",
+    "kotlin-test-junit5",
+    "koin-test",
+    "koin-test-junit5"
+]

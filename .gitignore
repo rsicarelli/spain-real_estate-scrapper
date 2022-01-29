@@ -37,7 +37,7 @@ dev.env
 .idea/uiDesigner.xml
 
 # Google Services (e.g. APIs or Firebase)
-/src/main/resources/homehunt-service-account.json
+/scrapper/src/main/resources/homehunt-service-account.json
 
 # Version control
 vcs.xml
