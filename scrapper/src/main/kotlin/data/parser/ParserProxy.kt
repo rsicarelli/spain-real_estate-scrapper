@@ -22,6 +22,7 @@ class ParserProxyImpl(
         return when (type) {
             Type.APROPERTIES -> aPropertiesSearchResultsParser.parse(doc)
             Type.ENGELS -> engelSearchResultsParser.parse(doc)
+            Type.ALAMEDA10 -> TODO()
         }
     }
 
@@ -29,6 +30,7 @@ class ParserProxyImpl(
         return when (type) {
             Type.APROPERTIES -> aPropertyPropertyDetailParser.parse(doc)
             Type.ENGELS -> engelPropertyDetailParser.parse(doc)
+            Type.ALAMEDA10 -> TODO()
         }
     }
 

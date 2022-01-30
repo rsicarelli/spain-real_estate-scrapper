@@ -5,6 +5,9 @@ import data.graphql.propertySchema
 import di.appModules
 import domain.service.PropertyService
 import io.ktor.application.*
+import io.ktor.features.*
+import io.ktor.gson.*
+import io.ktor.serialization.*
 import me.rsicarelli.data.graphql.authSchema
 import me.rsicarelli.data.graphql.ratingsSchema
 import me.rsicarelli.data.graphql.viewedPropertiesSchema
@@ -15,6 +18,10 @@ import me.rsicarelli.domain.service.ViewedPropertiesService
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import org.koin.core.context.startKoin
+import org.koin.core.logger.Level
+import org.koin.core.logger.Logger
+import org.koin.core.logger.MESSAGE
+import org.koin.ktor.ext.Koin
 
 class HomeHuntApplication : KoinComponent {
     val scrapperService: ScrapperService by inject()
@@ -26,14 +33,27 @@ class HomeHuntApplication : KoinComponent {
 
 fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
 
+class ErrorLogger : Logger(Level.ERROR) {
+    override fun log(level: Level, msg: MESSAGE) {
+        println(msg)
+    }
+}
+
 @Suppress("unused") // Referenced in application.conf
-@kotlin.jvm.JvmOverloads
+@JvmOverloads
 fun Application.module(testing: Boolean = false) {
 
-    startKoin {
-        printLogger()
+    install(Koin) {
+        logger(ErrorLogger())
+//        logger()/**/
         modules(appModules)
     }
+
+
+//    startKoin {
+//        printLogger()
+//        modules(appModules)
+//    }
 
     val app = HomeHuntApplication()
     app.scrapperService.invoke()
@@ -53,5 +73,9 @@ fun Application.module(testing: Boolean = false) {
             ratingsSchema(app.ratingsService)
             viewedPropertiesSchema(app.viewedPropertiesService)
         }
+    }
+
+    install(ContentNegotiation) {
+        gson()
     }
 }

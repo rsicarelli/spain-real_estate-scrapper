@@ -7,6 +7,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
+import java.time.Instant
 import java.time.ZoneId
 import java.time.ZonedDateTime
 import kotlin.time.Duration
@@ -104,4 +105,8 @@ fun <T> CssSelectable.ulWithClass(className: String, action: CssSelector.() -> T
 
 fun currentTimeAtUTC(): String {
     return ZonedDateTime.now(ZoneId.of("UTC")).toLocalDateTime().toString()
+}
+
+fun epochToDate(milis: Long): String {
+    return Instant.ofEpochMilli(milis).atZone(ZoneId.of("UTC")).toLocalDateTime().toString()
 }

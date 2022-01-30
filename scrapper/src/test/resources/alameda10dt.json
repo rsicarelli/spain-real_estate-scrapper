@@ -1,0 +1,625 @@
+[
+  {
+    "ltd": 39.4766801,
+    "lng": -0.3791947,
+    "addressVisible": "0",
+    "id": 96569767,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4669825,
+    "lng": -0.3719695,
+    "addressVisible": "0",
+    "id": 96535185,
+    "disabled": false
+  },
+  {
+    "ltd": 39.475987,
+    "lng": -0.3755545,
+    "addressVisible": "0",
+    "id": 96534735,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4738802,
+    "lng": -0.3555024,
+    "addressVisible": "0",
+    "id": 96534515,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4624977,
+    "lng": -0.3505136,
+    "addressVisible": "0",
+    "id": 96534148,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4807515,
+    "lng": -0.3553474,
+    "addressVisible": "1",
+    "id": 96519776,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4832349,
+    "lng": -0.3617188,
+    "addressVisible": "0",
+    "id": 38224441,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4690609,
+    "lng": -0.3734794,
+    "addressVisible": "0",
+    "id": 96481554,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4689474,
+    "lng": -0.3589121,
+    "addressVisible": "0",
+    "id": 96480923,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4673939,
+    "lng": -0.3734609,
+    "addressVisible": "0",
+    "id": 96480857,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4856054,
+    "lng": -0.3616177,
+    "addressVisible": "1",
+    "id": 96480319,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4701496,
+    "lng": -0.3586475,
+    "addressVisible": "1",
+    "id": 96479999,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4689474,
+    "lng": -0.3589121,
+    "addressVisible": "0",
+    "id": 96479884,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4713959,
+    "lng": -0.3611952,
+    "addressVisible": "2",
+    "id": 96479669,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4783596,
+    "lng": -0.3522482,
+    "addressVisible": "0",
+    "id": 96479603,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4785957,
+    "lng": -0.3646096,
+    "addressVisible": "2",
+    "id": 96479360,
+    "disabled": false
+  },
+  {
+    "ltd": 39.466852,
+    "lng": -0.3560348,
+    "addressVisible": "1",
+    "id": 96479270,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4725007,
+    "lng": -0.3545238,
+    "addressVisible": "1",
+    "id": 96479200,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4797965,
+    "lng": -0.3545818,
+    "addressVisible": "1",
+    "id": 96479180,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4692476,
+    "lng": -0.3712918,
+    "addressVisible": "0",
+    "id": 96479146,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4692847,
+    "lng": -0.3576098,
+    "addressVisible": "1",
+    "id": 96468139,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4766017,
+    "lng": -0.3553681,
+    "addressVisible": "1",
+    "id": 92083061,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4709485,
+    "lng": -0.3586819,
+    "addressVisible": "1",
+    "id": 96423534,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4717847,
+    "lng": -0.3567098,
+    "addressVisible": "2",
+    "id": 96423308,
+    "disabled": false
+  },
+  {
+    "ltd": 39.451192,
+    "lng": -0.3588754,
+    "addressVisible": "0",
+    "id": 96412418,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4399233,
+    "lng": -0.3904254,
+    "addressVisible": "1",
+    "id": 96401148,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4849978,
+    "lng": -0.3697284,
+    "addressVisible": "1",
+    "id": 96401052,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4675969,
+    "lng": -0.3780388,
+    "addressVisible": "0",
+    "id": 96400541,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4743761,
+    "lng": -0.354045,
+    "addressVisible": "0",
+    "id": 96400156,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4732198,
+    "lng": -0.3634715,
+    "addressVisible": "0",
+    "id": 96400100,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4552876,
+    "lng": -0.3584381,
+    "addressVisible": "0",
+    "id": 96399985,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4728614,
+    "lng": -0.3349416,
+    "addressVisible": "0",
+    "id": 96399949,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4702753,
+    "lng": -0.3544452,
+    "addressVisible": "0",
+    "id": 96390785,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4711907,
+    "lng": -0.3792717,
+    "addressVisible": "1",
+    "id": 96390732,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4880844,
+    "lng": -0.4035509,
+    "addressVisible": "0",
+    "id": 96390531,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4611809,
+    "lng": -0.3848046,
+    "addressVisible": "0",
+    "id": 96390051,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4703485,
+    "lng": -0.3569819,
+    "addressVisible": "0",
+    "id": 96381860,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4714608,
+    "lng": -0.3457313,
+    "addressVisible": "0",
+    "id": 96296256,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4750016,
+    "lng": -0.364195,
+    "addressVisible": "0",
+    "id": 95936457,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4729292,
+    "lng": -0.3881919,
+    "addressVisible": "1",
+    "id": 96304255,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4554611,
+    "lng": -0.3826013,
+    "addressVisible": "0",
+    "id": 96303945,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4675969,
+    "lng": -0.3780388,
+    "addressVisible": "0",
+    "id": 96272379,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4676859,
+    "lng": -0.3749362,
+    "addressVisible": "1",
+    "id": 96272215,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4845337,
+    "lng": -0.3722424,
+    "addressVisible": "0",
+    "id": 96249476,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4750016,
+    "lng": -0.364195,
+    "addressVisible": "0",
+    "id": 96155945,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4671124,
+    "lng": -0.3356933,
+    "addressVisible": "0",
+    "id": 92058665,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4685266,
+    "lng": -0.3372991,
+    "addressVisible": "0",
+    "id": 91778301,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4725032,
+    "lng": -0.3795932,
+    "addressVisible": "0",
+    "id": 92457184,
+    "disabled": false
+  },
+  {
+    "ltd": 39.469048,
+    "lng": -0.3720629,
+    "addressVisible": "1",
+    "id": 92169716,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4777896,
+    "lng": -0.3573643,
+    "addressVisible": "2",
+    "id": 94141296,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4605479,
+    "lng": -0.3708779,
+    "addressVisible": "0",
+    "id": 95211093,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4728891,
+    "lng": -0.3361358,
+    "addressVisible": "0",
+    "id": 94177536,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4731779,
+    "lng": -0.3545317,
+    "addressVisible": "2",
+    "id": 94760617,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4816919,
+    "lng": -0.3603519,
+    "addressVisible": "0",
+    "id": 94810345,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4657336,
+    "lng": -0.3395098,
+    "addressVisible": "0",
+    "id": 95211216,
+    "disabled": false
+  },
+  {
+    "ltd": 39.451192,
+    "lng": -0.3588754,
+    "addressVisible": "0",
+    "id": 95315894,
+    "disabled": false
+  },
+  {
+    "ltd": 39.473391,
+    "lng": -0.3723066,
+    "addressVisible": "0",
+    "id": 95211354,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4696485,
+    "lng": -0.3589819,
+    "addressVisible": "2",
+    "id": 95544268,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4866675,
+    "lng": -0.3686198,
+    "addressVisible": "1",
+    "id": 95429041,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4653347,
+    "lng": -0.3576188,
+    "addressVisible": "1",
+    "id": 95636006,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4446917,
+    "lng": -0.3669894,
+    "addressVisible": "0",
+    "id": 95420826,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4590497,
+    "lng": -0.3370351,
+    "addressVisible": "0",
+    "id": 95543658,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4751221,
+    "lng": -0.3629203,
+    "addressVisible": "0",
+    "id": 95992349,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4896603,
+    "lng": -0.372779,
+    "addressVisible": "0",
+    "id": 95712462,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4652607,
+    "lng": -0.3752209,
+    "addressVisible": "0",
+    "id": 95994263,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4609012,
+    "lng": -0.3712678,
+    "addressVisible": "0",
+    "id": 96063618,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4751875,
+    "lng": -0.3643226,
+    "addressVisible": "0",
+    "id": 96008067,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4785857,
+    "lng": -0.3533819,
+    "addressVisible": "2",
+    "id": 96087854,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4632544,
+    "lng": -0.3624603,
+    "addressVisible": "0",
+    "id": 96007243,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4691189,
+    "lng": -0.3742556,
+    "addressVisible": "1",
+    "id": 94779007,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4768065,
+    "lng": -0.3564392,
+    "addressVisible": "1",
+    "id": 88950423,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4890047,
+    "lng": -0.3760424,
+    "addressVisible": "0",
+    "id": 95559528,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4528046,
+    "lng": -0.3594409,
+    "addressVisible": "1",
+    "id": 95315965,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4885472,
+    "lng": -0.3586482,
+    "addressVisible": "1",
+    "id": 95316492,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4887632,
+    "lng": -0.3704136,
+    "addressVisible": "0",
+    "id": 94441604,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4689474,
+    "lng": -0.3589121,
+    "addressVisible": "0",
+    "id": 94997513,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4745373,
+    "lng": -0.3542491,
+    "addressVisible": "0",
+    "id": 94779908,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4741049,
+    "lng": -0.3440349,
+    "addressVisible": "0",
+    "id": 94380603,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4741049,
+    "lng": -0.3440349,
+    "addressVisible": "0",
+    "id": 94380395,
+    "disabled": false
+  },
+  {
+    "ltd": 39.475841,
+    "lng": -0.3615216,
+    "addressVisible": "1",
+    "id": 93216987,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4736945,
+    "lng": -0.3544974,
+    "addressVisible": "1",
+    "id": 36824974,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4756899,
+    "lng": -0.3490598,
+    "addressVisible": "0",
+    "id": 93695298,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4752163,
+    "lng": -0.358382,
+    "addressVisible": "2",
+    "id": 91804926,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4892595,
+    "lng": -0.3650427,
+    "addressVisible": "0",
+    "id": 93348199,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4616818,
+    "lng": -0.356189,
+    "addressVisible": "0",
+    "id": 84650031,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4773164,
+    "lng": -0.3532386,
+    "addressVisible": "2",
+    "id": 89883565,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4576962,
+    "lng": -0.3655686,
+    "addressVisible": "0",
+    "id": 87405792,
+    "disabled": false
+  },
+  {
+    "ltd": 39.4646107,
+    "lng": -0.3659452,
+    "addressVisible": "0",
+    "id": 39410318,
+    "disabled": false
+  },
+  {
+    "ltd": 39.47449,
+    "lng": -0.36593,
+    "addressVisible": "1",
+    "id": 85073561,
+    "disabled": false
+  }
+]

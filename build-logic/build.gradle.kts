@@ -14,6 +14,8 @@ repositories {
 
 dependencies {
     implementation(libs.kotlin.gradle)
+    implementation(libs.gradle.ksp)
+    implementation(libs.kotlin.serialization)
 //    implementation("gradle.plugin.com.github.jengelman.gradle.plugins:shadow:7.1.2")
 }
 

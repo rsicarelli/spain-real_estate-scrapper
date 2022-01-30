@@ -27,6 +27,7 @@ data class Property(
     sealed class Type(val tag: String) {
         object APROPERTIES : Type("aProperties")
         object ENGELS : Type("engels")
+        object ALAMEDA10 : Type("alameda10")
     }
 
     sealed class Tag(val identifier: String) {

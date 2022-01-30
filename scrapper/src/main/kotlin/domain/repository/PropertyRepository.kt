@@ -16,4 +16,5 @@ interface PropertyRepository : Repository<Property> {
     fun getByIds(ids: List<String>): List<Property>
     fun addAll(propertiesToSave: List<Property>): List<Property>
     fun getPropertiesPage(page: Int, size: Int) : PropertiesPage
+    suspend fun getProperties(url: String, headers: Map<String, String>) : List<Property>
 }

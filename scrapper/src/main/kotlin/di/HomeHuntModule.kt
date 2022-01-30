@@ -7,6 +7,8 @@ import data.repository.PropertyRepositoryImpl
 import domain.repository.PropertyRepository
 import domain.service.PropertyService
 import domain.usecase.*
+import me.rsicarelli.data.datasource.RemoteDataSource
+import me.rsicarelli.data.datasource.RemoteDataSourceImpl
 import me.rsicarelli.data.repository.RatingsRepositoryImpl
 import me.rsicarelli.data.repository.UserRepositoryImpl
 import me.rsicarelli.data.repository.ViewedPropertiesRepositoryImpl
@@ -17,6 +19,7 @@ import me.rsicarelli.domain.service.AuthService
 import me.rsicarelli.domain.service.RatingsService
 import me.rsicarelli.domain.service.ScrapperService
 import me.rsicarelli.domain.service.ViewedPropertiesService
+import me.rsicarelli.domain.usecase.GetRemoteListingsUseCase
 import org.koin.core.qualifier.named
 import org.koin.dsl.bind
 import org.koin.dsl.module
@@ -30,7 +33,15 @@ val homeHuntModule = module(createdAtStart = true) {
 
 val dataModule = module {
     single { WebDataSourceImpl() } bind WebDataSource::class
-    single { PropertyRepositoryImpl(get(), get(), get()) } bind PropertyRepository::class
+    single { RemoteDataSourceImpl() } bind RemoteDataSource::class
+    single {
+        PropertyRepositoryImpl(
+            client = get(),
+            webDataSource = get(),
+            remoteDataSource = get(),
+            parserProxy = get()
+        )
+    } bind PropertyRepository::class
     single { RatingsRepositoryImpl(get()) } bind RatingsRepository::class
     single { UserRepositoryImpl(get()) } bind UserRepository::class
     single { ViewedPropertiesRepositoryImpl(get()) } bind ViewedPropertiesRepository::class
@@ -57,6 +68,7 @@ val domainModule = module {
     single { SavePropertiesUseCase(get()) }
     single { FixPropertiesLocationUseCase() }
     single { ReportUnknownLocationsUseCase(get()) }
+    single { GetRemoteListingsUseCase(get()) }
 
     single {
         ScrapRealEstateUseCase(
@@ -65,7 +77,8 @@ val domainModule = module {
             getProperties = get(),
             saveProperties = get(),
             toggleAvailability = get(),
-            fixPropertiesLocation = get()
+            fixPropertiesLocation = get(),
+            getRemoteListingsUseCase = get()
         )
     }
 

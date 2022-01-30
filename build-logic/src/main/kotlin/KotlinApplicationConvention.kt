@@ -14,6 +14,9 @@ open class KotlinApplicationConvention : Plugin<Project> {
         with(project) {
             this.plugins.apply("application")
             this.plugins.apply("org.jetbrains.kotlin.jvm")
+            this.plugins.apply("com.google.devtools.ksp")
+            this.plugins.apply("org.jetbrains.kotlin.plugin.serialization")
+
             extensions.configure(JavaPluginExtension::class.java) {
                 sourceCompatibility = JavaVersion.VERSION_11
                 targetCompatibility = JavaVersion.VERSION_11
