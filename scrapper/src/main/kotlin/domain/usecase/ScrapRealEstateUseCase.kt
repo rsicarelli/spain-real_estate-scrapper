@@ -26,16 +26,14 @@ class ScrapRealEstateUseCase(
             logger.info { it.toString() }
         }
 
-        return flow {
-        }
-//        return getFirstResults.invoke(GetFirstSearchPageUseCase.Request(url, type))
-//            .flatMapConcat { getPaginatedSearchItems(GetPaginatedSearchItemsUseCase.Request(it, type)) }
-//            .flatMapConcat { getProperties(GetPropertyUseCase.Request(it, type)) }
-//            .flatMapConcat { fixPropertiesLocation.invoke(FixPropertiesLocationUseCase.Request(it)) }
-//            .flatMapConcat { saveProperties.invoke(SavePropertiesUseCase.Request(it, type)) }
-//            .flatMapConcat { toggleAvailability.invoke(DeleteUnavailablePropertiesUseCase.Request(it, type)) }
-//            .catch { logger.error { it } }
-//            .flowOn(Dispatchers.IO)
+        return getFirstResults.invoke(GetFirstSearchPageUseCase.Request(url, type))
+            .flatMapConcat { getPaginatedSearchItems(GetPaginatedSearchItemsUseCase.Request(it, type)) }
+            .flatMapConcat { getProperties(GetPropertyUseCase.Request(it, type)) }
+            .flatMapConcat { fixPropertiesLocation.invoke(FixPropertiesLocationUseCase.Request(it)) }
+            .flatMapConcat { saveProperties.invoke(SavePropertiesUseCase.Request(it, type)) }
+            .flatMapConcat { toggleAvailability.invoke(DeleteUnavailablePropertiesUseCase.Request(it, type)) }
+            .catch { logger.error { it } }
+            .flowOn(Dispatchers.IO)
     }
 
     data class Request(

@@ -45,15 +45,8 @@ fun Application.module(testing: Boolean = false) {
 
     install(Koin) {
         logger(ErrorLogger())
-//        logger()/**/
         modules(appModules)
     }
-
-
-//    startKoin {
-//        printLogger()
-//        modules(appModules)
-//    }
 
     val app = HomeHuntApplication()
     app.scrapperService.invoke()

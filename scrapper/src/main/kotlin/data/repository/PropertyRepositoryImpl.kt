@@ -1,6 +1,5 @@
 package data.repository
 
-import app.epochToDate
 import com.google.gson.*
 import com.mongodb.client.MongoClient
 import com.mongodb.client.MongoCollection
@@ -9,9 +8,8 @@ import com.mongodb.client.model.ReplaceOneModel
 import com.mongodb.client.model.ReplaceOptions
 import com.mongodb.client.model.WriteModel
 import data.datasource.WebDataSource
-import data.network.alameda10.Alameda10
+import data.network.alameda10.Alameda10Response
 import data.parser.ParserProxy
-import domain.entity.Location
 import domain.entity.Property
 import domain.entity.Property.Type
 import domain.entity.PropertySearchResult
@@ -57,7 +55,7 @@ class PropertyRepositoryImpl(
         val bodyRaw =
             "{\"currentPage\":0,\"itemsPerPage\":20,\"order\":\"desc\",\"orderfield\":\"creationDate\",\"ids\":[],\"UserContactId\":null,\"showAddress\":1,\"adOperationId\":\"2\",\"adScopeId\":null,\"adTypologyId\":\"0\",\"priceMin\":null,\"priceMax\":null,\"CreationDateMin\":null,\"CreationDateMax\":null,\"locationId\":[],\"drawShapePath\":null,\"homes\":null,\"chalets\":null,\"countryhouses\":null,\"isDuplex\":null,\"isPenthouse\":null,\"isStudio\":null,\"isIndependentHouse\":null,\"isSemidetachedHouse\":null,\"isTerracedHouse\":null,\"constructedAreaMin\":null,\"constructedAreaMax\":null,\"rooms_0\":null,\"rooms_1\":null,\"rooms_2\":null,\"rooms_3\":null,\"rooms_4\":null,\"baths_1\":null,\"baths_2\":null,\"baths_3\":null,\"builtTypeId\":null,\"isTopFloor\":null,\"isIntermediateFloor\":null,\"isGroundFloor\":null,\"isFirstFloor\":null,\"hasAirConditioning\":null,\"hasWardrobe\":null,\"hasGarage\":null,\"hasLift\":null,\"hasTerrace\":null,\"hasBoxRoom\":null,\"hasSwimmingPool\":null,\"hasGarden\":null,\"flatLocationId\":null,\"hasKitchen\":null,\"hasAutomaticDoor\":null,\"hasPersonalSecurity\":null,\"HasSecurity24h\":null,\"garageCapacityId\":null,\"hasHotWater\":null,\"hasExterior\":null,\"hasSuspendedFloor\":null,\"hasHeating\":null,\"isFurnish\":null,\"isBankOwned\":null,\"distributionId\":null,\"isOnlyOfficeBuilding\":null,\"ubicationId\":null,\"warehouseType_1\":null,\"warehouseType_2\":null,\"isATransfer\":null,\"isCornerLocated\":null,\"hasSmokeExtractor\":null,\"landType_1\":null,\"landType_2\":null,\"landType_3\":null,\"HasAllDayAccess\":null,\"HasLoadingDockAccess\":null,\"HasTenant\":null,\"addressVisible\":null,\"mlsIncluded\":null,\"freeText\":null,\"RefereceText\":null,\"isLowered\":null,\"priceDropDateFrom\":0,\"priceDropDateTo\":0,\"arePetsAllowed\":null,\"Equipment\":null,\"OperationStatus\":null,\"AdContract\":null,\"IsRent\":true,\"IsSale\":false,\"IsAuction\":false,\"AdState\":null}"
 
-        return remoteDataSource.client.post<Alameda10>(url) {
+        return remoteDataSource.client.post<Alameda10Response>(url) {
             headers {
                 headers.forEach { (key, value) ->
                     append(key, value)

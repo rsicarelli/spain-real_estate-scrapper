@@ -4,6 +4,7 @@ import domain.entity.Property
 import domain.repository.PropertyRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 
@@ -15,7 +16,10 @@ class GetRemoteListingsUseCase(
 
         return flow {
             emit(propertyRepository.getProperties(url, headers))
-        }.flowOn(Dispatchers.IO)
+        }.catch {
+            println(it)
+        }
+            .flowOn(Dispatchers.IO)
     }
 }
 
