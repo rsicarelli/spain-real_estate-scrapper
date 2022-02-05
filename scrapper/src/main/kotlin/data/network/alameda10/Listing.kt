@@ -32,6 +32,7 @@ data class Listing(
 
     fun createdAt() = epochToDate(creation)
     fun isHousing() = property.isHousing
+    fun galleryUrls() = multimedia.toUrls()
 }
 
 data class Price(@SerializedName("byOperation") val byOperation: ByOperation) {
@@ -73,7 +74,16 @@ data class Multimedia(
     @SerializedName("videos") val videos: ArrayList<Videos>,
     @SerializedName("MainPicture") val mainPicture: String,
     @SerializedName("CountPictures") val galleryPictureCount: Int?
-)
+) {
+
+    fun toUrls(): List<String> {
+        val path = "https://img3.idealista.com/blur/HOME_WI_1500/0/"
+        return pictures.map {
+            "$path${it.masterPath}${it.masterName}"
+        }
+    }
+
+}
 
 data class Pictures(
     @SerializedName("id") val id: Int? = null,

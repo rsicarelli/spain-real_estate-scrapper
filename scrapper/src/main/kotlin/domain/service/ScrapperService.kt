@@ -22,18 +22,18 @@ class ScrapperService : KoinComponent {
 
     operator fun invoke() {
         CoroutineScope(Dispatchers.Default).launchPeriodicAsync(Duration.hours(6)) {
-            scrapWebRealEstate.invoke(
-                ScrapWebRealEstateUseCase.Request(
-                    APROPERTIES_DEFAULT_URL,
-                    Property.Type.APROPERTIES
-                )
-            ).collect()
-            scrapWebRealEstate.invoke(
-                ScrapWebRealEstateUseCase.Request(
-                    ENGEL_DEFAULT_URL,
-                    Property.Type.ENGELS
-                )
-            ).collect()
+//            scrapWebRealEstate.invoke(
+//                ScrapWebRealEstateUseCase.Request(
+//                    APROPERTIES_DEFAULT_URL,
+//                    Property.Type.APROPERTIES
+//                )
+//            ).collect()
+//            scrapWebRealEstate.invoke(
+//                ScrapWebRealEstateUseCase.Request(
+//                    ENGEL_DEFAULT_URL,
+//                    Property.Type.ENGELS
+//                )
+//            ).collect()
             scrapApiRealEstate.invoke(
                 request = ScrapApiRealEstateUseCase.Request(
                     alameda10dt.first,
@@ -41,7 +41,7 @@ class ScrapperService : KoinComponent {
                     alameda10dt.third,
                     Property.Type.ALAMEDA10
                 )
-            )
+            ).collect()
         }
     }
 

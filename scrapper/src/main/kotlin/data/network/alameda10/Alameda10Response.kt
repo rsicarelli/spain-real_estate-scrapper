@@ -34,7 +34,7 @@ data class Alameda10Response(
                         fullDescription = fullDescription(),
                         locationDescription = null,
                         characteristics = listOf(),
-                        photoGalleryUrls = listOf(),
+                        photoGalleryUrls = galleryUrls(),
                         pdfUrl = null,
                         origin = Property.Type.ALAMEDA10.tag,
                         isActive = true,
