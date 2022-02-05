@@ -5,7 +5,6 @@ import domain.entity.Location
 import domain.entity.Property
 
 
-@kotlinx.serialization.Serializable
 data class Alameda10Response(
     @SerializedName("ads") var listings: List<Listing>,
 ) {

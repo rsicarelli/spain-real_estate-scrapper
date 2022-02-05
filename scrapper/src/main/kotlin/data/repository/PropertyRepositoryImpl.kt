@@ -1,6 +1,6 @@
 package data.repository
 
-import com.google.gson.*
+import com.google.gson.JsonObject
 import com.mongodb.client.MongoClient
 import com.mongodb.client.MongoCollection
 import com.mongodb.client.model.InsertOneModel
@@ -27,7 +27,6 @@ import org.bson.Document
 import org.litote.kmongo.`in`
 import org.litote.kmongo.find
 import org.litote.kmongo.getCollection
-import java.util.*
 
 
 class PropertyRepositoryImpl(
@@ -49,7 +48,6 @@ class PropertyRepositoryImpl(
 
     override suspend fun scrapPropertyDetails(url: String, type: Type): Flow<PropertyDetail> =
         webDataSource.get(url).map { parserProxy.parsePropertyDetail(it, type) }
-
 
     override suspend fun getProperties(url: String, headers: Map<String, String>, body: JsonObject): List<Property> {
         return remoteDataSource.client.post<Alameda10Response>(url) {
@@ -125,30 +123,6 @@ class PropertyRepositoryImpl(
             propertiesToSave
         } catch (t: Throwable) {
             throw Exception("Cannot add items")
-        }
-    }
-
-    val customGson: Gson = GsonBuilder().registerTypeHierarchyAdapter(
-        ByteArray::class.java,
-        ByteArrayToBase64TypeAdapter()
-    ).create()
-
-    private class ByteArrayToBase64TypeAdapter : JsonSerializer<ByteArray?>, JsonDeserializer<ByteArray?> {
-
-        override fun deserialize(
-            json: JsonElement?,
-            typeOfT: java.lang.reflect.Type?,
-            context: JsonDeserializationContext?
-        ): ByteArray? {
-            return Base64.getDecoder().decode(json!!.asString)
-        }
-
-        override fun serialize(
-            src: ByteArray?,
-            typeOfSrc: java.lang.reflect.Type?,
-            context: JsonSerializationContext?
-        ): JsonElement {
-            return JsonPrimitive(Base64.getEncoder().encodeToString(src))
         }
     }
 }

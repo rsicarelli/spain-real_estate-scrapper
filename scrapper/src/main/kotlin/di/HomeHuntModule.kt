@@ -20,12 +20,13 @@ import me.rsicarelli.domain.service.RatingsService
 import me.rsicarelli.domain.service.ScrapperService
 import me.rsicarelli.domain.service.ViewedPropertiesService
 import me.rsicarelli.domain.usecase.GetRemoteListingsUseCase
+import me.rsicarelli.domain.usecase.ScrapApiRealEstateUseCase
 import org.koin.core.qualifier.named
 import org.koin.dsl.bind
 import org.koin.dsl.module
 import org.litote.kmongo.KMongo
 
-val appModules by lazy { listOf(homeHuntModule, dataModule, domainModule) }
+val appModules by lazy { listOf(homeHuntModule, dataModule, domainModule, servicesModule) }
 
 val homeHuntModule = module(createdAtStart = true) {
     factory { KMongo.createClient(System.getenv("MONGO_URI") ?: "") }
@@ -60,31 +61,42 @@ val dataModule = module {
     }
 }
 
-val domainModule = module {
-    single { GetPropertyUseCase(get()) }
-    single { GetPaginatedSearchItemsUseCase(get()) }
-    single { DeleteUnavailablePropertiesUseCase(get()) }
-    single { GetFirstSearchPageUseCase(get()) }
-    single { SavePropertiesUseCase(get()) }
-    single { FixPropertiesLocationUseCase() }
-    single { ReportUnknownLocationsUseCase(get()) }
-    single { GetRemoteListingsUseCase(get()) }
+val servicesModule = module {
+    single { PropertyService() }
+    single { ScrapperService() }
+    single { AuthService() }
+    single { RatingsService() }
+    single { ViewedPropertiesService() }
+}
 
-    single {
-        ScrapRealEstateUseCase(
+val domainModule = module {
+    factory { GetPropertyUseCase(get()) }
+    factory { GetPaginatedSearchItemsUseCase(get()) }
+    factory { DeleteUnavailablePropertiesUseCase(get()) }
+    factory { GetFirstSearchPageUseCase(get()) }
+    factory { SavePropertiesUseCase(get()) }
+    factory { FixPropertiesLocationUseCase() }
+    factory { ReportUnknownLocationsUseCase(get()) }
+    factory { GetRemoteListingsUseCase(get()) }
+
+    factory {
+        ScrapWebRealEstateUseCase(
             getFirstResults = get(),
             getPaginatedSearchItems = get(),
             getProperties = get(),
             saveProperties = get(),
             toggleAvailability = get(),
             fixPropertiesLocation = get(),
-            getRemoteListingsUseCase = get()
         )
     }
 
-    single { PropertyService() }
-    single { ScrapperService() }
-    single { AuthService() }
-    single { RatingsService() }
-    single { ViewedPropertiesService() }
+    factory {
+        ScrapApiRealEstateUseCase(
+            saveProperties = get(),
+            toggleAvailability = get(),
+            fixPropertiesLocation = get(),
+            getRemoteListingsUseCase = get(),
+        )
+    }
+
 }

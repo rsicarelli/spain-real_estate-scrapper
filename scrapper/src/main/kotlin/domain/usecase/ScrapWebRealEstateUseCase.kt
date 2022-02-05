@@ -7,12 +7,11 @@ import kotlinx.coroutines.flow.*
 import me.rsicarelli.domain.usecase.GetRemoteListingsUseCase
 import mu.KotlinLogging
 
-private val logger = KotlinLogging.logger("ScrapRealEstateUseCase")
+private val logger = KotlinLogging.logger("ScrapWebRealEstateUseCase")
 
-class ScrapRealEstateUseCase(
+class ScrapWebRealEstateUseCase(
     private val getFirstResults: GetFirstSearchPageUseCase,
     private val getPaginatedSearchItems: GetPaginatedSearchItemsUseCase,
-    private val getRemoteListingsUseCase: GetRemoteListingsUseCase,
     private val getProperties: GetPropertyUseCase,
     private val saveProperties: SavePropertiesUseCase,
     private val toggleAvailability: DeleteUnavailablePropertiesUseCase,
@@ -21,10 +20,6 @@ class ScrapRealEstateUseCase(
     @OptIn(FlowPreview::class)
     suspend operator fun invoke(request: Request): Flow<Unit> {
         val (url, type) = request
-
-        getRemoteListingsUseCase.invoke().collect {
-            logger.info { it.toString() }
-        }
 
         return getFirstResults.invoke(GetFirstSearchPageUseCase.Request(url, type))
             .flatMapConcat { getPaginatedSearchItems(GetPaginatedSearchItemsUseCase.Request(it, type)) }
